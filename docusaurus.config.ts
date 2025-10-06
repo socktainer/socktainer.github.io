@@ -171,6 +171,7 @@ const config: Config = {
         },
       };
     },
+    'docusaurus-plugin-goatcounter',
     [
       '@docusaurus/plugin-content-docs',
       {
