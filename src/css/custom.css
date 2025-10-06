@@ -4,31 +4,34 @@
  * work well for content-centric websites.
  */
 
-@import 'tailwindcss';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
 @config '../../tailwind.config.js';
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #f97316;
-  --ifm-color-primary-dark: #ea680f;
-  --ifm-color-primary-darker: #dc5e0c;
-  --ifm-color-primary-darkest: #b54d0a;
-  --ifm-color-primary-light: #fa8c3d;
-  --ifm-color-primary-lighter: #fb9a51;
-  --ifm-color-primary-lightest: #fdb77f;
+  --ifm-color-primary: #ff8c00;
+  --ifm-color-primary-dark: #e67e00;
+  --ifm-color-primary-darker: #d97700;
+  --ifm-color-primary-darkest: #b36200;
+  --ifm-color-primary-light: #ff9a1a;
+  --ifm-color-primary-lighter: #ffa533;
+  --ifm-color-primary-lightest: #ffbb66;
+  --ifm-link-color: #ea580c;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #fb923c;
-  --ifm-color-primary-dark: #fa8c3d;
-  --ifm-color-primary-darker: #fa7c22;
-  --ifm-color-primary-darkest: #f97316;
-  --ifm-color-primary-light: #fba066;
-  --ifm-color-primary-lighter: #fcae7a;
-  --ifm-color-primary-lightest: #fdcca3;
+  --ifm-color-primary: #ffa500;
+  --ifm-color-primary-dark: #ff9a1a;
+  --ifm-color-primary-darker: #ff8c00;
+  --ifm-color-primary-darkest: #e67e00;
+  --ifm-color-primary-light: #ffaf33;
+  --ifm-color-primary-lighter: #ffba4d;
+  --ifm-color-primary-lightest: #ffd699;
+  --ifm-link-color: #fb923c;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -99,14 +102,11 @@ li.footer__item a svg {
 
 .navbar__logo {
   width: 45px;
-
 }
 
 .navbar__item {
   font-size: 0.9em;
   white-space: nowrap;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 .pagination-nav {

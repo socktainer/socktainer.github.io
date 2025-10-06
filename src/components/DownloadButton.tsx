@@ -21,7 +21,7 @@ export function HeaderDownloadButton(): JSX.Element {
     <div>
       <Link
         className="hidden xl:flex font-semibold no-underline hover:no-underline items-center text-white hover:text-white bg-gradient-to-b from-orange-500 to-orange-600 border-0 py-3 px-6 focus:outline-hidden hover:from-orange-600 hover:to-orange-700 rounded-lg text-base mt-0 mb-0 ml-4 mr-2"
-        to="/downloads"
+        to="/download"
       >
         Download
       </Link>

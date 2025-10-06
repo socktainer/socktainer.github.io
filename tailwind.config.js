@@ -6,9 +6,6 @@ module.exports = {
   important: true,
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': 'url(/img/gradients.png)',
-      },
       extend: {},
     },
   },

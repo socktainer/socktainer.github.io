@@ -2,46 +2,45 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to **Socktainer** 🚢 - a CLI/daemon that brings Docker compatibility to Apple's containerization framework on macOS!
+
+## What is Socktainer?
+
+Socktainer exposes a Docker-compatible REST API on top of Apple's containerization libraries, allowing you to use familiar Docker tools and clients to manage containers on your Apple Silicon Mac. It seamlessly bridges the gap between the Docker ecosystem and Apple's container framework.
+
+By creating a Unix domain socket at `$HOME/.socktainer/container.sock`, Socktainer enables common Docker clients (like the Docker CLI) to interact with local containers on macOS using the standard Docker API surface 🐳💻.
+
+## Key Features ✨
+
+- **Built on Apple's Container Framework** 🍏 - Leverages macOS containerization capabilities
+- **Docker API Compatibility** 🔄 - Provides partial compatibility with the Docker REST API
+- **Unix Domain Socket** 📡 - Listens on `$HOME/.socktainer/container.sock`
+- **Container Lifecycle Management** 🛠️ - Full support for inspect, start, stop, restart, kill, and remove operations
+- **Image Operations** 📦 - List, pull, delete images, and build from Dockerfiles
+- **Advanced Features** 📄 - Container logs, health checks, exec support, and event broadcasting
+- **Volume & Network Support** 🔌 - Create and manage volumes and networks
+- **Podman Desktop Integration** - Works with the [Podman Desktop Apple Container extension](https://github.com/podman-desktop/extension-apple-container) to visualize Apple containers and images
+
+## Requirements 📋
+
+To use Socktainer, you need:
+
+- **macOS on Apple Silicon (arm64)** 🍏💻
+  - Apple's container APIs only work on arm64 Macs
+  - See [Apple container requirements](https://developer.apple.com/documentation/containerframework) for more details
 
 ## Getting Started
 
-Get started by **creating a new site**.
+Ready to use Socktainer? Head over to the [Download page](/download) to get the latest release and installation instructions.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+For a comprehensive list of supported Docker API endpoints and feature parity status, check out the [API Feature Parity](./api-feature-parity) documentation.
 
-### What you'll need
+## Community 💬
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Join the Socktainer community to ask questions, share ideas, or get help:
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- **Discord**: [discord.gg/Pw9VWKcUEt](https://discord.gg/Pw9VWKcUEt) – Chat in real time with contributors and users
+- **GitHub Discussions**: [socktainer/discussions](https://github.com/socktainer/socktainer/discussions) – Ask questions or propose features
+- **GitHub Issues**: [socktainer/issues](https://github.com/socktainer/socktainer/issues) – Report bugs or request features

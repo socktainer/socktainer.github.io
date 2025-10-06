@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 const inDevMode = process.env.NODE_ENV === 'development';
 
-const title = 'Socktainer';
+const title = 'socktainer';
 const config: Config = {
   title,
   tagline: 'Connect existing docker tooling on top of apple container using REST API',
@@ -97,12 +97,19 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'mySidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+        {
+          type: 'docSidebar',
+          docsPluginId: 'tutorial',
+          sidebarId: 'mySidebar',
           position: 'left',
           label: 'Tutorial',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        
+        { to: '/download', label: 'Download', position: 'left' },
+
         {
           type: 'custom-downloadButton',
           position: 'right',
@@ -121,8 +128,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Get Started',
               to: '/docs/intro',
+            },
+            {
+              label: 'Download',
+              to: '/download',
             },
           ],
         },
@@ -130,16 +141,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/Pw9VWKcUEt',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'GitHub Discussions',
+              href: 'https://github.com/socktainer/socktainer/discussions',
+            },
+            {
+              label: 'GitHub Issues',
+              href: 'https://github.com/socktainer/socktainer/issues',
             },
           ],
         },
@@ -147,12 +158,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'GitHub',
+              href: 'https://github.com/socktainer/socktainer',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Releases',
+              href: 'https://github.com/socktainer/socktainer/releases',
             },
           ],
         },
@@ -162,6 +173,9 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    goatcounter: {
+      code: 'socktainer',
     },
   } satisfies Preset.ThemeConfig,
 
@@ -175,6 +189,16 @@ const config: Config = {
         },
       };
     },
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'tutorial',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: './sidebars.ts',
+        editUrl: 'https://github.com/socktainer/socktainer.github.io/tree/main/',
+      },
+    ],
   ],
 };
 

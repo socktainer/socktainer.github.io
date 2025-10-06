@@ -1,4 +1,3 @@
-
 // Import the original mapper
 import { library } from '@fortawesome/fontawesome-svg-core'; // Import the library component.
 import { fab } from '@fortawesome/free-brands-svg-icons'; // Import all brands icons.
