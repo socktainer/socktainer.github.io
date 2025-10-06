@@ -10,4 +10,4 @@ Step-by-step guides to help you integrate Socktainer with various tools and fram
 
 ## Available Tutorials:
 
-- [Testcontainers](./testcontainers) Learn how to use Testcontainers with Socktainer for integration testing in Java applications.
+- [Testcontainers](/tutorial/testcontainers) Learn how to use Testcontainers with Socktainer for integration testing in Java applications.

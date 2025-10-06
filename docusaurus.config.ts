@@ -50,24 +50,6 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/socktainer/socktainer.github.io/tree/main/',
         },
-        blog: {
-          blogTitle: 'Socktainer Blog',
-          postsPerPage: 'ALL',
-          showReadingTime: true,
-          blogSidebarTitle: 'All blog posts',
-          blogSidebarCount: 'ALL',
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/socktainer/socktainer.github.io/tree/main/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
