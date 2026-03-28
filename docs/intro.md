@@ -37,6 +37,10 @@ Ready to use Socktainer? Head over to the [Download page](/download) to get the 
 
 For a comprehensive list of supported Docker API endpoints and feature parity status, check out the [API Feature Parity](./api-feature-parity) documentation.
 
+If you want to use the Docker CLI against Socktainer through a dedicated context, see [Docker Context](./docker-context).
+
+If you need to work with registries, see [Registry Authentication](./registry-authentication).
+
 ## Community 💬
 
 Join the Socktainer community to ask questions, share ideas, or get help:
