@@ -7,6 +7,8 @@ import TailWindThemeSelector from '../components/TailWindThemeSelector';
 export default function Download(): ReactElement {
   const [showZipInstructions, setShowZipInstructions] = useState(false);
   const [showBinaryInstructions, setShowBinaryInstructions] = useState(false);
+  const [showPrereleaseBrewInstructions, setShowPrereleaseBrewInstructions] = useState(false);
+  const [showPrereleaseTagLinks, setShowPrereleaseTagLinks] = useState(false);
   return (
     <Layout title="Download" description="Download Socktainer - Docker REST API for Apple Containers">
       <TailWindThemeSelector />
@@ -65,14 +67,14 @@ export default function Download(): ReactElement {
                   1. Add the Socktainer tap:
                 </p>
                 <div className="bg-gray-900 dark:bg-black p-4 rounded-md">
-                  <code className="text-green-400 font-mono text-sm">brew tap socktainer/tap</code>
+                  <code className="text-green-400 font-mono text-sm">brew tap socktainer/tap https://github.com/socktainer/homebrew-tap</code>
                 </div>
               </div>
 
               <div>
                 <p className="text-sm font-semibold text-gray-700 dark:text-zinc-300 mb-2">2. Install Socktainer:</p>
                 <div className="bg-gray-900 dark:bg-black p-4 rounded-md">
-                  <code className="text-green-400 font-mono text-sm">brew install socktainer</code>
+                  <code className="text-green-400 font-mono text-sm">brew install socktainer/tap/socktainer</code>
                 </div>
               </div>
 
@@ -187,6 +189,77 @@ export default function Download(): ReactElement {
                         </div>
                       </div>
                     )}
+                  </div>
+                </div>
+              </div>
+
+              {/* All Releases */}
+              <div className="p-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 rounded-lg">
+                <div className="flex items-start gap-3 mb-4">
+                  <span className="text-3xl">🧪</span>
+                  <div className="flex-1">
+                    <Link
+                      to="https://github.com/socktainer/prereleases"
+                      className="block hover:opacity-80 transition-opacity"
+                    >
+                      <h3 className="text-lg font-bold text-gray-800 dark:text-zinc-200 mb-2">Pre-releases</h3>
+                      <p className="text-sm text-gray-600 dark:text-zinc-400">
+                        Download preview builds and early release candidates from the prereleases repository
+                      </p>
+                    </Link>
+
+                    <div className="mt-4 space-y-4">
+                      <div>
+                        <button
+                          onClick={() => setShowPrereleaseBrewInstructions(!showPrereleaseBrewInstructions)}
+                          className="inline-flex items-center gap-2 text-sm text-gray-700 dark:text-zinc-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+                        >
+                          <span>{showPrereleaseBrewInstructions ? '▼' : '▶'}</span>
+                          {showPrereleaseBrewInstructions ? 'Hide' : 'Show'} Homebrew pre-release instructions
+                        </button>
+
+                        {showPrereleaseBrewInstructions && (
+                          <div className="mt-4 space-y-3">
+                            <p className="text-sm font-semibold text-gray-700 dark:text-zinc-300">
+                              Install a pre-release build with Homebrew:
+                            </p>
+                            <div className="bg-gray-900 dark:bg-black p-4 rounded-md">
+                              <code className="text-green-400 font-mono text-sm block">
+                                brew tap socktainer/tap https://github.com/socktainer/homebrew-tap
+                              </code>
+                              <code className="text-green-400 font-mono text-sm block mt-2">
+                                brew install socktainer/tap/socktainer-next
+                              </code>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+
+                      <div>
+                        <button
+                          onClick={() => setShowPrereleaseTagLinks(!showPrereleaseTagLinks)}
+                          className="inline-flex items-center gap-2 text-sm text-gray-700 dark:text-zinc-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+                        >
+                          <span>{showPrereleaseTagLinks ? '▼' : '▶'}</span>
+                          {showPrereleaseTagLinks ? 'Hide' : 'Show'} pre-release tags
+                        </button>
+
+                        {showPrereleaseTagLinks && (
+                          <div className="mt-4 space-y-3">
+                            <p className="text-sm font-semibold text-gray-700 dark:text-zinc-300">
+                              Browse all published pre-release tags:
+                            </p>
+                            <Link
+                              to="https://github.com/socktainer/prereleases/tags"
+                              className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300 underline text-sm"
+                            >
+                              <span>🏷️</span>
+                              View prerelease tags
+                            </Link>
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
