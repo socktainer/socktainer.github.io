@@ -166,6 +166,16 @@ function _createMdxContent(props) {
         href: "./api-feature-parity",
         children: "API Feature Parity"
       }), " documentation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If you want to use the Docker CLI against Socktainer through a dedicated context, see ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "./docker-context",
+        children: "Docker Context"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If you need to work with registries, see ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "./registry-authentication",
+        children: "Registry Authentication"
+      }), "."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "community-",
       children: "Community 💬"
