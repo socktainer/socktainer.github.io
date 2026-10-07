@@ -594,7 +594,7 @@ var LayersCounter = ({
 /* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3587);
 /* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8808);
 /* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9493);
-/* harmony import */ var _theme_ThemedImage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3675);
+/* harmony import */ var _theme_ThemedImage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7069);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7259);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -794,7 +794,7 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
-/***/ 1408:
+/***/ 1100:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16943,6 +16943,37 @@ exports.version = "19.2.0";
 
 /***/ }),
 
+/***/ 1764:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ IconExternalLink)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(227);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"iconExternalLink":"iconExternalLink_ykX6"});
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// References symbol in docusaurus-theme-classic/src/inlineSvgSprites.ts
+// See why: https://github.com/facebook/docusaurus/issues/5865
+const svgSprite='#theme-svg-external-link';function IconExternalLink({width=13.5,height=13.5}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{width:width,height:height,"aria-label":(0,Translate/* translate */.T)({id:'theme.IconExternalLink.ariaLabel',message:'(opens in new tab)',description:'The ARIA label for the external link icon'}),className:styles_module.iconExternalLink,children:/*#__PURE__*/(0,jsx_runtime.jsx)("use",{href:svgSprite})});}
+
+/***/ }),
+
 /***/ 1936:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -17217,7 +17248,7 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 // EXTERNAL MODULE: ./.docusaurus/routesChunkNames.json
 var routesChunkNames = __webpack_require__(4054);
 ;// ./.docusaurus/registry.js
-/* harmony default export */ const registry = ({"0058b4c6":[()=>__webpack_require__.e(/* import() | 0058b4c6 */ 849).then(__webpack_require__.t.bind(__webpack_require__, 6164, 19)),"@generated/docusaurus-plugin-content-docs/default/p/docs-175.json",/*require.resolve*/(6164)],"03234f2b":[()=>__webpack_require__.e(/* import() | 03234f2b */ 2715).then(__webpack_require__.t.bind(__webpack_require__, 2684, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/__plugin.json",/*require.resolve*/(2684)],"0e384e19":[()=>Promise.all(/* import() | 0e384e19 */[__webpack_require__.e(2076), __webpack_require__.e(3976)]).then(__webpack_require__.bind(__webpack_require__, 3987)),"@site/docs/intro.md",/*require.resolve*/(3987)],"17896441":[()=>Promise.all(/* import() | 17896441 */[__webpack_require__.e(1869), __webpack_require__.e(2076), __webpack_require__.e(7584), __webpack_require__.e(8401)]).then(__webpack_require__.bind(__webpack_require__, 2584)),"@theme/DocItem",/*require.resolve*/(2584)],"1df93b7f":[()=>__webpack_require__.e(/* import() | 1df93b7f */ 4583).then(__webpack_require__.bind(__webpack_require__, 7251)),"@site/src/pages/index.tsx",/*require.resolve*/(7251)],"464507d4":[()=>Promise.all(/* import() | 464507d4 */[__webpack_require__.e(2076), __webpack_require__.e(1019)]).then(__webpack_require__.bind(__webpack_require__, 2121)),"@site/docs/api-feature-parity.md",/*require.resolve*/(2121)],"5e95c892":[()=>__webpack_require__.e(/* import() | 5e95c892 */ 9647).then(__webpack_require__.bind(__webpack_require__, 537)),"@theme/DocsRoot",/*require.resolve*/(537)],"5e9f5e1a":[()=>Promise.resolve(/* import() */).then(__webpack_require__.bind(__webpack_require__, 4784)),"@generated/docusaurus.config",/*require.resolve*/(4784)],"64e5928d":[()=>Promise.all(/* import() | 64e5928d */[__webpack_require__.e(2076), __webpack_require__.e(2302)]).then(__webpack_require__.bind(__webpack_require__, 6368)),"@site/docs/docker-context.md",/*require.resolve*/(6368)],"6867d105":[()=>__webpack_require__.e(/* import() | 6867d105 */ 2424).then(__webpack_require__.bind(__webpack_require__, 5424)),"@site/src/pages/download.tsx",/*require.resolve*/(5424)],"94c8361b":[()=>Promise.all(/* import() | 94c8361b */[__webpack_require__.e(2076), __webpack_require__.e(4819)]).then(__webpack_require__.bind(__webpack_require__, 468)),"@site/docs/registry-authentication.md",/*require.resolve*/(468)],"a58a13eb":[()=>Promise.all(/* import() | a58a13eb */[__webpack_require__.e(2076), __webpack_require__.e(1901)]).then(__webpack_require__.bind(__webpack_require__, 1426)),"@site/tutorial/index.md",/*require.resolve*/(1426)],"a7456010":[()=>__webpack_require__.e(/* import() | a7456010 */ 1235).then(__webpack_require__.t.bind(__webpack_require__, 8552, 19)),"@generated/docusaurus-plugin-content-pages/default/__plugin.json",/*require.resolve*/(8552)],"a7bd4aaa":[()=>__webpack_require__.e(/* import() | a7bd4aaa */ 7098).then(__webpack_require__.bind(__webpack_require__, 7743)),"@theme/DocVersionRoot",/*require.resolve*/(7743)],"a94703ab":[()=>Promise.all(/* import() | a94703ab */[__webpack_require__.e(1869), __webpack_require__.e(9048)]).then(__webpack_require__.bind(__webpack_require__, 2528)),"@theme/DocRoot",/*require.resolve*/(2528)],"aba21aa0":[()=>__webpack_require__.e(/* import() | aba21aa0 */ 5742).then(__webpack_require__.t.bind(__webpack_require__, 7093, 19)),"@generated/docusaurus-plugin-content-docs/default/__plugin.json",/*require.resolve*/(7093)],"d982e1fa":[()=>__webpack_require__.e(/* import() | d982e1fa */ 285).then(__webpack_require__.t.bind(__webpack_require__, 9256, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/p/tutorial-0f7.json",/*require.resolve*/(9256)],"fca495da":[()=>Promise.all(/* import() | fca495da */[__webpack_require__.e(2076), __webpack_require__.e(9174)]).then(__webpack_require__.bind(__webpack_require__, 361)),"@site/tutorial/testcontainers.md",/*require.resolve*/(361)]});
+/* harmony default export */ const registry = ({"0058b4c6":[()=>__webpack_require__.e(/* import() | 0058b4c6 */ 849).then(__webpack_require__.t.bind(__webpack_require__, 6164, 19)),"@generated/docusaurus-plugin-content-docs/default/p/docs-175.json",/*require.resolve*/(6164)],"03234f2b":[()=>__webpack_require__.e(/* import() | 03234f2b */ 2715).then(__webpack_require__.t.bind(__webpack_require__, 2684, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/__plugin.json",/*require.resolve*/(2684)],"0e384e19":[()=>Promise.all(/* import() | 0e384e19 */[__webpack_require__.e(2076), __webpack_require__.e(3976)]).then(__webpack_require__.bind(__webpack_require__, 3987)),"@site/docs/intro.md",/*require.resolve*/(3987)],"17896441":[()=>Promise.all(/* import() | 17896441 */[__webpack_require__.e(1869), __webpack_require__.e(2076), __webpack_require__.e(30), __webpack_require__.e(8401)]).then(__webpack_require__.bind(__webpack_require__, 2692)),"@theme/DocItem",/*require.resolve*/(2692)],"1df93b7f":[()=>__webpack_require__.e(/* import() | 1df93b7f */ 4583).then(__webpack_require__.bind(__webpack_require__, 7251)),"@site/src/pages/index.tsx",/*require.resolve*/(7251)],"464507d4":[()=>Promise.all(/* import() | 464507d4 */[__webpack_require__.e(2076), __webpack_require__.e(1019)]).then(__webpack_require__.bind(__webpack_require__, 2121)),"@site/docs/api-feature-parity.md",/*require.resolve*/(2121)],"5e95c892":[()=>__webpack_require__.e(/* import() | 5e95c892 */ 9647).then(__webpack_require__.bind(__webpack_require__, 537)),"@theme/DocsRoot",/*require.resolve*/(537)],"5e9f5e1a":[()=>Promise.resolve(/* import() */).then(__webpack_require__.bind(__webpack_require__, 4784)),"@generated/docusaurus.config",/*require.resolve*/(4784)],"64e5928d":[()=>Promise.all(/* import() | 64e5928d */[__webpack_require__.e(2076), __webpack_require__.e(2302)]).then(__webpack_require__.bind(__webpack_require__, 6368)),"@site/docs/docker-context.md",/*require.resolve*/(6368)],"6867d105":[()=>__webpack_require__.e(/* import() | 6867d105 */ 2424).then(__webpack_require__.bind(__webpack_require__, 5424)),"@site/src/pages/download.tsx",/*require.resolve*/(5424)],"94c8361b":[()=>Promise.all(/* import() | 94c8361b */[__webpack_require__.e(2076), __webpack_require__.e(4819)]).then(__webpack_require__.bind(__webpack_require__, 468)),"@site/docs/registry-authentication.md",/*require.resolve*/(468)],"a58a13eb":[()=>Promise.all(/* import() | a58a13eb */[__webpack_require__.e(2076), __webpack_require__.e(1901)]).then(__webpack_require__.bind(__webpack_require__, 1426)),"@site/tutorial/index.md",/*require.resolve*/(1426)],"a7456010":[()=>__webpack_require__.e(/* import() | a7456010 */ 1235).then(__webpack_require__.t.bind(__webpack_require__, 8552, 19)),"@generated/docusaurus-plugin-content-pages/default/__plugin.json",/*require.resolve*/(8552)],"a7bd4aaa":[()=>__webpack_require__.e(/* import() | a7bd4aaa */ 7098).then(__webpack_require__.bind(__webpack_require__, 7743)),"@theme/DocVersionRoot",/*require.resolve*/(7743)],"a94703ab":[()=>Promise.all(/* import() | a94703ab */[__webpack_require__.e(1869), __webpack_require__.e(9048)]).then(__webpack_require__.bind(__webpack_require__, 7999)),"@theme/DocRoot",/*require.resolve*/(7999)],"aba21aa0":[()=>__webpack_require__.e(/* import() | aba21aa0 */ 5742).then(__webpack_require__.t.bind(__webpack_require__, 7093, 19)),"@generated/docusaurus-plugin-content-docs/default/__plugin.json",/*require.resolve*/(7093)],"d982e1fa":[()=>__webpack_require__.e(/* import() | d982e1fa */ 285).then(__webpack_require__.t.bind(__webpack_require__, 9256, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/p/tutorial-0f7.json",/*require.resolve*/(9256)],"fca495da":[()=>Promise.all(/* import() | fca495da */[__webpack_require__.e(2076), __webpack_require__.e(9174)]).then(__webpack_require__.bind(__webpack_require__, 361)),"@site/tutorial/testcontainers.md",/*require.resolve*/(361)]});
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7259);
 ;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/theme-fallback/Loading/index.js
@@ -17451,6 +17482,16 @@ const{plugin}=(0,_docusaurus_useRouteContext__WEBPACK_IMPORTED_MODULE_2__/* ["de
 
 "use strict";
 module.exports = {};
+
+/***/ }),
+
+/***/ 2720:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -21399,37 +21440,6 @@ exports.version = "19.2.0";
 
 /***/ }),
 
-/***/ 3451:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ IconExternalLink)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"iconExternalLink":"iconExternalLink_ykX6"});
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// References symbol in docusaurus-theme-classic/src/inlineSvgSprites.ts
-// See why: https://github.com/facebook/docusaurus/issues/5865
-const svgSprite='#theme-svg-external-link';function IconExternalLink({width=13.5,height=13.5}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{width:width,height:height,"aria-label":(0,Translate/* translate */.T)({id:'theme.IconExternalLink.ariaLabel',message:'(opens in new tab)',description:'The ARIA label for the external link icon'}),className:styles_module.iconExternalLink,children:/*#__PURE__*/(0,jsx_runtime.jsx)("use",{href:svgSprite})});}
-
-/***/ }),
-
 /***/ 3466:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -22509,61 +22519,6 @@ const shouldAddBaseUrl=!url.startsWith(baseUrl);const basePath=shouldAddBaseUrl?
 
 /***/ }),
 
-/***/ 3675:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ ThemedImage)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(3526);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
-var useIsBrowser = __webpack_require__(1993);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
-var contexts_colorMode = __webpack_require__(2774);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/ThemedComponent/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"themedComponent":"themedComponent_NwjF","themedComponent--light":"themedComponent--light_Y9pu","themedComponent--dark":"themedComponent--dark_OnJW"});
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/ThemedComponent/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const AllThemes=(/* unused pure expression or super */ null && (['light','dark']));/**
- * Generic component to render anything themed in light/dark
- * Note: it's preferable to use CSS for theming because this component
- * will need to render all the variants during SSR to avoid a theme flash.
- *
- * Use this only when CSS customizations are not convenient or impossible.
- * For example, rendering themed images or SVGs...
- *
- * @param className applied to all the variants
- * @param children function to render a theme variant
- * @constructor
- */function ThemedComponent({className,children}){const isBrowser=(0,useIsBrowser/* default */.A)();const{colorMode}=(0,contexts_colorMode/* useColorMode */.G)();function getThemesToRender(){if(isBrowser){return colorMode==='dark'?['dark']:['light'];}// We need to render both components on the server / hydration to avoid:
-// - a flash of wrong theme before hydration
-// - React hydration mismatches
-// See https://github.com/facebook/docusaurus/pull/3730
-return['light','dark'];}return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:getThemesToRender().map(theme=>{const themedElement=children({theme,className:(0,clsx/* default */.A)(className,styles_module.themedComponent,styles_module[`themedComponent--${theme}`])});return/*#__PURE__*/(0,jsx_runtime.jsx)(react.Fragment,{children:themedElement},theme);})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemedImage/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function ThemedImage(props){const{sources,className:parentClassName,alt,...propsRest}=props;return/*#__PURE__*/(0,jsx_runtime.jsx)(ThemedComponent,{className:parentClassName,children:({theme,className})=>/*#__PURE__*/(0,jsx_runtime.jsx)("img",{src:sources[theme],alt:alt,className:className,...propsRest})});}
-
-/***/ }),
-
 /***/ 3790:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -22639,6 +22594,44 @@ const[lazyCollapsed,setLazyCollapsed]=(0,react__WEBPACK_IMPORTED_MODULE_0__.useS
  * LICENSE file in the root directory of this source tree.
  */// Constants used on the client-side: duplicated from server-side code
 const DEFAULT_PLUGIN_ID='default';
+
+/***/ }),
+
+/***/ 3943:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ Heading)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+var clsx = __webpack_require__(3526);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(227);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
+var useThemeConfig = __webpack_require__(9493);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Link.js
+var Link = __webpack_require__(1936);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBrokenLinks.js + 1 modules
+var useBrokenLinks = __webpack_require__(8098);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"anchorWithStickyNavbar":"anchorWithStickyNavbar_CIwr","anchorWithHideOnScrollNavbar":"anchorWithHideOnScrollNavbar_inFD"});
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Heading({as:As,id,...props}){const brokenLinks=(0,useBrokenLinks/* default */.A)();const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.p)();// H1 headings do not need an id because they don't appear in the TOC.
+if(As==='h1'||!id){return/*#__PURE__*/(0,jsx_runtime.jsx)(As,{...props,id:undefined});}brokenLinks.collectAnchor(id);const anchorTitle=(0,Translate/* translate */.T)({id:'theme.common.headingLinkTitle',message:'Direct link to {heading}',description:'Title for link to heading'},{heading:typeof props.children==='string'?props.children:id});return/*#__PURE__*/(0,jsx_runtime.jsxs)(As,{...props,className:(0,clsx/* default */.A)('anchor',hideOnScroll?styles_module.anchorWithHideOnScrollNavbar:styles_module.anchorWithStickyNavbar,props.className),id:id,children:[props.children,/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{className:"hash-link",to:`#${id}`,"aria-label":anchorTitle,title:anchorTitle,translate:"no",children:"\u200B"})]});}
 
 /***/ }),
 
@@ -24519,16 +24512,6 @@ function invariant(condition, message) {
 
 /***/ }),
 
-/***/ 5392:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ 5396:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -25036,6 +25019,307 @@ flushInitializers(READY_INITIALIZERS).then(resolve,resolve);});};module.exports=
 
 /***/ }),
 
+/***/ 5656:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js
+var client = __webpack_require__(1546);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@slorber+react-helmet-async@1.3.0_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@slorber/react-helmet-async/lib/index.module.js
+var index_module = __webpack_require__(9571);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-router-dom@5.3.4_react@19.2.0/node_modules/react-router-dom/esm/react-router-dom.js
+var react_router_dom = __webpack_require__(6735);
+// EXTERNAL MODULE: ./.docusaurus/docusaurus.config.mjs
+var docusaurus_config = __webpack_require__(4784);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ExecutionEnvironment.js
+var ExecutionEnvironment = __webpack_require__(95);
+;// ./.docusaurus/client-modules.js
+/* harmony default export */ const client_modules = ([__webpack_require__(1100),__webpack_require__(8268),__webpack_require__(9573),__webpack_require__(3790),__webpack_require__(2720)]);
+// EXTERNAL MODULE: ./.docusaurus/routes.js + 3 modules
+var routes = __webpack_require__(2376);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-router@5.3.4_react@19.2.0/node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(7596);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-router-config@5.1.1_react-router@5.3.4_react@19.2.0__react@19.2.0/node_modules/react-router-config/esm/react-router-config.js
+var react_router_config = __webpack_require__(2073);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/theme-fallback/Root/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Wrapper at the very top of the app, that is applied constantly
+// and does not depend on current route (unlike the layout)
+//
+// Gives the opportunity to add stateful providers on top of the app
+// and these providers won't reset state when we navigate
+//
+// See https://github.com/facebook/docusaurus/issues/3919
+function Root({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:children});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/titleFormatterUtils.js
+var titleFormatterUtils = __webpack_require__(2582);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemeProvider/TitleFormatter/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const formatter=params=>{// Add your own title formatting logic here!
+return params.defaultFormatter(params);};function ThemeProviderTitleFormatter({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(titleFormatterUtils/* TitleFormatterProvider */.AL,{formatter:formatter,children:children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemeProvider/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function ThemeProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(ThemeProviderTitleFormatter,{children:children});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Head.js
+var Head = __webpack_require__(334);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
+var useDocusaurusContext = __webpack_require__(8808);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(3587);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
+var useThemeConfig = __webpack_require__(9493);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js
+var metadataUtils = __webpack_require__(2457);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useAlternatePageUtils.js
+var useAlternatePageUtils = __webpack_require__(9530);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js + 1 modules
+var useKeyboardNavigation = __webpack_require__(5746);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/searchUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const DEFAULT_SEARCH_TAG='default';
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+utils-common@3.9.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@docusaurus/utils-common/lib/index.js
+var lib = __webpack_require__(1601);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SearchMetadata/index.js
+var SearchMetadata = __webpack_require__(7407);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SiteMetadata/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// TODO move to SiteMetadataDefaults or theme-common ?
+// Useful for i18n/SEO
+// See https://developers.google.com/search/docs/advanced/crawling/localized-versions
+// See https://github.com/facebook/docusaurus/issues/3317
+function AlternateLangHeaders(){const{i18n:{currentLocale,defaultLocale,localeConfigs}}=(0,useDocusaurusContext/* default */.A)();const alternatePageUtils=(0,useAlternatePageUtils/* useAlternatePageUtils */.o)();const currentHtmlLang=localeConfigs[currentLocale].htmlLang;// HTML lang is a BCP 47 tag, but the Open Graph protocol requires
+// using underscores instead of dashes.
+// See https://ogp.me/#optional
+// See https://en.wikipedia.org/wiki/IETF_language_tag)
+const bcp47ToOpenGraphLocale=code=>code.replace('-','_');// Note: it is fine to use both "x-default" and "en" to target the same url
+// See https://www.searchviu.com/en/multiple-hreflang-tags-one-url/
+return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[Object.entries(localeConfigs).map(([locale,{htmlLang}])=>/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"alternate",href:alternatePageUtils.createUrl({locale,fullyQualified:true}),hrefLang:htmlLang},locale)),/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"alternate",href:alternatePageUtils.createUrl({locale:defaultLocale,fullyQualified:true}),hrefLang:"x-default"}),/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:locale",content:bcp47ToOpenGraphLocale(currentHtmlLang)}),Object.values(localeConfigs).filter(config=>currentHtmlLang!==config.htmlLang).map(config=>/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:locale:alternate",content:bcp47ToOpenGraphLocale(config.htmlLang)},`meta-og-${config.htmlLang}`))]});}// Default canonical url inferred from current page location pathname
+function useDefaultCanonicalUrl(){const{siteConfig:{url:siteUrl,baseUrl,trailingSlash}}=(0,useDocusaurusContext/* default */.A)();// TODO using useLocation().pathname is not a super idea
+// See https://github.com/facebook/docusaurus/issues/9170
+const{pathname}=(0,react_router/* useLocation */.zy)();const canonicalPathname=(0,lib/* applyTrailingSlash */.Ks)((0,useBaseUrl/* default */.Ay)(pathname),{trailingSlash,baseUrl});return siteUrl+canonicalPathname;}// TODO move to SiteMetadataDefaults or theme-common ?
+function CanonicalUrlHeaders({permalink}){const{siteConfig:{url:siteUrl}}=(0,useDocusaurusContext/* default */.A)();const defaultCanonicalUrl=useDefaultCanonicalUrl();const canonicalUrl=permalink?`${siteUrl}${permalink}`:defaultCanonicalUrl;return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:url",content:canonicalUrl}),/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"canonical",href:canonicalUrl})]});}function SiteMetadata(){const{i18n:{currentLocale}}=(0,useDocusaurusContext/* default */.A)();// TODO maybe move these 2 themeConfig to siteConfig?
+// These seems useful for other themes as well
+const{metadata,image:defaultImage}=(0,useThemeConfig/* useThemeConfig */.p)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"twitter:card",content:"summary_large_image"}),/*#__PURE__*/(0,jsx_runtime.jsx)("body",{className:useKeyboardNavigation/* keyboardFocusedClassName */.w})]}),defaultImage&&/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{image:defaultImage}),/*#__PURE__*/(0,jsx_runtime.jsx)(CanonicalUrlHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AlternateLangHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(SearchMetadata/* default */.A,{tag:DEFAULT_SEARCH_TAG,locale:currentLocale}),/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:metadata.map((metadatum,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{...metadatum},i))})]});}
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/normalizeLocation.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Memoize previously normalized pathnames.
+const pathnames=new Map();function normalizeLocation(location){if(pathnames.has(location.pathname)){return{...location,pathname:pathnames.get(location.pathname)};}// If the location was registered with an `.html` extension, we don't strip it
+// away, or it will render to a 404 page.
+const matchedRoutes=(0,react_router_config/* matchRoutes */.u)(routes/* default */.A,location.pathname);if(matchedRoutes.some(({route})=>route.exact===true)){pathnames.set(location.pathname,location.pathname);return location;}const pathname=location.pathname.trim().replace(/(?:\/index)?\.html$/,'')||'/';pathnames.set(location.pathname,pathname);return{...location,pathname};}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/browserContext.js
+var browserContext = __webpack_require__(6139);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/docusaurusContext.js + 3 modules
+var docusaurusContext = __webpack_require__(6637);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsomorphicLayoutEffect.js
+var useIsomorphicLayoutEffect = __webpack_require__(1659);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/ClientLifecyclesDispatcher.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function dispatchLifecycleAction(lifecycleAction,...args){const callbacks=client_modules.map(clientModule=>{const lifecycleFunction=clientModule.default?.[lifecycleAction]??clientModule[lifecycleAction];return lifecycleFunction?.(...args);});return()=>callbacks.forEach(cb=>cb?.());}function scrollAfterNavigation({location,previousLocation}){if(!previousLocation){return;// no-op: use native browser feature
+}const samePathname=location.pathname===previousLocation.pathname;const sameHash=location.hash===previousLocation.hash;const sameSearch=location.search===previousLocation.search;// Query-string changes: do not scroll to top/hash
+if(samePathname&&sameHash&&!sameSearch){return;}const{hash}=location;if(!hash){window.scrollTo(0,0);}else{const id=decodeURIComponent(hash.substring(1));const element=document.getElementById(id);element?.scrollIntoView();}}function ClientLifecyclesDispatcher({children,location,previousLocation}){(0,useIsomorphicLayoutEffect/* default */.A)(()=>{if(previousLocation!==location){scrollAfterNavigation({location,previousLocation});dispatchLifecycleAction('onRouteDidUpdate',{previousLocation,location});}},[previousLocation,location]);return children;}/* harmony default export */ const client_ClientLifecyclesDispatcher = (ClientLifecyclesDispatcher);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/preload.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Helper function to make sure all async components for that particular route
+ * is preloaded before rendering. This is especially useful to avoid loading
+ * screens.
+ *
+ * @param pathname the route pathname, example: /docs/installation
+ * @returns Promise object represents whether pathname has been preloaded
+ */function preload(pathname){const matches=Array.from(new Set([pathname,decodeURI(pathname)])).map(p=>(0,react_router_config/* matchRoutes */.u)(routes/* default */.A,p)).flat();return Promise.all(matches.map(match=>match.route.component.preload?.()));}
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/PendingNavigation.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */class PendingNavigation extends react.Component{previousLocation;routeUpdateCleanupCb;constructor(props){super(props);// previousLocation doesn't affect rendering, hence not stored in state.
+this.previousLocation=null;this.routeUpdateCleanupCb=ExecutionEnvironment/* default */.A.canUseDOM?dispatchLifecycleAction('onRouteUpdate',{previousLocation:null,location:this.props.location}):()=>{};this.state={nextRouteHasLoaded:true};}// Intercept location update and still show current route until next route
+// is done loading.
+shouldComponentUpdate(nextProps,nextState){if(nextProps.location===this.props.location){// `nextRouteHasLoaded` is false means there's a pending route transition.
+// Don't update until it's done.
+return nextState.nextRouteHasLoaded;}// props.location being different means the router is trying to navigate to
+// a new route. We will preload the new route.
+const nextLocation=nextProps.location;// Save the location first.
+this.previousLocation=this.props.location;this.setState({nextRouteHasLoaded:false});this.routeUpdateCleanupCb=dispatchLifecycleAction('onRouteUpdate',{previousLocation:this.previousLocation,location:nextLocation});// Load data while the old screen remains. Force preload instead of using
+// `window.docusaurus`, because we want to avoid loading screen even when
+// user is on saveData
+preload(nextLocation.pathname).then(()=>{this.routeUpdateCleanupCb();this.setState({nextRouteHasLoaded:true});}).catch(e=>{console.warn(e);// If chunk loading failed, it could be because the path to a chunk
+// no longer exists due to a new deployment. Force refresh the page
+// instead of just not navigating.
+window.location.reload();});return false;}render(){const{children,location}=this.props;// Use a controlled <Route> to trick all descendants into rendering the old
+// location.
+return/*#__PURE__*/(0,jsx_runtime.jsx)(client_ClientLifecyclesDispatcher,{previousLocation:this.previousLocation,location:location,children:/*#__PURE__*/(0,jsx_runtime.jsx)(react_router/* Route */.qh,{location:location,render:()=>children})});}}/* harmony default export */ const client_PendingNavigation = (PendingNavigation);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/BaseUrlIssueBanner/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({});
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/BaseUrlIssueBanner/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Double-security: critical CSS will hide the banner if CSS can load!
+// __ prefix allows search crawlers (Algolia/DocSearch) to ignore anchors
+// https://github.com/facebook/docusaurus/issues/8883#issuecomment-1516328368
+const BannerContainerId='__docusaurus-base-url-issue-banner-container';const BannerId='__docusaurus-base-url-issue-banner';const SuggestionContainerId='__docusaurus-base-url-issue-banner-suggestion-container';// It is important to not use React to render this banner
+// otherwise Google would index it, even if it's hidden with some critical CSS!
+// See https://github.com/facebook/docusaurus/issues/4028
+// - We can't SSR (or it would be indexed)
+// - We can't CSR (as it means the baseurl is correct)
+function createInlineHtmlBanner(baseUrl){return`
+<div id="${BannerId}" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">
+   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>
+   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>
+   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">${baseUrl}</span> ${baseUrl==='/'?' (default value)':''}</p>
+   <p>We suggest trying baseUrl = <span id="${SuggestionContainerId}" style="font-weight: bold; color: green;"></span></p>
+</div>
+`;}// Needs to work for older browsers!
+function createInlineScript(baseUrl){/* language=js */return`
+document.addEventListener('DOMContentLoaded', function maybeInsertBanner() {
+  var shouldInsert = typeof window['docusaurus'] === 'undefined';
+  shouldInsert && insertBanner();
+});
+
+function insertBanner() {
+  var bannerContainer = document.createElement('div');
+  bannerContainer.id = '${BannerContainerId}';
+  var bannerHtml = ${JSON.stringify(createInlineHtmlBanner(baseUrl))// See https://redux.js.org/recipes/server-rendering/#security-considerations
+.replace(/</g,'\\\u003c')};
+  bannerContainer.innerHTML = bannerHtml;
+  document.body.prepend(bannerContainer);
+  var suggestionContainer = document.getElementById('${SuggestionContainerId}');
+  var actualHomePagePath = window.location.pathname;
+  var suggestedBaseUrl = actualHomePagePath.substr(-1) === '/'
+        ? actualHomePagePath
+        : actualHomePagePath + '/';
+  suggestionContainer.innerHTML = suggestedBaseUrl;
+}
+`;}function BaseUrlIssueBanner(){const{siteConfig:{baseUrl}}=(0,useDocusaurusContext/* default */.A)();return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:!ExecutionEnvironment/* default */.A.canUseDOM&&/*#__PURE__*/// Safe to use `ExecutionEnvironment`, because `Head` is purely
+// side-effect and doesn't affect hydration
+(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("script",{children:createInlineScript(baseUrl)})})});}/**
+ * We want to help the users with a bad baseUrl configuration (very common
+ * error). Help message is inlined, and hidden if JS or CSS is able to load.
+ *
+ * This component only inserts the base URL banner for the homepage, to avoid
+ * polluting every statically rendered page.
+ *
+ * Note: it might create false positives (ie network failures): not a big deal
+ *
+ * @see https://github.com/facebook/docusaurus/pull/3621
+ */function MaybeBaseUrlIssueBanner(){const{siteConfig:{baseUrl,baseUrlIssueBanner}}=(0,useDocusaurusContext/* default */.A)();const{pathname}=(0,react_router/* useLocation */.zy)();const isHomePage=pathname===baseUrl;const enabled=baseUrlIssueBanner&&isHomePage;return enabled?/*#__PURE__*/(0,jsx_runtime.jsx)(BaseUrlIssueBanner,{}):null;}
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/SiteMetadataDefaults.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function SiteMetadataDefaults(){const{siteConfig:{favicon,title,noIndex},i18n:{currentLocale,localeConfigs}}=(0,useDocusaurusContext/* default */.A)();const faviconUrl=(0,useBaseUrl/* default */.Ay)(favicon);const{htmlLang,direction:htmlDir}=localeConfigs[currentLocale];return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("html",{lang:htmlLang,dir:htmlDir}),/*#__PURE__*/(0,jsx_runtime.jsx)("title",{children:title}),/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:title",content:title}),/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"viewport",content:"width=device-width, initial-scale=1.0"}),noIndex&&/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"robots",content:"noindex, nofollow"}),favicon&&/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"icon",href:faviconUrl})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ErrorBoundary.js + 1 modules
+var ErrorBoundary = __webpack_require__(8812);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
+var useIsBrowser = __webpack_require__(1993);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/hasHydratedDataAttribute.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// See https://github.com/facebook/docusaurus/pull/9256
+// Docusaurus adds a <html data-has-hydrated="true"> after hydration
+function HasHydratedDataAttribute(){const isBrowser=(0,useIsBrowser/* default */.A)();return/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("html",{"data-has-hydrated":isBrowser})});}
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/App.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// TODO, quick fix for CSS insertion order
+// eslint-disable-next-line import/order
+const routesElement=(0,react_router_config/* renderRoutes */.v)(routes/* default */.A);function AppNavigation(){const location=(0,react_router/* useLocation */.zy)();const normalizedLocation=normalizeLocation(location);return/*#__PURE__*/(0,jsx_runtime.jsx)(client_PendingNavigation,{location:normalizedLocation,children:routesElement});}function App(){return/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(docusaurusContext/* DocusaurusContextProvider */.l,{children:/*#__PURE__*/(0,jsx_runtime.jsxs)(browserContext/* BrowserContextProvider */.x,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Root,{children:/*#__PURE__*/(0,jsx_runtime.jsxs)(ThemeProvider,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(SiteMetadataDefaults,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(SiteMetadata,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(MaybeBaseUrlIssueBanner,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AppNavigation,{})]})}),/*#__PURE__*/(0,jsx_runtime.jsx)(HasHydratedDataAttribute,{})]})})});}
+// EXTERNAL MODULE: ./.docusaurus/routesChunkNames.json
+var routesChunkNames = __webpack_require__(4054);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/prefetch.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function supports(feature){try{const fakeLink=document.createElement('link');return fakeLink.relList.supports(feature);}catch{return false;}}function linkPrefetchStrategy(url){return new Promise((resolve,reject)=>{if(typeof document==='undefined'){reject();return;}const link=document.createElement('link');link.setAttribute('rel','prefetch');link.setAttribute('href',url);link.onload=()=>resolve();link.onerror=()=>reject();const parentElement=document.getElementsByTagName('head')[0]??document.getElementsByName('script')[0]?.parentNode;parentElement?.appendChild(link);});}function xhrPrefetchStrategy(url){return new Promise((resolve,reject)=>{const req=new XMLHttpRequest();req.open('GET',url,true);req.withCredentials=true;req.onload=()=>{if(req.status===200){resolve();}else{reject();}};req.send(null);});}const supportedPrefetchStrategy=supports('prefetch')?linkPrefetchStrategy:xhrPrefetchStrategy;function prefetch(url){return supportedPrefetchStrategy(url).catch(()=>{});// 404s are logged to the console anyway.
+}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/flat.js
+var flat = __webpack_require__(6919);
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/docusaurus.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const fetched=new Set();const loaded=new Set();// If user is on slow or constrained connection.
+const isSlowConnection=()=>navigator.connection?.effectiveType.includes('2g')||navigator.connection?.saveData;const canPrefetch=routePath=>!isSlowConnection()&&!loaded.has(routePath)&&!fetched.has(routePath);const canPreload=routePath=>!isSlowConnection()&&!loaded.has(routePath);const getChunkNamesToLoad=path=>Object.entries(routesChunkNames).filter(// Remove the last part containing the route hash
+// input: /blog/2018/12/14/Happy-First-Birthday-Slash-fe9
+// output: /blog/2018/12/14/Happy-First-Birthday-Slash
+([routeNameWithHash])=>routeNameWithHash.replace(/-[^-]+$/,'')===path).flatMap(([,routeChunks])=>Object.values((0,flat/* default */.A)(routeChunks)));const docusaurus_prefetch=routePath=>{if(!canPrefetch(routePath)){return false;}fetched.add(routePath);// Find all webpack chunk names needed.
+const matches=(0,react_router_config/* matchRoutes */.u)(routes/* default */.A,routePath);const chunkNamesNeeded=matches.flatMap(match=>getChunkNamesToLoad(match.route.path));// Prefetch all webpack chunk assets file needed.
+return Promise.all(chunkNamesNeeded.map(chunkName=>{// "__webpack_require__.gca" is injected by ChunkAssetPlugin. Pass it
+// the name of the chunk you want to load and it will return its URL.
+// eslint-disable-next-line camelcase
+const chunkAsset=__webpack_require__.gca(chunkName);// In some cases, webpack might decide to optimize further, leading to
+// the chunk assets being merged to another chunk. In this case, we can
+// safely filter it out and don't need to load it.
+if(chunkAsset&&!chunkAsset.includes('undefined')){return prefetch(chunkAsset);}return Promise.resolve();}));};const docusaurus_preload=routePath=>{if(!canPreload(routePath)){return false;}loaded.add(routePath);return preload(routePath);};const docusaurus={prefetch: docusaurus_prefetch,preload: docusaurus_preload};// This object is directly mounted onto window, better freeze it
+/* harmony default export */ const client_docusaurus = (Object.freeze(docusaurus));
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/clientEntry.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Router({children}){return docusaurus_config["default"].future.experimental_router==='hash'?/*#__PURE__*/(0,jsx_runtime.jsx)(react_router_dom/* HashRouter */.I9,{children:children}):/*#__PURE__*/(0,jsx_runtime.jsx)(react_router_dom/* BrowserRouter */.Kd,{children:children});}const hydrate=Boolean(true);// Client-side render (e.g: running in browser) to become single-page
+// application (SPA).
+if(ExecutionEnvironment/* default */.A.canUseDOM){window.docusaurus=client_docusaurus;const container=document.getElementById('__docusaurus');const app=/*#__PURE__*/(0,jsx_runtime.jsx)(index_module/* HelmetProvider */.vd,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Router,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(App,{})})});const onRecoverableError=(error,errorInfo)=>{console.error('Docusaurus React Root onRecoverableError:',error,errorInfo);};const renderApp=()=>{if(window.docusaurusRoot){window.docusaurusRoot.render(app);return;}if(hydrate){window.docusaurusRoot=client.hydrateRoot(container,app,{onRecoverableError});}else{const root=client.createRoot(container,{onRecoverableError});root.render(app);window.docusaurusRoot=root;}};preload(window.location.pathname).then(()=>{(0,react.startTransition)(renderApp);});// Webpack Hot Module Replacement API
+if(false)// removed by dead control flow
+{}}
+
+/***/ }),
+
 /***/ 5666:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -25047,6 +25331,41 @@ if (true) {
 } else // removed by dead control flow
 {}
 
+
+/***/ }),
+
+/***/ 5746:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  w: () => (/* binding */ keyboardFocusedClassName),
+  J: () => (/* binding */ useKeyboardNavigation)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/styles.css
+// extracted by mini-css-extract-plugin
+
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const keyboardFocusedClassName='navigation-with-keyboard';/**
+ * Side-effect that adds the `keyboardFocusedClassName` to the body element when
+ * the keyboard has been pressed, or removes it when the mouse is clicked.
+ *
+ * The presence of this class name signals that the user may be using keyboard
+ * for navigation, and the theme **must** add focus outline when this class name
+ * is present. (And optionally not if it's absent, for design purposes)
+ *
+ * Inspired by https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
+ */function useKeyboardNavigation(){(0,react.useEffect)(()=>{function handleOutlineStyles(e){if(e.type==='keydown'&&e.key==='Tab'){document.body.classList.add(keyboardFocusedClassName);}if(e.type==='mousedown'){document.body.classList.remove(keyboardFocusedClassName);}}document.addEventListener('keydown',handleOutlineStyles);document.addEventListener('mousedown',handleOutlineStyles);return()=>{document.body.classList.remove(keyboardFocusedClassName);document.removeEventListener('keydown',handleOutlineStyles);document.removeEventListener('mousedown',handleOutlineStyles);};},[]);}
 
 /***/ }),
 
@@ -25318,6 +25637,50 @@ var jsx_runtime = __webpack_require__(7259);
  */// Static value on purpose: don't make it dynamic!
 // Using context is still useful for testability reasons.
 const contextValue={siteConfig: docusaurus_config["default"],siteMetadata: site_metadata_namespaceObject,globalData: globalData_namespaceObject,i18n: i18n_namespaceObject,codeTranslations: codeTranslations};const Context=/*#__PURE__*/react.createContext(contextValue);function DocusaurusContextProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Context.Provider,{value:contextValue,children:children});}
+
+/***/ }),
+
+/***/ 6641:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  bq: () => (/* binding */ ErrorBoundaryError),
+  MN: () => (/* binding */ ErrorBoundaryErrorMessageFallback),
+  a2: () => (/* binding */ ErrorBoundaryTryAgainButton),
+  k2: () => (/* binding */ ErrorCauseBoundary)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(227);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+utils-common@3.9.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@docusaurus/utils-common/lib/index.js
+var lib = __webpack_require__(1601);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const errorBoundaryUtils_module = ({"errorBoundaryError":"errorBoundaryError_hwFI","errorBoundaryFallback":"errorBoundaryFallback_IPlr"});
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function ErrorBoundaryTryAgainButton(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.ErrorPageContent.tryAgain",description:"The label of the button to try again rendering when the React error boundary captures an error",children:"Try again"})});}// A very simple reusable ErrorBoundary fallback component
+function ErrorBoundaryErrorMessageFallback({error,tryAgain}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:errorBoundaryUtils_module.errorBoundaryFallback,children:[/*#__PURE__*/(0,jsx_runtime.jsx)("p",{children:error.message}),/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundaryTryAgainButton,{onClick:tryAgain})]});}function ErrorBoundaryError({error}){const causalChain=(0,lib/* getErrorCausalChain */.rA)(error);const fullMessage=causalChain.map(e=>e.message).join('\n\nCause:\n');return/*#__PURE__*/(0,jsx_runtime.jsx)("p",{className:errorBoundaryUtils_module.errorBoundaryError,children:fullMessage});}/**
+ * This component is useful to wrap a low-level error into a more meaningful
+ * error with extra context, using the ES error-cause feature.
+ *
+ * <ErrorCauseBoundary
+ *   onError={(error) => new Error("extra context message",{cause: error})}
+ * >
+ *   <RiskyComponent>
+ * </ErrorCauseBoundary>
+ */class ErrorCauseBoundary extends react.Component{componentDidCatch(error,errorInfo){throw this.props.onError(error,errorInfo);}render(){return this.props.children;}}
 
 /***/ }),
 
@@ -25699,348 +26062,58 @@ module.exports = loadLanguages;
 
 /***/ }),
 
-/***/ 6970:
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js
-var client = __webpack_require__(1546);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@slorber+react-helmet-async@1.3.0_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@slorber/react-helmet-async/lib/index.module.js
-var index_module = __webpack_require__(9571);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react-router-dom@5.3.4_react@19.2.0/node_modules/react-router-dom/esm/react-router-dom.js
-var react_router_dom = __webpack_require__(6735);
-// EXTERNAL MODULE: ./.docusaurus/docusaurus.config.mjs
-var docusaurus_config = __webpack_require__(4784);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ExecutionEnvironment.js
-var ExecutionEnvironment = __webpack_require__(95);
-;// ./.docusaurus/client-modules.js
-/* harmony default export */ const client_modules = ([__webpack_require__(5392),__webpack_require__(1408),__webpack_require__(9573),__webpack_require__(3790),__webpack_require__(8844)]);
-// EXTERNAL MODULE: ./.docusaurus/routes.js + 3 modules
-var routes = __webpack_require__(2376);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react-router@5.3.4_react@19.2.0/node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(7596);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react-router-config@5.1.1_react-router@5.3.4_react@19.2.0__react@19.2.0/node_modules/react-router-config/esm/react-router-config.js
-var react_router_config = __webpack_require__(2073);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/theme-fallback/Root/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Wrapper at the very top of the app, that is applied constantly
-// and does not depend on current route (unlike the layout)
-//
-// Gives the opportunity to add stateful providers on top of the app
-// and these providers won't reset state when we navigate
-//
-// See https://github.com/facebook/docusaurus/issues/3919
-function Root({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:children});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/titleFormatterUtils.js
-var titleFormatterUtils = __webpack_require__(2582);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemeProvider/TitleFormatter/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const formatter=params=>{// Add your own title formatting logic here!
-return params.defaultFormatter(params);};function ThemeProviderTitleFormatter({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(titleFormatterUtils/* TitleFormatterProvider */.AL,{formatter:formatter,children:children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemeProvider/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function ThemeProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(ThemeProviderTitleFormatter,{children:children});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Head.js
-var Head = __webpack_require__(334);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
-var useDocusaurusContext = __webpack_require__(8808);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(3587);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
-var useThemeConfig = __webpack_require__(9493);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js
-var metadataUtils = __webpack_require__(2457);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useAlternatePageUtils.js
-var useAlternatePageUtils = __webpack_require__(9530);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js + 1 modules
-var useKeyboardNavigation = __webpack_require__(7339);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/searchUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const DEFAULT_SEARCH_TAG='default';
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+utils-common@3.9.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@docusaurus/utils-common/lib/index.js
-var lib = __webpack_require__(1601);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SearchMetadata/index.js
-var SearchMetadata = __webpack_require__(7407);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SiteMetadata/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO move to SiteMetadataDefaults or theme-common ?
-// Useful for i18n/SEO
-// See https://developers.google.com/search/docs/advanced/crawling/localized-versions
-// See https://github.com/facebook/docusaurus/issues/3317
-function AlternateLangHeaders(){const{i18n:{currentLocale,defaultLocale,localeConfigs}}=(0,useDocusaurusContext/* default */.A)();const alternatePageUtils=(0,useAlternatePageUtils/* useAlternatePageUtils */.o)();const currentHtmlLang=localeConfigs[currentLocale].htmlLang;// HTML lang is a BCP 47 tag, but the Open Graph protocol requires
-// using underscores instead of dashes.
-// See https://ogp.me/#optional
-// See https://en.wikipedia.org/wiki/IETF_language_tag)
-const bcp47ToOpenGraphLocale=code=>code.replace('-','_');// Note: it is fine to use both "x-default" and "en" to target the same url
-// See https://www.searchviu.com/en/multiple-hreflang-tags-one-url/
-return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[Object.entries(localeConfigs).map(([locale,{htmlLang}])=>/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"alternate",href:alternatePageUtils.createUrl({locale,fullyQualified:true}),hrefLang:htmlLang},locale)),/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"alternate",href:alternatePageUtils.createUrl({locale:defaultLocale,fullyQualified:true}),hrefLang:"x-default"}),/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:locale",content:bcp47ToOpenGraphLocale(currentHtmlLang)}),Object.values(localeConfigs).filter(config=>currentHtmlLang!==config.htmlLang).map(config=>/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:locale:alternate",content:bcp47ToOpenGraphLocale(config.htmlLang)},`meta-og-${config.htmlLang}`))]});}// Default canonical url inferred from current page location pathname
-function useDefaultCanonicalUrl(){const{siteConfig:{url:siteUrl,baseUrl,trailingSlash}}=(0,useDocusaurusContext/* default */.A)();// TODO using useLocation().pathname is not a super idea
-// See https://github.com/facebook/docusaurus/issues/9170
-const{pathname}=(0,react_router/* useLocation */.zy)();const canonicalPathname=(0,lib/* applyTrailingSlash */.Ks)((0,useBaseUrl/* default */.Ay)(pathname),{trailingSlash,baseUrl});return siteUrl+canonicalPathname;}// TODO move to SiteMetadataDefaults or theme-common ?
-function CanonicalUrlHeaders({permalink}){const{siteConfig:{url:siteUrl}}=(0,useDocusaurusContext/* default */.A)();const defaultCanonicalUrl=useDefaultCanonicalUrl();const canonicalUrl=permalink?`${siteUrl}${permalink}`:defaultCanonicalUrl;return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:url",content:canonicalUrl}),/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"canonical",href:canonicalUrl})]});}function SiteMetadata(){const{i18n:{currentLocale}}=(0,useDocusaurusContext/* default */.A)();// TODO maybe move these 2 themeConfig to siteConfig?
-// These seems useful for other themes as well
-const{metadata,image:defaultImage}=(0,useThemeConfig/* useThemeConfig */.p)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"twitter:card",content:"summary_large_image"}),/*#__PURE__*/(0,jsx_runtime.jsx)("body",{className:useKeyboardNavigation/* keyboardFocusedClassName */.w})]}),defaultImage&&/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{image:defaultImage}),/*#__PURE__*/(0,jsx_runtime.jsx)(CanonicalUrlHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AlternateLangHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(SearchMetadata/* default */.A,{tag:DEFAULT_SEARCH_TAG,locale:currentLocale}),/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:metadata.map((metadatum,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{...metadatum},i))})]});}
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/normalizeLocation.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Memoize previously normalized pathnames.
-const pathnames=new Map();function normalizeLocation(location){if(pathnames.has(location.pathname)){return{...location,pathname:pathnames.get(location.pathname)};}// If the location was registered with an `.html` extension, we don't strip it
-// away, or it will render to a 404 page.
-const matchedRoutes=(0,react_router_config/* matchRoutes */.u)(routes/* default */.A,location.pathname);if(matchedRoutes.some(({route})=>route.exact===true)){pathnames.set(location.pathname,location.pathname);return location;}const pathname=location.pathname.trim().replace(/(?:\/index)?\.html$/,'')||'/';pathnames.set(location.pathname,pathname);return{...location,pathname};}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/browserContext.js
-var browserContext = __webpack_require__(6139);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/docusaurusContext.js + 3 modules
-var docusaurusContext = __webpack_require__(6637);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsomorphicLayoutEffect.js
-var useIsomorphicLayoutEffect = __webpack_require__(1659);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/ClientLifecyclesDispatcher.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function dispatchLifecycleAction(lifecycleAction,...args){const callbacks=client_modules.map(clientModule=>{const lifecycleFunction=clientModule.default?.[lifecycleAction]??clientModule[lifecycleAction];return lifecycleFunction?.(...args);});return()=>callbacks.forEach(cb=>cb?.());}function scrollAfterNavigation({location,previousLocation}){if(!previousLocation){return;// no-op: use native browser feature
-}const samePathname=location.pathname===previousLocation.pathname;const sameHash=location.hash===previousLocation.hash;const sameSearch=location.search===previousLocation.search;// Query-string changes: do not scroll to top/hash
-if(samePathname&&sameHash&&!sameSearch){return;}const{hash}=location;if(!hash){window.scrollTo(0,0);}else{const id=decodeURIComponent(hash.substring(1));const element=document.getElementById(id);element?.scrollIntoView();}}function ClientLifecyclesDispatcher({children,location,previousLocation}){(0,useIsomorphicLayoutEffect/* default */.A)(()=>{if(previousLocation!==location){scrollAfterNavigation({location,previousLocation});dispatchLifecycleAction('onRouteDidUpdate',{previousLocation,location});}},[previousLocation,location]);return children;}/* harmony default export */ const client_ClientLifecyclesDispatcher = (ClientLifecyclesDispatcher);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/preload.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Helper function to make sure all async components for that particular route
- * is preloaded before rendering. This is especially useful to avoid loading
- * screens.
- *
- * @param pathname the route pathname, example: /docs/installation
- * @returns Promise object represents whether pathname has been preloaded
- */function preload(pathname){const matches=Array.from(new Set([pathname,decodeURI(pathname)])).map(p=>(0,react_router_config/* matchRoutes */.u)(routes/* default */.A,p)).flat();return Promise.all(matches.map(match=>match.route.component.preload?.()));}
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/PendingNavigation.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */class PendingNavigation extends react.Component{previousLocation;routeUpdateCleanupCb;constructor(props){super(props);// previousLocation doesn't affect rendering, hence not stored in state.
-this.previousLocation=null;this.routeUpdateCleanupCb=ExecutionEnvironment/* default */.A.canUseDOM?dispatchLifecycleAction('onRouteUpdate',{previousLocation:null,location:this.props.location}):()=>{};this.state={nextRouteHasLoaded:true};}// Intercept location update and still show current route until next route
-// is done loading.
-shouldComponentUpdate(nextProps,nextState){if(nextProps.location===this.props.location){// `nextRouteHasLoaded` is false means there's a pending route transition.
-// Don't update until it's done.
-return nextState.nextRouteHasLoaded;}// props.location being different means the router is trying to navigate to
-// a new route. We will preload the new route.
-const nextLocation=nextProps.location;// Save the location first.
-this.previousLocation=this.props.location;this.setState({nextRouteHasLoaded:false});this.routeUpdateCleanupCb=dispatchLifecycleAction('onRouteUpdate',{previousLocation:this.previousLocation,location:nextLocation});// Load data while the old screen remains. Force preload instead of using
-// `window.docusaurus`, because we want to avoid loading screen even when
-// user is on saveData
-preload(nextLocation.pathname).then(()=>{this.routeUpdateCleanupCb();this.setState({nextRouteHasLoaded:true});}).catch(e=>{console.warn(e);// If chunk loading failed, it could be because the path to a chunk
-// no longer exists due to a new deployment. Force refresh the page
-// instead of just not navigating.
-window.location.reload();});return false;}render(){const{children,location}=this.props;// Use a controlled <Route> to trick all descendants into rendering the old
-// location.
-return/*#__PURE__*/(0,jsx_runtime.jsx)(client_ClientLifecyclesDispatcher,{previousLocation:this.previousLocation,location:location,children:/*#__PURE__*/(0,jsx_runtime.jsx)(react_router/* Route */.qh,{location:location,render:()=>children})});}}/* harmony default export */ const client_PendingNavigation = (PendingNavigation);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/BaseUrlIssueBanner/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({});
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/BaseUrlIssueBanner/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Double-security: critical CSS will hide the banner if CSS can load!
-// __ prefix allows search crawlers (Algolia/DocSearch) to ignore anchors
-// https://github.com/facebook/docusaurus/issues/8883#issuecomment-1516328368
-const BannerContainerId='__docusaurus-base-url-issue-banner-container';const BannerId='__docusaurus-base-url-issue-banner';const SuggestionContainerId='__docusaurus-base-url-issue-banner-suggestion-container';// It is important to not use React to render this banner
-// otherwise Google would index it, even if it's hidden with some critical CSS!
-// See https://github.com/facebook/docusaurus/issues/4028
-// - We can't SSR (or it would be indexed)
-// - We can't CSR (as it means the baseurl is correct)
-function createInlineHtmlBanner(baseUrl){return`
-<div id="${BannerId}" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">
-   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>
-   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>
-   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">${baseUrl}</span> ${baseUrl==='/'?' (default value)':''}</p>
-   <p>We suggest trying baseUrl = <span id="${SuggestionContainerId}" style="font-weight: bold; color: green;"></span></p>
-</div>
-`;}// Needs to work for older browsers!
-function createInlineScript(baseUrl){/* language=js */return`
-document.addEventListener('DOMContentLoaded', function maybeInsertBanner() {
-  var shouldInsert = typeof window['docusaurus'] === 'undefined';
-  shouldInsert && insertBanner();
-});
-
-function insertBanner() {
-  var bannerContainer = document.createElement('div');
-  bannerContainer.id = '${BannerContainerId}';
-  var bannerHtml = ${JSON.stringify(createInlineHtmlBanner(baseUrl))// See https://redux.js.org/recipes/server-rendering/#security-considerations
-.replace(/</g,'\\\u003c')};
-  bannerContainer.innerHTML = bannerHtml;
-  document.body.prepend(bannerContainer);
-  var suggestionContainer = document.getElementById('${SuggestionContainerId}');
-  var actualHomePagePath = window.location.pathname;
-  var suggestedBaseUrl = actualHomePagePath.substr(-1) === '/'
-        ? actualHomePagePath
-        : actualHomePagePath + '/';
-  suggestionContainer.innerHTML = suggestedBaseUrl;
-}
-`;}function BaseUrlIssueBanner(){const{siteConfig:{baseUrl}}=(0,useDocusaurusContext/* default */.A)();return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:!ExecutionEnvironment/* default */.A.canUseDOM&&/*#__PURE__*/// Safe to use `ExecutionEnvironment`, because `Head` is purely
-// side-effect and doesn't affect hydration
-(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("script",{children:createInlineScript(baseUrl)})})});}/**
- * We want to help the users with a bad baseUrl configuration (very common
- * error). Help message is inlined, and hidden if JS or CSS is able to load.
- *
- * This component only inserts the base URL banner for the homepage, to avoid
- * polluting every statically rendered page.
- *
- * Note: it might create false positives (ie network failures): not a big deal
- *
- * @see https://github.com/facebook/docusaurus/pull/3621
- */function MaybeBaseUrlIssueBanner(){const{siteConfig:{baseUrl,baseUrlIssueBanner}}=(0,useDocusaurusContext/* default */.A)();const{pathname}=(0,react_router/* useLocation */.zy)();const isHomePage=pathname===baseUrl;const enabled=baseUrlIssueBanner&&isHomePage;return enabled?/*#__PURE__*/(0,jsx_runtime.jsx)(BaseUrlIssueBanner,{}):null;}
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/SiteMetadataDefaults.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function SiteMetadataDefaults(){const{siteConfig:{favicon,title,noIndex},i18n:{currentLocale,localeConfigs}}=(0,useDocusaurusContext/* default */.A)();const faviconUrl=(0,useBaseUrl/* default */.Ay)(favicon);const{htmlLang,direction:htmlDir}=localeConfigs[currentLocale];return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("html",{lang:htmlLang,dir:htmlDir}),/*#__PURE__*/(0,jsx_runtime.jsx)("title",{children:title}),/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:title",content:title}),/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"viewport",content:"width=device-width, initial-scale=1.0"}),noIndex&&/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"robots",content:"noindex, nofollow"}),favicon&&/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"icon",href:faviconUrl})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ErrorBoundary.js + 1 modules
-var ErrorBoundary = __webpack_require__(8812);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
-var useIsBrowser = __webpack_require__(1993);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/hasHydratedDataAttribute.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// See https://github.com/facebook/docusaurus/pull/9256
-// Docusaurus adds a <html data-has-hydrated="true"> after hydration
-function HasHydratedDataAttribute(){const isBrowser=(0,useIsBrowser/* default */.A)();return/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("html",{"data-has-hydrated":isBrowser})});}
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/App.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO, quick fix for CSS insertion order
-// eslint-disable-next-line import/order
-const routesElement=(0,react_router_config/* renderRoutes */.v)(routes/* default */.A);function AppNavigation(){const location=(0,react_router/* useLocation */.zy)();const normalizedLocation=normalizeLocation(location);return/*#__PURE__*/(0,jsx_runtime.jsx)(client_PendingNavigation,{location:normalizedLocation,children:routesElement});}function App(){return/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(docusaurusContext/* DocusaurusContextProvider */.l,{children:/*#__PURE__*/(0,jsx_runtime.jsxs)(browserContext/* BrowserContextProvider */.x,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Root,{children:/*#__PURE__*/(0,jsx_runtime.jsxs)(ThemeProvider,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(SiteMetadataDefaults,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(SiteMetadata,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(MaybeBaseUrlIssueBanner,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AppNavigation,{})]})}),/*#__PURE__*/(0,jsx_runtime.jsx)(HasHydratedDataAttribute,{})]})})});}
-// EXTERNAL MODULE: ./.docusaurus/routesChunkNames.json
-var routesChunkNames = __webpack_require__(4054);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/prefetch.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function supports(feature){try{const fakeLink=document.createElement('link');return fakeLink.relList.supports(feature);}catch{return false;}}function linkPrefetchStrategy(url){return new Promise((resolve,reject)=>{if(typeof document==='undefined'){reject();return;}const link=document.createElement('link');link.setAttribute('rel','prefetch');link.setAttribute('href',url);link.onload=()=>resolve();link.onerror=()=>reject();const parentElement=document.getElementsByTagName('head')[0]??document.getElementsByName('script')[0]?.parentNode;parentElement?.appendChild(link);});}function xhrPrefetchStrategy(url){return new Promise((resolve,reject)=>{const req=new XMLHttpRequest();req.open('GET',url,true);req.withCredentials=true;req.onload=()=>{if(req.status===200){resolve();}else{reject();}};req.send(null);});}const supportedPrefetchStrategy=supports('prefetch')?linkPrefetchStrategy:xhrPrefetchStrategy;function prefetch(url){return supportedPrefetchStrategy(url).catch(()=>{});// 404s are logged to the console anyway.
-}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/flat.js
-var flat = __webpack_require__(6919);
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/docusaurus.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const fetched=new Set();const loaded=new Set();// If user is on slow or constrained connection.
-const isSlowConnection=()=>navigator.connection?.effectiveType.includes('2g')||navigator.connection?.saveData;const canPrefetch=routePath=>!isSlowConnection()&&!loaded.has(routePath)&&!fetched.has(routePath);const canPreload=routePath=>!isSlowConnection()&&!loaded.has(routePath);const getChunkNamesToLoad=path=>Object.entries(routesChunkNames).filter(// Remove the last part containing the route hash
-// input: /blog/2018/12/14/Happy-First-Birthday-Slash-fe9
-// output: /blog/2018/12/14/Happy-First-Birthday-Slash
-([routeNameWithHash])=>routeNameWithHash.replace(/-[^-]+$/,'')===path).flatMap(([,routeChunks])=>Object.values((0,flat/* default */.A)(routeChunks)));const docusaurus_prefetch=routePath=>{if(!canPrefetch(routePath)){return false;}fetched.add(routePath);// Find all webpack chunk names needed.
-const matches=(0,react_router_config/* matchRoutes */.u)(routes/* default */.A,routePath);const chunkNamesNeeded=matches.flatMap(match=>getChunkNamesToLoad(match.route.path));// Prefetch all webpack chunk assets file needed.
-return Promise.all(chunkNamesNeeded.map(chunkName=>{// "__webpack_require__.gca" is injected by ChunkAssetPlugin. Pass it
-// the name of the chunk you want to load and it will return its URL.
-// eslint-disable-next-line camelcase
-const chunkAsset=__webpack_require__.gca(chunkName);// In some cases, webpack might decide to optimize further, leading to
-// the chunk assets being merged to another chunk. In this case, we can
-// safely filter it out and don't need to load it.
-if(chunkAsset&&!chunkAsset.includes('undefined')){return prefetch(chunkAsset);}return Promise.resolve();}));};const docusaurus_preload=routePath=>{if(!canPreload(routePath)){return false;}loaded.add(routePath);return preload(routePath);};const docusaurus={prefetch: docusaurus_prefetch,preload: docusaurus_preload};// This object is directly mounted onto window, better freeze it
-/* harmony default export */ const client_docusaurus = (Object.freeze(docusaurus));
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/clientEntry.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Router({children}){return docusaurus_config["default"].future.experimental_router==='hash'?/*#__PURE__*/(0,jsx_runtime.jsx)(react_router_dom/* HashRouter */.I9,{children:children}):/*#__PURE__*/(0,jsx_runtime.jsx)(react_router_dom/* BrowserRouter */.Kd,{children:children});}const hydrate=Boolean(true);// Client-side render (e.g: running in browser) to become single-page
-// application (SPA).
-if(ExecutionEnvironment/* default */.A.canUseDOM){window.docusaurus=client_docusaurus;const container=document.getElementById('__docusaurus');const app=/*#__PURE__*/(0,jsx_runtime.jsx)(index_module/* HelmetProvider */.vd,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Router,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(App,{})})});const onRecoverableError=(error,errorInfo)=>{console.error('Docusaurus React Root onRecoverableError:',error,errorInfo);};const renderApp=()=>{if(window.docusaurusRoot){window.docusaurusRoot.render(app);return;}if(hydrate){window.docusaurusRoot=client.hydrateRoot(container,app,{onRecoverableError});}else{const root=client.createRoot(container,{onRecoverableError});root.render(app);window.docusaurusRoot=root;}};preload(window.location.pathname).then(()=>{(0,react.startTransition)(renderApp);});// Webpack Hot Module Replacement API
-if(false)// removed by dead control flow
-{}}
-
-/***/ }),
-
-/***/ 7188:
+/***/ 7069:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  bq: () => (/* binding */ ErrorBoundaryError),
-  MN: () => (/* binding */ ErrorBoundaryErrorMessageFallback),
-  a2: () => (/* binding */ ErrorBoundaryTryAgainButton),
-  k2: () => (/* binding */ ErrorCauseBoundary)
+  A: () => (/* binding */ ThemedImage)
 });
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
 var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+utils-common@3.9.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@docusaurus/utils-common/lib/index.js
-var lib = __webpack_require__(1601);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.module.css
+// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+var clsx = __webpack_require__(3526);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
+var useIsBrowser = __webpack_require__(1993);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
+var contexts_colorMode = __webpack_require__(2774);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/ThemedComponent/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const errorBoundaryUtils_module = ({"errorBoundaryError":"errorBoundaryError_hwFI","errorBoundaryFallback":"errorBoundaryFallback_IPlr"});
+/* harmony default export */ const styles_module = ({"themedComponent":"themedComponent_NwjF","themedComponent--light":"themedComponent--light_Y9pu","themedComponent--dark":"themedComponent--dark_OnJW"});
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.js
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/ThemedComponent/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function ErrorBoundaryTryAgainButton(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.ErrorPageContent.tryAgain",description:"The label of the button to try again rendering when the React error boundary captures an error",children:"Try again"})});}// A very simple reusable ErrorBoundary fallback component
-function ErrorBoundaryErrorMessageFallback({error,tryAgain}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:errorBoundaryUtils_module.errorBoundaryFallback,children:[/*#__PURE__*/(0,jsx_runtime.jsx)("p",{children:error.message}),/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundaryTryAgainButton,{onClick:tryAgain})]});}function ErrorBoundaryError({error}){const causalChain=(0,lib/* getErrorCausalChain */.rA)(error);const fullMessage=causalChain.map(e=>e.message).join('\n\nCause:\n');return/*#__PURE__*/(0,jsx_runtime.jsx)("p",{className:errorBoundaryUtils_module.errorBoundaryError,children:fullMessage});}/**
- * This component is useful to wrap a low-level error into a more meaningful
- * error with extra context, using the ES error-cause feature.
+ */const AllThemes=(/* unused pure expression or super */ null && (['light','dark']));/**
+ * Generic component to render anything themed in light/dark
+ * Note: it's preferable to use CSS for theming because this component
+ * will need to render all the variants during SSR to avoid a theme flash.
  *
- * <ErrorCauseBoundary
- *   onError={(error) => new Error("extra context message",{cause: error})}
- * >
- *   <RiskyComponent>
- * </ErrorCauseBoundary>
- */class ErrorCauseBoundary extends react.Component{componentDidCatch(error,errorInfo){throw this.props.onError(error,errorInfo);}render(){return this.props.children;}}
+ * Use this only when CSS customizations are not convenient or impossible.
+ * For example, rendering themed images or SVGs...
+ *
+ * @param className applied to all the variants
+ * @param children function to render a theme variant
+ * @constructor
+ */function ThemedComponent({className,children}){const isBrowser=(0,useIsBrowser/* default */.A)();const{colorMode}=(0,contexts_colorMode/* useColorMode */.G)();function getThemesToRender(){if(isBrowser){return colorMode==='dark'?['dark']:['light'];}// We need to render both components on the server / hydration to avoid:
+// - a flash of wrong theme before hydration
+// - React hydration mismatches
+// See https://github.com/facebook/docusaurus/pull/3730
+return['light','dark'];}return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:getThemesToRender().map(theme=>{const themedElement=children({theme,className:(0,clsx/* default */.A)(className,styles_module.themedComponent,styles_module[`themedComponent--${theme}`])});return/*#__PURE__*/(0,jsx_runtime.jsx)(react.Fragment,{children:themedElement},theme);})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemedImage/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function ThemedImage(props){const{sources,className:parentClassName,alt,...propsRest}=props;return/*#__PURE__*/(0,jsx_runtime.jsx)(ThemedComponent,{className:parentClassName,children:({theme,className})=>/*#__PURE__*/(0,jsx_runtime.jsx)("img",{src:sources[theme],alt:alt,className:className,...propsRest})});}
 
 /***/ }),
 
@@ -26055,41 +26128,6 @@ if (true) {
 } else // removed by dead control flow
 {}
 
-
-/***/ }),
-
-/***/ 7339:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  w: () => (/* binding */ keyboardFocusedClassName),
-  J: () => (/* binding */ useKeyboardNavigation)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/styles.css
-// extracted by mini-css-extract-plugin
-
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const keyboardFocusedClassName='navigation-with-keyboard';/**
- * Side-effect that adds the `keyboardFocusedClassName` to the body element when
- * the keyboard has been pressed, or removes it when the mouse is clicked.
- *
- * The presence of this class name signals that the user may be using keyboard
- * for navigation, and the theme **must** add focus outline when this class name
- * is present. (And optionally not if it's absent, for design purposes)
- *
- * Inspired by https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
- */function useKeyboardNavigation(){(0,react.useEffect)(()=>{function handleOutlineStyles(e){if(e.type==='keydown'&&e.key==='Tab'){document.body.classList.add(keyboardFocusedClassName);}if(e.type==='mousedown'){document.body.classList.remove(keyboardFocusedClassName);}}document.addEventListener('keydown',handleOutlineStyles);document.addEventListener('mousedown',handleOutlineStyles);return()=>{document.body.classList.remove(keyboardFocusedClassName);document.removeEventListener('keydown',handleOutlineStyles);document.removeEventListener('mousedown',handleOutlineStyles);};},[]);}
 
 /***/ }),
 
@@ -30953,6 +30991,16 @@ var counter = api.counter;
 
 /***/ }),
 
+/***/ 8268:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ 8528:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -31507,7 +31555,7 @@ var Head = __webpack_require__(334);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+utils-common@3.9.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@docusaurus/utils-common/lib/index.js
 var lib = __webpack_require__(1601);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 73 modules
-var Layout = __webpack_require__(9528);
+var Layout = __webpack_require__(9950);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/routeContext.js
 var routeContext = __webpack_require__(5396);
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
@@ -31539,54 +31587,6 @@ return/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorRouteContextProvider,{children:/*#__
 const DefaultFallback=params=>/*#__PURE__*/(0,jsx_runtime.jsx)(Error,{...params});class ErrorBoundary extends react.Component{constructor(props){super(props);this.state={error:null};}componentDidCatch(error){// Catch errors in any components below and re-render with error message
 if(ExecutionEnvironment/* default */.A.canUseDOM){this.setState({error});}}render(){const{children}=this.props;const{error}=this.state;if(error){const fallbackParams={error,tryAgain:()=>this.setState({error:null})};const fallback=this.props.fallback??DefaultFallback;return fallback(fallbackParams);}// See https://github.com/facebook/docusaurus/issues/6337#issuecomment-1012913647
 return children??null;}}
-
-/***/ }),
-
-/***/ 8844:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ 8899:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Heading)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(3526);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
-var useThemeConfig = __webpack_require__(9493);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Link.js
-var Link = __webpack_require__(1936);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBrokenLinks.js + 1 modules
-var useBrokenLinks = __webpack_require__(8098);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"anchorWithStickyNavbar":"anchorWithStickyNavbar_CIwr","anchorWithHideOnScrollNavbar":"anchorWithHideOnScrollNavbar_inFD"});
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Heading({as:As,id,...props}){const brokenLinks=(0,useBrokenLinks/* default */.A)();const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.p)();// H1 headings do not need an id because they don't appear in the TOC.
-if(As==='h1'||!id){return/*#__PURE__*/(0,jsx_runtime.jsx)(As,{...props,id:undefined});}brokenLinks.collectAnchor(id);const anchorTitle=(0,Translate/* translate */.T)({id:'theme.common.headingLinkTitle',message:'Direct link to {heading}',description:'Title for link to heading'},{heading:typeof props.children==='string'?props.children:id});return/*#__PURE__*/(0,jsx_runtime.jsxs)(As,{...props,className:(0,clsx/* default */.A)('anchor',hideOnScroll?styles_module.anchorWithHideOnScrollNavbar:styles_module.anchorWithStickyNavbar,props.className),id:id,children:[props.children,/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{className:"hash-link",to:`#${id}`,"aria-label":anchorTitle,title:anchorTitle,translate:"no",children:"\u200B"})]});}
 
 /***/ }),
 
@@ -31682,663 +31682,6 @@ return str;}return str.endsWith(suffix)?str.slice(0,-suffix.length):str;}/** Add
  *//**
  * A convenient/more semantic way to get theme config from context.
  */function useThemeConfig(){return (0,_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)().siteConfig.themeConfig;}
-
-/***/ }),
-
-/***/ 9528:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Layout)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(3526);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ErrorBoundary.js + 1 modules
-var ErrorBoundary = __webpack_require__(8812);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js
-var metadataUtils = __webpack_require__(2457);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react-router@5.3.4_react@19.2.0/node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(7596);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useLocationChange.js
-var useLocationChange = __webpack_require__(2651);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/skipToContentUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * The id of the element that should become focused on a page
- * that does not have a <main> html tag.
- * Focusing the Docusaurus Layout children is a reasonable fallback.
- *
- * __ prefix allows search crawlers (Algolia/DocSearch) to ignore anchors
- * https://github.com/facebook/docusaurus/issues/8883#issuecomment-1516328368
- */const SkipToContentFallbackId='__docusaurus_skipToContent_fallback';/**
- * Returns the skip to content element to focus when the link is clicked.
- */function getSkipToContentTarget(){return(// Try to focus the <main> in priority
-// Note: this will only work if JS is enabled
-// See https://github.com/facebook/docusaurus/issues/6411#issuecomment-1284136069
-document.querySelector('main:first-of-type')??// Then try to focus the fallback element (usually the Layout children)
-document.getElementById(SkipToContentFallbackId));}function programmaticFocus(el){el.setAttribute('tabindex','-1');el.focus();el.removeAttribute('tabindex');}/** This hook wires the logic for a skip-to-content link. */function useSkipToContent(){const containerRef=(0,react.useRef)(null);const{action}=(0,react_router/* useHistory */.W6)();const onClick=(0,react.useCallback)(e=>{e.preventDefault();const targetElement=getSkipToContentTarget();if(targetElement){programmaticFocus(targetElement);}},[]);// "Reset" focus when navigating.
-// See https://github.com/facebook/docusaurus/pull/8204#issuecomment-1276547558
-(0,useLocationChange/* useLocationChange */.$)(({location})=>{if(containerRef.current&&!location.hash&&action==='PUSH'){programmaticFocus(containerRef.current);}});return{containerRef,onClick};}const DefaultSkipToContentLabel=(0,Translate/* translate */.T)({id:'theme.common.skipToMainContent',description:'The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation',message:'Skip to main content'});function SkipToContentLink(props){const linkLabel=props.children??DefaultSkipToContentLabel;const{containerRef,onClick}=useSkipToContent();return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{ref:containerRef,role:"region","aria-label":DefaultSkipToContentLabel,children:/*#__PURE__*/(0,jsx_runtime.jsx)("a",{...props,// Note this is a fallback href in case JS is disabled
-// It has limitations, see https://github.com/facebook/docusaurus/issues/6411#issuecomment-1284136069
-href:`#${SkipToContentFallbackId}`,onClick:onClick,children:linkLabel})});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(4366);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js + 1 modules
-var useKeyboardNavigation = __webpack_require__(7339);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SkipToContent/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"skipToContent":"skipToContent_Snvu"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SkipToContent/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function SkipToContent(){return/*#__PURE__*/(0,jsx_runtime.jsx)(SkipToContentLink,{className:styles_module.skipToContent});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
-var useThemeConfig = __webpack_require__(9493);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/announcementBar.js
-var contexts_announcementBar = __webpack_require__(9850);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Close/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconClose({width=21,height=21,color='currentColor',strokeWidth=1.2,className,...restProps}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 15 15",width:width,height:height,...restProps,children:/*#__PURE__*/(0,jsx_runtime.jsx)("g",{stroke:color,strokeWidth:strokeWidth,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{d:"M.75.75l13.5 13.5M14.25.75L.75 14.25"})})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/CloseButton/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const CloseButton_styles_module = ({"closeButton":"closeButton_DNX5"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/CloseButton/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function AnnouncementBarCloseButton(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button","aria-label":(0,Translate/* translate */.T)({id:'theme.AnnouncementBar.closeButtonAriaLabel',message:'Close',description:'The ARIA label for close button of announcement bar'}),...props,className:(0,clsx/* default */.A)('clean-btn close',CloseButton_styles_module.closeButton,props.className),children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconClose,{width:14,height:14,strokeWidth:3.1})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/Content/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Content_styles_module = ({"content":"content_QIvL"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/Content/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function AnnouncementBarContent(props){const{announcementBar}=(0,useThemeConfig/* useThemeConfig */.p)();const{content}=announcementBar;return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{...props,className:(0,clsx/* default */.A)(Content_styles_module.content,props.className)// Developer provided the HTML, so assume it's safe.
-// eslint-disable-next-line react/no-danger
-,dangerouslySetInnerHTML:{__html:content}});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const AnnouncementBar_styles_module = ({"announcementBar":"announcementBar_qKoH","announcementBarPlaceholder":"announcementBarPlaceholder_cVN_","announcementBarClose":"announcementBarClose_ptvj","announcementBarContent":"announcementBarContent_sgH0"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function AnnouncementBar(){const{announcementBar}=(0,useThemeConfig/* useThemeConfig */.p)();const{isActive,close}=(0,contexts_announcementBar/* useAnnouncementBar */.M)();if(!isActive){return null;}const{backgroundColor,textColor,isCloseable}=announcementBar;return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.announcementBar.container,AnnouncementBar_styles_module.announcementBar),style:{backgroundColor,color:textColor},role:"banner",children:[isCloseable&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:AnnouncementBar_styles_module.announcementBarPlaceholder}),/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBarContent,{className:AnnouncementBar_styles_module.announcementBarContent}),isCloseable&&/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBarCloseButton,{onClick:close,className:AnnouncementBar_styles_module.announcementBarClose})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/navbarMobileSidebar.js
-var navbarMobileSidebar = __webpack_require__(2522);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/scrollUtils.js
-var scrollUtils = __webpack_require__(2093);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useHideableNavbar.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Wires the imperative logic of a hideable navbar.
- * @param hideOnScroll If `false`, this hook is basically a no-op.
- */function useHideableNavbar(hideOnScroll){const[isNavbarVisible,setIsNavbarVisible]=(0,react.useState)(hideOnScroll);const isFocusedAnchor=(0,react.useRef)(false);const navbarHeight=(0,react.useRef)(0);const navbarRef=(0,react.useCallback)(node=>{if(node!==null){navbarHeight.current=node.getBoundingClientRect().height;}},[]);(0,scrollUtils/* useScrollPosition */.Mq)(({scrollY:scrollTop},lastPosition)=>{if(!hideOnScroll){return;}// Needed mostly for handling rubber band scrolling.
-// See https://github.com/facebook/docusaurus/pull/5721
-if(scrollTop<navbarHeight.current){setIsNavbarVisible(true);return;}if(isFocusedAnchor.current){isFocusedAnchor.current=false;return;}const lastScrollTop=lastPosition?.scrollY;const documentHeight=document.documentElement.scrollHeight-navbarHeight.current;const windowHeight=window.innerHeight;if(lastScrollTop&&scrollTop>=lastScrollTop){setIsNavbarVisible(false);}else if(scrollTop+windowHeight<documentHeight){setIsNavbarVisible(true);}});(0,useLocationChange/* useLocationChange */.$)(locationChangeEvent=>{if(!hideOnScroll){return;}// See https://github.com/facebook/docusaurus/pull/8059#issuecomment-1239639480
-const currentHash=locationChangeEvent.location.hash;const currentHashAnchor=currentHash?document.getElementById(currentHash.substring(1)):undefined;if(currentHashAnchor){isFocusedAnchor.current=true;setIsNavbarVisible(false);return;}setIsNavbarVisible(true);});return{navbarRef,isNavbarVisible};}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useLockBodyScroll.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Side-effect that locks the document body's scroll throughout the lifetime of
- * the containing component. e.g. when the mobile sidebar is expanded.
- */function useLockBodyScroll(lock=true){(0,react.useEffect)(()=>{document.body.style.overflow=lock?'hidden':'visible';return()=>{document.body.style.overflow='visible';};},[lock]);}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
-var reactUtils = __webpack_require__(6183);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/content.js
-var navbarSecondaryMenu_content = __webpack_require__(7507);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/display.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const Context=/*#__PURE__*/react.createContext(null);function useContextValue(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();const content=(0,navbarSecondaryMenu_content/* useNavbarSecondaryMenuContent */.YL)();const[shown,setShown]=(0,react.useState)(false);const hasContent=content.component!==null;const previousHasContent=(0,reactUtils/* usePrevious */.ZC)(hasContent);// When content is become available for the first time (set in useEffect)
-// we set this content to be shown!
-(0,react.useEffect)(()=>{const contentBecameAvailable=hasContent&&!previousHasContent;if(contentBecameAvailable){setShown(true);}},[hasContent,previousHasContent]);// On sidebar close, secondary menu is set to be shown on next re-opening
-// (if any secondary menu content available)
-(0,react.useEffect)(()=>{if(!hasContent){setShown(false);return;}if(!mobileSidebar.shown){setShown(true);}},[mobileSidebar.shown,hasContent]);return (0,react.useMemo)(()=>[shown,setShown],[shown]);}/** @internal */function NavbarSecondaryMenuDisplayProvider({children}){const value=useContextValue();return/*#__PURE__*/(0,jsx_runtime.jsx)(Context.Provider,{value:value,children:children});}function renderElement(content){if(content.component){const Comp=content.component;return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{...content.props});}return undefined;}/** Wires the logic for rendering the mobile navbar secondary menu. */function useNavbarSecondaryMenu(){const value=(0,react.useContext)(Context);if(!value){throw new reactUtils/* ReactContextError */.dV('NavbarSecondaryMenuDisplayProvider');}const[shown,setShown]=value;const hide=(0,react.useCallback)(()=>setShown(false),[setShown]);const content=(0,navbarSecondaryMenu_content/* useNavbarSecondaryMenuContent */.YL)();return (0,react.useMemo)(()=>({shown,hide,content:renderElement(content)}),[hide,content,shown]);}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/Layout/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO Docusaurus v4: remove temporary inert workaround
-//  See https://github.com/facebook/react/issues/17157
-//  See https://github.com/radix-ui/themes/pull/509
-function inertProps(inert){const isBeforeReact19=parseInt(react.version.split('.')[0],10)<19;if(isBeforeReact19){return{inert:inert?'':undefined};}return{inert};}function NavbarMobileSidebarPanel({children,inert}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.panel,'navbar-sidebar__item menu'),...inertProps(inert),children:children});}function NavbarMobileSidebarLayout({header,primaryMenu,secondaryMenu}){const{shown:secondaryMenuShown}=useNavbarSecondaryMenu();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.container,'navbar-sidebar'),children:[header,/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('navbar-sidebar__items',{'navbar-sidebar__items--show-secondary':secondaryMenuShown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:secondaryMenuShown,children:primaryMenu}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:!secondaryMenuShown,children:secondaryMenu})]})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
-var colorMode = __webpack_require__(2774);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
-var useIsBrowser = __webpack_require__(1993);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/LightMode/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconLightMode(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:24,height:24,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/DarkMode/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconDarkMode(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:24,height:24,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/SystemColorMode/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconSystemColorMode(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:24,height:24,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ColorModeToggle/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const ColorModeToggle_styles_module = ({"toggle":"toggle_Og8A","toggleButton":"toggleButton_uR6M","toggleIcon":"toggleIcon_DNkF","systemToggleIcon":"systemToggleIcon_ceD5","lightToggleIcon":"lightToggleIcon_d2Cq","darkToggleIcon":"darkToggleIcon_kDyW","toggleButtonDisabled":"toggleButtonDisabled_QqRk"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ColorModeToggle/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// The order of color modes is defined here, and can be customized with swizzle
-function getNextColorMode(colorMode,respectPrefersColorScheme){// 2-value transition
-if(!respectPrefersColorScheme){return colorMode==='dark'?'light':'dark';}// 3-value transition
-switch(colorMode){case null:return'light';case'light':return'dark';case'dark':return null;default:throw new Error(`unexpected color mode ${colorMode}`);}}function getColorModeLabel(colorMode){switch(colorMode){case null:return (0,Translate/* translate */.T)({message:'system mode',id:'theme.colorToggle.ariaLabel.mode.system',description:'The name for the system color mode'});case'light':return (0,Translate/* translate */.T)({message:'light mode',id:'theme.colorToggle.ariaLabel.mode.light',description:'The name for the light color mode'});case'dark':return (0,Translate/* translate */.T)({message:'dark mode',id:'theme.colorToggle.ariaLabel.mode.dark',description:'The name for the dark color mode'});default:throw new Error(`unexpected color mode ${colorMode}`);}}function getColorModeAriaLabel(colorMode){return (0,Translate/* translate */.T)({message:'Switch between dark and light mode (currently {mode})',id:'theme.colorToggle.ariaLabel',description:'The ARIA label for the color mode toggle'},{mode:getColorModeLabel(colorMode)});}function CurrentColorModeIcon(){// 3 icons are always rendered for technical reasons
-// We use "data-theme-choice" to render the correct one
-// This must work even before React hydrates
-return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconLightMode// a18y is handled at the button level,
-// not relying on button content (svg icons)
-,{"aria-hidden":true,className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggleIcon,ColorModeToggle_styles_module.lightToggleIcon)}),/*#__PURE__*/(0,jsx_runtime.jsx)(IconDarkMode,{"aria-hidden":true,className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggleIcon,ColorModeToggle_styles_module.darkToggleIcon)}),/*#__PURE__*/(0,jsx_runtime.jsx)(IconSystemColorMode,{"aria-hidden":true,className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggleIcon,ColorModeToggle_styles_module.systemToggleIcon)})]});}function ColorModeToggle({className,buttonClassName,respectPrefersColorScheme,value,onChange}){const isBrowser=(0,useIsBrowser/* default */.A)();return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggle,className),children:/*#__PURE__*/(0,jsx_runtime.jsx)("button",{className:(0,clsx/* default */.A)('clean-btn',ColorModeToggle_styles_module.toggleButton,!isBrowser&&ColorModeToggle_styles_module.toggleButtonDisabled,buttonClassName),type:"button",onClick:()=>onChange(getNextColorMode(value,respectPrefersColorScheme)),disabled:!isBrowser,title:getColorModeLabel(value),"aria-label":getColorModeAriaLabel(value),children:/*#__PURE__*/(0,jsx_runtime.jsx)(CurrentColorModeIcon,{})})});}/* harmony default export */ const theme_ColorModeToggle = (/*#__PURE__*/react.memo(ColorModeToggle));
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/ColorModeToggle/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Navbar_ColorModeToggle_styles_module = ({"darkNavbarColorModeToggle":"darkNavbarColorModeToggle_Th41"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/ColorModeToggle/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function NavbarColorModeToggle({className}){const navbarStyle=(0,useThemeConfig/* useThemeConfig */.p)().navbar.style;const{disableSwitch,respectPrefersColorScheme}=(0,useThemeConfig/* useThemeConfig */.p)().colorMode;const{colorModeChoice,setColorMode}=(0,colorMode/* useColorMode */.G)();if(disableSwitch){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(theme_ColorModeToggle,{className:className,buttonClassName:navbarStyle==='dark'?Navbar_ColorModeToggle_styles_module.darkNavbarColorModeToggle:undefined,respectPrefersColorScheme:respectPrefersColorScheme,value:colorModeChoice,onChange:setColorMode});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Logo/index.js
-var Logo = __webpack_require__(849);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Logo/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function NavbarLogo(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Logo/* default */.A,{className:"navbar__brand",imageClassName:"navbar__logo",titleClassName:"navbar__title text--truncate"});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/Header/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function CloseButton(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button","aria-label":(0,Translate/* translate */.T)({id:'theme.docs.sidebar.closeSidebarButtonAriaLabel',message:'Close navigation bar',description:'The ARIA label for close button of mobile sidebar'}),className:"clean-btn navbar-sidebar__close",onClick:()=>mobileSidebar.toggle(),children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconClose,{color:"var(--ifm-color-emphasis-600)"})});}function NavbarMobileSidebarHeader(){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"navbar-sidebar__brand",children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarLogo,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarColorModeToggle,{className:"margin-right--md"}),/*#__PURE__*/(0,jsx_runtime.jsx)(CloseButton,{})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Link.js
-var exports_Link = __webpack_require__(1936);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@fortawesome+react-fontawesome@3.1.0_@fortawesome+fontawesome-svg-core@7.1.0_react@19.2.0/node_modules/@fortawesome/react-fontawesome/dist/index.js
-var dist = __webpack_require__(644);
-;// ./src/components/DownloadButton.tsx
-function MainDownloadButton(){return/*#__PURE__*/_jsx("div",{children:/*#__PURE__*/_jsxs(Link,{className:"inline-flex font-semibold no-underline hover:no-underline items-center text-white hover:text-white bg-gradient-to-b from-orange-500 to-orange-600 border-0 py-3 px-6 focus:outline-hidden hover:from-orange-600 hover:to-orange-700 rounded-lg text-base mt-4 mb-0 ml-4",to:'`/downloads/',children:[/*#__PURE__*/_jsx(FontAwesomeIcon,{size:"1x",icon:faDownload,className:"px-2 py-1"})," Download Now"]})});}// Same as MainDownloadButton but instead it's "Download" and has no fontawesome icon
-function HeaderDownloadButton(){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{className:"hidden xl:flex font-semibold no-underline hover:no-underline items-center text-white hover:text-white bg-gradient-to-b from-orange-500 to-orange-600 border-0 py-3 px-6 focus:outline-hidden hover:from-orange-600 hover:to-orange-700 rounded-lg text-base mt-0 mb-0 ml-4 mr-2",to:"/download",children:"Download"})});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(3587);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(6040);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/regexpUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Matches a string regex (as provided from the config) against a target in a
- * null-safe fashion, case insensitive and global.
- */function isRegexpStringMatch(regexAsString,valueToTest){if(typeof regexAsString==='undefined'||typeof valueToTest==='undefined'){return false;}return new RegExp(regexAsString,'gi').test(valueToTest);}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/index.js + 1 modules
-var ExternalLink = __webpack_require__(3451);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/NavbarNavLink.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function NavbarNavLink({activeBasePath,activeBaseRegex,to,href,label,html,isDropdownLink,prependBaseUrlToHref,...props}){// TODO all this seems hacky
-// {to: 'version'} should probably be forbidden, in favor of {to: '/version'}
-const toUrl=(0,useBaseUrl/* default */.Ay)(to);const activeBaseUrl=(0,useBaseUrl/* default */.Ay)(activeBasePath);const normalizedHref=(0,useBaseUrl/* default */.Ay)(href,{forcePrependBaseUrl:true});const isExternalLink=label&&href&&!(0,isInternalUrl/* default */.A)(href);// Link content is set through html XOR label
-const linkContentProps=html?{dangerouslySetInnerHTML:{__html:html}}:{children:/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[label,isExternalLink&&/*#__PURE__*/(0,jsx_runtime.jsx)(ExternalLink/* default */.A,{...(isDropdownLink&&{width:12,height:12})})]})};if(href){return/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{href:prependBaseUrlToHref?normalizedHref:href,...props,...linkContentProps});}return/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{to:toUrl,isNavLink:true,...((activeBasePath||activeBaseRegex)&&{isActive:(_match,location)=>activeBaseRegex?isRegexpStringMatch(activeBaseRegex,location.pathname):location.pathname.startsWith(activeBaseUrl)}),...props,...linkContentProps});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DefaultNavbarItem/Mobile/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DefaultNavbarItemMobile({className,isDropdownItem,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:"menu__list-item",children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{className:(0,clsx/* default */.A)('menu__link',className),...props})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DefaultNavbarItem/Desktop/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DefaultNavbarItemDesktop({className,isDropdownItem=false,...props}){const element=/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{className:(0,clsx/* default */.A)(isDropdownItem?'dropdown__link':'navbar__item navbar__link',className),isDropdownLink:isDropdownItem,...props});if(isDropdownItem){return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{children:element});}return element;}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DefaultNavbarItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DefaultNavbarItem({mobile=false,position,// Need to destructure position from props so that it doesn't get passed on.
-...props}){const Comp=mobile?DefaultNavbarItemMobile:DefaultNavbarItemDesktop;return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{...props,activeClassName:props.activeClassName??(mobile?'menu__link--active':'navbar__link--active')});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/Collapsible/index.js
-var Collapsible = __webpack_require__(3885);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
-var routesUtils = __webpack_require__(2412);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
-var useDocusaurusContext = __webpack_require__(8808);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useLocalPathname.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Get the pathname of current route, without the optional site baseUrl.
- * - `/docs/myDoc` => `/docs/myDoc`
- * - `/baseUrl/docs/myDoc` => `/docs/myDoc`
- */function useLocalPathname(){const{siteConfig:{baseUrl}}=(0,useDocusaurusContext/* default */.A)();const{pathname}=(0,react_router/* useLocation */.zy)();return pathname.replace(baseUrl,'/');}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/Mobile/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Mobile_styles_module = ({"dropdownNavbarItemMobile":"dropdownNavbarItemMobile_UR_l"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/Mobile/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function isItemActive(item,localPathname){if((0,routesUtils/* isSamePath */.ys)(item.to,localPathname)){return true;}if(isRegexpStringMatch(item.activeBaseRegex,localPathname)){return true;}if(item.activeBasePath&&localPathname.startsWith(item.activeBasePath)){return true;}return false;}function containsActiveItems(items,localPathname){return items.some(item=>isItemActive(item,localPathname));}function CollapseButton({collapsed,onClick}){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{"aria-label":collapsed?(0,Translate/* translate */.T)({id:'theme.navbar.mobileDropdown.collapseButton.expandAriaLabel',message:'Expand the dropdown',description:'The ARIA label of the button to expand the mobile dropdown navbar item'}):(0,Translate/* translate */.T)({id:'theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel',message:'Collapse the dropdown',description:'The ARIA label of the button to collapse the mobile dropdown navbar item'}),"aria-expanded":!collapsed,type:"button",className:"clean-btn menu__caret",onClick:onClick});}function useItemCollapsible({active}){const{collapsed,toggleCollapsed,setCollapsed}=(0,Collapsible/* useCollapsible */.u)({initialState:()=>!active});// Expand if any item active after a navigation
-(0,react.useEffect)(()=>{if(active){setCollapsed(false);}},[active,setCollapsed]);return{collapsed,toggleCollapsed};}function DropdownNavbarItemMobile({items,className,position,// Need to destructure position from props so that it doesn't get passed on.
-onClick,...props}){const localPathname=useLocalPathname();const isActive=(0,routesUtils/* isSamePath */.ys)(props.to,localPathname);const containsActive=containsActiveItems(items,localPathname);const{collapsed,toggleCollapsed}=useItemCollapsible({active:isActive||containsActive});// # hash permits to make the <a> tag focusable in case no link target
-// See https://github.com/facebook/docusaurus/pull/6003
-// There's probably a better solution though...
-const href=props.to?undefined:'#';return/*#__PURE__*/(0,jsx_runtime.jsxs)("li",{className:(0,clsx/* default */.A)('menu__list-item',{'menu__list-item--collapsed':collapsed}),children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('menu__list-item-collapsible',{'menu__list-item-collapsible--active':isActive}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{role:"button",className:(0,clsx/* default */.A)(Mobile_styles_module.dropdownNavbarItemMobile,'menu__link menu__link--sublist',className),href:href,...props,onClick:e=>{// Prevent navigation when link is "#"
-if(href==='#'){e.preventDefault();}// Otherwise we let navigation eventually happen, and/or collapse
-toggleCollapsed();},children:props.children??props.label}),/*#__PURE__*/(0,jsx_runtime.jsx)(CollapseButton,{collapsed:collapsed,onClick:e=>{e.preventDefault();toggleCollapsed();}})]}),/*#__PURE__*/(0,jsx_runtime.jsx)(Collapsible/* Collapsible */.N,{lazy:true,as:"ul",className:"menu__list",collapsed:collapsed,children:items.map((childItemProps,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{mobile:true,isDropdownItem:true,onClick:onClick,activeClassName:"menu__link--active",...childItemProps,key:i}))})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/Desktop/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DropdownNavbarItemDesktop({items,position,className,onClick,...props}){const dropdownRef=(0,react.useRef)(null);const[showDropdown,setShowDropdown]=(0,react.useState)(false);(0,react.useEffect)(()=>{const handleClickOutside=event=>{if(!dropdownRef.current||dropdownRef.current.contains(event.target)){return;}setShowDropdown(false);};document.addEventListener('mousedown',handleClickOutside);document.addEventListener('touchstart',handleClickOutside);document.addEventListener('focusin',handleClickOutside);return()=>{document.removeEventListener('mousedown',handleClickOutside);document.removeEventListener('touchstart',handleClickOutside);document.removeEventListener('focusin',handleClickOutside);};},[dropdownRef]);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{ref:dropdownRef,className:(0,clsx/* default */.A)('navbar__item','dropdown','dropdown--hoverable',{'dropdown--right':position==='right','dropdown--show':showDropdown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{"aria-haspopup":"true","aria-expanded":showDropdown,role:"button"// # hash permits to make the <a> tag focusable in case no link target
-// See https://github.com/facebook/docusaurus/pull/6003
-// There's probably a better solution though...
-,href:props.to?undefined:'#',className:(0,clsx/* default */.A)('navbar__link',className),...props,onClick:props.to?undefined:e=>e.preventDefault(),onKeyDown:e=>{if(e.key==='Enter'){e.preventDefault();setShowDropdown(!showDropdown);}},children:props.children??props.label}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"dropdown__menu",children:items.map((childItemProps,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{isDropdownItem:true,activeClassName:"dropdown__link--active",...childItemProps,key:i}))})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DropdownNavbarItem({mobile=false,...props}){const Comp=mobile?DropdownNavbarItemMobile:DropdownNavbarItemDesktop;return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{...props});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useAlternatePageUtils.js
-var useAlternatePageUtils = __webpack_require__(9530);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/historyUtils.js
-var historyUtils = __webpack_require__(4566);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Language/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconLanguage({width=20,height=20,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:width,height:height,"aria-hidden":true,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/LocaleDropdownNavbarItem/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const LocaleDropdownNavbarItem_styles_module = ({"iconLanguage":"iconLanguage_gCNh"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/LocaleDropdownNavbarItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useLocaleDropdownUtils(){const{siteConfig,i18n:{localeConfigs}}=(0,useDocusaurusContext/* default */.A)();const alternatePageUtils=(0,useAlternatePageUtils/* useAlternatePageUtils */.o)();const search=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.search);const hash=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.hash);const getLocaleConfig=locale=>{const localeConfig=localeConfigs[locale];if(!localeConfig){throw new Error(`Docusaurus bug, no locale config found for locale=${locale}`);}return localeConfig;};const getBaseURLForLocale=locale=>{const localeConfig=getLocaleConfig(locale);const isSameDomain=localeConfig.url===siteConfig.url;if(isSameDomain){// Shorter paths if localized sites are hosted on the same domain
-// This reduces HTML size a bit
-return`pathname://${alternatePageUtils.createUrl({locale,fullyQualified:false})}`;}return alternatePageUtils.createUrl({locale,fullyQualified:true});};return{getURL:(locale,options)=>{// We have 2 query strings because
-// - there's the current one
-// - there's one user can provide through navbar config
-// see https://github.com/facebook/docusaurus/pull/8915
-const finalSearch=(0,historyUtils/* mergeSearchStrings */.jy)([search,options.queryString],'append');return`${getBaseURLForLocale(locale)}${finalSearch}${hash}`;},getLabel:locale=>{return getLocaleConfig(locale).label;},getLang:locale=>{return getLocaleConfig(locale).htmlLang;}};}function LocaleDropdownNavbarItem({mobile,dropdownItemsBefore,dropdownItemsAfter,queryString,...props}){const utils=useLocaleDropdownUtils();const{i18n:{currentLocale,locales}}=(0,useDocusaurusContext/* default */.A)();const localeItems=locales.map(locale=>{return{label:utils.getLabel(locale),lang:utils.getLang(locale),to:utils.getURL(locale,{queryString}),target:'_self',autoAddBaseUrl:false,className:// eslint-disable-next-line no-nested-ternary
-locale===currentLocale?// Similar idea as DefaultNavbarItem: select the right Infima active
-// class name. This cannot be substituted with isActive, because the
-// target URLs contain `pathname://` and therefore are not NavLinks!
-mobile?'menu__link--active':'dropdown__link--active':''};});const items=[...dropdownItemsBefore,...localeItems,...dropdownItemsAfter];// Mobile is handled a bit differently
-const dropdownLabel=mobile?(0,Translate/* translate */.T)({message:'Languages',id:'theme.navbar.mobileLanguageDropdown.label',description:'The label for the mobile language switcher dropdown'}):utils.getLabel(currentLocale);return/*#__PURE__*/(0,jsx_runtime.jsx)(DropdownNavbarItem,{...props,mobile:mobile,label:/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconLanguage,{className:LocaleDropdownNavbarItem_styles_module.iconLanguage}),dropdownLabel]}),items:items});}
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Noop.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//* harmony default export */ const Noop = (()=>null);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Search/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Search_styles_module = ({"navbarSearchContainer":"navbarSearchContainer_HJoG"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Search/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function NavbarSearch({children,className}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(className,Search_styles_module.navbarSearchContainer),children:children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/SearchNavbarItem.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function SearchNavbarItem({mobile,className}){if(mobile){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarSearch,{className:className,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Noop,{})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/HtmlNavbarItem.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function HtmlNavbarItem({value,className,mobile=false,isDropdownItem=false}){const Comp=isDropdownItem?'li':'div';return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{className:(0,clsx/* default */.A)({navbar__item:!mobile&&!isDropdownItem,'menu__list-item':mobile},className),dangerouslySetInnerHTML:{__html:value}});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/index.js + 2 modules
-var client = __webpack_require__(2913);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js + 1 modules
-var docsUtils = __webpack_require__(4812);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocNavbarItem.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocNavbarItem({docId,label:staticLabel,docsPluginId,...props}){const{activeDoc}=(0,client/* useActiveDocContext */.zK)(docsPluginId);const doc=(0,docsUtils/* useLayoutDoc */.QB)(docId,docsPluginId);const pageActive=activeDoc?.path===doc?.path;// Draft and unlisted items are not displayed in the navbar.
-if(doc===null||doc.unlisted&&!pageActive){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{exact:true,...props,isActive:()=>pageActive||!!activeDoc?.sidebar&&activeDoc.sidebar===doc.sidebar,label:staticLabel??doc.id,to:doc.path});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocSidebarNavbarItem.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocSidebarNavbarItem({sidebarId,label,docsPluginId,...props}){const{activeDoc}=(0,client/* useActiveDocContext */.zK)(docsPluginId);const sidebarLink=(0,docsUtils/* useLayoutDocsSidebar */.fW)(sidebarId,docsPluginId).link;if(!sidebarLink){throw new Error(`DocSidebarNavbarItem: Sidebar with ID "${sidebarId}" doesn't have anything to be linked to.`);}return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{exact:true,...props,isActive:()=>activeDoc?.sidebar===sidebarId,label:label??sidebarLink.label,to:sidebarLink.path});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocsVersionNavbarItem.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const getVersionMainDoc=version=>version.docs.find(doc=>doc.id===version.mainDocId);function DocsVersionNavbarItem({label:staticLabel,to:staticTo,docsPluginId,...props}){const version=(0,docsUtils/* useDocsVersionCandidates */.Vd)(docsPluginId)[0];const label=staticLabel??version.label;const path=staticTo??getVersionMainDoc(version).path;return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{...props,label:label,to:path});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsPreferredVersion.js
-var docsPreferredVersion = __webpack_require__(149);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocsVersionDropdownNavbarItem.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function getVersionItems(versions,configs){if(configs){// Collect all the versions we have
-const versionMap=new Map(versions.map(version=>[version.name,version]));const toVersionItem=(name,config)=>{const version=versionMap.get(name);if(!version){throw new Error(`No docs version exist for name '${name}', please verify your 'docsVersionDropdown' navbar item versions config.
-Available version names:\n- ${versions.map(v=>`${v.name}`).join('\n- ')}`);}return{version,label:config?.label??version.label};};if(Array.isArray(configs)){return configs.map(name=>toVersionItem(name,undefined));}else{return Object.entries(configs).map(([name,config])=>toVersionItem(name,config));}}else{return versions.map(version=>({version,label:version.label}));}}function useVersionItems({docsPluginId,configs}){const versions=(0,client/* useVersions */.jh)(docsPluginId);return getVersionItems(versions,configs);}function DocsVersionDropdownNavbarItem_getVersionMainDoc(version){return version.docs.find(doc=>doc.id===version.mainDocId);}function getVersionTargetDoc(version,activeDocContext){// We try to link to the same doc, in another version
-// When not possible, fallback to the "main doc" of the version
-return activeDocContext.alternateDocVersions[version.name]??DocsVersionDropdownNavbarItem_getVersionMainDoc(version);}// The version item to use for the "dropdown button"
-function useDisplayedVersionItem({docsPluginId,versionItems}){// The order of the candidates matters!
-const candidates=(0,docsUtils/* useDocsVersionCandidates */.Vd)(docsPluginId);const candidateItems=candidates.map(candidate=>versionItems.find(vi=>vi.version===candidate)).filter(vi=>vi!==undefined);return candidateItems[0]??versionItems[0];}function DocsVersionDropdownNavbarItem({mobile,docsPluginId,dropdownActiveClassDisabled,dropdownItemsBefore,dropdownItemsAfter,versions:configs,...props}){const search=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.search);const hash=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.hash);const activeDocContext=(0,client/* useActiveDocContext */.zK)(docsPluginId);const{savePreferredVersionName}=(0,docsPreferredVersion/* useDocsPreferredVersion */.g1)(docsPluginId);const versionItems=useVersionItems({docsPluginId,configs});const displayedVersionItem=useDisplayedVersionItem({docsPluginId,versionItems});function versionItemToLink({version,label}){const targetDoc=getVersionTargetDoc(version,activeDocContext);return{label,// preserve ?search#hash suffix on version switches
-to:`${targetDoc.path}${search}${hash}`,isActive:()=>version===activeDocContext.activeVersion,onClick:()=>savePreferredVersionName(version.name)};}const items=[...dropdownItemsBefore,...versionItems.map(versionItemToLink),...dropdownItemsAfter];// Mobile dropdown is handled a bit differently
-const dropdownLabel=mobile&&items.length>1?(0,Translate/* translate */.T)({id:'theme.navbar.mobileVersionsDropdown.label',message:'Versions',description:'The label for the navbar versions dropdown on mobile view'}):displayedVersionItem.label;const dropdownTo=mobile&&items.length>1?undefined:getVersionTargetDoc(displayedVersionItem.version,activeDocContext).path;// We don't want to render a version dropdown with 0 or 1 item. If we build
-// the site with a single docs version (onlyIncludeVersions: ['1.0.0']),
-// We'd rather render a button instead of a dropdown
-if(items.length<=1){return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{...props,mobile:mobile,label:dropdownLabel,to:dropdownTo,isActive:dropdownActiveClassDisabled?()=>false:undefined});}return/*#__PURE__*/(0,jsx_runtime.jsx)(DropdownNavbarItem,{...props,mobile:mobile,label:dropdownLabel,to:dropdownTo,items:items,isActive:dropdownActiveClassDisabled?()=>false:undefined});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/ComponentTypes.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const ComponentTypes={default:DefaultNavbarItem,localeDropdown:LocaleDropdownNavbarItem,search:SearchNavbarItem,dropdown:DropdownNavbarItem,html:HtmlNavbarItem,doc:DocNavbarItem,docSidebar:DocSidebarNavbarItem,docsVersion:DocsVersionNavbarItem,docsVersionDropdown:DocsVersionDropdownNavbarItem};/* harmony default export */ const NavbarItem_ComponentTypes = (ComponentTypes);
-;// ./src/theme/NavbarItem/ComponentTypes.js
-// "Custom" navbar items to be added
-/* harmony default export */ const theme_NavbarItem_ComponentTypes = ({...NavbarItem_ComponentTypes,'custom-downloadButton':()=>/*#__PURE__*/(0,jsx_runtime.jsx)(HeaderDownloadButton,{className:"navbar__item navbar__link"})});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function normalizeComponentType(type,props){// Backward compatibility: navbar item with no type set
-// but containing dropdown items should use the type "dropdown"
-if(!type||type==='default'){return'items'in props?'dropdown':'default';}return type;}function NavbarItem({type,...props}){const componentType=normalizeComponentType(type,props);const NavbarItemComponent=theme_NavbarItem_ComponentTypes[componentType];if(!NavbarItemComponent){throw new Error(`No NavbarItem component found for type "${type}".`);}return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItemComponent,{...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/PrimaryMenu/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useNavbarItems(){// TODO temporary casting until ThemeConfig type is improved
-return (0,useThemeConfig/* useThemeConfig */.p)().navbar.items;}// The primary menu displays the navbar items
-function NavbarMobilePrimaryMenu(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();// TODO how can the order be defined for mobile?
-// Should we allow providing a different list of items?
-const items=useNavbarItems();return/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"menu__list",children:items.map((item,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{mobile:true,...item,onClick:()=>mobileSidebar.toggle(),key:i}))});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/SecondaryMenu/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function SecondaryMenuBackButton(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{...props,type:"button",className:"clean-btn navbar-sidebar__back",children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel",description:"The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)",children:"\u2190 Back to main menu"})});}// The secondary menu slides from the right and shows contextual information
-// such as the docs sidebar
-function NavbarMobileSidebarSecondaryMenu(){const isPrimaryMenuEmpty=(0,useThemeConfig/* useThemeConfig */.p)().navbar.items.length===0;const secondaryMenu=useNavbarSecondaryMenu();return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[!isPrimaryMenuEmpty&&/*#__PURE__*/(0,jsx_runtime.jsx)(SecondaryMenuBackButton,{onClick:()=>secondaryMenu.hide()}),secondaryMenu.content]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function NavbarMobileSidebar(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();useLockBodyScroll(mobileSidebar.shown);if(!mobileSidebar.shouldRender){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarLayout,{header:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarHeader,{}),primaryMenu:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobilePrimaryMenu,{}),secondaryMenu:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarSecondaryMenu,{})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Layout/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Layout_styles_module = ({"navbarHideable":"navbarHideable_AIB5","navbarHidden":"navbarHidden_RE_t"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Layout/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function NavbarBackdrop(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{role:"presentation",...props,className:(0,clsx/* default */.A)('navbar-sidebar__backdrop',props.className)});}function NavbarLayout({children}){const{navbar:{hideOnScroll,style}}=(0,useThemeConfig/* useThemeConfig */.p)();const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();const{navbarRef,isNavbarVisible}=useHideableNavbar(hideOnScroll);return/*#__PURE__*/(0,jsx_runtime.jsxs)("nav",{ref:navbarRef,"aria-label":(0,Translate/* translate */.T)({id:'theme.NavBar.navAriaLabel',message:'Main',description:'The ARIA label for the main navigation'}),className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.container,'navbar','navbar--fixed-top',hideOnScroll&&[Layout_styles_module.navbarHideable,!isNavbarVisible&&Layout_styles_module.navbarHidden],{'navbar--dark':style==='dark','navbar--primary':style==='primary','navbar-sidebar--show':mobileSidebar.shown}),children:[children,/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarBackdrop,{onClick:mobileSidebar.toggle}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebar,{})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.js + 1 modules
-var errorBoundaryUtils = __webpack_require__(7188);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/navbarUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const DefaultNavItemPosition='right';/**
- * Split links by left/right. If position is unspecified, fallback to right.
- */function splitNavbarItems(items){function isLeft(item){return(item.position??DefaultNavItemPosition)==='left';}const leftItems=items.filter(isLeft);const rightItems=items.filter(item=>!isLeft(item));return[leftItems,rightItems];}/**
- * Composes multiple navbar state providers that are mutually dependent and
- * hence can't be re-ordered.
- */function NavbarProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(navbarSecondaryMenu_content/* NavbarSecondaryMenuContentProvider */.y_,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(navbarMobileSidebar/* NavbarMobileSidebarProvider */.e,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarSecondaryMenuDisplayProvider,{children:children})})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Menu/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconMenu({width=30,height=30,className,...restProps}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{className:className,width:width,height:height,viewBox:"0 0 30 30","aria-hidden":"true",...restProps,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{stroke:"currentColor",strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2",d:"M4 7h22M4 15h22M4 23h22"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/Toggle/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MobileSidebarToggle(){const{toggle,shown}=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{onClick:toggle,"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.sidebar.toggleSidebarButtonAriaLabel',message:'Toggle navigation bar',description:'The ARIA label for hamburger menu button of mobile navigation'}),"aria-expanded":shown,className:"navbar__toggle clean-btn",type:"button",children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconMenu,{})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Content/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Navbar_Content_styles_module = ({"colorModeToggle":"colorModeToggle_O0m1"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Content/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Content_useNavbarItems(){// TODO temporary casting until ThemeConfig type is improved
-return (0,useThemeConfig/* useThemeConfig */.p)().navbar.items;}function NavbarItems({items}){return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:items.map((item,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorCauseBoundary */.k2,{onError:error=>new Error(`A theme navbar item failed to render.
-Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
-${JSON.stringify(item,null,2)}`,{cause:error}),children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItem,{...item})},i))});}function NavbarContentLayout({left,right}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"navbar__inner",children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.containerLeft,'navbar__items'),children:left}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.containerRight,'navbar__items navbar__items--right'),children:right})]});}function NavbarContent(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();const items=Content_useNavbarItems();const[leftItems,rightItems]=splitNavbarItems(items);const searchBarItem=items.find(item=>item.type==='search');return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarContentLayout,{left:/*#__PURE__*/// TODO stop hardcoding items?
-(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[!mobileSidebar.disabled&&/*#__PURE__*/(0,jsx_runtime.jsx)(MobileSidebarToggle,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarLogo,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItems,{items:leftItems})]}),right:/*#__PURE__*/// TODO stop hardcoding items?
-// Ask the user to add the respective navbar items => more flexible
-(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItems,{items:rightItems}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarColorModeToggle,{className:Navbar_Content_styles_module.colorModeToggle}),!searchBarItem&&/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarSearch,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Noop,{})})]})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Navbar(){return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarLayout,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarContent,{})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/footerUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * A rough duck-typing about whether the `footer.links` is intended to be multi-
- * column.
- */function isMultiColumnFooterLinks(links){return'title'in links[0];}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/LinkItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function FooterLinkItem({item}){const{to,href,label,prependBaseUrlToHref,className,...props}=item;const toUrl=(0,useBaseUrl/* default */.Ay)(to);const normalizedHref=(0,useBaseUrl/* default */.Ay)(href,{forcePrependBaseUrl:true});return/*#__PURE__*/(0,jsx_runtime.jsxs)(exports_Link/* default */.A,{className:(0,clsx/* default */.A)('footer__link-item',className),...(href?{href:prependBaseUrlToHref?normalizedHref:href}:{to:toUrl}),...props,children:[label,href&&!(0,isInternalUrl/* default */.A)(href)&&/*#__PURE__*/(0,jsx_runtime.jsx)(ExternalLink/* default */.A,{})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Links/MultiColumn/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function ColumnLinkItem({item}){return item.html?/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:(0,clsx/* default */.A)('footer__item',item.className)// Developer provided the HTML, so assume it's safe.
-// eslint-disable-next-line react/no-danger
-,dangerouslySetInnerHTML:{__html:item.html}}):/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:"footer__item",children:/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinkItem,{item:item})},item.href??item.to);}function Column({column}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.footer.column,'col footer__col',column.className),children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__title",children:column.title}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"footer__items clean-list",children:column.items.map((item,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(ColumnLinkItem,{item:item},i))})]});}function FooterLinksMultiColumn({columns}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"row footer__links",children:columns.map((column,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(Column,{column:column},i))});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Links/Simple/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Separator(){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:"footer__link-separator",children:"\xB7"});}function SimpleLinkItem({item}){return item.html?/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:(0,clsx/* default */.A)('footer__link-item',item.className)// Developer provided the HTML, so assume it's safe.
-// eslint-disable-next-line react/no-danger
-,dangerouslySetInnerHTML:{__html:item.html}}):/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinkItem,{item:item});}function FooterLinksSimple({links}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__links text--center",children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__links",children:links.map((item,i)=>/*#__PURE__*/(0,jsx_runtime.jsxs)(react.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(SimpleLinkItem,{item:item}),links.length!==i+1&&/*#__PURE__*/(0,jsx_runtime.jsx)(Separator,{})]},i))})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Links/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function FooterLinks({links}){return isMultiColumnFooterLinks(links)?/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinksMultiColumn,{columns:links}):/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinksSimple,{links:links});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemedImage/index.js + 2 modules
-var ThemedImage = __webpack_require__(3675);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Logo/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Logo_styles_module = ({"footerLogoLink":"footerLogoLink_I7k4"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Logo/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function LogoImage({logo}){const{withBaseUrl}=(0,useBaseUrl/* useBaseUrlUtils */.hH)();const sources={light:withBaseUrl(logo.src),dark:withBaseUrl(logo.srcDark??logo.src)};return/*#__PURE__*/(0,jsx_runtime.jsx)(ThemedImage/* default */.A,{className:(0,clsx/* default */.A)('footer__logo',logo.className),alt:logo.alt,sources:sources,width:logo.width,height:logo.height,style:logo.style});}function FooterLogo({logo}){return logo.href?/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{href:logo.href,className:Logo_styles_module.footerLogoLink,target:logo.target,children:/*#__PURE__*/(0,jsx_runtime.jsx)(LogoImage,{logo:logo})}):/*#__PURE__*/(0,jsx_runtime.jsx)(LogoImage,{logo:logo});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Copyright/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function FooterCopyright({copyright}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__copyright"// Developer provided the HTML, so assume it's safe.
-// eslint-disable-next-line react/no-danger
-,dangerouslySetInnerHTML:{__html:copyright}});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Layout/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function FooterLayout({style,links,logo,copyright}){return/*#__PURE__*/(0,jsx_runtime.jsx)("footer",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.footer.container,'footer',{'footer--dark':style==='dark'}),children:/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"container container-fluid",children:[links,(logo||copyright)&&/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"footer__bottom text--center",children:[logo&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-bottom--sm",children:logo}),copyright]})]})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Footer(){const{footer}=(0,useThemeConfig/* useThemeConfig */.p)();if(!footer){return null;}const{copyright,links,logo,style}=footer;return/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLayout,{style:style,links:links&&links.length>0&&/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinks,{links:links}),logo:logo&&/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLogo,{logo:logo}),copyright:copyright&&/*#__PURE__*/(0,jsx_runtime.jsx)(FooterCopyright,{copyright:copyright})});}/* harmony default export */ const theme_Footer = (/*#__PURE__*/react.memo(Footer));
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/Provider/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const Provider=(0,reactUtils/* composeProviders */.fM)([colorMode/* ColorModeProvider */.a,contexts_announcementBar/* AnnouncementBarProvider */.o,scrollUtils/* ScrollControllerProvider */.Tv,docsPreferredVersion/* DocsPreferredVersionContextProvider */.VQ,metadataUtils/* PluginHtmlClassNameProvider */.Jx,NavbarProvider]);function LayoutProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Provider,{children:children});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
-var Heading = __webpack_require__(8899);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ErrorPageContent.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function ErrorPageContent({error,tryAgain}){return/*#__PURE__*/(0,jsx_runtime.jsx)("main",{className:"container margin-vert--xl",children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"row",children:/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"col col--6 col--offset-3",children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Heading/* default */.A,{as:"h1",className:"hero__title",children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.ErrorPageContent.title",description:"The title of the fallback page when the page crashed",children:"This page crashed."})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-vert--lg",children:/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorBoundaryTryAgainButton */.a2,{onClick:tryAgain,className:"button button--primary shadow--lw"})}),/*#__PURE__*/(0,jsx_runtime.jsx)("hr",{}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-vert--md",children:/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorBoundaryError */.bq,{error:error})})]})})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const theme_Layout_styles_module = ({"mainWrapper":"mainWrapper_Ino9"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Layout(props){const{children,noFooter,wrapperClassName,// Not really layout-related, but kept for convenience/retro-compatibility
-title,description}=props;(0,useKeyboardNavigation/* useKeyboardNavigation */.J)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(LayoutProvider,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{title:title,description:description}),/*#__PURE__*/(0,jsx_runtime.jsx)(SkipToContent,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(Navbar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{id:SkipToContentFallbackId,className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.main.container,ThemeClassNames/* ThemeClassNames */.G.wrapper.main,theme_Layout_styles_module.mainWrapper,wrapperClassName),children:/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{fallback:params=>/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorPageContent,{...params}),children:children})}),!noFooter&&/*#__PURE__*/(0,jsx_runtime.jsx)(theme_Footer,{})]});}
 
 /***/ }),
 
@@ -32998,12 +32341,669 @@ false);// Update state after hydration
 // cSpell:ignore annoucement
 if(viewedId==='annoucement-bar'){viewedId='announcement-bar';}const isNewAnnouncement=id!==viewedId;IdStorage.set(id);if(isNewAnnouncement){setDismissedInStorage(false);}if(isNewAnnouncement||!isDismissedInStorage()){setClosed(false);}},[announcementBar]);return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>({isActive:!!announcementBar&&!isClosed,close:handleClose}),[announcementBar,isClosed,handleClose]);}function AnnouncementBarProvider({children}){const value=useContextValue();return/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Context.Provider,{value:value,children:children});}function useAnnouncementBar(){const api=(0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(Context);if(!api){throw new _utils_reactUtils__WEBPACK_IMPORTED_MODULE_3__/* .ReactContextError */ .dV('AnnouncementBarProvider');}return api;}
 
+/***/ }),
+
+/***/ 9950:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ Layout)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+var clsx = __webpack_require__(3526);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ErrorBoundary.js + 1 modules
+var ErrorBoundary = __webpack_require__(8812);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js
+var metadataUtils = __webpack_require__(2457);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-router@5.3.4_react@19.2.0/node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(7596);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(227);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useLocationChange.js
+var useLocationChange = __webpack_require__(2651);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/skipToContentUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * The id of the element that should become focused on a page
+ * that does not have a <main> html tag.
+ * Focusing the Docusaurus Layout children is a reasonable fallback.
+ *
+ * __ prefix allows search crawlers (Algolia/DocSearch) to ignore anchors
+ * https://github.com/facebook/docusaurus/issues/8883#issuecomment-1516328368
+ */const SkipToContentFallbackId='__docusaurus_skipToContent_fallback';/**
+ * Returns the skip to content element to focus when the link is clicked.
+ */function getSkipToContentTarget(){return(// Try to focus the <main> in priority
+// Note: this will only work if JS is enabled
+// See https://github.com/facebook/docusaurus/issues/6411#issuecomment-1284136069
+document.querySelector('main:first-of-type')??// Then try to focus the fallback element (usually the Layout children)
+document.getElementById(SkipToContentFallbackId));}function programmaticFocus(el){el.setAttribute('tabindex','-1');el.focus();el.removeAttribute('tabindex');}/** This hook wires the logic for a skip-to-content link. */function useSkipToContent(){const containerRef=(0,react.useRef)(null);const{action}=(0,react_router/* useHistory */.W6)();const onClick=(0,react.useCallback)(e=>{e.preventDefault();const targetElement=getSkipToContentTarget();if(targetElement){programmaticFocus(targetElement);}},[]);// "Reset" focus when navigating.
+// See https://github.com/facebook/docusaurus/pull/8204#issuecomment-1276547558
+(0,useLocationChange/* useLocationChange */.$)(({location})=>{if(containerRef.current&&!location.hash&&action==='PUSH'){programmaticFocus(containerRef.current);}});return{containerRef,onClick};}const DefaultSkipToContentLabel=(0,Translate/* translate */.T)({id:'theme.common.skipToMainContent',description:'The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation',message:'Skip to main content'});function SkipToContentLink(props){const linkLabel=props.children??DefaultSkipToContentLabel;const{containerRef,onClick}=useSkipToContent();return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{ref:containerRef,role:"region","aria-label":DefaultSkipToContentLabel,children:/*#__PURE__*/(0,jsx_runtime.jsx)("a",{...props,// Note this is a fallback href in case JS is disabled
+// It has limitations, see https://github.com/facebook/docusaurus/issues/6411#issuecomment-1284136069
+href:`#${SkipToContentFallbackId}`,onClick:onClick,children:linkLabel})});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
+var ThemeClassNames = __webpack_require__(4366);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js + 1 modules
+var useKeyboardNavigation = __webpack_require__(5746);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SkipToContent/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"skipToContent":"skipToContent_Snvu"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/SkipToContent/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function SkipToContent(){return/*#__PURE__*/(0,jsx_runtime.jsx)(SkipToContentLink,{className:styles_module.skipToContent});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
+var useThemeConfig = __webpack_require__(9493);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/announcementBar.js
+var contexts_announcementBar = __webpack_require__(9850);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Close/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconClose({width=21,height=21,color='currentColor',strokeWidth=1.2,className,...restProps}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 15 15",width:width,height:height,...restProps,children:/*#__PURE__*/(0,jsx_runtime.jsx)("g",{stroke:color,strokeWidth:strokeWidth,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{d:"M.75.75l13.5 13.5M14.25.75L.75 14.25"})})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/CloseButton/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const CloseButton_styles_module = ({"closeButton":"closeButton_DNX5"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/CloseButton/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AnnouncementBarCloseButton(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button","aria-label":(0,Translate/* translate */.T)({id:'theme.AnnouncementBar.closeButtonAriaLabel',message:'Close',description:'The ARIA label for close button of announcement bar'}),...props,className:(0,clsx/* default */.A)('clean-btn close',CloseButton_styles_module.closeButton,props.className),children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconClose,{width:14,height:14,strokeWidth:3.1})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/Content/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Content_styles_module = ({"content":"content_QIvL"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/Content/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AnnouncementBarContent(props){const{announcementBar}=(0,useThemeConfig/* useThemeConfig */.p)();const{content}=announcementBar;return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{...props,className:(0,clsx/* default */.A)(Content_styles_module.content,props.className)// Developer provided the HTML, so assume it's safe.
+// eslint-disable-next-line react/no-danger
+,dangerouslySetInnerHTML:{__html:content}});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const AnnouncementBar_styles_module = ({"announcementBar":"announcementBar_qKoH","announcementBarPlaceholder":"announcementBarPlaceholder_cVN_","announcementBarClose":"announcementBarClose_ptvj","announcementBarContent":"announcementBarContent_sgH0"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/AnnouncementBar/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AnnouncementBar(){const{announcementBar}=(0,useThemeConfig/* useThemeConfig */.p)();const{isActive,close}=(0,contexts_announcementBar/* useAnnouncementBar */.M)();if(!isActive){return null;}const{backgroundColor,textColor,isCloseable}=announcementBar;return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.announcementBar.container,AnnouncementBar_styles_module.announcementBar),style:{backgroundColor,color:textColor},role:"banner",children:[isCloseable&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:AnnouncementBar_styles_module.announcementBarPlaceholder}),/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBarContent,{className:AnnouncementBar_styles_module.announcementBarContent}),isCloseable&&/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBarCloseButton,{onClick:close,className:AnnouncementBar_styles_module.announcementBarClose})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/navbarMobileSidebar.js
+var navbarMobileSidebar = __webpack_require__(2522);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/scrollUtils.js
+var scrollUtils = __webpack_require__(2093);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useHideableNavbar.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Wires the imperative logic of a hideable navbar.
+ * @param hideOnScroll If `false`, this hook is basically a no-op.
+ */function useHideableNavbar(hideOnScroll){const[isNavbarVisible,setIsNavbarVisible]=(0,react.useState)(hideOnScroll);const isFocusedAnchor=(0,react.useRef)(false);const navbarHeight=(0,react.useRef)(0);const navbarRef=(0,react.useCallback)(node=>{if(node!==null){navbarHeight.current=node.getBoundingClientRect().height;}},[]);(0,scrollUtils/* useScrollPosition */.Mq)(({scrollY:scrollTop},lastPosition)=>{if(!hideOnScroll){return;}// Needed mostly for handling rubber band scrolling.
+// See https://github.com/facebook/docusaurus/pull/5721
+if(scrollTop<navbarHeight.current){setIsNavbarVisible(true);return;}if(isFocusedAnchor.current){isFocusedAnchor.current=false;return;}const lastScrollTop=lastPosition?.scrollY;const documentHeight=document.documentElement.scrollHeight-navbarHeight.current;const windowHeight=window.innerHeight;if(lastScrollTop&&scrollTop>=lastScrollTop){setIsNavbarVisible(false);}else if(scrollTop+windowHeight<documentHeight){setIsNavbarVisible(true);}});(0,useLocationChange/* useLocationChange */.$)(locationChangeEvent=>{if(!hideOnScroll){return;}// See https://github.com/facebook/docusaurus/pull/8059#issuecomment-1239639480
+const currentHash=locationChangeEvent.location.hash;const currentHashAnchor=currentHash?document.getElementById(currentHash.substring(1)):undefined;if(currentHashAnchor){isFocusedAnchor.current=true;setIsNavbarVisible(false);return;}setIsNavbarVisible(true);});return{navbarRef,isNavbarVisible};}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useLockBodyScroll.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Side-effect that locks the document body's scroll throughout the lifetime of
+ * the containing component. e.g. when the mobile sidebar is expanded.
+ */function useLockBodyScroll(lock=true){(0,react.useEffect)(()=>{document.body.style.overflow=lock?'hidden':'visible';return()=>{document.body.style.overflow='visible';};},[lock]);}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
+var reactUtils = __webpack_require__(6183);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/content.js
+var navbarSecondaryMenu_content = __webpack_require__(7507);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/display.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Context=/*#__PURE__*/react.createContext(null);function useContextValue(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();const content=(0,navbarSecondaryMenu_content/* useNavbarSecondaryMenuContent */.YL)();const[shown,setShown]=(0,react.useState)(false);const hasContent=content.component!==null;const previousHasContent=(0,reactUtils/* usePrevious */.ZC)(hasContent);// When content is become available for the first time (set in useEffect)
+// we set this content to be shown!
+(0,react.useEffect)(()=>{const contentBecameAvailable=hasContent&&!previousHasContent;if(contentBecameAvailable){setShown(true);}},[hasContent,previousHasContent]);// On sidebar close, secondary menu is set to be shown on next re-opening
+// (if any secondary menu content available)
+(0,react.useEffect)(()=>{if(!hasContent){setShown(false);return;}if(!mobileSidebar.shown){setShown(true);}},[mobileSidebar.shown,hasContent]);return (0,react.useMemo)(()=>[shown,setShown],[shown]);}/** @internal */function NavbarSecondaryMenuDisplayProvider({children}){const value=useContextValue();return/*#__PURE__*/(0,jsx_runtime.jsx)(Context.Provider,{value:value,children:children});}function renderElement(content){if(content.component){const Comp=content.component;return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{...content.props});}return undefined;}/** Wires the logic for rendering the mobile navbar secondary menu. */function useNavbarSecondaryMenu(){const value=(0,react.useContext)(Context);if(!value){throw new reactUtils/* ReactContextError */.dV('NavbarSecondaryMenuDisplayProvider');}const[shown,setShown]=value;const hide=(0,react.useCallback)(()=>setShown(false),[setShown]);const content=(0,navbarSecondaryMenu_content/* useNavbarSecondaryMenuContent */.YL)();return (0,react.useMemo)(()=>({shown,hide,content:renderElement(content)}),[hide,content,shown]);}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// TODO Docusaurus v4: remove temporary inert workaround
+//  See https://github.com/facebook/react/issues/17157
+//  See https://github.com/radix-ui/themes/pull/509
+function inertProps(inert){const isBeforeReact19=parseInt(react.version.split('.')[0],10)<19;if(isBeforeReact19){return{inert:inert?'':undefined};}return{inert};}function NavbarMobileSidebarPanel({children,inert}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.panel,'navbar-sidebar__item menu'),...inertProps(inert),children:children});}function NavbarMobileSidebarLayout({header,primaryMenu,secondaryMenu}){const{shown:secondaryMenuShown}=useNavbarSecondaryMenu();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.container,'navbar-sidebar'),children:[header,/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('navbar-sidebar__items',{'navbar-sidebar__items--show-secondary':secondaryMenuShown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:secondaryMenuShown,children:primaryMenu}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:!secondaryMenuShown,children:secondaryMenu})]})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
+var colorMode = __webpack_require__(2774);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
+var useIsBrowser = __webpack_require__(1993);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/LightMode/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconLightMode(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:24,height:24,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/DarkMode/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconDarkMode(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:24,height:24,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/SystemColorMode/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconSystemColorMode(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:24,height:24,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ColorModeToggle/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const ColorModeToggle_styles_module = ({"toggle":"toggle_Og8A","toggleButton":"toggleButton_uR6M","toggleIcon":"toggleIcon_DNkF","systemToggleIcon":"systemToggleIcon_ceD5","lightToggleIcon":"lightToggleIcon_d2Cq","darkToggleIcon":"darkToggleIcon_kDyW","toggleButtonDisabled":"toggleButtonDisabled_QqRk"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ColorModeToggle/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// The order of color modes is defined here, and can be customized with swizzle
+function getNextColorMode(colorMode,respectPrefersColorScheme){// 2-value transition
+if(!respectPrefersColorScheme){return colorMode==='dark'?'light':'dark';}// 3-value transition
+switch(colorMode){case null:return'light';case'light':return'dark';case'dark':return null;default:throw new Error(`unexpected color mode ${colorMode}`);}}function getColorModeLabel(colorMode){switch(colorMode){case null:return (0,Translate/* translate */.T)({message:'system mode',id:'theme.colorToggle.ariaLabel.mode.system',description:'The name for the system color mode'});case'light':return (0,Translate/* translate */.T)({message:'light mode',id:'theme.colorToggle.ariaLabel.mode.light',description:'The name for the light color mode'});case'dark':return (0,Translate/* translate */.T)({message:'dark mode',id:'theme.colorToggle.ariaLabel.mode.dark',description:'The name for the dark color mode'});default:throw new Error(`unexpected color mode ${colorMode}`);}}function getColorModeAriaLabel(colorMode){return (0,Translate/* translate */.T)({message:'Switch between dark and light mode (currently {mode})',id:'theme.colorToggle.ariaLabel',description:'The ARIA label for the color mode toggle'},{mode:getColorModeLabel(colorMode)});}function CurrentColorModeIcon(){// 3 icons are always rendered for technical reasons
+// We use "data-theme-choice" to render the correct one
+// This must work even before React hydrates
+return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconLightMode// a18y is handled at the button level,
+// not relying on button content (svg icons)
+,{"aria-hidden":true,className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggleIcon,ColorModeToggle_styles_module.lightToggleIcon)}),/*#__PURE__*/(0,jsx_runtime.jsx)(IconDarkMode,{"aria-hidden":true,className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggleIcon,ColorModeToggle_styles_module.darkToggleIcon)}),/*#__PURE__*/(0,jsx_runtime.jsx)(IconSystemColorMode,{"aria-hidden":true,className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggleIcon,ColorModeToggle_styles_module.systemToggleIcon)})]});}function ColorModeToggle({className,buttonClassName,respectPrefersColorScheme,value,onChange}){const isBrowser=(0,useIsBrowser/* default */.A)();return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ColorModeToggle_styles_module.toggle,className),children:/*#__PURE__*/(0,jsx_runtime.jsx)("button",{className:(0,clsx/* default */.A)('clean-btn',ColorModeToggle_styles_module.toggleButton,!isBrowser&&ColorModeToggle_styles_module.toggleButtonDisabled,buttonClassName),type:"button",onClick:()=>onChange(getNextColorMode(value,respectPrefersColorScheme)),disabled:!isBrowser,title:getColorModeLabel(value),"aria-label":getColorModeAriaLabel(value),children:/*#__PURE__*/(0,jsx_runtime.jsx)(CurrentColorModeIcon,{})})});}/* harmony default export */ const theme_ColorModeToggle = (/*#__PURE__*/react.memo(ColorModeToggle));
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/ColorModeToggle/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Navbar_ColorModeToggle_styles_module = ({"darkNavbarColorModeToggle":"darkNavbarColorModeToggle_Th41"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/ColorModeToggle/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function NavbarColorModeToggle({className}){const navbarStyle=(0,useThemeConfig/* useThemeConfig */.p)().navbar.style;const{disableSwitch,respectPrefersColorScheme}=(0,useThemeConfig/* useThemeConfig */.p)().colorMode;const{colorModeChoice,setColorMode}=(0,colorMode/* useColorMode */.G)();if(disableSwitch){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(theme_ColorModeToggle,{className:className,buttonClassName:navbarStyle==='dark'?Navbar_ColorModeToggle_styles_module.darkNavbarColorModeToggle:undefined,respectPrefersColorScheme:respectPrefersColorScheme,value:colorModeChoice,onChange:setColorMode});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Logo/index.js
+var Logo = __webpack_require__(849);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Logo/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function NavbarLogo(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Logo/* default */.A,{className:"navbar__brand",imageClassName:"navbar__logo",titleClassName:"navbar__title text--truncate"});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/Header/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function CloseButton(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button","aria-label":(0,Translate/* translate */.T)({id:'theme.docs.sidebar.closeSidebarButtonAriaLabel',message:'Close navigation bar',description:'The ARIA label for close button of mobile sidebar'}),className:"clean-btn navbar-sidebar__close",onClick:()=>mobileSidebar.toggle(),children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconClose,{color:"var(--ifm-color-emphasis-600)"})});}function NavbarMobileSidebarHeader(){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"navbar-sidebar__brand",children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarLogo,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarColorModeToggle,{className:"margin-right--md"}),/*#__PURE__*/(0,jsx_runtime.jsx)(CloseButton,{})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Link.js
+var exports_Link = __webpack_require__(1936);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@fortawesome+react-fontawesome@3.1.0_@fortawesome+fontawesome-svg-core@7.1.0_react@19.2.0/node_modules/@fortawesome/react-fontawesome/dist/index.js
+var dist = __webpack_require__(644);
+;// ./src/components/DownloadButton.tsx
+function MainDownloadButton(){return/*#__PURE__*/_jsx("div",{children:/*#__PURE__*/_jsxs(Link,{className:"inline-flex font-semibold no-underline hover:no-underline items-center text-white hover:text-white bg-gradient-to-b from-orange-500 to-orange-600 border-0 py-3 px-6 focus:outline-hidden hover:from-orange-600 hover:to-orange-700 rounded-lg text-base mt-4 mb-0 ml-4",to:'`/downloads/',children:[/*#__PURE__*/_jsx(FontAwesomeIcon,{size:"1x",icon:faDownload,className:"px-2 py-1"})," Download Now"]})});}// Same as MainDownloadButton but instead it's "Download" and has no fontawesome icon
+function HeaderDownloadButton(){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{className:"hidden xl:flex font-semibold no-underline hover:no-underline items-center text-white hover:text-white bg-gradient-to-b from-orange-500 to-orange-600 border-0 py-3 px-6 focus:outline-hidden hover:from-orange-600 hover:to-orange-700 rounded-lg text-base mt-0 mb-0 ml-4 mr-2",to:"/download",children:"Download"})});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(3587);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
+var isInternalUrl = __webpack_require__(6040);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/regexpUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Matches a string regex (as provided from the config) against a target in a
+ * null-safe fashion, case insensitive and global.
+ */function isRegexpStringMatch(regexAsString,valueToTest){if(typeof regexAsString==='undefined'||typeof valueToTest==='undefined'){return false;}return new RegExp(regexAsString,'gi').test(valueToTest);}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/index.js + 1 modules
+var ExternalLink = __webpack_require__(1764);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/NavbarNavLink.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function NavbarNavLink({activeBasePath,activeBaseRegex,to,href,label,html,isDropdownLink,prependBaseUrlToHref,...props}){// TODO all this seems hacky
+// {to: 'version'} should probably be forbidden, in favor of {to: '/version'}
+const toUrl=(0,useBaseUrl/* default */.Ay)(to);const activeBaseUrl=(0,useBaseUrl/* default */.Ay)(activeBasePath);const normalizedHref=(0,useBaseUrl/* default */.Ay)(href,{forcePrependBaseUrl:true});const isExternalLink=label&&href&&!(0,isInternalUrl/* default */.A)(href);// Link content is set through html XOR label
+const linkContentProps=html?{dangerouslySetInnerHTML:{__html:html}}:{children:/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[label,isExternalLink&&/*#__PURE__*/(0,jsx_runtime.jsx)(ExternalLink/* default */.A,{...(isDropdownLink&&{width:12,height:12})})]})};if(href){return/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{href:prependBaseUrlToHref?normalizedHref:href,...props,...linkContentProps});}return/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{to:toUrl,isNavLink:true,...((activeBasePath||activeBaseRegex)&&{isActive:(_match,location)=>activeBaseRegex?isRegexpStringMatch(activeBaseRegex,location.pathname):location.pathname.startsWith(activeBaseUrl)}),...props,...linkContentProps});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DefaultNavbarItem/Mobile/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DefaultNavbarItemMobile({className,isDropdownItem,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:"menu__list-item",children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{className:(0,clsx/* default */.A)('menu__link',className),...props})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DefaultNavbarItem/Desktop/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DefaultNavbarItemDesktop({className,isDropdownItem=false,...props}){const element=/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{className:(0,clsx/* default */.A)(isDropdownItem?'dropdown__link':'navbar__item navbar__link',className),isDropdownLink:isDropdownItem,...props});if(isDropdownItem){return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{children:element});}return element;}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DefaultNavbarItem/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DefaultNavbarItem({mobile=false,position,// Need to destructure position from props so that it doesn't get passed on.
+...props}){const Comp=mobile?DefaultNavbarItemMobile:DefaultNavbarItemDesktop;return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{...props,activeClassName:props.activeClassName??(mobile?'menu__link--active':'navbar__link--active')});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/Collapsible/index.js
+var Collapsible = __webpack_require__(3885);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
+var routesUtils = __webpack_require__(2412);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
+var useDocusaurusContext = __webpack_require__(8808);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useLocalPathname.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Get the pathname of current route, without the optional site baseUrl.
+ * - `/docs/myDoc` => `/docs/myDoc`
+ * - `/baseUrl/docs/myDoc` => `/docs/myDoc`
+ */function useLocalPathname(){const{siteConfig:{baseUrl}}=(0,useDocusaurusContext/* default */.A)();const{pathname}=(0,react_router/* useLocation */.zy)();return pathname.replace(baseUrl,'/');}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/Mobile/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Mobile_styles_module = ({"dropdownNavbarItemMobile":"dropdownNavbarItemMobile_UR_l"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/Mobile/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function isItemActive(item,localPathname){if((0,routesUtils/* isSamePath */.ys)(item.to,localPathname)){return true;}if(isRegexpStringMatch(item.activeBaseRegex,localPathname)){return true;}if(item.activeBasePath&&localPathname.startsWith(item.activeBasePath)){return true;}return false;}function containsActiveItems(items,localPathname){return items.some(item=>isItemActive(item,localPathname));}function CollapseButton({collapsed,onClick}){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{"aria-label":collapsed?(0,Translate/* translate */.T)({id:'theme.navbar.mobileDropdown.collapseButton.expandAriaLabel',message:'Expand the dropdown',description:'The ARIA label of the button to expand the mobile dropdown navbar item'}):(0,Translate/* translate */.T)({id:'theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel',message:'Collapse the dropdown',description:'The ARIA label of the button to collapse the mobile dropdown navbar item'}),"aria-expanded":!collapsed,type:"button",className:"clean-btn menu__caret",onClick:onClick});}function useItemCollapsible({active}){const{collapsed,toggleCollapsed,setCollapsed}=(0,Collapsible/* useCollapsible */.u)({initialState:()=>!active});// Expand if any item active after a navigation
+(0,react.useEffect)(()=>{if(active){setCollapsed(false);}},[active,setCollapsed]);return{collapsed,toggleCollapsed};}function DropdownNavbarItemMobile({items,className,position,// Need to destructure position from props so that it doesn't get passed on.
+onClick,...props}){const localPathname=useLocalPathname();const isActive=(0,routesUtils/* isSamePath */.ys)(props.to,localPathname);const containsActive=containsActiveItems(items,localPathname);const{collapsed,toggleCollapsed}=useItemCollapsible({active:isActive||containsActive});// # hash permits to make the <a> tag focusable in case no link target
+// See https://github.com/facebook/docusaurus/pull/6003
+// There's probably a better solution though...
+const href=props.to?undefined:'#';return/*#__PURE__*/(0,jsx_runtime.jsxs)("li",{className:(0,clsx/* default */.A)('menu__list-item',{'menu__list-item--collapsed':collapsed}),children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('menu__list-item-collapsible',{'menu__list-item-collapsible--active':isActive}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{role:"button",className:(0,clsx/* default */.A)(Mobile_styles_module.dropdownNavbarItemMobile,'menu__link menu__link--sublist',className),href:href,...props,onClick:e=>{// Prevent navigation when link is "#"
+if(href==='#'){e.preventDefault();}// Otherwise we let navigation eventually happen, and/or collapse
+toggleCollapsed();},children:props.children??props.label}),/*#__PURE__*/(0,jsx_runtime.jsx)(CollapseButton,{collapsed:collapsed,onClick:e=>{e.preventDefault();toggleCollapsed();}})]}),/*#__PURE__*/(0,jsx_runtime.jsx)(Collapsible/* Collapsible */.N,{lazy:true,as:"ul",className:"menu__list",collapsed:collapsed,children:items.map((childItemProps,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{mobile:true,isDropdownItem:true,onClick:onClick,activeClassName:"menu__link--active",...childItemProps,key:i}))})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/Desktop/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DropdownNavbarItemDesktop({items,position,className,onClick,...props}){const dropdownRef=(0,react.useRef)(null);const[showDropdown,setShowDropdown]=(0,react.useState)(false);(0,react.useEffect)(()=>{const handleClickOutside=event=>{if(!dropdownRef.current||dropdownRef.current.contains(event.target)){return;}setShowDropdown(false);};document.addEventListener('mousedown',handleClickOutside);document.addEventListener('touchstart',handleClickOutside);document.addEventListener('focusin',handleClickOutside);return()=>{document.removeEventListener('mousedown',handleClickOutside);document.removeEventListener('touchstart',handleClickOutside);document.removeEventListener('focusin',handleClickOutside);};},[dropdownRef]);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{ref:dropdownRef,className:(0,clsx/* default */.A)('navbar__item','dropdown','dropdown--hoverable',{'dropdown--right':position==='right','dropdown--show':showDropdown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{"aria-haspopup":"true","aria-expanded":showDropdown,role:"button"// # hash permits to make the <a> tag focusable in case no link target
+// See https://github.com/facebook/docusaurus/pull/6003
+// There's probably a better solution though...
+,href:props.to?undefined:'#',className:(0,clsx/* default */.A)('navbar__link',className),...props,onClick:props.to?undefined:e=>e.preventDefault(),onKeyDown:e=>{if(e.key==='Enter'){e.preventDefault();setShowDropdown(!showDropdown);}},children:props.children??props.label}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"dropdown__menu",children:items.map((childItemProps,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{isDropdownItem:true,activeClassName:"dropdown__link--active",...childItemProps,key:i}))})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DropdownNavbarItem({mobile=false,...props}){const Comp=mobile?DropdownNavbarItemMobile:DropdownNavbarItemDesktop;return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{...props});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useAlternatePageUtils.js
+var useAlternatePageUtils = __webpack_require__(9530);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/historyUtils.js
+var historyUtils = __webpack_require__(4566);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Language/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconLanguage({width=20,height=20,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",width:width,height:height,"aria-hidden":true,...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/LocaleDropdownNavbarItem/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const LocaleDropdownNavbarItem_styles_module = ({"iconLanguage":"iconLanguage_gCNh"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/LocaleDropdownNavbarItem/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useLocaleDropdownUtils(){const{siteConfig,i18n:{localeConfigs}}=(0,useDocusaurusContext/* default */.A)();const alternatePageUtils=(0,useAlternatePageUtils/* useAlternatePageUtils */.o)();const search=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.search);const hash=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.hash);const getLocaleConfig=locale=>{const localeConfig=localeConfigs[locale];if(!localeConfig){throw new Error(`Docusaurus bug, no locale config found for locale=${locale}`);}return localeConfig;};const getBaseURLForLocale=locale=>{const localeConfig=getLocaleConfig(locale);const isSameDomain=localeConfig.url===siteConfig.url;if(isSameDomain){// Shorter paths if localized sites are hosted on the same domain
+// This reduces HTML size a bit
+return`pathname://${alternatePageUtils.createUrl({locale,fullyQualified:false})}`;}return alternatePageUtils.createUrl({locale,fullyQualified:true});};return{getURL:(locale,options)=>{// We have 2 query strings because
+// - there's the current one
+// - there's one user can provide through navbar config
+// see https://github.com/facebook/docusaurus/pull/8915
+const finalSearch=(0,historyUtils/* mergeSearchStrings */.jy)([search,options.queryString],'append');return`${getBaseURLForLocale(locale)}${finalSearch}${hash}`;},getLabel:locale=>{return getLocaleConfig(locale).label;},getLang:locale=>{return getLocaleConfig(locale).htmlLang;}};}function LocaleDropdownNavbarItem({mobile,dropdownItemsBefore,dropdownItemsAfter,queryString,...props}){const utils=useLocaleDropdownUtils();const{i18n:{currentLocale,locales}}=(0,useDocusaurusContext/* default */.A)();const localeItems=locales.map(locale=>{return{label:utils.getLabel(locale),lang:utils.getLang(locale),to:utils.getURL(locale,{queryString}),target:'_self',autoAddBaseUrl:false,className:// eslint-disable-next-line no-nested-ternary
+locale===currentLocale?// Similar idea as DefaultNavbarItem: select the right Infima active
+// class name. This cannot be substituted with isActive, because the
+// target URLs contain `pathname://` and therefore are not NavLinks!
+mobile?'menu__link--active':'dropdown__link--active':''};});const items=[...dropdownItemsBefore,...localeItems,...dropdownItemsAfter];// Mobile is handled a bit differently
+const dropdownLabel=mobile?(0,Translate/* translate */.T)({message:'Languages',id:'theme.navbar.mobileLanguageDropdown.label',description:'The label for the mobile language switcher dropdown'}):utils.getLabel(currentLocale);return/*#__PURE__*/(0,jsx_runtime.jsx)(DropdownNavbarItem,{...props,mobile:mobile,label:/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconLanguage,{className:LocaleDropdownNavbarItem_styles_module.iconLanguage}),dropdownLabel]}),items:items});}
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Noop.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//* harmony default export */ const Noop = (()=>null);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Search/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Search_styles_module = ({"navbarSearchContainer":"navbarSearchContainer_HJoG"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Search/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function NavbarSearch({children,className}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(className,Search_styles_module.navbarSearchContainer),children:children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/SearchNavbarItem.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function SearchNavbarItem({mobile,className}){if(mobile){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarSearch,{className:className,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Noop,{})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/HtmlNavbarItem.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function HtmlNavbarItem({value,className,mobile=false,isDropdownItem=false}){const Comp=isDropdownItem?'li':'div';return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{className:(0,clsx/* default */.A)({navbar__item:!mobile&&!isDropdownItem,'menu__list-item':mobile},className),dangerouslySetInnerHTML:{__html:value}});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/index.js + 2 modules
+var client = __webpack_require__(2913);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js + 1 modules
+var docsUtils = __webpack_require__(4812);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocNavbarItem.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocNavbarItem({docId,label:staticLabel,docsPluginId,...props}){const{activeDoc}=(0,client/* useActiveDocContext */.zK)(docsPluginId);const doc=(0,docsUtils/* useLayoutDoc */.QB)(docId,docsPluginId);const pageActive=activeDoc?.path===doc?.path;// Draft and unlisted items are not displayed in the navbar.
+if(doc===null||doc.unlisted&&!pageActive){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{exact:true,...props,isActive:()=>pageActive||!!activeDoc?.sidebar&&activeDoc.sidebar===doc.sidebar,label:staticLabel??doc.id,to:doc.path});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocSidebarNavbarItem.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocSidebarNavbarItem({sidebarId,label,docsPluginId,...props}){const{activeDoc}=(0,client/* useActiveDocContext */.zK)(docsPluginId);const sidebarLink=(0,docsUtils/* useLayoutDocsSidebar */.fW)(sidebarId,docsPluginId).link;if(!sidebarLink){throw new Error(`DocSidebarNavbarItem: Sidebar with ID "${sidebarId}" doesn't have anything to be linked to.`);}return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{exact:true,...props,isActive:()=>activeDoc?.sidebar===sidebarId,label:label??sidebarLink.label,to:sidebarLink.path});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocsVersionNavbarItem.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const getVersionMainDoc=version=>version.docs.find(doc=>doc.id===version.mainDocId);function DocsVersionNavbarItem({label:staticLabel,to:staticTo,docsPluginId,...props}){const version=(0,docsUtils/* useDocsVersionCandidates */.Vd)(docsPluginId)[0];const label=staticLabel??version.label;const path=staticTo??getVersionMainDoc(version).path;return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{...props,label:label,to:path});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsPreferredVersion.js
+var docsPreferredVersion = __webpack_require__(149);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocsVersionDropdownNavbarItem.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function getVersionItems(versions,configs){if(configs){// Collect all the versions we have
+const versionMap=new Map(versions.map(version=>[version.name,version]));const toVersionItem=(name,config)=>{const version=versionMap.get(name);if(!version){throw new Error(`No docs version exist for name '${name}', please verify your 'docsVersionDropdown' navbar item versions config.
+Available version names:\n- ${versions.map(v=>`${v.name}`).join('\n- ')}`);}return{version,label:config?.label??version.label};};if(Array.isArray(configs)){return configs.map(name=>toVersionItem(name,undefined));}else{return Object.entries(configs).map(([name,config])=>toVersionItem(name,config));}}else{return versions.map(version=>({version,label:version.label}));}}function useVersionItems({docsPluginId,configs}){const versions=(0,client/* useVersions */.jh)(docsPluginId);return getVersionItems(versions,configs);}function DocsVersionDropdownNavbarItem_getVersionMainDoc(version){return version.docs.find(doc=>doc.id===version.mainDocId);}function getVersionTargetDoc(version,activeDocContext){// We try to link to the same doc, in another version
+// When not possible, fallback to the "main doc" of the version
+return activeDocContext.alternateDocVersions[version.name]??DocsVersionDropdownNavbarItem_getVersionMainDoc(version);}// The version item to use for the "dropdown button"
+function useDisplayedVersionItem({docsPluginId,versionItems}){// The order of the candidates matters!
+const candidates=(0,docsUtils/* useDocsVersionCandidates */.Vd)(docsPluginId);const candidateItems=candidates.map(candidate=>versionItems.find(vi=>vi.version===candidate)).filter(vi=>vi!==undefined);return candidateItems[0]??versionItems[0];}function DocsVersionDropdownNavbarItem({mobile,docsPluginId,dropdownActiveClassDisabled,dropdownItemsBefore,dropdownItemsAfter,versions:configs,...props}){const search=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.search);const hash=(0,historyUtils/* useHistorySelector */.Hl)(history=>history.location.hash);const activeDocContext=(0,client/* useActiveDocContext */.zK)(docsPluginId);const{savePreferredVersionName}=(0,docsPreferredVersion/* useDocsPreferredVersion */.g1)(docsPluginId);const versionItems=useVersionItems({docsPluginId,configs});const displayedVersionItem=useDisplayedVersionItem({docsPluginId,versionItems});function versionItemToLink({version,label}){const targetDoc=getVersionTargetDoc(version,activeDocContext);return{label,// preserve ?search#hash suffix on version switches
+to:`${targetDoc.path}${search}${hash}`,isActive:()=>version===activeDocContext.activeVersion,onClick:()=>savePreferredVersionName(version.name)};}const items=[...dropdownItemsBefore,...versionItems.map(versionItemToLink),...dropdownItemsAfter];// Mobile dropdown is handled a bit differently
+const dropdownLabel=mobile&&items.length>1?(0,Translate/* translate */.T)({id:'theme.navbar.mobileVersionsDropdown.label',message:'Versions',description:'The label for the navbar versions dropdown on mobile view'}):displayedVersionItem.label;const dropdownTo=mobile&&items.length>1?undefined:getVersionTargetDoc(displayedVersionItem.version,activeDocContext).path;// We don't want to render a version dropdown with 0 or 1 item. If we build
+// the site with a single docs version (onlyIncludeVersions: ['1.0.0']),
+// We'd rather render a button instead of a dropdown
+if(items.length<=1){return/*#__PURE__*/(0,jsx_runtime.jsx)(DefaultNavbarItem,{...props,mobile:mobile,label:dropdownLabel,to:dropdownTo,isActive:dropdownActiveClassDisabled?()=>false:undefined});}return/*#__PURE__*/(0,jsx_runtime.jsx)(DropdownNavbarItem,{...props,mobile:mobile,label:dropdownLabel,to:dropdownTo,items:items,isActive:dropdownActiveClassDisabled?()=>false:undefined});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/ComponentTypes.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const ComponentTypes={default:DefaultNavbarItem,localeDropdown:LocaleDropdownNavbarItem,search:SearchNavbarItem,dropdown:DropdownNavbarItem,html:HtmlNavbarItem,doc:DocNavbarItem,docSidebar:DocSidebarNavbarItem,docsVersion:DocsVersionNavbarItem,docsVersionDropdown:DocsVersionDropdownNavbarItem};/* harmony default export */ const NavbarItem_ComponentTypes = (ComponentTypes);
+;// ./src/theme/NavbarItem/ComponentTypes.js
+// "Custom" navbar items to be added
+/* harmony default export */ const theme_NavbarItem_ComponentTypes = ({...NavbarItem_ComponentTypes,'custom-downloadButton':()=>/*#__PURE__*/(0,jsx_runtime.jsx)(HeaderDownloadButton,{className:"navbar__item navbar__link"})});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function normalizeComponentType(type,props){// Backward compatibility: navbar item with no type set
+// but containing dropdown items should use the type "dropdown"
+if(!type||type==='default'){return'items'in props?'dropdown':'default';}return type;}function NavbarItem({type,...props}){const componentType=normalizeComponentType(type,props);const NavbarItemComponent=theme_NavbarItem_ComponentTypes[componentType];if(!NavbarItemComponent){throw new Error(`No NavbarItem component found for type "${type}".`);}return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItemComponent,{...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/PrimaryMenu/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useNavbarItems(){// TODO temporary casting until ThemeConfig type is improved
+return (0,useThemeConfig/* useThemeConfig */.p)().navbar.items;}// The primary menu displays the navbar items
+function NavbarMobilePrimaryMenu(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();// TODO how can the order be defined for mobile?
+// Should we allow providing a different list of items?
+const items=useNavbarItems();return/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"menu__list",children:items.map((item,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{mobile:true,...item,onClick:()=>mobileSidebar.toggle(),key:i}))});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/SecondaryMenu/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function SecondaryMenuBackButton(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{...props,type:"button",className:"clean-btn navbar-sidebar__back",children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel",description:"The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)",children:"\u2190 Back to main menu"})});}// The secondary menu slides from the right and shows contextual information
+// such as the docs sidebar
+function NavbarMobileSidebarSecondaryMenu(){const isPrimaryMenuEmpty=(0,useThemeConfig/* useThemeConfig */.p)().navbar.items.length===0;const secondaryMenu=useNavbarSecondaryMenu();return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[!isPrimaryMenuEmpty&&/*#__PURE__*/(0,jsx_runtime.jsx)(SecondaryMenuBackButton,{onClick:()=>secondaryMenu.hide()}),secondaryMenu.content]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function NavbarMobileSidebar(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();useLockBodyScroll(mobileSidebar.shown);if(!mobileSidebar.shouldRender){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarLayout,{header:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarHeader,{}),primaryMenu:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobilePrimaryMenu,{}),secondaryMenu:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarSecondaryMenu,{})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Layout/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Layout_styles_module = ({"navbarHideable":"navbarHideable_AIB5","navbarHidden":"navbarHidden_RE_t"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function NavbarBackdrop(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{role:"presentation",...props,className:(0,clsx/* default */.A)('navbar-sidebar__backdrop',props.className)});}function NavbarLayout({children}){const{navbar:{hideOnScroll,style}}=(0,useThemeConfig/* useThemeConfig */.p)();const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();const{navbarRef,isNavbarVisible}=useHideableNavbar(hideOnScroll);return/*#__PURE__*/(0,jsx_runtime.jsxs)("nav",{ref:navbarRef,"aria-label":(0,Translate/* translate */.T)({id:'theme.NavBar.navAriaLabel',message:'Main',description:'The ARIA label for the main navigation'}),className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.container,'navbar','navbar--fixed-top',hideOnScroll&&[Layout_styles_module.navbarHideable,!isNavbarVisible&&Layout_styles_module.navbarHidden],{'navbar--dark':style==='dark','navbar--primary':style==='primary','navbar-sidebar--show':mobileSidebar.shown}),children:[children,/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarBackdrop,{onClick:mobileSidebar.toggle}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebar,{})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.js + 1 modules
+var errorBoundaryUtils = __webpack_require__(6641);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/navbarUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const DefaultNavItemPosition='right';/**
+ * Split links by left/right. If position is unspecified, fallback to right.
+ */function splitNavbarItems(items){function isLeft(item){return(item.position??DefaultNavItemPosition)==='left';}const leftItems=items.filter(isLeft);const rightItems=items.filter(item=>!isLeft(item));return[leftItems,rightItems];}/**
+ * Composes multiple navbar state providers that are mutually dependent and
+ * hence can't be re-ordered.
+ */function NavbarProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(navbarSecondaryMenu_content/* NavbarSecondaryMenuContentProvider */.y_,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(navbarMobileSidebar/* NavbarMobileSidebarProvider */.e,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarSecondaryMenuDisplayProvider,{children:children})})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Menu/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconMenu({width=30,height=30,className,...restProps}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{className:className,width:width,height:height,viewBox:"0 0 30 30","aria-hidden":"true",...restProps,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{stroke:"currentColor",strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2",d:"M4 7h22M4 15h22M4 23h22"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/MobileSidebar/Toggle/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MobileSidebarToggle(){const{toggle,shown}=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{onClick:toggle,"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.sidebar.toggleSidebarButtonAriaLabel',message:'Toggle navigation bar',description:'The ARIA label for hamburger menu button of mobile navigation'}),"aria-expanded":shown,className:"navbar__toggle clean-btn",type:"button",children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconMenu,{})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Content/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Navbar_Content_styles_module = ({"colorModeToggle":"colorModeToggle_O0m1"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/Content/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Content_useNavbarItems(){// TODO temporary casting until ThemeConfig type is improved
+return (0,useThemeConfig/* useThemeConfig */.p)().navbar.items;}function NavbarItems({items}){return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:items.map((item,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorCauseBoundary */.k2,{onError:error=>new Error(`A theme navbar item failed to render.
+Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
+${JSON.stringify(item,null,2)}`,{cause:error}),children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItem,{...item})},i))});}function NavbarContentLayout({left,right}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"navbar__inner",children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.containerLeft,'navbar__items'),children:left}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.containerRight,'navbar__items navbar__items--right'),children:right})]});}function NavbarContent(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.M)();const items=Content_useNavbarItems();const[leftItems,rightItems]=splitNavbarItems(items);const searchBarItem=items.find(item=>item.type==='search');return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarContentLayout,{left:/*#__PURE__*/// TODO stop hardcoding items?
+(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[!mobileSidebar.disabled&&/*#__PURE__*/(0,jsx_runtime.jsx)(MobileSidebarToggle,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarLogo,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItems,{items:leftItems})]}),right:/*#__PURE__*/// TODO stop hardcoding items?
+// Ask the user to add the respective navbar items => more flexible
+(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarItems,{items:rightItems}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarColorModeToggle,{className:Navbar_Content_styles_module.colorModeToggle}),!searchBarItem&&/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarSearch,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Noop,{})})]})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Navbar/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Navbar(){return/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarLayout,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarContent,{})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/footerUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * A rough duck-typing about whether the `footer.links` is intended to be multi-
+ * column.
+ */function isMultiColumnFooterLinks(links){return'title'in links[0];}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/LinkItem/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function FooterLinkItem({item}){const{to,href,label,prependBaseUrlToHref,className,...props}=item;const toUrl=(0,useBaseUrl/* default */.Ay)(to);const normalizedHref=(0,useBaseUrl/* default */.Ay)(href,{forcePrependBaseUrl:true});return/*#__PURE__*/(0,jsx_runtime.jsxs)(exports_Link/* default */.A,{className:(0,clsx/* default */.A)('footer__link-item',className),...(href?{href:prependBaseUrlToHref?normalizedHref:href}:{to:toUrl}),...props,children:[label,href&&!(0,isInternalUrl/* default */.A)(href)&&/*#__PURE__*/(0,jsx_runtime.jsx)(ExternalLink/* default */.A,{})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Links/MultiColumn/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function ColumnLinkItem({item}){return item.html?/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:(0,clsx/* default */.A)('footer__item',item.className)// Developer provided the HTML, so assume it's safe.
+// eslint-disable-next-line react/no-danger
+,dangerouslySetInnerHTML:{__html:item.html}}):/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:"footer__item",children:/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinkItem,{item:item})},item.href??item.to);}function Column({column}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.footer.column,'col footer__col',column.className),children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__title",children:column.title}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"footer__items clean-list",children:column.items.map((item,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(ColumnLinkItem,{item:item},i))})]});}function FooterLinksMultiColumn({columns}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"row footer__links",children:columns.map((column,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(Column,{column:column},i))});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Links/Simple/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Separator(){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:"footer__link-separator",children:"\xB7"});}function SimpleLinkItem({item}){return item.html?/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:(0,clsx/* default */.A)('footer__link-item',item.className)// Developer provided the HTML, so assume it's safe.
+// eslint-disable-next-line react/no-danger
+,dangerouslySetInnerHTML:{__html:item.html}}):/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinkItem,{item:item});}function FooterLinksSimple({links}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__links text--center",children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__links",children:links.map((item,i)=>/*#__PURE__*/(0,jsx_runtime.jsxs)(react.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(SimpleLinkItem,{item:item}),links.length!==i+1&&/*#__PURE__*/(0,jsx_runtime.jsx)(Separator,{})]},i))})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Links/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function FooterLinks({links}){return isMultiColumnFooterLinks(links)?/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinksMultiColumn,{columns:links}):/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinksSimple,{links:links});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ThemedImage/index.js + 2 modules
+var ThemedImage = __webpack_require__(7069);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Logo/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Logo_styles_module = ({"footerLogoLink":"footerLogoLink_I7k4"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Logo/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function LogoImage({logo}){const{withBaseUrl}=(0,useBaseUrl/* useBaseUrlUtils */.hH)();const sources={light:withBaseUrl(logo.src),dark:withBaseUrl(logo.srcDark??logo.src)};return/*#__PURE__*/(0,jsx_runtime.jsx)(ThemedImage/* default */.A,{className:(0,clsx/* default */.A)('footer__logo',logo.className),alt:logo.alt,sources:sources,width:logo.width,height:logo.height,style:logo.style});}function FooterLogo({logo}){return logo.href?/*#__PURE__*/(0,jsx_runtime.jsx)(exports_Link/* default */.A,{href:logo.href,className:Logo_styles_module.footerLogoLink,target:logo.target,children:/*#__PURE__*/(0,jsx_runtime.jsx)(LogoImage,{logo:logo})}):/*#__PURE__*/(0,jsx_runtime.jsx)(LogoImage,{logo:logo});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Copyright/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function FooterCopyright({copyright}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"footer__copyright"// Developer provided the HTML, so assume it's safe.
+// eslint-disable-next-line react/no-danger
+,dangerouslySetInnerHTML:{__html:copyright}});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function FooterLayout({style,links,logo,copyright}){return/*#__PURE__*/(0,jsx_runtime.jsx)("footer",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.footer.container,'footer',{'footer--dark':style==='dark'}),children:/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"container container-fluid",children:[links,(logo||copyright)&&/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"footer__bottom text--center",children:[logo&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-bottom--sm",children:logo}),copyright]})]})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Footer/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Footer(){const{footer}=(0,useThemeConfig/* useThemeConfig */.p)();if(!footer){return null;}const{copyright,links,logo,style}=footer;return/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLayout,{style:style,links:links&&links.length>0&&/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLinks,{links:links}),logo:logo&&/*#__PURE__*/(0,jsx_runtime.jsx)(FooterLogo,{logo:logo}),copyright:copyright&&/*#__PURE__*/(0,jsx_runtime.jsx)(FooterCopyright,{copyright:copyright})});}/* harmony default export */ const theme_Footer = (/*#__PURE__*/react.memo(Footer));
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/Provider/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Provider=(0,reactUtils/* composeProviders */.fM)([colorMode/* ColorModeProvider */.a,contexts_announcementBar/* AnnouncementBarProvider */.o,scrollUtils/* ScrollControllerProvider */.Tv,docsPreferredVersion/* DocsPreferredVersionContextProvider */.VQ,metadataUtils/* PluginHtmlClassNameProvider */.Jx,NavbarProvider]);function LayoutProvider({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Provider,{children:children});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
+var Heading = __webpack_require__(3943);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ErrorPageContent.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function ErrorPageContent({error,tryAgain}){return/*#__PURE__*/(0,jsx_runtime.jsx)("main",{className:"container margin-vert--xl",children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"row",children:/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"col col--6 col--offset-3",children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Heading/* default */.A,{as:"h1",className:"hero__title",children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.ErrorPageContent.title",description:"The title of the fallback page when the page crashed",children:"This page crashed."})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-vert--lg",children:/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorBoundaryTryAgainButton */.a2,{onClick:tryAgain,className:"button button--primary shadow--lw"})}),/*#__PURE__*/(0,jsx_runtime.jsx)("hr",{}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-vert--md",children:/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorBoundaryError */.bq,{error:error})})]})})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const theme_Layout_styles_module = ({"mainWrapper":"mainWrapper_Ino9"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Layout(props){const{children,noFooter,wrapperClassName,// Not really layout-related, but kept for convenience/retro-compatibility
+title,description}=props;(0,useKeyboardNavigation/* useKeyboardNavigation */.J)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(LayoutProvider,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{title:title,description:description}),/*#__PURE__*/(0,jsx_runtime.jsx)(SkipToContent,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(Navbar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{id:SkipToContentFallbackId,className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.main.container,ThemeClassNames/* ThemeClassNames */.G.wrapper.main,theme_Layout_styles_module.mainWrapper,wrapperClassName),children:/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{fallback:params=>/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorPageContent,{...params}),children:children})}),!noFooter&&/*#__PURE__*/(0,jsx_runtime.jsx)(theme_Footer,{})]});}
+
 /***/ })
 
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, [1869], () => (__webpack_exec__(6970)));
+/******/ __webpack_require__.O(0, [1869], () => (__webpack_exec__(5656)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

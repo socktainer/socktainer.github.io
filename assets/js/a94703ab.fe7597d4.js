@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkwebsite"] = self["webpackChunkwebsite"] || []).push([[9048],{
 
-/***/ 2528:
+/***/ 7999:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -109,7 +109,7 @@ var useIsBrowser = __webpack_require__(1993);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
 var isInternalUrl = __webpack_require__(6040);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/ExternalLink/index.js + 1 modules
-var ExternalLink = __webpack_require__(3451);
+var ExternalLink = __webpack_require__(1764);
 ;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocSidebarItem/Link/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const Link_styles_module = ({"menuExternalLink":"menuExternalLink_M_3J","linkLabel":"linkLabel_Tdqw"});
@@ -290,7 +290,7 @@ return/*#__PURE__*/(0,jsx_runtime.jsx)(Content/* default */.A,{});}const{docElem
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6363);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3526);
 /* harmony import */ var _docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(227);
-/* harmony import */ var _theme_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8899);
+/* harmony import */ var _theme_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3943);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7259);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
