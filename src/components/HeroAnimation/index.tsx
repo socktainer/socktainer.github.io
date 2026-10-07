@@ -38,7 +38,7 @@ export default function HeroAnimation(): ReactNode {
   return (
     <div
       role="img"
-      aria-label="On the client side, docker run sends a request through the Unix socket. On the socket side, Socktainer receives it and Apple container starts the container in its own lightweight VM, then the result goes back to the Docker CLI."
+      aria-label="On the CLI side, docker run sends a request through the Unix socket. On the socket side, Socktainer receives it and Apple container starts the container in its own lightweight VM, then the result goes back to the Docker CLI."
       className="bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl p-4 sm:p-6 border-2 border-orange-200 dark:border-orange-800 w-full max-w-md"
     >
       <div className="grid gap-2">
@@ -60,9 +60,9 @@ export default function HeroAnimation(): ReactNode {
           </div>
         </div>
 
-        {/* Client side */}
+        {/* CLI side */}
         <div style={row('1')} className={`${zoneLabelClass} text-sky-700 dark:text-sky-300`}>
-          Client side
+          CLI side
         </div>
         <div
           style={row('2')}
@@ -91,9 +91,8 @@ export default function HeroAnimation(): ReactNode {
 
         {/* Socket boundary */}
         <div style={row('4')} className="relative flex justify-center py-1">
-          <div className="absolute inset-x-0 top-1/2 border-t-2 border-dashed border-zinc-300 dark:border-zinc-600" />
           <span className="relative z-10 px-3 py-1 rounded-full whitespace-nowrap font-mono text-[10px] sm:text-[11px] bg-white dark:bg-zinc-900 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-700">
-            🔌 unix://$HOME/.socktainer/container.sock
+            🪄 unix://$HOME/.socktainer/container.sock
           </span>
         </div>
 
