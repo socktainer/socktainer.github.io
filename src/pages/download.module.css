@@ -1,0 +1,17 @@
+/* Short fade when switching install tabs; the panel is re-mounted via its key */
+.panel {
+  animation: panelIn 0.25s ease-out;
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel {
+    animation: none;
+  }
+}
