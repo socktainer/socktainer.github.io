@@ -92,7 +92,7 @@ export default function HeroAnimation(): ReactNode {
         {/* Socket boundary */}
         <div style={row('4')} className="relative flex justify-center py-1">
           <span className="relative z-10 px-3 py-1 rounded-full whitespace-nowrap font-mono text-[10px] sm:text-[11px] bg-white dark:bg-zinc-900 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-700">
-            🪄 unix://$HOME/.socktainer/container.sock
+            🔌 unix://$HOME/.socktainer/container.sock
           </span>
         </div>
 
@@ -100,7 +100,7 @@ export default function HeroAnimation(): ReactNode {
         <div style={row('5')} className={`${zoneLabelClass} text-orange-700 dark:text-orange-300`}>
           Socket side
         </div>
-        <Node icon="🧦" title="Socktainer" subtitle="Docker REST API" glow={styles.glowSock} gridRow="6" />
+        <Node icon="🪄" title="Socktainer" subtitle="Docker REST API" glow={styles.glowSock} gridRow="6" />
         <div
           style={row('7')}
           className="h-8 flex items-center pl-[calc(50%+0.75rem)] whitespace-nowrap text-[10px] font-mono text-orange-600 dark:text-orange-400"
