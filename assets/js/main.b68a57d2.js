@@ -21690,14 +21690,14 @@ var routesChunkNames = __webpack_require__(4054);
         /*require.resolve*/(6557)
     ],
     "17896441": [
-        ()=>Promise.all(/* import() | 17896441 */ [__webpack_require__.e("4014"), __webpack_require__.e("5005"), __webpack_require__.e("500"), __webpack_require__.e("106")]).then(__webpack_require__.bind(__webpack_require__, 2018)),
+        ()=>Promise.all(/* import() | 17896441 */ [__webpack_require__.e("4014"), __webpack_require__.e("5005"), __webpack_require__.e("416"), __webpack_require__.e("438"), __webpack_require__.e("106")]).then(__webpack_require__.bind(__webpack_require__, 2018)),
         "@theme/DocItem",
         /*require.resolve*/(2018)
     ],
     "1df93b7f": [
-        ()=>__webpack_require__.e(/* import() | 1df93b7f */ "9452").then(__webpack_require__.bind(__webpack_require__, 7838)),
+        ()=>Promise.all(/* import() | 1df93b7f */ [__webpack_require__.e("4014"), __webpack_require__.e("416"), __webpack_require__.e("9452")]).then(__webpack_require__.bind(__webpack_require__, 7086)),
         "@site/src/pages/index.tsx",
-        /*require.resolve*/(7838)
+        /*require.resolve*/(7086)
     ],
     "464507d4": [
         ()=>Promise.all(/* import() | 464507d4 */ [__webpack_require__.e("5005"), __webpack_require__.e("2504")]).then(__webpack_require__.bind(__webpack_require__, 9324)),
