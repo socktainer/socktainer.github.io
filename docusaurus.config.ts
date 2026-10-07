@@ -34,6 +34,27 @@ const config: Config = {
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Socktainer',
+        description:
+          'Docker-compatible REST API on top of Apple container. Use Docker CLI and Testcontainers on macOS with Apple containers.',
+        url: 'https://socktainer.github.io',
+        image: 'https://socktainer.github.io/img/social-card.png',
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'macOS',
+        license: 'https://github.com/socktainer/socktainer/blob/main/LICENSE',
+        sameAs: ['https://github.com/socktainer/socktainer'],
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      }),
+    },
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -46,6 +67,7 @@ const config: Config = {
     [
       'classic',
       {
+        blog: false,
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/socktainer/socktainer.github.io/tree/main/',
@@ -58,8 +80,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.png',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
