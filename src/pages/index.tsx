@@ -10,7 +10,7 @@ import TailWindThemeSelector from '../components/TailWindThemeSelector';
 
 function HomepageHeader() {
   return (
-    <header className="relative overflow-hidden bg-orange-50 dark:bg-zinc-900 py-6 lg:py-8">
+    <header className="relative overflow-hidden flex items-center min-h-[calc(100svh-var(--ifm-navbar-height))] bg-orange-50 dark:bg-zinc-900 py-6 lg:py-8">
       {/* Ambient background: faint dot grid */}
       <div
         aria-hidden
@@ -22,7 +22,7 @@ function HomepageHeader() {
         }}
       />
 
-      <div className="relative container mx-auto px-4">
+      <div className="relative w-full container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* Hero Text */}
           <div className="min-w-0 text-center lg:text-left space-y-4">
