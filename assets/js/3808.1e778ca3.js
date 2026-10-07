@@ -1,4 +1,4 @@
-(self["webpackChunkwebsite"] = self["webpackChunkwebsite"] || []).push([[30],{
+(self["webpackChunkwebsite"] = self["webpackChunkwebsite"] || []).push([[3808],{
 
 /***/ 130:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -171,2495 +171,6 @@ var defineProperty = (function() {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (defineProperty);
 
-
-/***/ }),
-
-/***/ 538:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ theme_MDXComponents)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Head.js
-var Head = __webpack_require__(334);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
-var useIsBrowser = __webpack_require__(1993);
-// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(3526);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
-var contexts_colorMode = __webpack_require__(2774);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
-var useThemeConfig = __webpack_require__(9493);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/usePrismTheme.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Returns a color-mode-dependent Prism theme: whatever the user specified in
- * the config. Falls back to `palenight`.
- */function usePrismTheme(){const{prism}=(0,useThemeConfig/* useThemeConfig */.p)();const{colorMode}=(0,contexts_colorMode/* useColorMode */.G)();const lightModeTheme=prism.theme;const darkModeTheme=prism.darkTheme||lightModeTheme;const prismTheme=colorMode==='dark'?darkModeTheme:lightModeTheme;return prismTheme;}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(4366);
-// EXTERNAL MODULE: ./node_modules/.pnpm/parse-numeric-range@1.3.0/node_modules/parse-numeric-range/index.js
-var parse_numeric_range = __webpack_require__(4809);
-var parse_numeric_range_default = /*#__PURE__*/__webpack_require__.n(parse_numeric_range);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
-var reactUtils = __webpack_require__(6183);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/codeBlockUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const codeBlockTitleRegex=/title=(?<quote>["'])(?<title>.*?)\1/;const metastringLinesRangeRegex=/\{(?<range>[\d,-]+)\}/;// Supported types of highlight comments
-const popularCommentPatterns={js:{start:'\\/\\/',end:''},jsBlock:{start:'\\/\\*',end:'\\*\\/'},jsx:{start:'\\{\\s*\\/\\*',end:'\\*\\/\\s*\\}'},bash:{start:'#',end:''},html:{start:'<!--',end:'-->'}};const commentPatterns={...popularCommentPatterns,// shallow copy is sufficient
-// minor comment styles
-lua:{start:'--',end:''},wasm:{start:'\\;\\;',end:''},tex:{start:'%',end:''},vb:{start:"['‘’]",end:''},vbnet:{start:"(?:_\\s*)?['‘’]",end:''},// Visual Studio 2019 or later
-rem:{start:'[Rr][Ee][Mm]\\b',end:''},f90:{start:'!',end:''},// Free format only
-ml:{start:'\\(\\*',end:'\\*\\)'},cobol:{start:'\\*>',end:''}// Free format only
-};const popularCommentTypes=Object.keys(popularCommentPatterns);function getCommentPattern(languages,magicCommentDirectives){// To be more reliable, the opening and closing comment must match
-const commentPattern=languages.map(lang=>{const{start,end}=commentPatterns[lang];return`(?:${start}\\s*(${magicCommentDirectives.flatMap(d=>[d.line,d.block?.start,d.block?.end].filter(Boolean)).join('|')})\\s*${end})`;}).join('|');// White space is allowed, but otherwise it should be on it's own line
-return new RegExp(`^\\s*(?:${commentPattern})\\s*$`);}/**
- * Select comment styles based on language
- */function getAllMagicCommentDirectiveStyles(lang,magicCommentDirectives){switch(lang){case'js':case'javascript':case'ts':case'typescript':return getCommentPattern(['js','jsBlock'],magicCommentDirectives);case'jsx':case'tsx':return getCommentPattern(['js','jsBlock','jsx'],magicCommentDirectives);case'html':return getCommentPattern(['js','jsBlock','html'],magicCommentDirectives);case'python':case'py':case'bash':return getCommentPattern(['bash'],magicCommentDirectives);case'markdown':case'md':// Text uses HTML, front matter uses bash
-return getCommentPattern(['html','jsx','bash'],magicCommentDirectives);case'tex':case'latex':case'matlab':return getCommentPattern(['tex'],magicCommentDirectives);case'lua':case'haskell':return getCommentPattern(['lua'],magicCommentDirectives);case'sql':return getCommentPattern(['lua','jsBlock'],magicCommentDirectives);case'wasm':return getCommentPattern(['wasm'],magicCommentDirectives);case'vb':case'vba':case'visual-basic':return getCommentPattern(['vb','rem'],magicCommentDirectives);case'vbnet':return getCommentPattern(['vbnet','rem'],magicCommentDirectives);case'batch':return getCommentPattern(['rem'],magicCommentDirectives);case'basic':// https://github.com/PrismJS/prism/blob/master/components/prism-basic.js#L3
-return getCommentPattern(['rem','f90'],magicCommentDirectives);case'fsharp':return getCommentPattern(['js','ml'],magicCommentDirectives);case'ocaml':case'sml':return getCommentPattern(['ml'],magicCommentDirectives);case'fortran':return getCommentPattern(['f90'],magicCommentDirectives);case'cobol':return getCommentPattern(['cobol'],magicCommentDirectives);default:// All popular comment types
-return getCommentPattern(popularCommentTypes,magicCommentDirectives);}}function parseCodeBlockTitle(metastring){return metastring?.match(codeBlockTitleRegex)?.groups.title??'';}function getMetaLineNumbersStart(metastring){const showLineNumbersMeta=metastring?.split(' ').find(str=>str.startsWith('showLineNumbers'));if(showLineNumbersMeta){if(showLineNumbersMeta.startsWith('showLineNumbers=')){const value=showLineNumbersMeta.replace('showLineNumbers=','');return parseInt(value,10);}return 1;}return undefined;}function getLineNumbersStart({showLineNumbers,metastring}){const defaultStart=1;if(typeof showLineNumbers==='boolean'){return showLineNumbers?defaultStart:undefined;}if(typeof showLineNumbers==='number'){return showLineNumbers;}return getMetaLineNumbersStart(metastring);}// TODO Docusaurus v4: remove, only kept for internal retro-compatibility
-//  See https://github.com/facebook/docusaurus/pull/11153
-function containsLineNumbers(metastring){return Boolean(metastring?.includes('showLineNumbers'));}function parseCodeLinesFromMetastring(code,{metastring,magicComments}){// Highlighted lines specified in props: don't parse the content
-if(metastring&&metastringLinesRangeRegex.test(metastring)){const linesRange=metastring.match(metastringLinesRangeRegex).groups.range;if(magicComments.length===0){throw new Error(`A highlight range has been given in code block's metastring (\`\`\` ${metastring}), but no magic comment config is available. Docusaurus applies the first magic comment entry's className for metastring ranges.`);}const metastringRangeClassName=magicComments[0].className;const lines=parse_numeric_range_default()(linesRange).filter(n=>n>0).map(n=>[n-1,[metastringRangeClassName]]);return{lineClassNames:Object.fromEntries(lines),code};}return null;}function parseCodeLinesFromContent(code,params){const{language,magicComments}=params;if(language===undefined){return{lineClassNames:{},code};}const directiveRegex=getAllMagicCommentDirectiveStyles(language,magicComments);// Go through line by line
-const lines=code.split(/\r?\n/);const blocks=Object.fromEntries(magicComments.map(d=>[d.className,{start:0,range:''}]));const lineToClassName=Object.fromEntries(magicComments.filter(d=>d.line).map(({className,line})=>[line,className]));const blockStartToClassName=Object.fromEntries(magicComments.filter(d=>d.block).map(({className,block})=>[block.start,className]));const blockEndToClassName=Object.fromEntries(magicComments.filter(d=>d.block).map(({className,block})=>[block.end,className]));for(let lineNumber=0;lineNumber<lines.length;){const line=lines[lineNumber];const match=line.match(directiveRegex);if(!match){// Lines without directives are unchanged
-lineNumber+=1;continue;}const directive=match.slice(1).find(item=>item!==undefined);if(lineToClassName[directive]){blocks[lineToClassName[directive]].range+=`${lineNumber},`;}else if(blockStartToClassName[directive]){blocks[blockStartToClassName[directive]].start=lineNumber;}else if(blockEndToClassName[directive]){blocks[blockEndToClassName[directive]].range+=`${blocks[blockEndToClassName[directive]].start}-${lineNumber-1},`;}lines.splice(lineNumber,1);}const lineClassNames={};Object.entries(blocks).forEach(([className,{range}])=>{parse_numeric_range_default()(range).forEach(l=>{lineClassNames[l]??=[];lineClassNames[l].push(className);});});return{code:lines.join('\n'),lineClassNames};}/**
- * Parses the code content, strips away any magic comments, and returns the
- * clean content and the highlighted lines marked by the comments or metastring.
- *
- * If the metastring contains a range, the `content` will be returned as-is
- * without any parsing. The returned `lineClassNames` will be a map from that
- * number range to the first magic comment config entry (which _should_ be for
- * line highlight directives.)
- */function parseLines(code,params){// Historical behavior: we remove last line break
-const newCode=code.replace(/\r?\n$/,'');// Historical behavior: we try one strategy after the other
-// we don't support mixing metastring ranges + magic comments
-return parseCodeLinesFromMetastring(newCode,{...params})??parseCodeLinesFromContent(newCode,{...params});}/**
- * Gets the language name from the class name (set by MDX).
- * e.g. `"language-javascript"` => `"javascript"`.
- * Returns undefined if there is no language class name.
- */function parseClassNameLanguage(className){if(!className){return undefined;}const languageClassName=className.split(' ').find(str=>str.startsWith('language-'));return languageClassName?.replace(/language-/,'');}// Prism languages are always lowercase
-// We want to fail-safe and allow both "php" and "PHP"
-// See https://github.com/facebook/docusaurus/issues/9012
-function normalizeLanguage(language){return language?.toLowerCase();}function getLanguage(params){return normalizeLanguage(params.language??parseClassNameLanguage(params.className)??params.defaultLanguage)??'text';// There's always a language, required by Prism;
-}/**
- * This ensures that we always have the code block language as className
- * For MDX code blocks this is provided automatically by MDX
- * For JSX code blocks, the language gets added by this function
- * This ensures both cases lead to a consistent HTML output
- */function ensureLanguageClassName({className,language}){return (0,clsx/* default */.A)(className,language&&!className?.includes(`language-${language}`)&&`language-${language}`);}function createCodeBlockMetadata(params){const language=getLanguage({language:params.language,defaultLanguage:params.defaultLanguage,className:params.className});const{lineClassNames,code}=parseLines(params.code,{metastring:params.metastring,magicComments:params.magicComments,language});const className=ensureLanguageClassName({className:params.className,language});const title=parseCodeBlockTitle(params.metastring)||params.title;const lineNumbersStart=getLineNumbersStart({showLineNumbers:params.showLineNumbers,metastring:params.metastring});return{codeInput:params.code,code,className,language,title,lineNumbersStart,lineClassNames};}function getPrismCssVariables(prismTheme){const mapping={color:'--prism-color',backgroundColor:'--prism-background-color'};const properties={};Object.entries(prismTheme.plain).forEach(([key,value])=>{const varName=mapping[key];if(varName&&typeof value==='string'){properties[varName]=value;}});return properties;}const CodeBlockContext=/*#__PURE__*/(0,react.createContext)(null);function CodeBlockContextProvider({metadata,wordWrap,children}){// Should we optimize this in 2 contexts?
-// Unlike metadata, wordWrap is stateful and likely to trigger re-renders
-const value=(0,react.useMemo)(()=>{return{metadata,wordWrap};},[metadata,wordWrap]);return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContext.Provider,{value:value,children:children});}function useCodeBlockContext(){const value=(0,react.useContext)(CodeBlockContext);if(value===null){throw new reactUtils/* ReactContextError */.dV('CodeBlockContextProvider');}return value;}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Container/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"codeBlockContainer":"codeBlockContainer_UH37"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Container/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function CodeBlockContainer({as:As,...props}){const prismTheme=usePrismTheme();const prismCssVariables=getPrismCssVariables(prismTheme);return/*#__PURE__*/(0,jsx_runtime.jsx)(As// Polymorphic components are hard to type, without `oneOf` generics
-,{...props,style:prismCssVariables,className:(0,clsx/* default */.A)(props.className,styles_module.codeBlockContainer,ThemeClassNames/* ThemeClassNames */.G.common.codeBlock)});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Content_styles_module = ({"codeBlock":"codeBlock_skZe","codeBlockStandalone":"codeBlockStandalone_LWEz","codeBlockLines":"codeBlockLines_GM_q","codeBlockLinesWithNumbering":"codeBlockLinesWithNumbering_iYHT"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/Element.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO Docusaurus v4: move this component at the root?
-// This component only handles a rare edge-case: <pre><MyComp/></pre> in MDX
-// <pre> tags in markdown map to CodeBlocks. They may contain JSX children.
-// When children is not a simple string, we just return a styled block without
-// actually highlighting.
-function CodeBlockJSX({children,className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContainer,{as:"pre",tabIndex:0,className:(0,clsx/* default */.A)(Content_styles_module.codeBlockStandalone,'thin-scrollbar',className),children:/*#__PURE__*/(0,jsx_runtime.jsx)("code",{className:Content_styles_module.codeBlockLines,children:children})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useMutationObserver.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const DefaultOptions={attributes:true,characterData:true,childList:true,subtree:true};function useMutationObserver(target,callback,options=DefaultOptions){const stableCallback=(0,reactUtils/* useEvent */._q)(callback);// MutationObserver options are not nested much
-// so this should be to memo options in 99%
-// TODO handle options.attributeFilter array
-const stableOptions=(0,reactUtils/* useShallowMemoObject */.Be)(options);(0,react.useEffect)(()=>{const observer=new MutationObserver(stableCallback);if(target){observer.observe(target,stableOptions);}return()=>observer.disconnect();},[target,stableCallback,stableOptions]);}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useCodeWordWrap.js
-// Callback fires when the "hidden" attribute of a tabpanel changes
-// See https://github.com/facebook/docusaurus/pull/7485
-function useTabBecameVisibleCallback(codeBlockRef,callback){const[hiddenTabElement,setHiddenTabElement]=(0,react.useState)();const updateHiddenTabElement=(0,react.useCallback)(()=>{// No need to observe non-hidden tabs
-// + we want to force a re-render when a tab becomes visible
-setHiddenTabElement(codeBlockRef.current?.closest('[role=tabpanel][hidden]'));},[codeBlockRef,setHiddenTabElement]);(0,react.useEffect)(()=>{updateHiddenTabElement();},[updateHiddenTabElement]);useMutationObserver(hiddenTabElement,mutations=>{mutations.forEach(mutation=>{if(mutation.type==='attributes'&&mutation.attributeName==='hidden'){callback();updateHiddenTabElement();}});},{attributes:true,characterData:false,childList:false,subtree:false});}function useCodeWordWrap(){const[isEnabled,setIsEnabled]=(0,react.useState)(false);const[isCodeScrollable,setIsCodeScrollable]=(0,react.useState)(false);const codeBlockRef=(0,react.useRef)(null);const toggle=(0,react.useCallback)(()=>{const codeElement=codeBlockRef.current.querySelector('code');if(isEnabled){codeElement.removeAttribute('style');}else{codeElement.style.whiteSpace='pre-wrap';// When code wrap is enabled, we want to avoid a scrollbar in any case
-// Ensure that very very long words/strings/tokens still wrap
-codeElement.style.overflowWrap='anywhere';}setIsEnabled(value=>!value);},[codeBlockRef,isEnabled]);const updateCodeIsScrollable=(0,react.useCallback)(()=>{const{scrollWidth,clientWidth}=codeBlockRef.current;const isScrollable=scrollWidth>clientWidth||codeBlockRef.current.querySelector('code').hasAttribute('style');setIsCodeScrollable(isScrollable);},[codeBlockRef]);useTabBecameVisibleCallback(codeBlockRef,updateCodeIsScrollable);(0,react.useEffect)(()=>{updateCodeIsScrollable();},[isEnabled,updateCodeIsScrollable]);(0,react.useEffect)(()=>{window.addEventListener('resize',updateCodeIsScrollable,{passive:true});return()=>{window.removeEventListener('resize',updateCodeIsScrollable);};},[updateCodeIsScrollable]);return{codeBlockRef,isEnabled,isCodeScrollable,toggle};}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Title/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Just a pass-through component that users can swizzle and customize
-function CodeBlockTitle({children}){return children;}
-// EXTERNAL MODULE: ./node_modules/.pnpm/prism-react-renderer@2.4.1_react@19.2.0/node_modules/prism-react-renderer/dist/index.mjs
-var dist = __webpack_require__(3293);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Line/Token/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Pass-through components that users can swizzle and customize
-function CodeBlockLineToken({line,token,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Line/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Line_styles_module = ({"codeLine":"codeLine_KaC6","codeLineNumber":"codeLineNumber_Vney","codeLineContent":"codeLineContent_I0xC"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Line/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Replaces '\n' by ''
-// Historical code, not sure why we even need this :/
-function fixLineBreak(line){const singleLineBreakToken=line.length===1&&line[0].content==='\n'?line[0]:undefined;if(singleLineBreakToken){return[{...singleLineBreakToken,content:''}];}return line;}function CodeBlockLine({line:lineProp,classNames,showLineNumbers,getLineProps,getTokenProps}){const line=fixLineBreak(lineProp);const lineProps=getLineProps({line,className:(0,clsx/* default */.A)(classNames,showLineNumbers&&Line_styles_module.codeLine)});const lineTokens=line.map((token,key)=>{const tokenProps=getTokenProps({token});return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockLineToken,{...tokenProps,line:line,token:token,children:tokenProps.children},key);});return/*#__PURE__*/(0,jsx_runtime.jsxs)("span",{...lineProps,children:[showLineNumbers?/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:Line_styles_module.codeLineNumber}),/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:Line_styles_module.codeLineContent,children:lineTokens})]}):lineTokens,/*#__PURE__*/(0,jsx_runtime.jsx)("br",{})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO Docusaurus v4: remove useless forwardRef
-const Pre=/*#__PURE__*/react.forwardRef((props,ref)=>{return/*#__PURE__*/(0,jsx_runtime.jsx)("pre",{ref:ref/* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */,tabIndex:0,...props,className:(0,clsx/* default */.A)(props.className,Content_styles_module.codeBlock,'thin-scrollbar')});});function Code(props){const{metadata}=useCodeBlockContext();return/*#__PURE__*/(0,jsx_runtime.jsx)("code",{...props,className:(0,clsx/* default */.A)(props.className,Content_styles_module.codeBlockLines,metadata.lineNumbersStart!==undefined&&Content_styles_module.codeBlockLinesWithNumbering),style:{...props.style,counterReset:metadata.lineNumbersStart===undefined?undefined:`line-count ${metadata.lineNumbersStart-1}`}});}function CodeBlockContent({className:classNameProp}){const{metadata,wordWrap}=useCodeBlockContext();const prismTheme=usePrismTheme();const{code,language,lineNumbersStart,lineClassNames}=metadata;return/*#__PURE__*/(0,jsx_runtime.jsx)(dist/* Highlight */.f4,{theme:prismTheme,code:code,language:language,children:({className,style,tokens:lines,getLineProps,getTokenProps})=>/*#__PURE__*/(0,jsx_runtime.jsx)(Pre,{ref:wordWrap.codeBlockRef,className:(0,clsx/* default */.A)(classNameProp,className),style:style,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Code,{children:lines.map((line,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockLine,{line:line,getLineProps:getLineProps,getTokenProps:getTokenProps,classNames:lineClassNames[i],showLineNumbers:lineNumbersStart!==undefined},i))})})});}
-;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/BrowserOnly.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Similar comp to the one described here:
-// https://www.joshwcomeau.com/react/the-perils-of-rehydration/#abstractions
-function BrowserOnly({children,fallback}){const isBrowser=(0,useIsBrowser/* default */.A)();if(isBrowser){if(typeof children!=='function'&&"production"==='development')// removed by dead control flow
-{}return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:children?.()});}return fallback??null;}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/Button/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function CodeBlockButton({className,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button",...props,className:(0,clsx/* default */.A)('clean-btn',className)});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Copy/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconCopy(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Success/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconSuccess(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/CopyButton/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const CopyButton_styles_module = ({"copyButtonCopied":"copyButtonCopied_PWMo","copyButtonIcons":"copyButtonIcons_eD0b","copyButtonIcon":"copyButtonIcon_l99o","copyButtonSuccessIcon":"copyButtonSuccessIcon_yjLY"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/CopyButton/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function title(){return (0,Translate/* translate */.T)({id:'theme.CodeBlock.copy',message:'Copy',description:'The copy button label on code blocks'});}function ariaLabel(isCopied){return isCopied?(0,Translate/* translate */.T)({id:'theme.CodeBlock.copied',message:'Copied',description:'The copied button label on code blocks'}):(0,Translate/* translate */.T)({id:'theme.CodeBlock.copyButtonAriaLabel',message:'Copy code to clipboard',description:'The ARIA label for copy code blocks button'});}function useCopyButton(){const{metadata:{code}}=useCodeBlockContext();const[isCopied,setIsCopied]=(0,react.useState)(false);const copyTimeout=(0,react.useRef)(undefined);const copyCode=(0,react.useCallback)(()=>{navigator.clipboard.writeText(code).then(()=>{setIsCopied(true);copyTimeout.current=window.setTimeout(()=>{setIsCopied(false);},1000);});},[code]);(0,react.useEffect)(()=>()=>window.clearTimeout(copyTimeout.current),[]);return{copyCode,isCopied};}function CopyButton({className}){const{copyCode,isCopied}=useCopyButton();return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockButton,{"aria-label":ariaLabel(isCopied),title:title(),className:(0,clsx/* default */.A)(className,CopyButton_styles_module.copyButton,isCopied&&CopyButton_styles_module.copyButtonCopied),onClick:copyCode,children:/*#__PURE__*/(0,jsx_runtime.jsxs)("span",{className:CopyButton_styles_module.copyButtonIcons,"aria-hidden":"true",children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconCopy,{className:CopyButton_styles_module.copyButtonIcon}),/*#__PURE__*/(0,jsx_runtime.jsx)(IconSuccess,{className:CopyButton_styles_module.copyButtonSuccessIcon})]})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/WordWrap/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconWordWrap(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/WordWrapButton/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const WordWrapButton_styles_module = ({"wordWrapButtonIcon":"wordWrapButtonIcon_t17H","wordWrapButtonEnabled":"wordWrapButtonEnabled_QF3o"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/WordWrapButton/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function WordWrapButton({className}){const{wordWrap}=useCodeBlockContext();const canShowButton=wordWrap.isEnabled||wordWrap.isCodeScrollable;if(!canShowButton){return false;}const title=(0,Translate/* translate */.T)({id:'theme.CodeBlock.wordWrapToggle',message:'Toggle word wrap',description:'The title attribute for toggle word wrapping button of code block lines'});return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockButton,{onClick:()=>wordWrap.toggle(),className:(0,clsx/* default */.A)(className,wordWrap.isEnabled&&WordWrapButton_styles_module.wordWrapButtonEnabled),"aria-label":title,title:title,children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconWordWrap,{className:WordWrapButton_styles_module.wordWrapButtonIcon,"aria-hidden":"true"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Buttons_styles_module = ({"buttonGroup":"buttonGroup_ju_h"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Code block buttons are not server-rendered on purpose
-// Adding them to the initial HTML is useless and expensive (due to JSX SVG)
-// They are hidden by default and require React  to become interactive
-function CodeBlockButtons({className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(BrowserOnly,{children:()=>/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(className,Buttons_styles_module.buttonGroup),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(WordWrapButton,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(CopyButton,{})]})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Layout/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Layout_styles_module = ({"codeBlockContent":"codeBlockContent_UcRl","codeBlockTitle":"codeBlockTitle_oAfZ","codeBlock":"codeBlock_Ii3J"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Layout/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function CodeBlockLayout({className}){const{metadata}=useCodeBlockContext();return/*#__PURE__*/(0,jsx_runtime.jsxs)(CodeBlockContainer,{as:"div",className:(0,clsx/* default */.A)(className,metadata.className),children:[metadata.title&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:Layout_styles_module.codeBlockTitle,children:/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockTitle,{children:metadata.title})}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:Layout_styles_module.codeBlockContent,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContent,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockButtons,{})]})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/String.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useCodeBlockMetadata(props){const{prism}=(0,useThemeConfig/* useThemeConfig */.p)();return createCodeBlockMetadata({code:props.children,className:props.className,metastring:props.metastring,magicComments:prism.magicComments,defaultLanguage:prism.defaultLanguage,language:props.language,title:props.title,showLineNumbers:props.showLineNumbers});}// TODO Docusaurus v4: move this component at the root?
-function CodeBlockString(props){const metadata=useCodeBlockMetadata(props);const wordWrap=useCodeWordWrap();return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContextProvider,{metadata:metadata,wordWrap:wordWrap,children:/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockLayout,{})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Best attempt to make the children a plain string so it is copyable. If there
- * are react elements, we will not be able to copy the content, and it will
- * return `children` as-is; otherwise, it concatenates the string children
- * together.
- */function maybeStringifyChildren(children){if(react.Children.toArray(children).some(el=>/*#__PURE__*/(0,react.isValidElement)(el))){return children;}// The children is now guaranteed to be one/more plain strings
-return Array.isArray(children)?children.join(''):children;}function CodeBlock({children:rawChildren,...props}){// The Prism theme on SSR is always the default theme but the site theme can
-// be in a different mode. React hydration doesn't update DOM styles that come
-// from SSR. Hence force a re-render after mounting to apply the current
-// relevant styles.
-const isBrowser=(0,useIsBrowser/* default */.A)();const children=maybeStringifyChildren(rawChildren);const CodeBlockComp=typeof children==='string'?CodeBlockString:CodeBlockJSX;return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockComp,{...props,children:children},String(isBrowser));}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/CodeInline/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Simple component used to render inline code blocks
-// its purpose is to be swizzled and customized
-// MDX 1 used to have a inlineCode comp, see https://mdxjs.com/migrating/v2/
-function CodeInline(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("code",{...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Code.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function shouldBeInline(props){return(// empty code blocks have no props.children,
-// see https://github.com/facebook/docusaurus/pull/9704
-typeof props.children!=='undefined'&&react.Children.toArray(props.children).every(el=>typeof el==='string'&&!el.includes('\n')));}function MDXCode(props){return shouldBeInline(props)?/*#__PURE__*/(0,jsx_runtime.jsx)(CodeInline,{...props}):/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlock,{...props});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Link.js
-var Link = __webpack_require__(1936);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/A/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const A_styles_module = ({"footnoteRefStickyNavbar":"footnoteRefStickyNavbar_JMYU","footnoteRefHideOnScrollNavbar":"footnoteRefHideOnScrollNavbar_A8Gn"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/A/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function isFootnoteRef(props){return props['data-footnote-ref']===true;}function FootnoteRefLink(props){const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.p)();return/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{...props,className:(0,clsx/* default */.A)(hideOnScroll?A_styles_module.footnoteRefHideOnScrollNavbar:A_styles_module.footnoteRefStickyNavbar,props.className)});}function MDXA(props){if(isFootnoteRef(props)){return/*#__PURE__*/(0,jsx_runtime.jsx)(FootnoteRefLink,{...props});}return/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Pre.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MDXPre(props){// With MDX 2, this element is only used for fenced code blocks
-// It always receives a MDXComponents/Code as children
-return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:props.children});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBrokenLinks.js + 1 modules
-var useBrokenLinks = __webpack_require__(8098);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/Collapsible/index.js
-var Collapsible = __webpack_require__(3885);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/Details/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Details_styles_module = ({"details":"details_yaxw","isBrowser":"isBrowser_XySv","collapsibleContent":"collapsibleContent_wyob"});
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/Details/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function isInSummary(node){if(!node){return false;}return node.tagName==='SUMMARY'||isInSummary(node.parentElement);}function hasParent(node,parent){if(!node){return false;}return node===parent||hasParent(node.parentElement,parent);}/**
- * A mostly un-styled `<details>` element with smooth collapsing. Provides some
- * very lightweight styles, but you should bring your UI.
- */function Details({summary,children,...props}){(0,useBrokenLinks/* default */.A)().collectAnchor(props.id);const isBrowser=(0,useIsBrowser/* default */.A)();const detailsRef=(0,react.useRef)(null);const{collapsed,setCollapsed}=(0,Collapsible/* useCollapsible */.u)({initialState:!props.open});// Use a separate state for the actual details prop, because it must be set
-// only after animation completes, otherwise close animations won't work
-const[open,setOpen]=(0,react.useState)(props.open);const summaryElement=/*#__PURE__*/react.isValidElement(summary)?summary:/*#__PURE__*/(0,jsx_runtime.jsx)("summary",{children:summary??'Details'});return(/*#__PURE__*/// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
-(0,jsx_runtime.jsxs)("details",{...props,ref:detailsRef,open:open,"data-collapsed":collapsed,className:(0,clsx/* default */.A)(Details_styles_module.details,isBrowser&&Details_styles_module.isBrowser,props.className),onMouseDown:e=>{const target=e.target;// Prevent a double-click to highlight summary text
-if(isInSummary(target)&&e.detail>1){e.preventDefault();}},onClick:e=>{e.stopPropagation();// For isolation of multiple nested details/summary
-const target=e.target;const shouldToggle=isInSummary(target)&&hasParent(target,detailsRef.current);if(!shouldToggle){return;}e.preventDefault();if(collapsed){setCollapsed(false);setOpen(true);}else{setCollapsed(true);// Don't do this, it breaks close animation!
-// setOpen(false);
-}},children:[summaryElement,/*#__PURE__*/(0,jsx_runtime.jsx)(Collapsible/* Collapsible */.N,{lazy:false// Content might matter for SEO in this case
-,collapsed:collapsed,onCollapseTransitionEnd:newCollapsed=>{setCollapsed(newCollapsed);setOpen(!newCollapsed);},children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:Details_styles_module.collapsibleContent,children:children})})]}));}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Details/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const theme_Details_styles_module = ({"details":"details_QLvM"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Details/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Should we have a custom details/summary comp in Infima instead of reusing
-// alert classes?
-const InfimaClasses='alert alert--info';function Details_Details({...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Details,{...props,className:(0,clsx/* default */.A)(InfimaClasses,theme_Details_styles_module.details,props.className)});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Details.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MDXDetails(props){const items=react.Children.toArray(props.children);// Split summary item from the rest to pass it as a separate prop to the
-// Details theme component
-const summary=items.find(item=>/*#__PURE__*/react.isValidElement(item)&&item.type==='summary');const children=/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:items.filter(item=>item!==summary)});return/*#__PURE__*/(0,jsx_runtime.jsx)(Details_Details,{...props,summary:summary,children:children});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
-var Heading = __webpack_require__(3943);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Heading.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MDXHeading(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(Heading/* default */.A,{...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Ul/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Ul_styles_module = ({"containsTaskList":"containsTaskList_oYSy"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Ul/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function transformUlClassName(className){// Fix https://github.com/facebook/docusaurus/issues/9098
-if(typeof className==='undefined'){return undefined;}return (0,clsx/* default */.A)(className,// This class is set globally by GitHub/MDX. We keep the global class, and
-// add another class to get a task list without the default ul styling
-// See https://github.com/syntax-tree/mdast-util-to-hast/issues/28
-className?.includes('contains-task-list')&&Ul_styles_module.containsTaskList);}function MDXUl(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{...props,className:transformUlClassName(props.className)});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Li.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MDXLi(props){// MDX Footnotes have ids such as <li id="user-content-fn-1-953011">
-(0,useBrokenLinks/* default */.A)().collectAnchor(props.id);return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Img/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Img_styles_module = ({"img":"img_wPmx"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Img/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function transformImgClassName(className){return (0,clsx/* default */.A)(className,Img_styles_module.img);}function MDXImg(props){return(/*#__PURE__*/// eslint-disable-next-line jsx-a11y/alt-text
-(0,jsx_runtime.jsx)("img",{decoding:"async",loading:"lazy",...props,className:transformImgClassName(props.className)}));}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js + 15 modules
-var Admonition = __webpack_require__(3038);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/ErrorBoundary.js + 1 modules
-var ErrorBoundary = __webpack_require__(8812);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.js + 1 modules
-var errorBoundaryUtils = __webpack_require__(6641);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-KS23V3DP.mjs
-var chunk_KS23V3DP = __webpack_require__(4285);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-EXTU4WIE.mjs
-var chunk_EXTU4WIE = __webpack_require__(7348);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-MI3HLSF2.mjs
-var chunk_MI3HLSF2 = __webpack_require__(3767);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-N4CR4FBY.mjs
-var chunk_N4CR4FBY = __webpack_require__(6659);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-QXUST7PY.mjs
-var chunk_QXUST7PY = __webpack_require__(9142);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-HN2XXSSU.mjs
-var chunk_HN2XXSSU = __webpack_require__(9124);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-JZLCHNYA.mjs
-var chunk_JZLCHNYA = __webpack_require__(7440);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-CVBHYZKI.mjs
-var chunk_CVBHYZKI = __webpack_require__(5611);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-ATLVNIR6.mjs
-var chunk_ATLVNIR6 = __webpack_require__(3637);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-JA3XYJ7Z.mjs + 13 modules
-var chunk_JA3XYJ7Z = __webpack_require__(2133);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-S3R3BYOJ.mjs
-var chunk_S3R3BYOJ = __webpack_require__(1808);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-ABZYJK2D.mjs + 3 modules
-var chunk_ABZYJK2D = __webpack_require__(7693);
-// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-AGHRB4JF.mjs
-var chunk_AGHRB4JF = __webpack_require__(1595);
-// EXTERNAL MODULE: ./node_modules/.pnpm/ts-dedent@2.2.0/node_modules/ts-dedent/esm/index.js
-var esm = __webpack_require__(6793);
-// EXTERNAL MODULE: ./node_modules/.pnpm/d3@7.9.0/node_modules/d3/src/index.js + 216 modules
-var src = __webpack_require__(3170);
-;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Enum.js
-var MS = '-ms-'
-var MOZ = '-moz-'
-var WEBKIT = '-webkit-'
-
-var COMMENT = 'comm'
-var RULESET = 'rule'
-var DECLARATION = 'decl'
-
-var PAGE = '@page'
-var MEDIA = '@media'
-var IMPORT = '@import'
-var CHARSET = '@charset'
-var VIEWPORT = '@viewport'
-var SUPPORTS = '@supports'
-var DOCUMENT = '@document'
-var NAMESPACE = '@namespace'
-var KEYFRAMES = '@keyframes'
-var FONT_FACE = '@font-face'
-var COUNTER_STYLE = '@counter-style'
-var FONT_FEATURE_VALUES = '@font-feature-values'
-var LAYER = '@layer'
-var SCOPE = '@scope'
-
-;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Utility.js
-/**
- * @param {number}
- * @return {number}
- */
-var abs = Math.abs
-
-/**
- * @param {number}
- * @return {string}
- */
-var Utility_from = String.fromCharCode
-
-/**
- * @param {object}
- * @return {object}
- */
-var Utility_assign = Object.assign
-
-/**
- * @param {string} value
- * @param {number} length
- * @return {number}
- */
-function hash (value, length) {
-	return charat(value, 0) ^ 45 ? (((((((length << 2) ^ charat(value, 0)) << 2) ^ charat(value, 1)) << 2) ^ charat(value, 2)) << 2) ^ charat(value, 3) : 0
-}
-
-/**
- * @param {string} value
- * @return {string}
- */
-function trim (value) {
-	return value.trim()
-}
-
-/**
- * @param {string} value
- * @param {RegExp} pattern
- * @return {string?}
- */
-function match (value, pattern) {
-	return (value = pattern.exec(value)) ? value[0] : value
-}
-
-/**
- * @param {string} value
- * @param {(string|RegExp)} pattern
- * @param {string} replacement
- * @return {string}
- */
-function replace (value, pattern, replacement) {
-	return value.replace(pattern, replacement)
-}
-
-/**
- * @param {string} value
- * @param {string} search
- * @param {number} position
- * @return {number}
- */
-function indexof (value, search, position) {
-	return value.indexOf(search, position)
-}
-
-/**
- * @param {string} value
- * @param {number} index
- * @return {number}
- */
-function charat (value, index) {
-	return value.charCodeAt(index) | 0
-}
-
-/**
- * @param {string} value
- * @param {number} begin
- * @param {number} end
- * @return {string}
- */
-function substr (value, begin, end) {
-	return value.slice(begin, end)
-}
-
-/**
- * @param {string} value
- * @return {number}
- */
-function strlen (value) {
-	return value.length
-}
-
-/**
- * @param {any[]} value
- * @return {number}
- */
-function sizeof (value) {
-	return value.length
-}
-
-/**
- * @param {any} value
- * @param {any[]} array
- * @return {any}
- */
-function Utility_append (value, array) {
-	return array.push(value), value
-}
-
-/**
- * @param {string[]} array
- * @param {function} callback
- * @return {string}
- */
-function combine (array, callback) {
-	return array.map(callback).join('')
-}
-
-/**
- * @param {string[]} array
- * @param {RegExp} pattern
- * @return {string[]}
- */
-function filter (array, pattern) {
-	return array.filter(function (value) { return !match(value, pattern) })
-}
-
-;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Serializer.js
-
-
-
-/**
- * @param {object[]} children
- * @param {function} callback
- * @return {string}
- */
-function serialize (children, callback) {
-	var output = ''
-
-	for (var i = 0; i < children.length; i++)
-		output += callback(children[i], i, children, callback) || ''
-
-	return output
-}
-
-/**
- * @param {object} element
- * @param {number} index
- * @param {object[]} children
- * @param {function} callback
- * @return {string}
- */
-function stringify (element, index, children, callback) {
-	switch (element.type) {
-		case LAYER: if (element.children.length) break
-		case IMPORT: case NAMESPACE: case DECLARATION: return element.return = element.return || element.value
-		case COMMENT: return ''
-		case KEYFRAMES: return element.return = element.value + '{' + serialize(element.children, callback) + '}'
-		case RULESET: if (!strlen(element.value = element.props.join(','))) return ''
-	}
-
-	return strlen(children = serialize(element.children, callback)) ? element.return = element.value + '{' + children + '}' : ''
-}
-
-;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Tokenizer.js
-
-
-var line = 1
-var column = 1
-var Tokenizer_length = 0
-var position = 0
-var character = 0
-var characters = ''
-
-/**
- * @param {string} value
- * @param {object | null} root
- * @param {object | null} parent
- * @param {string} type
- * @param {string[] | string} props
- * @param {object[] | string} children
- * @param {object[]} siblings
- * @param {number} length
- */
-function node (value, root, parent, type, props, children, length, siblings) {
-	return {value: value, root: root, parent: parent, type: type, props: props, children: children, line: line, column: column, length: length, return: '', siblings: siblings}
-}
-
-/**
- * @param {object} root
- * @param {object} props
- * @return {object}
- */
-function copy (root, props) {
-	return assign(node('', null, null, '', null, null, 0, root.siblings), root, {length: -root.length}, props)
-}
-
-/**
- * @param {object} root
- */
-function lift (root) {
-	while (root.root)
-		root = copy(root.root, {children: [root]})
-
-	append(root, root.siblings)
-}
-
-/**
- * @return {number}
- */
-function Tokenizer_char () {
-	return character
-}
-
-/**
- * @return {number}
- */
-function prev () {
-	character = position > 0 ? charat(characters, --position) : 0
-
-	if (column--, character === 10)
-		column = 1, line--
-
-	return character
-}
-
-/**
- * @return {number}
- */
-function next () {
-	character = position < Tokenizer_length ? charat(characters, position++) : 0
-
-	if (column++, character === 10)
-		column = 1, line++
-
-	return character
-}
-
-/**
- * @return {number}
- */
-function peek () {
-	return charat(characters, position)
-}
-
-/**
- * @return {number}
- */
-function caret () {
-	return position
-}
-
-/**
- * @param {number} begin
- * @param {number} end
- * @return {string}
- */
-function slice (begin, end) {
-	return substr(characters, begin, end)
-}
-
-/**
- * @param {number} type
- * @return {number}
- */
-function token (type) {
-	switch (type) {
-		// \0 \t \n \r \s whitespace token
-		case 0: case 9: case 10: case 13: case 32:
-			return 5
-		// ! + , / > @ ~ isolate token
-		case 33: case 43: case 44: case 47: case 62: case 64: case 126:
-		// ; { } breakpoint token
-		case 59: case 123: case 125:
-			return 4
-		// : accompanied token
-		case 58:
-			return 3
-		// " ' ( [ opening delimit token
-		case 34: case 39: case 40: case 91:
-			return 2
-		// ) ] closing delimit token
-		case 41: case 93:
-			return 1
-	}
-
-	return 0
-}
-
-/**
- * @param {string} value
- * @return {any[]}
- */
-function alloc (value) {
-	return line = column = 1, Tokenizer_length = strlen(characters = value), position = 0, []
-}
-
-/**
- * @param {any} value
- * @return {any}
- */
-function dealloc (value) {
-	return characters = '', value
-}
-
-/**
- * @param {number} type
- * @return {string}
- */
-function delimit (type) {
-	return trim(slice(position - 1, delimiter(type === 91 ? type + 2 : type === 40 ? type + 1 : type)))
-}
-
-/**
- * @param {string} value
- * @return {string[]}
- */
-function tokenize (value) {
-	return dealloc(tokenizer(alloc(value)))
-}
-
-/**
- * @param {number} type
- * @return {string}
- */
-function whitespace (type) {
-	while (character = peek())
-		if (character < 33)
-			next()
-		else
-			break
-
-	return token(type) > 2 || token(character) > 3 ? '' : ' '
-}
-
-/**
- * @param {string[]} children
- * @return {string[]}
- */
-function tokenizer (children) {
-	while (next())
-		switch (token(character)) {
-			case 0: append(identifier(position - 1), children)
-				break
-			case 2: append(delimit(character), children)
-				break
-			default: append(from(character), children)
-		}
-
-	return children
-}
-
-/**
- * @param {number} index
- * @param {number} count
- * @return {string}
- */
-function escaping (index, count) {
-	while (--count && next())
-		// not 0-9 A-F a-f
-		if (character < 48 || character > 102 || (character > 57 && character < 65) || (character > 70 && character < 97))
-			break
-
-	return slice(index, caret() + (count < 6 && peek() == 32 && next() == 32))
-}
-
-/**
- * @param {number} type
- * @return {number}
- */
-function delimiter (type) {
-	while (next())
-		switch (character) {
-			// ] ) " '
-			case type:
-				return position
-			// " '
-			case 34: case 39:
-				if (type !== 34 && type !== 39)
-					delimiter(character)
-				break
-			// (
-			case 40:
-				if (type === 41)
-					delimiter(type)
-				break
-			// \
-			case 92:
-				next()
-				break
-		}
-
-	return position
-}
-
-/**
- * @param {number} type
- * @param {number} index
- * @return {number}
- */
-function commenter (type, index) {
-	while (next())
-		// //
-		if (type + character === 47 + 10)
-			break
-		// /*
-		else if (type + character === 42 + 42 && peek() === 47)
-			break
-
-	return '/*' + slice(index, position - 1) + '*' + Utility_from(type === 47 ? type : next())
-}
-
-/**
- * @param {number} index
- * @return {string}
- */
-function identifier (index) {
-	while (!token(peek()))
-		next()
-
-	return slice(index, position)
-}
-
-;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Parser.js
-
-
-
-
-/**
- * @param {string} value
- * @return {object[]}
- */
-function compile (value) {
-	return dealloc(parse('', null, null, null, [''], value = alloc(value), 0, [0], value))
-}
-
-/**
- * @param {string} value
- * @param {object} root
- * @param {object?} parent
- * @param {string[]} rule
- * @param {string[]} rules
- * @param {string[]} rulesets
- * @param {number[]} pseudo
- * @param {number[]} points
- * @param {string[]} declarations
- * @return {object}
- */
-function parse (value, root, parent, rule, rules, rulesets, pseudo, points, declarations) {
-	var index = 0
-	var offset = 0
-	var length = pseudo
-	var atrule = 0
-	var property = 0
-	var previous = 0
-	var variable = 1
-	var scanning = 1
-	var ampersand = 1
-	var character = 0
-	var type = ''
-	var props = rules
-	var children = rulesets
-	var reference = rule
-	var characters = type
-
-	while (scanning)
-		switch (previous = character, character = next()) {
-			// (
-			case 40:
-				if (previous != 108 && charat(characters, length - 1) == 58) {
-					if (indexof(characters += replace(delimit(character), '&', '&\f'), '&\f', abs(index ? points[index - 1] : 0)) != -1)
-						ampersand = -1
-					break
-				}
-			// " ' [
-			case 34: case 39: case 91:
-				characters += delimit(character)
-				break
-			// \t \n \r \s
-			case 9: case 10: case 13: case 32:
-				characters += whitespace(previous)
-				break
-			// \
-			case 92:
-				characters += escaping(caret() - 1, 7)
-				continue
-			// /
-			case 47:
-				switch (peek()) {
-					case 42: case 47:
-						Utility_append(comment(commenter(next(), caret()), root, parent, declarations), declarations)
-						if ((token(previous || 1) == 5 || token(peek() || 1) == 5) && strlen(characters) && substr(characters, -1, void 0) !== ' ') characters += ' '
-						break
-					default:
-						characters += '/'
-				}
-				break
-			// {
-			case 123 * variable:
-				points[index++] = strlen(characters) * ampersand
-			// } ; \0
-			case 125 * variable: case 59: case 0:
-				switch (character) {
-					// \0 }
-					case 0: case 125: scanning = 0
-					// ;
-					case 59 + offset: if (ampersand == -1) characters = replace(characters, /\f/g, '')
-						if (property > 0 && (strlen(characters) - length || (variable === 0 && previous === 47)))
-							Utility_append(property > 32 ? declaration(characters + ';', rule, parent, length - 1, declarations) : declaration(replace(characters, ' ', '') + ';', rule, parent, length - 2, declarations), declarations)
-						break
-					// @ ;
-					case 59: characters += ';'
-					// { rule/at-rule
-					default:
-						Utility_append(reference = ruleset(characters, root, parent, index, offset, rules, points, type, props = [], children = [], length, rulesets), rulesets)
-
-						if (character === 123)
-							if (offset === 0)
-								parse(characters, root, reference, reference, props, rulesets, length, points, children)
-							else {
-								switch (atrule) {
-									// c(ontainer)
-									case 99:
-										if (charat(characters, 3) === 110) break
-									// l(ayer)
-									case 108:
-										if (charat(characters, 2) === 97) break
-									default:
-										offset = 0
-									// d(ocument) m(edia) s(upports)
-									case 100: case 109: case 115:
-								}
-								if (offset) parse(value, reference, reference, rule && Utility_append(ruleset(value, reference, reference, 0, 0, rules, points, type, rules, props = [], length, children), children), rules, children, length, points, rule ? props : children)
-								else parse(characters, reference, reference, reference, [''], children, 0, points, children)
-							}
-				}
-
-				index = offset = property = 0, variable = ampersand = 1, type = characters = '', length = pseudo
-				break
-			// :
-			case 58:
-				length = 1 + strlen(characters), property = previous
-			default:
-				if (variable < 1)
-					if (character == 123)
-						--variable
-					else if (character == 125 && variable++ == 0 && prev() == 125)
-						continue
-
-				switch (characters += Utility_from(character), character * variable) {
-					// &
-					case 38:
-						ampersand = offset > 0 ? 1 : (characters += '\f', -1)
-						break
-					// ,
-					case 44:
-						points[index++] = (strlen(characters) - 1) * ampersand, ampersand = 1
-						break
-					// @
-					case 64:
-						// -
-						if (peek() === 45)
-							characters += delimit(next())
-
-						atrule = peek(), offset = length = strlen(type = characters += identifier(caret())), character++
-						break
-					// -
-					case 45:
-						if (previous === 45 && strlen(characters) == 2)
-							variable = 0
-				}
-		}
-
-	return rulesets
-}
-
-/**
- * @param {string} value
- * @param {object} root
- * @param {object?} parent
- * @param {number} index
- * @param {number} offset
- * @param {string[]} rules
- * @param {number[]} points
- * @param {string} type
- * @param {string[]} props
- * @param {string[]} children
- * @param {number} length
- * @param {object[]} siblings
- * @return {object}
- */
-function ruleset (value, root, parent, index, offset, rules, points, type, props, children, length, siblings) {
-	var post = offset - 1
-	var rule = offset === 0 ? rules : ['']
-	var size = sizeof(rule)
-
-	for (var i = 0, j = 0, k = 0; i < index; ++i)
-		for (var x = 0, y = substr(value, post + 1, post = abs(j = points[i])), z = value; x < size; ++x)
-			if (z = trim(j > 0 ? rule[x] + ' ' + y : replace(y, /&\f/g, rule[x])))
-				props[k++] = z
-
-	return node(value, root, parent, offset === 0 ? RULESET : type, props, children, length, siblings)
-}
-
-/**
- * @param {number} value
- * @param {object} root
- * @param {object?} parent
- * @param {object[]} siblings
- * @return {object}
- */
-function comment (value, root, parent, siblings) {
-	return node(value, root, parent, COMMENT, Utility_from(Tokenizer_char()), substr(value, 2, -2), 0, siblings)
-}
-
-/**
- * @param {string} value
- * @param {object} root
- * @param {object?} parent
- * @param {number} length
- * @param {object[]} siblings
- * @return {object}
- */
-function declaration (value, root, parent, length, siblings) {
-	return node(value, root, parent, DECLARATION, substr(value, 0, length), substr(value, length + 1, -1), length, siblings)
-}
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/dompurify@3.2.7/node_modules/dompurify/dist/purify.es.mjs
-var purify_es = __webpack_require__(4309);
-// EXTERNAL MODULE: ./node_modules/.pnpm/lodash-es@4.17.21/node_modules/lodash-es/isEmpty.js
-var isEmpty = __webpack_require__(570);
-;// ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/mermaid.core.mjs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// src/mermaid.ts
-
-
-// src/diagrams/c4/c4Detector.ts
-var id = "c4";
-var detector = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*C4Context|C4Container|C4Component|C4Dynamic|C4Deployment/.test(txt);
-}, "detector");
-var loader = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 2903).then(__webpack_require__.bind(__webpack_require__, 2903));
-  return { id, diagram: diagram2 };
-}, "loader");
-var mermaid_core_plugin = {
-  id,
-  detector,
-  loader
-};
-var c4Detector_default = mermaid_core_plugin;
-
-// src/diagrams/flowchart/flowDetector.ts
-var id2 = "flowchart";
-var detector2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
-  if (config?.flowchart?.defaultRenderer === "dagre-wrapper" || config?.flowchart?.defaultRenderer === "elk") {
-    return false;
-  }
-  return /^\s*graph/.test(txt);
-}, "detector");
-var loader2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5789)]).then(__webpack_require__.bind(__webpack_require__, 5789));
-  return { id: id2, diagram: diagram2 };
-}, "loader");
-var plugin2 = {
-  id: id2,
-  detector: detector2,
-  loader: loader2
-};
-var flowDetector_default = plugin2;
-
-// src/diagrams/flowchart/flowDetector-v2.ts
-var id3 = "flowchart-v2";
-var detector3 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
-  if (config?.flowchart?.defaultRenderer === "dagre-d3") {
-    return false;
-  }
-  if (config?.flowchart?.defaultRenderer === "elk") {
-    config.layout = "elk";
-  }
-  if (/^\s*graph/.test(txt) && config?.flowchart?.defaultRenderer === "dagre-wrapper") {
-    return true;
-  }
-  return /^\s*flowchart/.test(txt);
-}, "detector");
-var loader3 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5789)]).then(__webpack_require__.bind(__webpack_require__, 5789));
-  return { id: id3, diagram: diagram2 };
-}, "loader");
-var plugin3 = {
-  id: id3,
-  detector: detector3,
-  loader: loader3
-};
-var flowDetector_v2_default = plugin3;
-
-// src/diagrams/er/erDetector.ts
-var id4 = "er";
-var detector4 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*erDiagram/.test(txt);
-}, "detector");
-var loader4 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4546)]).then(__webpack_require__.bind(__webpack_require__, 4546));
-  return { id: id4, diagram: diagram2 };
-}, "loader");
-var plugin4 = {
-  id: id4,
-  detector: detector4,
-  loader: loader4
-};
-var erDetector_default = plugin4;
-
-// src/diagrams/git/gitGraphDetector.ts
-var id5 = "gitGraph";
-var detector5 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*gitGraph/.test(txt);
-}, "detector");
-var loader5 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5373)]).then(__webpack_require__.bind(__webpack_require__, 5373));
-  return { id: id5, diagram: diagram2 };
-}, "loader");
-var plugin5 = {
-  id: id5,
-  detector: detector5,
-  loader: loader5
-};
-var gitGraphDetector_default = plugin5;
-
-// src/diagrams/gantt/ganttDetector.ts
-var id6 = "gantt";
-var detector6 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*gantt/.test(txt);
-}, "detector");
-var loader6 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 8169).then(__webpack_require__.bind(__webpack_require__, 8169));
-  return { id: id6, diagram: diagram2 };
-}, "loader");
-var plugin6 = {
-  id: id6,
-  detector: detector6,
-  loader: loader6
-};
-var ganttDetector_default = plugin6;
-
-// src/diagrams/info/infoDetector.ts
-var id7 = "info";
-var detector7 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*info/.test(txt);
-}, "detector");
-var loader7 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9646)]).then(__webpack_require__.bind(__webpack_require__, 9646));
-  return { id: id7, diagram: diagram2 };
-}, "loader");
-var info = {
-  id: id7,
-  detector: detector7,
-  loader: loader7
-};
-
-// src/diagrams/pie/pieDetector.ts
-var id8 = "pie";
-var detector8 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*pie/.test(txt);
-}, "detector");
-var loader8 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4422)]).then(__webpack_require__.bind(__webpack_require__, 4422));
-  return { id: id8, diagram: diagram2 };
-}, "loader");
-var pie = {
-  id: id8,
-  detector: detector8,
-  loader: loader8
-};
-
-// src/diagrams/quadrant-chart/quadrantDetector.ts
-var id9 = "quadrantChart";
-var detector9 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*quadrantChart/.test(txt);
-}, "detector");
-var loader9 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 4273).then(__webpack_require__.bind(__webpack_require__, 4273));
-  return { id: id9, diagram: diagram2 };
-}, "loader");
-var plugin7 = {
-  id: id9,
-  detector: detector9,
-  loader: loader9
-};
-var quadrantDetector_default = plugin7;
-
-// src/diagrams/xychart/xychartDetector.ts
-var id10 = "xychart";
-var detector10 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*xychart(-beta)?/.test(txt);
-}, "detector");
-var loader10 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 9629).then(__webpack_require__.bind(__webpack_require__, 9629));
-  return { id: id10, diagram: diagram2 };
-}, "loader");
-var plugin8 = {
-  id: id10,
-  detector: detector10,
-  loader: loader10
-};
-var xychartDetector_default = plugin8;
-
-// src/diagrams/requirement/requirementDetector.ts
-var id11 = "requirement";
-var detector11 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*requirement(Diagram)?/.test(txt);
-}, "detector");
-var loader11 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(1562)]).then(__webpack_require__.bind(__webpack_require__, 1562));
-  return { id: id11, diagram: diagram2 };
-}, "loader");
-var plugin9 = {
-  id: id11,
-  detector: detector11,
-  loader: loader11
-};
-var requirementDetector_default = plugin9;
-
-// src/diagrams/sequence/sequenceDetector.ts
-var id12 = "sequence";
-var detector12 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*sequenceDiagram/.test(txt);
-}, "detector");
-var loader12 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 3582).then(__webpack_require__.bind(__webpack_require__, 3582));
-  return { id: id12, diagram: diagram2 };
-}, "loader");
-var plugin10 = {
-  id: id12,
-  detector: detector12,
-  loader: loader12
-};
-var sequenceDetector_default = plugin10;
-
-// src/diagrams/class/classDetector.ts
-var id13 = "class";
-var detector13 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
-  if (config?.class?.defaultRenderer === "dagre-wrapper") {
-    return false;
-  }
-  return /^\s*classDiagram/.test(txt);
-}, "detector");
-var loader13 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9076), __webpack_require__.e(6404)]).then(__webpack_require__.bind(__webpack_require__, 6404));
-  return { id: id13, diagram: diagram2 };
-}, "loader");
-var plugin11 = {
-  id: id13,
-  detector: detector13,
-  loader: loader13
-};
-var classDetector_default = plugin11;
-
-// src/diagrams/class/classDetector-V2.ts
-var id14 = "classDiagram";
-var detector14 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
-  if (/^\s*classDiagram/.test(txt) && config?.class?.defaultRenderer === "dagre-wrapper") {
-    return true;
-  }
-  return /^\s*classDiagram-v2/.test(txt);
-}, "detector");
-var loader14 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9076), __webpack_require__.e(141)]).then(__webpack_require__.bind(__webpack_require__, 141));
-  return { id: id14, diagram: diagram2 };
-}, "loader");
-var plugin12 = {
-  id: id14,
-  detector: detector14,
-  loader: loader14
-};
-var classDetector_V2_default = plugin12;
-
-// src/diagrams/state/stateDetector.ts
-var id15 = "state";
-var detector15 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
-  if (config?.state?.defaultRenderer === "dagre-wrapper") {
-    return false;
-  }
-  return /^\s*stateDiagram/.test(txt);
-}, "detector");
-var loader15 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4326), __webpack_require__.e(7386), __webpack_require__.e(8868)]).then(__webpack_require__.bind(__webpack_require__, 8868));
-  return { id: id15, diagram: diagram2 };
-}, "loader");
-var plugin13 = {
-  id: id15,
-  detector: detector15,
-  loader: loader15
-};
-var stateDetector_default = plugin13;
-
-// src/diagrams/state/stateDetector-V2.ts
-var id16 = "stateDiagram";
-var detector16 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
-  if (/^\s*stateDiagram-v2/.test(txt)) {
-    return true;
-  }
-  if (/^\s*stateDiagram/.test(txt) && config?.state?.defaultRenderer === "dagre-wrapper") {
-    return true;
-  }
-  return false;
-}, "detector");
-var loader16 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(7386), __webpack_require__.e(9312)]).then(__webpack_require__.bind(__webpack_require__, 9312));
-  return { id: id16, diagram: diagram2 };
-}, "loader");
-var plugin14 = {
-  id: id16,
-  detector: detector16,
-  loader: loader16
-};
-var stateDetector_V2_default = plugin14;
-
-// src/diagrams/user-journey/journeyDetector.ts
-var id17 = "journey";
-var detector17 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*journey/.test(txt);
-}, "detector");
-var loader17 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(6282)]).then(__webpack_require__.bind(__webpack_require__, 6282));
-  return { id: id17, diagram: diagram2 };
-}, "loader");
-var plugin15 = {
-  id: id17,
-  detector: detector17,
-  loader: loader17
-};
-var journeyDetector_default = plugin15;
-
-// src/diagrams/error/errorRenderer.ts
-var draw = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((_text, id28, version) => {
-  chunk_AGHRB4JF/* log */.Rm.debug("rendering svg for syntax error\n");
-  const svg = (0,chunk_EXTU4WIE/* selectSvgElement */.D)(id28);
-  const g = svg.append("g");
-  svg.attr("viewBox", "0 0 2412 512");
-  (0,chunk_ABZYJK2D/* configureSvgSize */.a$)(svg, 100, 512, true);
-  g.append("path").attr("class", "error-icon").attr(
-    "d",
-    "m411.313,123.313c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32-9.375,9.375-20.688-20.688c-12.484-12.5-32.766-12.5-45.25,0l-16,16c-1.261,1.261-2.304,2.648-3.31,4.051-21.739-8.561-45.324-13.426-70.065-13.426-105.867,0-192,86.133-192,192s86.133,192 192,192 192-86.133 192-192c0-24.741-4.864-48.327-13.426-70.065 1.402-1.007 2.79-2.049 4.051-3.31l16-16c12.5-12.492 12.5-32.758 0-45.25l-20.688-20.688 9.375-9.375 32.001-31.999zm-219.313,100.687c-52.938,0-96,43.063-96,96 0,8.836-7.164,16-16,16s-16-7.164-16-16c0-70.578 57.422-128 128-128 8.836,0 16,7.164 16,16s-7.164,16-16,16z"
-  );
-  g.append("path").attr("class", "error-icon").attr(
-    "d",
-    "m459.02,148.98c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l16,16c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16.001-16z"
-  );
-  g.append("path").attr("class", "error-icon").attr(
-    "d",
-    "m340.395,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16-16c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l15.999,16z"
-  );
-  g.append("path").attr("class", "error-icon").attr(
-    "d",
-    "m400,64c8.844,0 16-7.164 16-16v-32c0-8.836-7.156-16-16-16-8.844,0-16,7.164-16,16v32c0,8.836 7.156,16 16,16z"
-  );
-  g.append("path").attr("class", "error-icon").attr(
-    "d",
-    "m496,96.586h-32c-8.844,0-16,7.164-16,16 0,8.836 7.156,16 16,16h32c8.844,0 16-7.164 16-16 0-8.836-7.156-16-16-16z"
-  );
-  g.append("path").attr("class", "error-icon").attr(
-    "d",
-    "m436.98,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l32-32c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32c-6.251,6.25-6.251,16.375-0.001,22.625z"
-  );
-  g.append("text").attr("class", "error-text").attr("x", 1440).attr("y", 250).attr("font-size", "150px").style("text-anchor", "middle").text("Syntax error in text");
-  g.append("text").attr("class", "error-text").attr("x", 1250).attr("y", 400).attr("font-size", "100px").style("text-anchor", "middle").text(`mermaid version ${version}`);
-}, "draw");
-var renderer = { draw };
-var errorRenderer_default = renderer;
-
-// src/diagrams/error/errorDiagram.ts
-var diagram = {
-  db: {},
-  renderer,
-  parser: {
-    parse: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-      return;
-    }, "parse")
-  }
-};
-var errorDiagram_default = diagram;
-
-// src/diagrams/flowchart/elk/detector.ts
-var id18 = "flowchart-elk";
-var detector18 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config = {}) => {
-  if (
-    // If diagram explicitly states flowchart-elk
-    /^\s*flowchart-elk/.test(txt) || // If a flowchart/graph diagram has their default renderer set to elk
-    /^\s*(flowchart|graph)/.test(txt) && config?.flowchart?.defaultRenderer === "elk"
-  ) {
-    config.layout = "elk";
-    return true;
-  }
-  return false;
-}, "detector");
-var loader18 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5789)]).then(__webpack_require__.bind(__webpack_require__, 5789));
-  return { id: id18, diagram: diagram2 };
-}, "loader");
-var plugin16 = {
-  id: id18,
-  detector: detector18,
-  loader: loader18
-};
-var detector_default = plugin16;
-
-// src/diagrams/timeline/detector.ts
-var id19 = "timeline";
-var detector19 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*timeline/.test(txt);
-}, "detector");
-var loader19 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 3497).then(__webpack_require__.bind(__webpack_require__, 5878));
-  return { id: id19, diagram: diagram2 };
-}, "loader");
-var plugin17 = {
-  id: id19,
-  detector: detector19,
-  loader: loader19
-};
-var detector_default2 = plugin17;
-
-// src/diagrams/mindmap/detector.ts
-var id20 = "mindmap";
-var detector20 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*mindmap/.test(txt);
-}, "detector");
-var loader20 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(6077)]).then(__webpack_require__.bind(__webpack_require__, 6077));
-  return { id: id20, diagram: diagram2 };
-}, "loader");
-var plugin18 = {
-  id: id20,
-  detector: detector20,
-  loader: loader20
-};
-var detector_default3 = plugin18;
-
-// src/diagrams/kanban/detector.ts
-var id21 = "kanban";
-var detector21 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*kanban/.test(txt);
-}, "detector");
-var loader21 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5739)]).then(__webpack_require__.bind(__webpack_require__, 5739));
-  return { id: id21, diagram: diagram2 };
-}, "loader");
-var plugin19 = {
-  id: id21,
-  detector: detector21,
-  loader: loader21
-};
-var detector_default4 = plugin19;
-
-// src/diagrams/sankey/sankeyDetector.ts
-var id22 = "sankey";
-var detector22 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*sankey(-beta)?/.test(txt);
-}, "detector");
-var loader22 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 1706).then(__webpack_require__.bind(__webpack_require__, 1706));
-  return { id: id22, diagram: diagram2 };
-}, "loader");
-var plugin20 = {
-  id: id22,
-  detector: detector22,
-  loader: loader22
-};
-var sankeyDetector_default = plugin20;
-
-// src/diagrams/packet/detector.ts
-var id23 = "packet";
-var detector23 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*packet(-beta)?/.test(txt);
-}, "detector");
-var loader23 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(6261)]).then(__webpack_require__.bind(__webpack_require__, 6261));
-  return { id: id23, diagram: diagram2 };
-}, "loader");
-var packet = {
-  id: id23,
-  detector: detector23,
-  loader: loader23
-};
-
-// src/diagrams/radar/detector.ts
-var id24 = "radar";
-var detector24 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*radar-beta/.test(txt);
-}, "detector");
-var loader24 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(2774)]).then(__webpack_require__.bind(__webpack_require__, 393));
-  return { id: id24, diagram: diagram2 };
-}, "loader");
-var radar = {
-  id: id24,
-  detector: detector24,
-  loader: loader24
-};
-
-// src/diagrams/block/blockDetector.ts
-var id25 = "block";
-var detector25 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*block(-beta)?/.test(txt);
-}, "detector");
-var loader25 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8454)]).then(__webpack_require__.bind(__webpack_require__, 8454));
-  return { id: id25, diagram: diagram2 };
-}, "loader");
-var plugin21 = {
-  id: id25,
-  detector: detector25,
-  loader: loader25
-};
-var blockDetector_default = plugin21;
-
-// src/diagrams/architecture/architectureDetector.ts
-var id26 = "architecture";
-var detector26 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*architecture/.test(txt);
-}, "detector");
-var loader26 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(638), __webpack_require__.e(8215)]).then(__webpack_require__.bind(__webpack_require__, 8215));
-  return { id: id26, diagram: diagram2 };
-}, "loader");
-var architecture = {
-  id: id26,
-  detector: detector26,
-  loader: loader26
-};
-var architectureDetector_default = architecture;
-
-// src/diagrams/treemap/detector.ts
-var id27 = "treemap";
-var detector27 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
-  return /^\s*treemap/.test(txt);
-}, "detector");
-var loader27 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4739)]).then(__webpack_require__.bind(__webpack_require__, 4739));
-  return { id: id27, diagram: diagram2 };
-}, "loader");
-var treemap = {
-  id: id27,
-  detector: detector27,
-  loader: loader27
-};
-
-// src/diagram-api/diagram-orchestration.ts
-var hasLoadedDiagrams = false;
-var addDiagrams = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-  if (hasLoadedDiagrams) {
-    return;
-  }
-  hasLoadedDiagrams = true;
-  (0,chunk_ABZYJK2D/* registerDiagram */.Js)("error", errorDiagram_default, (text) => {
-    return text.toLowerCase().trim() === "error";
-  });
-  (0,chunk_ABZYJK2D/* registerDiagram */.Js)(
-    "---",
-    // --- diagram type may appear if YAML front-matter is not parsed correctly
-    {
-      db: {
-        clear: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-        }, "clear")
-      },
-      styles: {},
-      // should never be used
-      renderer: {
-        draw: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-        }, "draw")
-      },
-      parser: {
-        parse: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-          throw new Error(
-            "Diagrams beginning with --- are not valid. If you were trying to use a YAML front-matter, please ensure that you've correctly opened and closed the YAML front-matter with un-indented `---` blocks"
-          );
-        }, "parse")
-      },
-      init: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => null, "init")
-      // no op
-    },
-    (text) => {
-      return text.toLowerCase().trimStart().startsWith("---");
-    }
-  );
-  if (true) {
-    (0,chunk_ABZYJK2D/* registerLazyLoadedDiagrams */.Xd)(detector_default, detector_default3, architectureDetector_default);
-  }
-  (0,chunk_ABZYJK2D/* registerLazyLoadedDiagrams */.Xd)(
-    c4Detector_default,
-    detector_default4,
-    classDetector_V2_default,
-    classDetector_default,
-    erDetector_default,
-    ganttDetector_default,
-    info,
-    pie,
-    requirementDetector_default,
-    sequenceDetector_default,
-    flowDetector_v2_default,
-    flowDetector_default,
-    detector_default2,
-    gitGraphDetector_default,
-    stateDetector_V2_default,
-    stateDetector_default,
-    journeyDetector_default,
-    quadrantDetector_default,
-    sankeyDetector_default,
-    packet,
-    xychartDetector_default,
-    blockDetector_default,
-    radar,
-    treemap
-  );
-}, "addDiagrams");
-
-// src/diagram-api/loadDiagram.ts
-var loadRegisteredDiagrams = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  chunk_AGHRB4JF/* log */.Rm.debug(`Loading registered diagrams`);
-  const results = await Promise.allSettled(
-    Object.entries(chunk_ABZYJK2D/* detectors */.mW).map(async ([key, { detector: detector28, loader: loader28 }]) => {
-      if (!loader28) {
-        return;
-      }
-      try {
-        (0,chunk_ABZYJK2D/* getDiagram */.Gs)(key);
-      } catch {
-        try {
-          const { diagram: diagram2, id: id28 } = await loader28();
-          (0,chunk_ABZYJK2D/* registerDiagram */.Js)(id28, diagram2, detector28);
-        } catch (err) {
-          chunk_AGHRB4JF/* log */.Rm.error(`Failed to load external diagram with key ${key}. Removing from detectors.`);
-          delete chunk_ABZYJK2D/* detectors */.mW[key];
-          throw err;
-        }
-      }
-    })
-  );
-  const failed = results.filter((result) => result.status === "rejected");
-  if (failed.length > 0) {
-    chunk_AGHRB4JF/* log */.Rm.error(`Failed to load ${failed.length} external diagrams`);
-    for (const res of failed) {
-      chunk_AGHRB4JF/* log */.Rm.error(res);
-    }
-    throw new Error(`Failed to load ${failed.length} external diagrams`);
-  }
-}, "loadRegisteredDiagrams");
-
-// src/mermaidAPI.ts
-
-
-
-
-
-// src/accessibility.ts
-var SVG_ROLE = "graphics-document document";
-function setA11yDiagramInfo(svg, diagramType) {
-  svg.attr("role", SVG_ROLE);
-  if (diagramType !== "") {
-    svg.attr("aria-roledescription", diagramType);
-  }
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(setA11yDiagramInfo, "setA11yDiagramInfo");
-function addSVGa11yTitleDescription(svg, a11yTitle, a11yDesc, baseId) {
-  if (svg.insert === void 0) {
-    return;
-  }
-  if (a11yDesc) {
-    const descId = `chart-desc-${baseId}`;
-    svg.attr("aria-describedby", descId);
-    svg.insert("desc", ":first-child").attr("id", descId).text(a11yDesc);
-  }
-  if (a11yTitle) {
-    const titleId = `chart-title-${baseId}`;
-    svg.attr("aria-labelledby", titleId);
-    svg.insert("title", ":first-child").attr("id", titleId).text(a11yTitle);
-  }
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(addSVGa11yTitleDescription, "addSVGa11yTitleDescription");
-
-// src/Diagram.ts
-var Diagram = class _Diagram {
-  constructor(type, text, db, parser, renderer2) {
-    this.type = type;
-    this.text = text;
-    this.db = db;
-    this.parser = parser;
-    this.renderer = renderer2;
-  }
-  static {
-    (0,chunk_AGHRB4JF/* __name */.K2)(this, "Diagram");
-  }
-  static async fromText(text, metadata = {}) {
-    const config = (0,chunk_ABZYJK2D/* getConfig */.zj)();
-    const type = (0,chunk_ABZYJK2D/* detectType */.Ch)(text, config);
-    text = (0,chunk_S3R3BYOJ/* encodeEntities */.C4)(text) + "\n";
-    try {
-      (0,chunk_ABZYJK2D/* getDiagram */.Gs)(type);
-    } catch {
-      const loader28 = (0,chunk_ABZYJK2D/* getDiagramLoader */.J$)(type);
-      if (!loader28) {
-        throw new chunk_ABZYJK2D/* UnknownDiagramError */.C0(`Diagram ${type} not found.`);
-      }
-      const { id: id28, diagram: diagram2 } = await loader28();
-      (0,chunk_ABZYJK2D/* registerDiagram */.Js)(id28, diagram2);
-    }
-    const { db, parser, renderer: renderer2, init: init2 } = (0,chunk_ABZYJK2D/* getDiagram */.Gs)(type);
-    if (parser.parser) {
-      parser.parser.yy = db;
-    }
-    db.clear?.();
-    init2?.(config);
-    if (metadata.title) {
-      db.setDiagramTitle?.(metadata.title);
-    }
-    await parser.parse(text);
-    return new _Diagram(type, text, db, parser, renderer2);
-  }
-  async render(id28, version) {
-    await this.renderer.draw(this.text, id28, version, this);
-  }
-  getParser() {
-    return this.parser;
-  }
-  getType() {
-    return this.type;
-  }
-};
-
-// src/interactionDb.ts
-var interactionFunctions = [];
-var attachFunctions = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-  interactionFunctions.forEach((f) => {
-    f();
-  });
-  interactionFunctions = [];
-}, "attachFunctions");
-
-// src/diagram-api/comments.ts
-var cleanupComments = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((text) => {
-  return text.replace(/^\s*%%(?!{)[^\n]+\n?/gm, "").trimStart();
-}, "cleanupComments");
-
-// src/diagram-api/frontmatter.ts
-function extractFrontMatter(text) {
-  const matches = text.match(chunk_ABZYJK2D/* frontMatterRegex */.EJ);
-  if (!matches) {
-    return {
-      text,
-      metadata: {}
-    };
-  }
-  let parsed = (0,chunk_MI3HLSF2/* load */.H)(matches[1], {
-    // To support config, we need JSON schema.
-    // https://www.yaml.org/spec/1.2/spec.html#id2803231
-    schema: chunk_MI3HLSF2/* JSON_SCHEMA */.r
-  }) ?? {};
-  parsed = typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
-  const metadata = {};
-  if (parsed.displayMode) {
-    metadata.displayMode = parsed.displayMode.toString();
-  }
-  if (parsed.title) {
-    metadata.title = parsed.title.toString();
-  }
-  if (parsed.config) {
-    metadata.config = parsed.config;
-  }
-  return {
-    text: text.slice(matches[0].length),
-    metadata
-  };
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(extractFrontMatter, "extractFrontMatter");
-
-// src/preprocess.ts
-var cleanupText = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((code) => {
-  return code.replace(/\r\n?/g, "\n").replace(
-    /<(\w+)([^>]*)>/g,
-    (match, tag, attributes) => "<" + tag + attributes.replace(/="([^"]*)"/g, "='$1'") + ">"
-  );
-}, "cleanupText");
-var processFrontmatter = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((code) => {
-  const { text, metadata } = extractFrontMatter(code);
-  const { displayMode, title, config = {} } = metadata;
-  if (displayMode) {
-    if (!config.gantt) {
-      config.gantt = {};
-    }
-    config.gantt.displayMode = displayMode;
-  }
-  return { title, config, text };
-}, "processFrontmatter");
-var processDirectives = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((code) => {
-  const initDirective = chunk_S3R3BYOJ/* utils_default */._K.detectInit(code) ?? {};
-  const wrapDirectives = chunk_S3R3BYOJ/* utils_default */._K.detectDirective(code, "wrap");
-  if (Array.isArray(wrapDirectives)) {
-    initDirective.wrap = wrapDirectives.some(({ type }) => type === "wrap");
-  } else if (wrapDirectives?.type === "wrap") {
-    initDirective.wrap = true;
-  }
-  return {
-    text: (0,chunk_S3R3BYOJ/* removeDirectives */.vU)(code),
-    directive: initDirective
-  };
-}, "processDirectives");
-function preprocessDiagram(code) {
-  const cleanedCode = cleanupText(code);
-  const frontMatterResult = processFrontmatter(cleanedCode);
-  const directiveResult = processDirectives(frontMatterResult.text);
-  const config = (0,chunk_S3R3BYOJ/* cleanAndMerge */.$t)(frontMatterResult.config, directiveResult.directive);
-  code = cleanupComments(directiveResult.text);
-  return {
-    code,
-    title: frontMatterResult.title,
-    config
-  };
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(preprocessDiagram, "preprocessDiagram");
-
-// src/utils/base64.ts
-function toBase64(str) {
-  const utf8Bytes = new TextEncoder().encode(str);
-  const utf8Str = Array.from(utf8Bytes, (byte) => String.fromCodePoint(byte)).join("");
-  return btoa(utf8Str);
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(toBase64, "toBase64");
-
-// src/mermaidAPI.ts
-var MAX_TEXTLENGTH = 5e4;
-var MAX_TEXTLENGTH_EXCEEDED_MSG = "graph TB;a[Maximum text size in diagram exceeded];style a fill:#faa";
-var SECURITY_LVL_SANDBOX = "sandbox";
-var SECURITY_LVL_LOOSE = "loose";
-var XMLNS_SVG_STD = "http://www.w3.org/2000/svg";
-var XMLNS_XLINK_STD = "http://www.w3.org/1999/xlink";
-var XMLNS_XHTML_STD = "http://www.w3.org/1999/xhtml";
-var IFRAME_WIDTH = "100%";
-var IFRAME_HEIGHT = "100%";
-var IFRAME_STYLES = "border:0;margin:0;";
-var IFRAME_BODY_STYLE = "margin:0";
-var IFRAME_SANDBOX_OPTS = "allow-top-navigation-by-user-activation allow-popups";
-var IFRAME_NOT_SUPPORTED_MSG = 'The "iframe" tag is not supported by your browser.';
-var DOMPURIFY_TAGS = ["foreignobject"];
-var DOMPURIFY_ATTR = ["dominant-baseline"];
-function processAndSetConfigs(text) {
-  const processed = preprocessDiagram(text);
-  (0,chunk_ABZYJK2D/* reset */.cL)();
-  (0,chunk_ABZYJK2D/* addDirective */.xA)(processed.config ?? {});
-  return processed;
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(processAndSetConfigs, "processAndSetConfigs");
-async function mermaid_core_parse(text, parseOptions) {
-  addDiagrams();
-  try {
-    const { code, config } = processAndSetConfigs(text);
-    const diagram2 = await getDiagramFromText(code);
-    return { diagramType: diagram2.type, config };
-  } catch (error) {
-    if (parseOptions?.suppressErrors) {
-      return false;
-    }
-    throw error;
-  }
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(mermaid_core_parse, "parse");
-var cssImportantStyles = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((cssClass, element, cssClasses = []) => {
-  return `
-.${cssClass} ${element} { ${cssClasses.join(" !important; ")} !important; }`;
-}, "cssImportantStyles");
-var createCssStyles = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((config, classDefs = /* @__PURE__ */ new Map()) => {
-  let cssStyles = "";
-  if (config.themeCSS !== void 0) {
-    cssStyles += `
-${config.themeCSS}`;
-  }
-  if (config.fontFamily !== void 0) {
-    cssStyles += `
-:root { --mermaid-font-family: ${config.fontFamily}}`;
-  }
-  if (config.altFontFamily !== void 0) {
-    cssStyles += `
-:root { --mermaid-alt-font-family: ${config.altFontFamily}}`;
-  }
-  if (classDefs instanceof Map) {
-    const htmlLabels = config.htmlLabels ?? config.flowchart?.htmlLabels;
-    const cssHtmlElements = ["> *", "span"];
-    const cssShapeElements = ["rect", "polygon", "ellipse", "circle", "path"];
-    const cssElements = htmlLabels ? cssHtmlElements : cssShapeElements;
-    classDefs.forEach((styleClassDef) => {
-      if (!(0,isEmpty/* default */.A)(styleClassDef.styles)) {
-        cssElements.forEach((cssElement) => {
-          cssStyles += cssImportantStyles(styleClassDef.id, cssElement, styleClassDef.styles);
-        });
-      }
-      if (!(0,isEmpty/* default */.A)(styleClassDef.textStyles)) {
-        cssStyles += cssImportantStyles(
-          styleClassDef.id,
-          "tspan",
-          (styleClassDef?.textStyles || []).map((s) => s.replace("color", "fill"))
-        );
-      }
-    });
-  }
-  return cssStyles;
-}, "createCssStyles");
-var createUserStyles = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((config, graphType, classDefs, svgId) => {
-  const userCSSstyles = createCssStyles(config, classDefs);
-  const allStyles = (0,chunk_ABZYJK2D/* styles_default */.tM)(graphType, userCSSstyles, config.themeVariables);
-  return serialize(compile(`${svgId}{${allStyles}}`), stringify);
-}, "createUserStyles");
-var cleanUpSvgCode = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((svgCode = "", inSandboxMode, useArrowMarkerUrls) => {
-  let cleanedUpSvg = svgCode;
-  if (!useArrowMarkerUrls && !inSandboxMode) {
-    cleanedUpSvg = cleanedUpSvg.replace(
-      /marker-end="url\([\d+./:=?A-Za-z-]*?#/g,
-      'marker-end="url(#'
-    );
-  }
-  cleanedUpSvg = (0,chunk_S3R3BYOJ/* decodeEntities */.Sm)(cleanedUpSvg);
-  cleanedUpSvg = cleanedUpSvg.replace(/<br>/g, "<br/>");
-  return cleanedUpSvg;
-}, "cleanUpSvgCode");
-var putIntoIFrame = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((svgCode = "", svgElement) => {
-  const height = svgElement?.viewBox?.baseVal?.height ? svgElement.viewBox.baseVal.height + "px" : IFRAME_HEIGHT;
-  const base64encodedSrc = toBase64(`<body style="${IFRAME_BODY_STYLE}">${svgCode}</body>`);
-  return `<iframe style="width:${IFRAME_WIDTH};height:${height};${IFRAME_STYLES}" src="data:text/html;charset=UTF-8;base64,${base64encodedSrc}" sandbox="${IFRAME_SANDBOX_OPTS}">
-  ${IFRAME_NOT_SUPPORTED_MSG}
-</iframe>`;
-}, "putIntoIFrame");
-var appendDivSvgG = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((parentRoot, id28, enclosingDivId, divStyle, svgXlink) => {
-  const enclosingDiv = parentRoot.append("div");
-  enclosingDiv.attr("id", enclosingDivId);
-  if (divStyle) {
-    enclosingDiv.attr("style", divStyle);
-  }
-  const svgNode = enclosingDiv.append("svg").attr("id", id28).attr("width", "100%").attr("xmlns", XMLNS_SVG_STD);
-  if (svgXlink) {
-    svgNode.attr("xmlns:xlink", svgXlink);
-  }
-  svgNode.append("g");
-  return parentRoot;
-}, "appendDivSvgG");
-function sandboxedIframe(parentNode, iFrameId) {
-  return parentNode.append("iframe").attr("id", iFrameId).attr("style", "width: 100%; height: 100%;").attr("sandbox", "");
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(sandboxedIframe, "sandboxedIframe");
-var removeExistingElements = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((doc, id28, divId, iFrameId) => {
-  doc.getElementById(id28)?.remove();
-  doc.getElementById(divId)?.remove();
-  doc.getElementById(iFrameId)?.remove();
-}, "removeExistingElements");
-var render = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function(id28, text, svgContainingElement) {
-  addDiagrams();
-  const processed = processAndSetConfigs(text);
-  text = processed.code;
-  const config = (0,chunk_ABZYJK2D/* getConfig */.zj)();
-  chunk_AGHRB4JF/* log */.Rm.debug(config);
-  if (text.length > (config?.maxTextSize ?? MAX_TEXTLENGTH)) {
-    text = MAX_TEXTLENGTH_EXCEEDED_MSG;
-  }
-  const idSelector = "#" + id28;
-  const iFrameID = "i" + id28;
-  const iFrameID_selector = "#" + iFrameID;
-  const enclosingDivID = "d" + id28;
-  const enclosingDivID_selector = "#" + enclosingDivID;
-  const removeTempElements = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-    const tmpElementSelector = isSandboxed ? iFrameID_selector : enclosingDivID_selector;
-    const node = (0,src/* select */.Ltv)(tmpElementSelector).node();
-    if (node && "remove" in node) {
-      node.remove();
-    }
-  }, "removeTempElements");
-  let root = (0,src/* select */.Ltv)("body");
-  const isSandboxed = config.securityLevel === SECURITY_LVL_SANDBOX;
-  const isLooseSecurityLevel = config.securityLevel === SECURITY_LVL_LOOSE;
-  const fontFamily = config.fontFamily;
-  if (svgContainingElement !== void 0) {
-    if (svgContainingElement) {
-      svgContainingElement.innerHTML = "";
-    }
-    if (isSandboxed) {
-      const iframe = sandboxedIframe((0,src/* select */.Ltv)(svgContainingElement), iFrameID);
-      root = (0,src/* select */.Ltv)(iframe.nodes()[0].contentDocument.body);
-      root.node().style.margin = 0;
-    } else {
-      root = (0,src/* select */.Ltv)(svgContainingElement);
-    }
-    appendDivSvgG(root, id28, enclosingDivID, `font-family: ${fontFamily}`, XMLNS_XLINK_STD);
-  } else {
-    removeExistingElements(document, id28, enclosingDivID, iFrameID);
-    if (isSandboxed) {
-      const iframe = sandboxedIframe((0,src/* select */.Ltv)("body"), iFrameID);
-      root = (0,src/* select */.Ltv)(iframe.nodes()[0].contentDocument.body);
-      root.node().style.margin = 0;
-    } else {
-      root = (0,src/* select */.Ltv)("body");
-    }
-    appendDivSvgG(root, id28, enclosingDivID);
-  }
-  let diag;
-  let parseEncounteredException;
-  try {
-    diag = await Diagram.fromText(text, { title: processed.title });
-  } catch (error) {
-    if (config.suppressErrorRendering) {
-      removeTempElements();
-      throw error;
-    }
-    diag = await Diagram.fromText("error");
-    parseEncounteredException = error;
-  }
-  const element = root.select(enclosingDivID_selector).node();
-  const diagramType = diag.type;
-  const svg = element.firstChild;
-  const firstChild = svg.firstChild;
-  const diagramClassDefs = diag.renderer.getClasses?.(text, diag);
-  const rules = createUserStyles(config, diagramType, diagramClassDefs, idSelector);
-  const style1 = document.createElement("style");
-  style1.innerHTML = rules;
-  svg.insertBefore(style1, firstChild);
-  try {
-    await diag.renderer.draw(text, id28, chunk_KS23V3DP/* package_default */.n.version, diag);
-  } catch (e) {
-    if (config.suppressErrorRendering) {
-      removeTempElements();
-    } else {
-      errorRenderer_default.draw(text, id28, chunk_KS23V3DP/* package_default */.n.version);
-    }
-    throw e;
-  }
-  const svgNode = root.select(`${enclosingDivID_selector} svg`);
-  const a11yTitle = diag.db.getAccTitle?.();
-  const a11yDescr = diag.db.getAccDescription?.();
-  addA11yInfo(diagramType, svgNode, a11yTitle, a11yDescr);
-  root.select(`[id="${id28}"]`).selectAll("foreignobject > *").attr("xmlns", XMLNS_XHTML_STD);
-  let svgCode = root.select(enclosingDivID_selector).node().innerHTML;
-  chunk_AGHRB4JF/* log */.Rm.debug("config.arrowMarkerAbsolute", config.arrowMarkerAbsolute);
-  svgCode = cleanUpSvgCode(svgCode, isSandboxed, (0,chunk_ABZYJK2D/* evaluate */._3)(config.arrowMarkerAbsolute));
-  if (isSandboxed) {
-    const svgEl = root.select(enclosingDivID_selector + " svg").node();
-    svgCode = putIntoIFrame(svgCode, svgEl);
-  } else if (!isLooseSecurityLevel) {
-    svgCode = purify_es/* default */.A.sanitize(svgCode, {
-      ADD_TAGS: DOMPURIFY_TAGS,
-      ADD_ATTR: DOMPURIFY_ATTR,
-      HTML_INTEGRATION_POINTS: { foreignobject: true }
-    });
-  }
-  attachFunctions();
-  if (parseEncounteredException) {
-    throw parseEncounteredException;
-  }
-  removeTempElements();
-  return {
-    diagramType,
-    svg: svgCode,
-    bindFunctions: diag.db.bindFunctions
-  };
-}, "render");
-function initialize(userOptions = {}) {
-  const options = (0,chunk_ABZYJK2D/* assignWithDepth_default */.hH)({}, userOptions);
-  if (options?.fontFamily && !options.themeVariables?.fontFamily) {
-    if (!options.themeVariables) {
-      options.themeVariables = {};
-    }
-    options.themeVariables.fontFamily = options.fontFamily;
-  }
-  (0,chunk_ABZYJK2D/* saveConfigFromInitialize */.wZ)(options);
-  if (options?.theme && options.theme in chunk_ABZYJK2D/* themes_default */.H$) {
-    options.themeVariables = chunk_ABZYJK2D/* themes_default */.H$[options.theme].getThemeVariables(
-      options.themeVariables
-    );
-  } else if (options) {
-    options.themeVariables = chunk_ABZYJK2D/* themes_default */.H$.default.getThemeVariables(options.themeVariables);
-  }
-  const config = typeof options === "object" ? (0,chunk_ABZYJK2D/* setSiteConfig */.UU)(options) : (0,chunk_ABZYJK2D/* getSiteConfig */.Q2)();
-  (0,chunk_AGHRB4JF/* setLogLevel */.He)(config.logLevel);
-  addDiagrams();
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(initialize, "initialize");
-var getDiagramFromText = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((text, metadata = {}) => {
-  const { code } = preprocessDiagram(text);
-  return Diagram.fromText(code, metadata);
-}, "getDiagramFromText");
-function addA11yInfo(diagramType, svgNode, a11yTitle, a11yDescr) {
-  setA11yDiagramInfo(svgNode, diagramType);
-  addSVGa11yTitleDescription(svgNode, a11yTitle, a11yDescr, svgNode.attr("id"));
-}
-(0,chunk_AGHRB4JF/* __name */.K2)(addA11yInfo, "addA11yInfo");
-var mermaidAPI = Object.freeze({
-  render,
-  parse: mermaid_core_parse,
-  getDiagramFromText,
-  initialize,
-  getConfig: chunk_ABZYJK2D/* getConfig */.zj,
-  setConfig: chunk_ABZYJK2D/* setConfig */.Nk,
-  getSiteConfig: chunk_ABZYJK2D/* getSiteConfig */.Q2,
-  updateSiteConfig: chunk_ABZYJK2D/* updateSiteConfig */.B6,
-  reset: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-    (0,chunk_ABZYJK2D/* reset */.cL)();
-  }, "reset"),
-  globalReset: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-    (0,chunk_ABZYJK2D/* reset */.cL)(chunk_ABZYJK2D/* defaultConfig */.sb);
-  }, "globalReset"),
-  defaultConfig: chunk_ABZYJK2D/* defaultConfig */.sb
-});
-(0,chunk_AGHRB4JF/* setLogLevel */.He)((0,chunk_ABZYJK2D/* getConfig */.zj)().logLevel);
-(0,chunk_ABZYJK2D/* reset */.cL)((0,chunk_ABZYJK2D/* getConfig */.zj)());
-
-// src/mermaid.ts
-var handleError = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((error, errors, parseError) => {
-  chunk_AGHRB4JF/* log */.Rm.warn(error);
-  if ((0,chunk_S3R3BYOJ/* isDetailedError */.dq)(error)) {
-    if (parseError) {
-      parseError(error.str, error.hash);
-    }
-    errors.push({ ...error, message: error.str, error });
-  } else {
-    if (parseError) {
-      parseError(error);
-    }
-    if (error instanceof Error) {
-      errors.push({
-        str: error.message,
-        message: error.message,
-        hash: error.name,
-        error
-      });
-    }
-  }
-}, "handleError");
-var run = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function(options = {
-  querySelector: ".mermaid"
-}) {
-  try {
-    await runThrowsErrors(options);
-  } catch (e) {
-    if ((0,chunk_S3R3BYOJ/* isDetailedError */.dq)(e)) {
-      chunk_AGHRB4JF/* log */.Rm.error(e.str);
-    }
-    if (mermaid.parseError) {
-      mermaid.parseError(e);
-    }
-    if (!options.suppressErrors) {
-      chunk_AGHRB4JF/* log */.Rm.error("Use the suppressErrors option to suppress these errors");
-      throw e;
-    }
-  }
-}, "run");
-var runThrowsErrors = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function({ postRenderCallback, querySelector, nodes } = {
-  querySelector: ".mermaid"
-}) {
-  const conf = mermaidAPI.getConfig();
-  chunk_AGHRB4JF/* log */.Rm.debug(`${!postRenderCallback ? "No " : ""}Callback function found`);
-  let nodesToProcess;
-  if (nodes) {
-    nodesToProcess = nodes;
-  } else if (querySelector) {
-    nodesToProcess = document.querySelectorAll(querySelector);
-  } else {
-    throw new Error("Nodes and querySelector are both undefined");
-  }
-  chunk_AGHRB4JF/* log */.Rm.debug(`Found ${nodesToProcess.length} diagrams`);
-  if (conf?.startOnLoad !== void 0) {
-    chunk_AGHRB4JF/* log */.Rm.debug("Start On Load: " + conf?.startOnLoad);
-    mermaidAPI.updateSiteConfig({ startOnLoad: conf?.startOnLoad });
-  }
-  const idGenerator = new chunk_S3R3BYOJ/* utils_default */._K.InitIDGenerator(conf.deterministicIds, conf.deterministicIDSeed);
-  let txt;
-  const errors = [];
-  for (const element of Array.from(nodesToProcess)) {
-    chunk_AGHRB4JF/* log */.Rm.info("Rendering diagram: " + element.id);
-    if (element.getAttribute("data-processed")) {
-      continue;
-    }
-    element.setAttribute("data-processed", "true");
-    const id28 = `mermaid-${idGenerator.next()}`;
-    txt = element.innerHTML;
-    txt = (0,esm/* dedent */.T)(chunk_S3R3BYOJ/* utils_default */._K.entityDecode(txt)).trim().replace(/<br\s*\/?>/gi, "<br/>");
-    const init2 = chunk_S3R3BYOJ/* utils_default */._K.detectInit(txt);
-    if (init2) {
-      chunk_AGHRB4JF/* log */.Rm.debug("Detected early reinit: ", init2);
-    }
-    try {
-      const { svg, bindFunctions } = await render2(id28, txt, element);
-      element.innerHTML = svg;
-      if (postRenderCallback) {
-        await postRenderCallback(id28);
-      }
-      if (bindFunctions) {
-        bindFunctions(element);
-      }
-    } catch (error) {
-      handleError(error, errors, mermaid.parseError);
-    }
-  }
-  if (errors.length > 0) {
-    throw errors[0];
-  }
-}, "runThrowsErrors");
-var initialize2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(function(config) {
-  mermaidAPI.initialize(config);
-}, "initialize");
-var init = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function(config, nodes, callback) {
-  chunk_AGHRB4JF/* log */.Rm.warn("mermaid.init is deprecated. Please use run instead.");
-  if (config) {
-    initialize2(config);
-  }
-  const runOptions = { postRenderCallback: callback, querySelector: ".mermaid" };
-  if (typeof nodes === "string") {
-    runOptions.querySelector = nodes;
-  } else if (nodes) {
-    if (nodes instanceof HTMLElement) {
-      runOptions.nodes = [nodes];
-    } else {
-      runOptions.nodes = nodes;
-    }
-  }
-  await run(runOptions);
-}, "init");
-var registerExternalDiagrams = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async (diagrams, {
-  lazyLoad = true
-} = {}) => {
-  addDiagrams();
-  (0,chunk_ABZYJK2D/* registerLazyLoadedDiagrams */.Xd)(...diagrams);
-  if (lazyLoad === false) {
-    await loadRegisteredDiagrams();
-  }
-}, "registerExternalDiagrams");
-var contentLoaded = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(function() {
-  if (mermaid.startOnLoad) {
-    const { startOnLoad } = mermaidAPI.getConfig();
-    if (startOnLoad) {
-      mermaid.run().catch((err) => chunk_AGHRB4JF/* log */.Rm.error("Mermaid failed to initialize", err));
-    }
-  }
-}, "contentLoaded");
-if (typeof document !== "undefined") {
-  window.addEventListener("load", contentLoaded, false);
-}
-var setParseErrorHandler = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(function(parseErrorHandler) {
-  mermaid.parseError = parseErrorHandler;
-}, "setParseErrorHandler");
-var executionQueue = [];
-var executionQueueRunning = false;
-var executeQueue = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
-  if (executionQueueRunning) {
-    return;
-  }
-  executionQueueRunning = true;
-  while (executionQueue.length > 0) {
-    const f = executionQueue.shift();
-    if (f) {
-      try {
-        await f();
-      } catch (e) {
-        chunk_AGHRB4JF/* log */.Rm.error("Error executing queue", e);
-      }
-    }
-  }
-  executionQueueRunning = false;
-}, "executeQueue");
-var parse2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async (text, parseOptions) => {
-  return new Promise((resolve, reject) => {
-    const performCall = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => new Promise((res, rej) => {
-      mermaidAPI.parse(text, parseOptions).then(
-        (r) => {
-          res(r);
-          resolve(r);
-        },
-        (e) => {
-          chunk_AGHRB4JF/* log */.Rm.error("Error parsing", e);
-          mermaid.parseError?.(e);
-          rej(e);
-          reject(e);
-        }
-      );
-    }), "performCall");
-    executionQueue.push(performCall);
-    executeQueue().catch(reject);
-  });
-}, "parse");
-var render2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((id28, text, container) => {
-  return new Promise((resolve, reject) => {
-    const performCall = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => new Promise((res, rej) => {
-      mermaidAPI.render(id28, text, container).then(
-        (r) => {
-          res(r);
-          resolve(r);
-        },
-        (e) => {
-          chunk_AGHRB4JF/* log */.Rm.error("Error parsing", e);
-          mermaid.parseError?.(e);
-          rej(e);
-          reject(e);
-        }
-      );
-    }), "performCall");
-    executionQueue.push(performCall);
-    executeQueue().catch(reject);
-  });
-}, "render");
-var getRegisteredDiagramsMetadata = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
-  return Object.keys(chunk_ABZYJK2D/* detectors */.mW).map((id28) => ({
-    id: id28
-  }));
-}, "getRegisteredDiagramsMetadata");
-var mermaid = {
-  startOnLoad: true,
-  mermaidAPI,
-  parse: parse2,
-  render: render2,
-  init,
-  run,
-  registerExternalDiagrams,
-  registerLayoutLoaders: chunk_N4CR4FBY/* registerLayoutLoaders */.sO,
-  initialize: initialize2,
-  parseError: void 0,
-  contentLoaded,
-  setParseErrorHandler,
-  detectType: chunk_ABZYJK2D/* detectType */.Ch,
-  registerIconPacks: chunk_JA3XYJ7Z/* registerIconPacks */.pC,
-  getRegisteredDiagramsMetadata
-};
-var mermaid_default = mermaid;
-
-/*! Check if previously processed */
-/*!
- * Wait for document loaded before starting the execution
- */
-
-;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_30ec81497eb664bae61cf6a3c18f37b0/node_modules/@docusaurus/theme-mermaid/lib/client/layouts.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */async function registerOptionalElkLayout(){// Mermaid does not support ELK layouts by default
-// See https://github.com/mermaid-js/mermaid/tree/develop/packages/mermaid-layout-elk
-// ELK layouts are heavy, so we made it an optional peer dependency
-// See https://github.com/facebook/docusaurus/pull/11357
-if(false)// removed by dead control flow
-{}}// Ensure we only try to register layouts once
-let layoutsRegistered=false;async function ensureLayoutsRegistered(){if(!layoutsRegistered){await registerOptionalElkLayout();layoutsRegistered=true;}}
-;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_30ec81497eb664bae61cf6a3c18f37b0/node_modules/@docusaurus/theme-mermaid/lib/client/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Stable className to allow users to easily target with CSS
-const MermaidContainerClassName='docusaurus-mermaid-container';function useMermaidThemeConfig(){return (0,useThemeConfig/* useThemeConfig */.p)().mermaid;}function useMermaidConfig(){const{colorMode}=(0,contexts_colorMode/* useColorMode */.G)();const mermaidThemeConfig=useMermaidThemeConfig();const theme=mermaidThemeConfig.theme[colorMode];const{options}=mermaidThemeConfig;return (0,react.useMemo)(()=>({startOnLoad:false,...options,theme}),[theme,options]);}function useMermaidId(){/*
-    Random client-only id, we don't care much but mermaid want an id so...
-    Note: Mermaid doesn't like values provided by Rect.useId() and throws
-    */// TODO Docusaurus v4: check if useId() now works
-//  It could work thanks to https://github.com/facebook/react/pull/32001
-// return useId(); // tried that, doesn't work ('#d:re:' is not a valid selector.)
-return (0,react.useState)(`mermaid-svg-${Math.round(Math.random()*10000000)}`)[0];}async function renderMermaid({id,text,config}){await ensureLayoutsRegistered();/*
-    Mermaid API is really weird :s
-    It is a big mutable singleton with multiple config levels
-    Note: most recent API type definitions are missing
-  
-    There are 2 kind of configs:
-  
-    - siteConfig: some kind of global/protected shared config
-      you can only set with "initialize"
-  
-    - config/currentConfig
-      the config the renderer will use
-      it is reset to siteConfig before each render
-      but it can be altered by the mermaid txt content itself through directives
-  
-    To use a new mermaid config (on colorMode change for example) we should
-    update siteConfig, and it can only be done with initialize()
-     */mermaid_default.initialize(config);try{return await mermaid_default.render(id,text);}catch(e){// Because Mermaid add a weird SVG/Message to the DOM on error
-// https://github.com/mermaid-js/mermaid/issues/3205#issuecomment-1719620183
-document.querySelector(`#d${id}`)?.remove();throw e;}}function useMermaidRenderResult({text,config:providedConfig}){const[result,setResult]=(0,react.useState)(null);const id=useMermaidId();/*
-    For flexibility, we allow the hook to receive a custom Mermaid config
-    The user could inject a modified version of the default config for example
-     */const defaultMermaidConfig=useMermaidConfig();const config=providedConfig??defaultMermaidConfig;(0,react.useEffect)(()=>{renderMermaid({id,text,config})// TODO maybe try to use Suspense here and throw the promise?
-// See also https://github.com/pmndrs/suspend-react
-.then(setResult).catch(e=>{// Funky way to trigger parent React error boundary
-// See https://x.com/sebastienlorber/status/1628340871899893768
-setResult(()=>{throw e;});});},[id,text,config]);return result;}
-;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_30ec81497eb664bae61cf6a3c18f37b0/node_modules/@docusaurus/theme-mermaid/lib/theme/Mermaid/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Mermaid_styles_module = ({"container":"container_nj2j"});
-;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_30ec81497eb664bae61cf6a3c18f37b0/node_modules/@docusaurus/theme-mermaid/lib/theme/Mermaid/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MermaidRenderResult({renderResult}){const ref=(0,react.useRef)(null);(0,react.useEffect)(()=>{const div=ref.current;renderResult.bindFunctions?.(div);},[renderResult]);return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{ref:ref,className:`${MermaidContainerClassName} ${Mermaid_styles_module.container}`// eslint-disable-next-line react/no-danger
-,dangerouslySetInnerHTML:{__html:renderResult.svg}});}function MermaidRenderer({value}){const renderResult=useMermaidRenderResult({text:value});if(renderResult===null){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(MermaidRenderResult,{renderResult:renderResult});}function Mermaid(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{fallback:params=>/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorBoundaryErrorMessageFallback */.MN,{...params}),children:/*#__PURE__*/(0,jsx_runtime.jsx)(MermaidRenderer,{...props})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const MDXComponents={Head: Head/* default */.A,details:MDXDetails,// For MD mode support, see https://github.com/facebook/docusaurus/issues/9092#issuecomment-1602902274
-Details:MDXDetails,code:MDXCode,a:MDXA,pre:MDXPre,ul:MDXUl,li:MDXLi,img:MDXImg,h1:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h1",...props}),h2:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h2",...props}),h3:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h3",...props}),h4:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h4",...props}),h5:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h5",...props}),h6:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h6",...props}),admonition:Admonition/* default */.A,mermaid:Mermaid};/* harmony default export */ const theme_MDXComponents = (MDXComponents);
 
 /***/ }),
 
@@ -2873,6 +384,147 @@ function isEmpty(value) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (isEmpty);
 
+
+/***/ }),
+
+/***/ 673:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ Admonition)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/admonitionUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Workaround because it's difficult in MDX v1 to provide a MDX title as props
+// See https://github.com/facebook/docusaurus/pull/7152#issuecomment-1145779682
+function extractMDXAdmonitionTitle(children){const items=react.Children.toArray(children);const mdxAdmonitionTitleWrapper=items.find(item=>/*#__PURE__*/react.isValidElement(item)&&item.type==='mdxAdmonitionTitle');const rest=items.filter(item=>item!==mdxAdmonitionTitleWrapper);const mdxAdmonitionTitle=mdxAdmonitionTitleWrapper?.props.children;return{mdxAdmonitionTitle,rest:rest.length>0?/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:rest}):null};}function processAdmonitionProps(props){const{mdxAdmonitionTitle,rest}=extractMDXAdmonitionTitle(props.children);const title=props.title??mdxAdmonitionTitle;return{...props,// Do not return "title: undefined" prop
+// this might create unwanted props overrides when merging props
+// For example: {...default,...props}
+...(title&&{title}),children:rest};}
+// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+var clsx = __webpack_require__(3526);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(6007);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
+var ThemeClassNames = __webpack_require__(4562);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Layout/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"admonition":"admonition_45ko","admonitionHeading":"admonitionHeading_ll91","admonitionIcon":"admonitionIcon_f5ex","admonitionContent":"admonitionContent_K63K"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AdmonitionContainer({type,className,children}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.common.admonition,ThemeClassNames/* ThemeClassNames */.G.common.admonitionType(type),styles_module.admonition,className),children:children});}function AdmonitionHeading({icon,title}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:styles_module.admonitionHeading,children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:styles_module.admonitionIcon,children:icon}),title]});}function AdmonitionContent({children}){return children?/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:styles_module.admonitionContent,children:children}):null;}function AdmonitionLayout(props){const{type,icon,title,children,className}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)(AdmonitionContainer,{type:type,className:className,children:[title||icon?/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionHeading,{title:title,icon:icon}):null,/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionContent,{children:children})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Note.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AdmonitionIconNote(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 14 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Note.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const infimaClassName='alert alert--secondary';const defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconNote,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.note",description:"The default label used for the Note admonition (:::note)",children:"note"})};function AdmonitionTypeNote(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...defaultProps,...props,className:(0,clsx/* default */.A)(infimaClassName,props.className),children:props.children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Tip.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AdmonitionIconTip(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 12 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Tip.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Tip_infimaClassName='alert alert--success';const Tip_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconTip,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.tip",description:"The default label used for the Tip admonition (:::tip)",children:"tip"})};function AdmonitionTypeTip(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Tip_defaultProps,...props,className:(0,clsx/* default */.A)(Tip_infimaClassName,props.className),children:props.children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Info.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AdmonitionIconInfo(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 14 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Info.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Info_infimaClassName='alert alert--info';const Info_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconInfo,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.info",description:"The default label used for the Info admonition (:::info)",children:"info"})};function AdmonitionTypeInfo(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Info_defaultProps,...props,className:(0,clsx/* default */.A)(Info_infimaClassName,props.className),children:props.children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Warning.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AdmonitionIconCaution(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 16 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Warning.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Warning_infimaClassName='alert alert--warning';const Warning_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconCaution,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.warning",description:"The default label used for the Warning admonition (:::warning)",children:"warning"})};function AdmonitionTypeWarning(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Warning_defaultProps,...props,className:(0,clsx/* default */.A)(Warning_infimaClassName,props.className),children:props.children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Danger.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function AdmonitionIconDanger(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 12 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Danger.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Danger_infimaClassName='alert alert--danger';const Danger_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconDanger,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.danger",description:"The default label used for the Danger admonition (:::danger)",children:"danger"})};function AdmonitionTypeDanger(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Danger_defaultProps,...props,className:(0,clsx/* default */.A)(Danger_infimaClassName,props.className),children:props.children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Caution.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const Caution_infimaClassName='alert alert--warning';const Caution_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconCaution,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.caution",description:"The default label used for the Caution admonition (:::caution)",children:"caution"})};// TODO remove before v4: Caution replaced by Warning
+// see https://github.com/facebook/docusaurus/issues/7558
+function AdmonitionTypeCaution(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Caution_defaultProps,...props,className:(0,clsx/* default */.A)(Caution_infimaClassName,props.className),children:props.children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Types.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const admonitionTypes={note:AdmonitionTypeNote,tip:AdmonitionTypeTip,info:AdmonitionTypeInfo,warning:AdmonitionTypeWarning,danger:AdmonitionTypeDanger};// Undocumented legacy admonition type aliases
+// Provide hardcoded/untranslated retrocompatible label
+// See also https://github.com/facebook/docusaurus/issues/7767
+const admonitionAliases={secondary:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeNote,{title:"secondary",...props}),important:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeInfo,{title:"important",...props}),success:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeTip,{title:"success",...props}),caution:AdmonitionTypeCaution};/* harmony default export */ const Types = ({...admonitionTypes,...admonitionAliases});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function getAdmonitionTypeComponent(type){const component=Types[type];if(component){return component;}console.warn(`No admonition component found for admonition type "${type}". Using Info as fallback.`);return Types.info;}function Admonition(unprocessedProps){const props=processAdmonitionProps(unprocessedProps);const AdmonitionTypeComponent=getAdmonitionTypeComponent(props.type);return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeComponent,{...props});}
 
 /***/ }),
 
@@ -4965,456 +2617,6 @@ var setToString = _shortOut(_baseSetToString);
 
 /***/ }),
 
-/***/ 2692:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ DocItem)
-});
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
-var react = __webpack_require__(6363);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js
-var metadataUtils = __webpack_require__(2457);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
-var reactUtils = __webpack_require__(6183);
-// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/doc.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const Context=/*#__PURE__*/react.createContext(null);/**
- * Note: we don't use `PropDoc` as context value on purpose. Metadata is
- * currently stored inside the MDX component, but we may want to change that in
- * the future. This layer is a good opportunity to decouple storage from
- * consuming API, potentially allowing us to provide metadata as both props and
- * route context without duplicating the chunks in the future.
- */function useContextValue(content){return (0,react.useMemo)(()=>({metadata:content.metadata,frontMatter:content.frontMatter,assets:content.assets,contentTitle:content.contentTitle,toc:content.toc}),[content]);}/**
- * This is a very thin layer around the `content` received from the MDX loader.
- * It provides metadata about the doc to the children tree.
- */function DocProvider({children,content}){const contextValue=useContextValue(content);return/*#__PURE__*/(0,jsx_runtime.jsx)(Context.Provider,{value:contextValue,children:children});}/**
- * Returns the data of the currently browsed doc. Gives access to the doc's MDX
- * Component, front matter, metadata, TOC, etc. When swizzling a low-level
- * component (e.g. the "Edit this page" link) and you need some extra metadata,
- * you don't have to drill the props all the way through the component tree:
- * simply use this hook instead.
- */function useDoc(){const doc=(0,react.useContext)(Context);if(doc===null){throw new reactUtils/* ReactContextError */.dV('DocProvider');}return doc;}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Metadata/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocItemMetadata(){const{metadata,frontMatter,assets}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{title:metadata.title,description:metadata.description,keywords:frontMatter.keywords,image:assets.image??frontMatter.image});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(3526);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
-var useWindowSize = __webpack_require__(8528);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Link.js
-var Link = __webpack_require__(1936);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/PaginatorNavLink/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function PaginatorNavLink(props){const{permalink,title,subLabel,isNext}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)(Link/* default */.A,{className:(0,clsx/* default */.A)('pagination-nav__link',isNext?'pagination-nav__link--next':'pagination-nav__link--prev'),to:permalink,children:[subLabel&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"pagination-nav__sublabel",children:subLabel}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"pagination-nav__label",children:title})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocPaginator/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocPaginator(props){const{className,previous,next}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)("nav",{className:(0,clsx/* default */.A)(className,'pagination-nav'),"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.paginator.navAriaLabel',message:'Docs pages',description:'The ARIA label for the docs pagination'}),children:[previous&&/*#__PURE__*/(0,jsx_runtime.jsx)(PaginatorNavLink,{...previous,subLabel:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.paginator.previous",description:"The label used to navigate to the previous doc",children:"Previous"})}),next&&/*#__PURE__*/(0,jsx_runtime.jsx)(PaginatorNavLink,{...next,subLabel:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.paginator.next",description:"The label used to navigate to the next doc",children:"Next"}),isNext:true})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Paginator/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * This extra component is needed, because <DocPaginator> should remain generic.
- * DocPaginator is used in non-docs contexts too: generated-index pages...
- */function DocItemPaginator(){const{metadata}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(DocPaginator,{className:"docusaurus-mt-lg",previous:metadata.previous,next:metadata.next});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
-var useDocusaurusContext = __webpack_require__(8808);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/index.js + 2 modules
-var client = __webpack_require__(2913);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(4366);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsPreferredVersion.js
-var docsPreferredVersion = __webpack_require__(149);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsVersion.js
-var docsVersion = __webpack_require__(2516);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBanner/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function UnreleasedVersionLabel({siteTitle,versionMetadata}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.unreleasedVersionLabel",description:"The label used to tell the user that he's browsing an unreleased doc version",values:{siteTitle,versionLabel:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:versionMetadata.label})},children:'This is unreleased documentation for {siteTitle} {versionLabel} version.'});}function UnmaintainedVersionLabel({siteTitle,versionMetadata}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.unmaintainedVersionLabel",description:"The label used to tell the user that he's browsing an unmaintained doc version",values:{siteTitle,versionLabel:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:versionMetadata.label})},children:'This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.'});}const BannerLabelComponents={unreleased:UnreleasedVersionLabel,unmaintained:UnmaintainedVersionLabel};function BannerLabel(props){const BannerLabelComponent=BannerLabelComponents[props.versionMetadata.banner];return/*#__PURE__*/(0,jsx_runtime.jsx)(BannerLabelComponent,{...props});}function LatestVersionSuggestionLabel({versionLabel,to,onClick}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.latestVersionSuggestionLabel",description:"The label used to tell the user to check the latest version",values:{versionLabel,latestVersionLink:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{to:to,onClick:onClick,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.latestVersionLinkLabel",description:"The label used for the latest version suggestion link label",children:"latest version"})})})},children:'For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).'});}function DocVersionBannerEnabled({className,versionMetadata}){const{siteConfig:{title:siteTitle}}=(0,useDocusaurusContext/* default */.A)();const{pluginId}=(0,client/* useActivePlugin */.vT)({failfast:true});const getVersionMainDoc=version=>version.docs.find(doc=>doc.id===version.mainDocId);const{savePreferredVersionName}=(0,docsPreferredVersion/* useDocsPreferredVersion */.g1)(pluginId);const{latestDocSuggestion,latestVersionSuggestion}=(0,client/* useDocVersionSuggestions */.HW)(pluginId);// Try to link to same doc in latest version (not always possible), falling
-// back to main doc of latest version
-const latestVersionSuggestedDoc=latestDocSuggestion??getVersionMainDoc(latestVersionSuggestion);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.docs.docVersionBanner,'alert alert--warning margin-bottom--md'),role:"alert",children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(BannerLabel,{siteTitle:siteTitle,versionMetadata:versionMetadata})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-top--md",children:/*#__PURE__*/(0,jsx_runtime.jsx)(LatestVersionSuggestionLabel,{versionLabel:latestVersionSuggestion.label,to:latestVersionSuggestedDoc.path,onClick:()=>savePreferredVersionName(latestVersionSuggestion.name)})})]});}function DocVersionBanner({className}){const versionMetadata=(0,docsVersion/* useDocsVersion */.r)();if(versionMetadata.banner){return/*#__PURE__*/(0,jsx_runtime.jsx)(DocVersionBannerEnabled,{className:className,versionMetadata:versionMetadata});}return null;}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBadge/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocVersionBadge({className}){const versionMetadata=(0,docsVersion/* useDocsVersion */.r)();if(versionMetadata.badge){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.docs.docVersionBadge,'badge badge--secondary'),children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versionBadge.label",values:{versionLabel:versionMetadata.label},children:'Version: {versionLabel}'})});}return null;}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Tag/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"tag":"tag_um1G","tagRegular":"tagRegular_hNAe","tagWithCount":"tagWithCount_ovLX"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Tag/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Tag({permalink,label,count,description}){return/*#__PURE__*/(0,jsx_runtime.jsxs)(Link/* default */.A,{rel:"tag",href:permalink,title:description,className:(0,clsx/* default */.A)(styles_module.tag,count?styles_module.tagWithCount:styles_module.tagRegular),children:[label,count&&/*#__PURE__*/(0,jsx_runtime.jsx)("span",{children:count})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TagsListInline/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const TagsListInline_styles_module = ({"tags":"tags_tUsW","tag":"tag_hQ_W"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TagsListInline/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function TagsListInline({tags}){return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.tags.tagsListLabel",description:"The label alongside a tag list",children:"Tags:"})}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:(0,clsx/* default */.A)(TagsListInline_styles_module.tags,'padding--none','margin-left--sm'),children:tags.map(tag=>/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:TagsListInline_styles_module.tag,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Tag,{...tag})},tag.permalink))})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Edit/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Edit_styles_module = ({"iconEdit":"iconEdit_W4sC"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Edit/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconEdit({className,...restProps}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{fill:"currentColor",height:"20",width:"20",viewBox:"0 0 40 40",className:(0,clsx/* default */.A)(Edit_styles_module.iconEdit,className),"aria-hidden":"true",...restProps,children:/*#__PURE__*/(0,jsx_runtime.jsx)("g",{children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{d:"m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"})})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/EditThisPage/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function EditThisPage({editUrl}){return/*#__PURE__*/(0,jsx_runtime.jsxs)(Link/* default */.A,{to:editUrl,className:ThemeClassNames/* ThemeClassNames */.G.common.editThisPage,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconEdit,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.common.editThisPage",description:"The link label to edit the current page",children:"Edit this page"})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/IntlUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useCalendar(){const{i18n:{currentLocale,localeConfigs}}=(0,useDocusaurusContext/* default */.A)();return localeConfigs[currentLocale].calendar;}function useDateTimeFormat(options={}){const{i18n:{currentLocale}}=(0,useDocusaurusContext/* default */.A)();const calendar=useCalendar();return new Intl.DateTimeFormat(currentLocale,{calendar,...options});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/LastUpdated/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function LastUpdatedAtDate({lastUpdatedAt}){const atDate=new Date(lastUpdatedAt);const dateTimeFormat=useDateTimeFormat({day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});const formattedLastUpdatedAt=dateTimeFormat.format(atDate);return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.lastUpdated.atDate",description:"The words used to describe on which date a page has been last updated",values:{date:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:/*#__PURE__*/(0,jsx_runtime.jsx)("time",{dateTime:atDate.toISOString(),itemProp:"dateModified",children:formattedLastUpdatedAt})})},children:' on {date}'});}function LastUpdatedByUser({lastUpdatedBy}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.lastUpdated.byUser",description:"The words used to describe by who the page has been last updated",values:{user:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:lastUpdatedBy})},children:' by {user}'});}function LastUpdated({lastUpdatedAt,lastUpdatedBy}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("span",{className:ThemeClassNames/* ThemeClassNames */.G.common.lastUpdated,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.lastUpdated.lastUpdatedAtBy",description:"The sentence used to display when a page has been last updated, and by who",values:{atDate:lastUpdatedAt?/*#__PURE__*/(0,jsx_runtime.jsx)(LastUpdatedAtDate,{lastUpdatedAt:lastUpdatedAt}):'',byUser:lastUpdatedBy?/*#__PURE__*/(0,jsx_runtime.jsx)(LastUpdatedByUser,{lastUpdatedBy:lastUpdatedBy}):''},children:'Last updated{atDate}{byUser}'}), false&&/*#__PURE__*/0]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/EditMetaRow/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const EditMetaRow_styles_module = ({"lastUpdated":"lastUpdated_o9YG"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/EditMetaRow/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function EditMetaRow({className,editUrl,lastUpdatedAt,lastUpdatedBy}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('row',className),children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"col",children:editUrl&&/*#__PURE__*/(0,jsx_runtime.jsx)(EditThisPage,{editUrl:editUrl})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)('col',EditMetaRow_styles_module.lastUpdated),children:(lastUpdatedAt||lastUpdatedBy)&&/*#__PURE__*/(0,jsx_runtime.jsx)(LastUpdated,{lastUpdatedAt:lastUpdatedAt,lastUpdatedBy:lastUpdatedBy})})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Footer/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocItemFooter(){const{metadata}=useDoc();const{editUrl,lastUpdatedAt,lastUpdatedBy,tags}=metadata;const canDisplayTagsRow=tags.length>0;const canDisplayEditMetaRow=!!(editUrl||lastUpdatedAt||lastUpdatedBy);const canDisplayFooter=canDisplayTagsRow||canDisplayEditMetaRow;if(!canDisplayFooter){return null;}return/*#__PURE__*/(0,jsx_runtime.jsxs)("footer",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docFooter,'docusaurus-mt-lg'),children:[canDisplayTagsRow&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)('row margin-top--sm',ThemeClassNames/* ThemeClassNames */.G.docs.docFooterTagsRow),children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"col",children:/*#__PURE__*/(0,jsx_runtime.jsx)(TagsListInline,{tags:tags})})}),canDisplayEditMetaRow&&/*#__PURE__*/(0,jsx_runtime.jsx)(EditMetaRow,{className:(0,clsx/* default */.A)('margin-top--sm',ThemeClassNames/* ThemeClassNames */.G.docs.docFooterEditMetaRow),editUrl:editUrl,lastUpdatedAt:lastUpdatedAt,lastUpdatedBy:lastUpdatedBy})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/components/Collapsible/index.js
-var Collapsible = __webpack_require__(3885);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
-var useThemeConfig = __webpack_require__(9493);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/tocUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function treeifyTOC(flatTOC){const headings=flatTOC.map(heading=>({...heading,parentIndex:-1,children:[]}));// Keep track of which previous index would be the current heading's direct
-// parent. Each entry <i> is the last index of the `headings` array at heading
-// level <i>. We will modify these indices as we iterate through all headings.
-// e.g. if an ### H3 was last seen at index 2, then prevIndexForLevel[3] === 2
-// indices 0 and 1 will remain unused.
-const prevIndexForLevel=Array(7).fill(-1);headings.forEach((curr,currIndex)=>{// Take the last seen index for each ancestor level. the highest index will
-// be the direct ancestor of the current heading.
-const ancestorLevelIndexes=prevIndexForLevel.slice(2,curr.level);curr.parentIndex=Math.max(...ancestorLevelIndexes);// Mark that curr.level was last seen at the current index.
-prevIndexForLevel[curr.level]=currIndex;});const rootNodes=[];// For a given parentIndex, add each Node into that parent's `children` array
-headings.forEach(heading=>{const{parentIndex,...rest}=heading;if(parentIndex>=0){headings[parentIndex].children.push(rest);}else{rootNodes.push(rest);}});return rootNodes;}/**
- * Takes a flat TOC list (from the MDX loader) and treeifies it into what the
- * TOC components expect. Memoized for performance.
- */function useTreeifiedTOC(toc){return useMemo(()=>treeifyTOC(toc),[toc]);}function filterTOC({toc,minHeadingLevel,maxHeadingLevel}){function isValid(item){return item.level>=minHeadingLevel&&item.level<=maxHeadingLevel;}return toc.flatMap(item=>{const filteredChildren=filterTOC({toc:item.children,minHeadingLevel,maxHeadingLevel});if(isValid(item)){return[{...item,children:filteredChildren}];}return filteredChildren;});}/**
- * Takes a flat TOC list (from the MDX loader) and treeifies it into what the
- * TOC components expect, applying the `minHeadingLevel` and `maxHeadingLevel`.
- * Memoized for performance.
- *
- * **Important**: this is not the same as `useTreeifiedTOC(toc.filter(...))`,
- * because we have to filter the TOC after it has been treeified. This is mostly
- * to ensure that weird TOC structures preserve their semantics. For example, an
- * h3-h2-h4 sequence should not be treeified as an "h3 > h4" hierarchy with
- * min=3, max=4, but should rather be "[h3, h4]" (since the h2 heading has split
- * the two headings and they are not parent-children)
- */function useFilteredAndTreeifiedTOC({toc,minHeadingLevel,maxHeadingLevel}){return (0,react.useMemo)(()=>filterTOC({toc:treeifyTOC(toc),minHeadingLevel,maxHeadingLevel}),[toc,minHeadingLevel,maxHeadingLevel]);}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/hooks/useTOCHighlight.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO make the hardcoded theme-classic classnames configurable (or add them
-// to ThemeClassNames?)
-/**
- * If the anchor has no height and is just a "marker" in the DOM; we'll use the
- * parent (normally the link text) rect boundaries instead
- */function getVisibleBoundingClientRect(element){const rect=element.getBoundingClientRect();const hasNoHeight=rect.top===rect.bottom;if(hasNoHeight){return getVisibleBoundingClientRect(element.parentNode);}return rect;}/**
- * Considering we divide viewport into 2 zones of each 50vh, this returns true
- * if an element is in the first zone (i.e., appear in viewport, near the top)
- */function isInViewportTopHalf(boundingRect){return boundingRect.top>0&&boundingRect.bottom<window.innerHeight/2;}function getAnchors({minHeadingLevel,maxHeadingLevel}){const selectors=[];for(let i=minHeadingLevel;i<=maxHeadingLevel;i+=1){selectors.push(`h${i}.anchor`);}return Array.from(document.querySelectorAll(selectors.join()));}function getActiveAnchor(anchors,{anchorTopOffset}){// Naming is hard: The "nextVisibleAnchor" is the first anchor that appear
-// under the viewport top boundary. It does not mean this anchor is visible
-// yet, but if user continues scrolling down, it will be the first to become
-// visible
-const nextVisibleAnchor=anchors.find(anchor=>{const boundingRect=getVisibleBoundingClientRect(anchor);return boundingRect.top>=anchorTopOffset;});if(nextVisibleAnchor){const boundingRect=getVisibleBoundingClientRect(nextVisibleAnchor);// If anchor is in the top half of the viewport: it is the one we consider
-// "active" (unless it's too close to the top and and soon to be scrolled
-// outside viewport)
-if(isInViewportTopHalf(boundingRect)){return nextVisibleAnchor;}// If anchor is in the bottom half of the viewport, or under the viewport,
-// we consider the active anchor is the previous one. This is because the
-// main text appearing in the user screen mostly belong to the previous
-// anchor. Returns null for the first anchor, see
-// https://github.com/facebook/docusaurus/issues/5318
-return anchors[anchors.indexOf(nextVisibleAnchor)-1]??null;}// No anchor under viewport top (i.e. we are at the bottom of the page),
-// highlight the last anchor found
-return anchors[anchors.length-1]??null;}function getLinkAnchorValue(link){return decodeURIComponent(link.href.substring(link.href.indexOf('#')+1));}function getLinks(linkClassName){return Array.from(document.getElementsByClassName(linkClassName));}function getNavbarHeight(){// Not ideal to obtain actual height this way
-// Using TS ! (not ?) because otherwise a bad selector would be un-noticed
-return document.querySelector('.navbar').clientHeight;}function useAnchorTopOffsetRef(){const anchorTopOffsetRef=(0,react.useRef)(0);const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.p)();(0,react.useEffect)(()=>{anchorTopOffsetRef.current=hideOnScroll?0:getNavbarHeight();},[hideOnScroll]);return anchorTopOffsetRef;}/**
- * Side-effect that applies the active class name to the TOC heading that the
- * user is currently viewing. Disabled when `config` is undefined.
- */function useTOCHighlight(config){const lastActiveLinkRef=(0,react.useRef)(undefined);const anchorTopOffsetRef=useAnchorTopOffsetRef();(0,react.useEffect)(()=>{if(!config){// No-op, highlighting is disabled
-return()=>{};}const{linkClassName,linkActiveClassName,minHeadingLevel,maxHeadingLevel}=config;function updateLinkActiveClass(link,active){if(active){if(lastActiveLinkRef.current&&lastActiveLinkRef.current!==link){lastActiveLinkRef.current.classList.remove(linkActiveClassName);}link.classList.add(linkActiveClassName);lastActiveLinkRef.current=link;// link.scrollIntoView({block: 'nearest'});
-}else{link.classList.remove(linkActiveClassName);}}function updateActiveLink(){const links=getLinks(linkClassName);const anchors=getAnchors({minHeadingLevel,maxHeadingLevel});const activeAnchor=getActiveAnchor(anchors,{anchorTopOffset:anchorTopOffsetRef.current});const activeLink=links.find(link=>activeAnchor&&activeAnchor.id===getLinkAnchorValue(link));links.forEach(link=>{updateLinkActiveClass(link,link===activeLink);});}document.addEventListener('scroll',updateActiveLink);document.addEventListener('resize',updateActiveLink);updateActiveLink();return()=>{document.removeEventListener('scroll',updateActiveLink);document.removeEventListener('resize',updateActiveLink);};},[config,anchorTopOffsetRef]);}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOCItems/Tree.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Recursive component rendering the toc tree
-function TOCItemTree({toc,className,linkClassName,isChild}){if(!toc.length){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:isChild?undefined:className,children:toc.map(heading=>/*#__PURE__*/(0,jsx_runtime.jsxs)("li",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{to:`#${heading.id}`,className:linkClassName??undefined// Developer provided the HTML, so assume it's safe.
-,dangerouslySetInnerHTML:{__html:heading.value}}),/*#__PURE__*/(0,jsx_runtime.jsx)(TOCItemTree,{isChild:true,toc:heading.children,className:className,linkClassName:linkClassName})]},heading.id))});}// Memo only the tree root is enough
-/* harmony default export */ const Tree = (/*#__PURE__*/react.memo(TOCItemTree));
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOCItems/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function TOCItems({toc,className='table-of-contents table-of-contents__left-border',linkClassName='table-of-contents__link',linkActiveClassName=undefined,minHeadingLevel:minHeadingLevelOption,maxHeadingLevel:maxHeadingLevelOption,...props}){const themeConfig=(0,useThemeConfig/* useThemeConfig */.p)();const minHeadingLevel=minHeadingLevelOption??themeConfig.tableOfContents.minHeadingLevel;const maxHeadingLevel=maxHeadingLevelOption??themeConfig.tableOfContents.maxHeadingLevel;const tocTree=useFilteredAndTreeifiedTOC({toc,minHeadingLevel,maxHeadingLevel});const tocHighlightConfig=(0,react.useMemo)(()=>{if(linkClassName&&linkActiveClassName){return{linkClassName,linkActiveClassName,minHeadingLevel,maxHeadingLevel};}return undefined;},[linkClassName,linkActiveClassName,minHeadingLevel,maxHeadingLevel]);useTOCHighlight(tocHighlightConfig);return/*#__PURE__*/(0,jsx_runtime.jsx)(Tree,{toc:tocTree,className:className,linkClassName:linkClassName,...props});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/CollapseButton/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const CollapseButton_styles_module = ({"tocCollapsibleButton":"tocCollapsibleButton_NDx3","tocCollapsibleButtonExpanded":"tocCollapsibleButtonExpanded__Mq7"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/CollapseButton/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function TOCCollapsibleCollapseButton({collapsed,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button",...props,className:(0,clsx/* default */.A)('clean-btn',CollapseButton_styles_module.tocCollapsibleButton,!collapsed&&CollapseButton_styles_module.tocCollapsibleButtonExpanded,props.className),children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.TOCCollapsible.toggleButtonLabel",description:"The label used by the button on the collapsible TOC component",children:"On this page"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const TOCCollapsible_styles_module = ({"tocCollapsible":"tocCollapsible_jpDM","tocCollapsibleContent":"tocCollapsibleContent_Lw8X","tocCollapsibleExpanded":"tocCollapsibleExpanded_YHxf"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function TOCCollapsible({toc,className,minHeadingLevel,maxHeadingLevel}){const{collapsed,toggleCollapsed}=(0,Collapsible/* useCollapsible */.u)({initialState:true});return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(TOCCollapsible_styles_module.tocCollapsible,!collapsed&&TOCCollapsible_styles_module.tocCollapsibleExpanded,className),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(TOCCollapsibleCollapseButton,{collapsed:collapsed,onClick:toggleCollapsed}),/*#__PURE__*/(0,jsx_runtime.jsx)(Collapsible/* Collapsible */.N,{lazy:true,className:TOCCollapsible_styles_module.tocCollapsibleContent,collapsed:collapsed,children:/*#__PURE__*/(0,jsx_runtime.jsx)(TOCItems,{toc:toc,minHeadingLevel:minHeadingLevel,maxHeadingLevel:maxHeadingLevel})})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Mobile/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Mobile_styles_module = ({"tocMobile":"tocMobile_Ay0K"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Mobile/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocItemTOCMobile(){const{toc,frontMatter}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(TOCCollapsible,{toc:toc,minHeadingLevel:frontMatter.toc_min_heading_level,maxHeadingLevel:frontMatter.toc_max_heading_level,className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docTocMobile,Mobile_styles_module.tocMobile)});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOC/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const TOC_styles_module = ({"tableOfContents":"tableOfContents_oOrG","docItemContainer":"docItemContainer_S3Be"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/TOC/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// Using a custom className
-// This prevents TOCInline/TOCCollapsible getting highlighted by mistake
-const LINK_CLASS_NAME='table-of-contents__link toc-highlight';const LINK_ACTIVE_CLASS_NAME='table-of-contents__link--active';function TOC({className,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(TOC_styles_module.tableOfContents,'thin-scrollbar',className),children:/*#__PURE__*/(0,jsx_runtime.jsx)(TOCItems,{...props,linkClassName:LINK_CLASS_NAME,linkActiveClassName:LINK_ACTIVE_CLASS_NAME})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Desktop/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocItemTOCDesktop(){const{toc,frontMatter}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(TOC,{toc:toc,minHeadingLevel:frontMatter.toc_min_heading_level,maxHeadingLevel:frontMatter.toc_max_heading_level,className:ThemeClassNames/* ThemeClassNames */.G.docs.docTocDesktop});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
-var Heading = __webpack_require__(3943);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0/node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(1197);
-// EXTERNAL MODULE: ./src/theme/MDXComponents.js
-var MDXComponents = __webpack_require__(8302);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/MDXContent/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function MDXContent({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(lib/* MDXProvider */.x,{components:MDXComponents/* default */.A,children:children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Content/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- Title can be declared inside md content or declared through
- front matter and added manually. To make both cases consistent,
- the added title is added under the same div.markdown block
- See https://github.com/facebook/docusaurus/pull/4882#issuecomment-853021120
-
- We render a "synthetic title" if:
- - user doesn't ask to hide it with front matter
- - the markdown content does not already contain a top-level h1 heading
-*/function useSyntheticTitle(){const{metadata,frontMatter,contentTitle}=useDoc();const shouldRender=!frontMatter.hide_title&&typeof contentTitle==='undefined';if(!shouldRender){return null;}return metadata.title;}function DocItemContent({children}){const syntheticTitle=useSyntheticTitle();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docMarkdown,'markdown'),children:[syntheticTitle&&/*#__PURE__*/(0,jsx_runtime.jsx)("header",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Heading/* default */.A,{as:"h1",children:syntheticTitle})}),/*#__PURE__*/(0,jsx_runtime.jsx)(MDXContent,{children:children})]});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js + 1 modules
-var docsUtils = __webpack_require__(4812);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
-var routesUtils = __webpack_require__(2412);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(3587);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Home/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconHome(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{d:"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z",fill:"currentColor"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/Items/Home/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Home_styles_module = ({"breadcrumbHomeIcon":"breadcrumbHomeIcon_c9sO"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/Items/Home/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function HomeBreadcrumbItem(){const homeHref=(0,useBaseUrl/* default */.Ay)('/');return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:"breadcrumbs__item",children:/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.breadcrumbs.home',message:'Home page',description:'The ARIA label for the home page in the breadcrumbs'}),className:"breadcrumbs__link",href:homeHref,children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconHome,{className:Home_styles_module.breadcrumbHomeIcon})})});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Head.js
-var Head = __webpack_require__(334);
-;// ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/structuredDataUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useBreadcrumbsStructuredData({breadcrumbs}){const{siteConfig}=(0,useDocusaurusContext/* default */.A)();return{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:breadcrumbs// We filter breadcrumb items without links, they are not allowed
-// See also https://github.com/facebook/docusaurus/issues/9319#issuecomment-2643560845
-.filter(breadcrumb=>breadcrumb.href).map((breadcrumb,index)=>({'@type':'ListItem',position:index+1,name:breadcrumb.label,item:`${siteConfig.url}${breadcrumb.href}`}))};}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/StructuredData/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocBreadcrumbsStructuredData(props){const structuredData=useBreadcrumbsStructuredData({breadcrumbs:props.breadcrumbs});return/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("script",{type:"application/ld+json",children:JSON.stringify(structuredData)})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const DocBreadcrumbs_styles_module = ({"breadcrumbsContainer":"breadcrumbsContainer_JpcI"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO move to design system folder
-function BreadcrumbsItemLink({children,href,isLast}){const className='breadcrumbs__link';if(isLast){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:className,children:children});}return href?/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{className:className,href:href,children:/*#__PURE__*/(0,jsx_runtime.jsx)("span",{children:children})}):/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:className,children:children});}// TODO move to design system folder
-function BreadcrumbsItem({children,active}){return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:(0,clsx/* default */.A)('breadcrumbs__item',{'breadcrumbs__item--active':active}),children:children});}function DocBreadcrumbs(){const breadcrumbs=(0,docsUtils/* useSidebarBreadcrumbs */.OF)();const homePageRoute=(0,routesUtils/* useHomePageRoute */.Dt)();if(!breadcrumbs){return null;}return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(DocBreadcrumbsStructuredData,{breadcrumbs:breadcrumbs}),/*#__PURE__*/(0,jsx_runtime.jsx)("nav",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docBreadcrumbs,DocBreadcrumbs_styles_module.breadcrumbsContainer),"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.breadcrumbs.navAriaLabel',message:'Breadcrumbs',description:'The ARIA label for the breadcrumbs'}),children:/*#__PURE__*/(0,jsx_runtime.jsxs)("ul",{className:"breadcrumbs",children:[homePageRoute&&/*#__PURE__*/(0,jsx_runtime.jsx)(HomeBreadcrumbItem,{}),breadcrumbs.map((item,idx)=>{const isLast=idx===breadcrumbs.length-1;const href=item.type==='category'&&item.linkUnlisted?undefined:item.href;return/*#__PURE__*/(0,jsx_runtime.jsx)(BreadcrumbsItem,{active:isLast,children:/*#__PURE__*/(0,jsx_runtime.jsx)(BreadcrumbsItemLink,{href:href,isLast:isLast,children:item.label})},idx);})]})})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/translations/contentVisibilityTranslations.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function UnlistedBannerTitle(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.unlistedBanner.title",description:"The unlisted content banner title",children:"Unlisted page"});}function UnlistedBannerMessage(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.unlistedBanner.message",description:"The unlisted content banner message",children:"This page is unlisted. Search engines will not index it, and only users having a direct link can access it."});}// TODO Docusaurus v4 breaking change (since it's v3 public theme-common API :/)
-//  Move this to theme/ContentVisibility/Unlisted
-function UnlistedMetadata(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"robots",content:"noindex, nofollow"})});}function DraftBannerTitle(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.draftBanner.title",description:"The draft content banner title",children:"Draft page"});}function DraftBannerMessage(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.draftBanner.message",description:"The draft content banner message",children:"This page is a draft. It will only be visible in dev and be excluded from the production build."});}
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js + 15 modules
-var Admonition = __webpack_require__(3038);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ContentVisibility/Draft/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function Draft({className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Admonition/* default */.A,{type:"caution",title:/*#__PURE__*/(0,jsx_runtime.jsx)(DraftBannerTitle,{}),className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.common.draftBanner),children:/*#__PURE__*/(0,jsx_runtime.jsx)(DraftBannerMessage,{})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ContentVisibility/Unlisted/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function UnlistedBanner({className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Admonition/* default */.A,{type:"caution",title:/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedBannerTitle,{}),className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.common.unlistedBanner),children:/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedBannerMessage,{})});}function Unlisted(props){return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedMetadata,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedBanner,{...props})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/ContentVisibility/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function ContentVisibility({metadata}){const{unlisted,frontMatter}=metadata;// Reading draft/unlisted status from frontMatter is useful to display
-// the banners in dev mode (in dev, metadata.unlisted is always false)
-// See https://github.com/facebook/docusaurus/issues/8285
-return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(unlisted||frontMatter.unlisted)&&/*#__PURE__*/(0,jsx_runtime.jsx)(Unlisted,{}),frontMatter.draft&&/*#__PURE__*/(0,jsx_runtime.jsx)(Draft,{})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Layout/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const Layout_styles_module = ({"docItemContainer":"docItemContainer_Amuc","docItemCol":"docItemCol_Ix_p"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Layout/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *//**
- * Decide if the toc should be rendered, on mobile or desktop viewports
- */function useDocTOC(){const{frontMatter,toc}=useDoc();const windowSize=(0,useWindowSize/* useWindowSize */.l)();const hidden=frontMatter.hide_table_of_contents;const canRender=!hidden&&toc.length>0;const mobile=canRender?/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemTOCMobile,{}):undefined;const desktop=canRender&&(windowSize==='desktop'||windowSize==='ssr')?/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemTOCDesktop,{}):undefined;return{hidden,mobile,desktop};}function DocItemLayout({children}){const docTOC=useDocTOC();const{metadata}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"row",children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('col',!docTOC.hidden&&Layout_styles_module.docItemCol),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(ContentVisibility,{metadata:metadata}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocVersionBanner,{}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:Layout_styles_module.docItemContainer,children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("article",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(DocBreadcrumbs,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocVersionBadge,{}),docTOC.mobile,/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemContent,{children:children}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemFooter,{})]}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemPaginator,{})]})]}),docTOC.desktop&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"col col--3",children:docTOC.desktop})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function DocItem(props){const docHtmlClassName=`docs-doc-id-${props.content.metadata.id}`;const MDXComponent=props.content;return/*#__PURE__*/(0,jsx_runtime.jsx)(DocProvider,{content:props.content,children:/*#__PURE__*/(0,jsx_runtime.jsxs)(metadataUtils/* HtmlClassNameProvider */.e3,{className:docHtmlClassName,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemMetadata,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemLayout,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(MDXComponent,{})})]})});}
-
-/***/ }),
-
 /***/ 2849:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -5461,144 +2663,453 @@ function isArrayLike(value) {
 
 /***/ }),
 
-/***/ 3038:
+/***/ 2959:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Admonition)
+  "default": () => (/* binding */ DocItem)
 });
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
 var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js
+var metadataUtils = __webpack_require__(4925);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
+var reactUtils = __webpack_require__(3403);
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7259);
-;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/admonitionUtils.js
+;// ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._0102d6af86e0a1ac91bb34bdebfdc33d/node_modules/@docusaurus/plugin-content-docs/lib/client/doc.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */// Workaround because it's difficult in MDX v1 to provide a MDX title as props
-// See https://github.com/facebook/docusaurus/pull/7152#issuecomment-1145779682
-function extractMDXAdmonitionTitle(children){const items=react.Children.toArray(children);const mdxAdmonitionTitleWrapper=items.find(item=>/*#__PURE__*/react.isValidElement(item)&&item.type==='mdxAdmonitionTitle');const rest=items.filter(item=>item!==mdxAdmonitionTitleWrapper);const mdxAdmonitionTitle=mdxAdmonitionTitleWrapper?.props.children;return{mdxAdmonitionTitle,rest:rest.length>0?/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:rest}):null};}function processAdmonitionProps(props){const{mdxAdmonitionTitle,rest}=extractMDXAdmonitionTitle(props.children);const title=props.title??mdxAdmonitionTitle;return{...props,// Do not return "title: undefined" prop
-// this might create unwanted props overrides when merging props
-// For example: {...default,...props}
-...(title&&{title}),children:rest};}
+ */const Context=/*#__PURE__*/react.createContext(null);/**
+ * Note: we don't use `PropDoc` as context value on purpose. Metadata is
+ * currently stored inside the MDX component, but we may want to change that in
+ * the future. This layer is a good opportunity to decouple storage from
+ * consuming API, potentially allowing us to provide metadata as both props and
+ * route context without duplicating the chunks in the future.
+ */function useContextValue(content){return (0,react.useMemo)(()=>({metadata:content.metadata,frontMatter:content.frontMatter,assets:content.assets,contentTitle:content.contentTitle,toc:content.toc}),[content]);}/**
+ * This is a very thin layer around the `content` received from the MDX loader.
+ * It provides metadata about the doc to the children tree.
+ */function DocProvider({children,content}){const contextValue=useContextValue(content);return/*#__PURE__*/(0,jsx_runtime.jsx)(Context.Provider,{value:contextValue,children:children});}/**
+ * Returns the data of the currently browsed doc. Gives access to the doc's MDX
+ * Component, front matter, metadata, TOC, etc. When swizzling a low-level
+ * component (e.g. the "Edit this page" link) and you need some extra metadata,
+ * you don't have to drill the props all the way through the component tree:
+ * simply use this hook instead.
+ */function useDoc(){const doc=(0,react.useContext)(Context);if(doc===null){throw new reactUtils/* ReactContextError */.dV('DocProvider');}return doc;}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Metadata/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocItemMetadata(){const{metadata,frontMatter,assets}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{title:metadata.title,description:metadata.description,keywords:frontMatter.keywords,image:assets.image??frontMatter.image});}
 // EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
 var clsx = __webpack_require__(3526);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(227);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(4366);
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Layout/styles.module.css
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
+var useWindowSize = __webpack_require__(2684);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(6007);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Link.js
+var Link = __webpack_require__(3308);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/PaginatorNavLink/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function PaginatorNavLink(props){const{permalink,title,subLabel,isNext}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)(Link/* default */.A,{className:(0,clsx/* default */.A)('pagination-nav__link',isNext?'pagination-nav__link--next':'pagination-nav__link--prev'),to:permalink,children:[subLabel&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"pagination-nav__sublabel",children:subLabel}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"pagination-nav__label",children:title})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocPaginator/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocPaginator(props){const{className,previous,next}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)("nav",{className:(0,clsx/* default */.A)(className,'pagination-nav'),"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.paginator.navAriaLabel',message:'Docs pages',description:'The ARIA label for the docs pagination'}),children:[previous&&/*#__PURE__*/(0,jsx_runtime.jsx)(PaginatorNavLink,{...previous,subLabel:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.paginator.previous",description:"The label used to navigate to the previous doc",children:"Previous"})}),next&&/*#__PURE__*/(0,jsx_runtime.jsx)(PaginatorNavLink,{...next,subLabel:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.paginator.next",description:"The label used to navigate to the next doc",children:"Next"}),isNext:true})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Paginator/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * This extra component is needed, because <DocPaginator> should remain generic.
+ * DocPaginator is used in non-docs contexts too: generated-index pages...
+ */function DocItemPaginator(){const{metadata}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(DocPaginator,{className:"docusaurus-mt-lg",previous:metadata.previous,next:metadata.next});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
+var useDocusaurusContext = __webpack_require__(7780);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._0102d6af86e0a1ac91bb34bdebfdc33d/node_modules/@docusaurus/plugin-content-docs/lib/client/index.js + 2 modules
+var client = __webpack_require__(8081);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
+var ThemeClassNames = __webpack_require__(4562);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._0102d6af86e0a1ac91bb34bdebfdc33d/node_modules/@docusaurus/plugin-content-docs/lib/client/docsPreferredVersion.js
+var docsPreferredVersion = __webpack_require__(6241);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._0102d6af86e0a1ac91bb34bdebfdc33d/node_modules/@docusaurus/plugin-content-docs/lib/client/docsVersion.js
+var docsVersion = __webpack_require__(3344);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBanner/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function UnreleasedVersionLabel({siteTitle,versionMetadata}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.unreleasedVersionLabel",description:"The label used to tell the user that he's browsing an unreleased doc version",values:{siteTitle,versionLabel:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:versionMetadata.label})},children:'This is unreleased documentation for {siteTitle} {versionLabel} version.'});}function UnmaintainedVersionLabel({siteTitle,versionMetadata}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.unmaintainedVersionLabel",description:"The label used to tell the user that he's browsing an unmaintained doc version",values:{siteTitle,versionLabel:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:versionMetadata.label})},children:'This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.'});}const BannerLabelComponents={unreleased:UnreleasedVersionLabel,unmaintained:UnmaintainedVersionLabel};function BannerLabel(props){const BannerLabelComponent=BannerLabelComponents[props.versionMetadata.banner];return/*#__PURE__*/(0,jsx_runtime.jsx)(BannerLabelComponent,{...props});}function LatestVersionSuggestionLabel({versionLabel,to,onClick}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.latestVersionSuggestionLabel",description:"The label used to tell the user to check the latest version",values:{versionLabel,latestVersionLink:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{to:to,onClick:onClick,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versions.latestVersionLinkLabel",description:"The label used for the latest version suggestion link label",children:"latest version"})})})},children:'For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).'});}function DocVersionBannerEnabled({className,versionMetadata}){const{siteConfig:{title:siteTitle}}=(0,useDocusaurusContext/* default */.A)();const{pluginId}=(0,client/* useActivePlugin */.vT)({failfast:true});const getVersionMainDoc=version=>version.docs.find(doc=>doc.id===version.mainDocId);const{savePreferredVersionName}=(0,docsPreferredVersion/* useDocsPreferredVersion */.g1)(pluginId);const{latestDocSuggestion,latestVersionSuggestion}=(0,client/* useDocVersionSuggestions */.HW)(pluginId);// Try to link to same doc in latest version (not always possible), falling
+// back to main doc of latest version
+const latestVersionSuggestedDoc=latestDocSuggestion??getVersionMainDoc(latestVersionSuggestion);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.docs.docVersionBanner,'alert alert--warning margin-bottom--md'),role:"alert",children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(BannerLabel,{siteTitle:siteTitle,versionMetadata:versionMetadata})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"margin-top--md",children:/*#__PURE__*/(0,jsx_runtime.jsx)(LatestVersionSuggestionLabel,{versionLabel:latestVersionSuggestion.label,to:latestVersionSuggestedDoc.path,onClick:()=>savePreferredVersionName(latestVersionSuggestion.name)})})]});}function DocVersionBanner({className}){const versionMetadata=(0,docsVersion/* useDocsVersion */.r)();if(versionMetadata.banner){return/*#__PURE__*/(0,jsx_runtime.jsx)(DocVersionBannerEnabled,{className:className,versionMetadata:versionMetadata});}return null;}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBadge/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocVersionBadge({className}){const versionMetadata=(0,docsVersion/* useDocsVersion */.r)();if(versionMetadata.badge){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.docs.docVersionBadge,'badge badge--secondary'),children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.docs.versionBadge.label",values:{versionLabel:versionMetadata.label},children:'Version: {versionLabel}'})});}return null;}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Tag/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"admonition":"admonition_wUh5","admonitionHeading":"admonitionHeading_cUJc","admonitionIcon":"admonitionIcon_kGVO","admonitionContent":"admonitionContent_aw5S"});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Layout/index.js
+/* harmony default export */ const styles_module = ({"tag":"tag_J4X1","tagRegular":"tagRegular_t4de","tagWithCount":"tagWithCount_Dq3n"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Tag/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function AdmonitionContainer({type,className,children}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.common.admonition,ThemeClassNames/* ThemeClassNames */.G.common.admonitionType(type),styles_module.admonition,className),children:children});}function AdmonitionHeading({icon,title}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:styles_module.admonitionHeading,children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:styles_module.admonitionIcon,children:icon}),title]});}function AdmonitionContent({children}){return children?/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:styles_module.admonitionContent,children:children}):null;}function AdmonitionLayout(props){const{type,icon,title,children,className}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)(AdmonitionContainer,{type:type,className:className,children:[title||icon?/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionHeading,{title:title,icon:icon}):null,/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionContent,{children:children})]});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Note.js
+ */function Tag({permalink,label,count,description}){return/*#__PURE__*/(0,jsx_runtime.jsxs)(Link/* default */.A,{rel:"tag",href:permalink,title:description,className:(0,clsx/* default */.A)(styles_module.tag,count?styles_module.tagWithCount:styles_module.tagRegular),children:[label,count&&/*#__PURE__*/(0,jsx_runtime.jsx)("span",{children:count})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TagsListInline/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const TagsListInline_styles_module = ({"tags":"tags_JnZS","tag":"tag_IUIr"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TagsListInline/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function AdmonitionIconNote(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 14 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Note.js
+ */function TagsListInline({tags}){return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.tags.tagsListLabel",description:"The label alongside a tag list",children:"Tags:"})}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:(0,clsx/* default */.A)(TagsListInline_styles_module.tags,'padding--none','margin-left--sm'),children:tags.map(tag=>/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:TagsListInline_styles_module.tag,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Tag,{...tag})},tag.permalink))})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Edit/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Edit_styles_module = ({"iconEdit":"iconEdit_nCVZ"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Edit/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const infimaClassName='alert alert--secondary';const defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconNote,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.note",description:"The default label used for the Note admonition (:::note)",children:"note"})};function AdmonitionTypeNote(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...defaultProps,...props,className:(0,clsx/* default */.A)(infimaClassName,props.className),children:props.children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Tip.js
+ */function IconEdit({className,...restProps}){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{fill:"currentColor",height:"20",width:"20",viewBox:"0 0 40 40",className:(0,clsx/* default */.A)(Edit_styles_module.iconEdit,className),"aria-hidden":"true",...restProps,children:/*#__PURE__*/(0,jsx_runtime.jsx)("g",{children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{d:"m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"})})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/EditThisPage/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function AdmonitionIconTip(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 12 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Tip.js
+ */function EditThisPage({editUrl}){return/*#__PURE__*/(0,jsx_runtime.jsxs)(Link/* default */.A,{to:editUrl,className:ThemeClassNames/* ThemeClassNames */.G.common.editThisPage,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconEdit,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.common.editThisPage",description:"The link label to edit the current page",children:"Edit this page"})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/IntlUtils.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const Tip_infimaClassName='alert alert--success';const Tip_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconTip,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.tip",description:"The default label used for the Tip admonition (:::tip)",children:"tip"})};function AdmonitionTypeTip(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Tip_defaultProps,...props,className:(0,clsx/* default */.A)(Tip_infimaClassName,props.className),children:props.children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Info.js
+ */function useCalendar(){const{i18n:{currentLocale,localeConfigs}}=(0,useDocusaurusContext/* default */.A)();return localeConfigs[currentLocale].calendar;}function useDateTimeFormat(options={}){const{i18n:{currentLocale}}=(0,useDocusaurusContext/* default */.A)();const calendar=useCalendar();return new Intl.DateTimeFormat(currentLocale,{calendar,...options});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/LastUpdated/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function AdmonitionIconInfo(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 14 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Info.js
+ */function LastUpdatedAtDate({lastUpdatedAt}){const atDate=new Date(lastUpdatedAt);const dateTimeFormat=useDateTimeFormat({day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});const formattedLastUpdatedAt=dateTimeFormat.format(atDate);return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.lastUpdated.atDate",description:"The words used to describe on which date a page has been last updated",values:{date:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:/*#__PURE__*/(0,jsx_runtime.jsx)("time",{dateTime:atDate.toISOString(),itemProp:"dateModified",children:formattedLastUpdatedAt})})},children:' on {date}'});}function LastUpdatedByUser({lastUpdatedBy}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.lastUpdated.byUser",description:"The words used to describe by who the page has been last updated",values:{user:/*#__PURE__*/(0,jsx_runtime.jsx)("b",{children:lastUpdatedBy})},children:' by {user}'});}function LastUpdated({lastUpdatedAt,lastUpdatedBy}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("span",{className:ThemeClassNames/* ThemeClassNames */.G.common.lastUpdated,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.lastUpdated.lastUpdatedAtBy",description:"The sentence used to display when a page has been last updated, and by who",values:{atDate:lastUpdatedAt?/*#__PURE__*/(0,jsx_runtime.jsx)(LastUpdatedAtDate,{lastUpdatedAt:lastUpdatedAt}):'',byUser:lastUpdatedBy?/*#__PURE__*/(0,jsx_runtime.jsx)(LastUpdatedByUser,{lastUpdatedBy:lastUpdatedBy}):''},children:'Last updated{atDate}{byUser}'}), false&&/*#__PURE__*/0]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/EditMetaRow/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const EditMetaRow_styles_module = ({"lastUpdated":"lastUpdated_RZYL"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/EditMetaRow/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const Info_infimaClassName='alert alert--info';const Info_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconInfo,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.info",description:"The default label used for the Info admonition (:::info)",children:"info"})};function AdmonitionTypeInfo(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Info_defaultProps,...props,className:(0,clsx/* default */.A)(Info_infimaClassName,props.className),children:props.children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Warning.js
+ */function EditMetaRow({className,editUrl,lastUpdatedAt,lastUpdatedBy}){return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('row',className),children:[/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"col",children:editUrl&&/*#__PURE__*/(0,jsx_runtime.jsx)(EditThisPage,{editUrl:editUrl})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)('col',EditMetaRow_styles_module.lastUpdated),children:(lastUpdatedAt||lastUpdatedBy)&&/*#__PURE__*/(0,jsx_runtime.jsx)(LastUpdated,{lastUpdatedAt:lastUpdatedAt,lastUpdatedBy:lastUpdatedBy})})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Footer/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function AdmonitionIconCaution(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 16 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Warning.js
+ */function DocItemFooter(){const{metadata}=useDoc();const{editUrl,lastUpdatedAt,lastUpdatedBy,tags}=metadata;const canDisplayTagsRow=tags.length>0;const canDisplayEditMetaRow=!!(editUrl||lastUpdatedAt||lastUpdatedBy);const canDisplayFooter=canDisplayTagsRow||canDisplayEditMetaRow;if(!canDisplayFooter){return null;}return/*#__PURE__*/(0,jsx_runtime.jsxs)("footer",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docFooter,'docusaurus-mt-lg'),children:[canDisplayTagsRow&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)('row margin-top--sm',ThemeClassNames/* ThemeClassNames */.G.docs.docFooterTagsRow),children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"col",children:/*#__PURE__*/(0,jsx_runtime.jsx)(TagsListInline,{tags:tags})})}),canDisplayEditMetaRow&&/*#__PURE__*/(0,jsx_runtime.jsx)(EditMetaRow,{className:(0,clsx/* default */.A)('margin-top--sm',ThemeClassNames/* ThemeClassNames */.G.docs.docFooterEditMetaRow),editUrl:editUrl,lastUpdatedAt:lastUpdatedAt,lastUpdatedBy:lastUpdatedBy})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/components/Collapsible/index.js
+var Collapsible = __webpack_require__(7166);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
+var useThemeConfig = __webpack_require__(641);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/tocUtils.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const Warning_infimaClassName='alert alert--warning';const Warning_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconCaution,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.warning",description:"The default label used for the Warning admonition (:::warning)",children:"warning"})};function AdmonitionTypeWarning(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Warning_defaultProps,...props,className:(0,clsx/* default */.A)(Warning_infimaClassName,props.className),children:props.children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Icon/Danger.js
+ */function treeifyTOC(flatTOC){const headings=flatTOC.map(heading=>({...heading,parentIndex:-1,children:[]}));// Keep track of which previous index would be the current heading's direct
+// parent. Each entry <i> is the last index of the `headings` array at heading
+// level <i>. We will modify these indices as we iterate through all headings.
+// e.g. if an ### H3 was last seen at index 2, then prevIndexForLevel[3] === 2
+// indices 0 and 1 will remain unused.
+const prevIndexForLevel=Array(7).fill(-1);headings.forEach((curr,currIndex)=>{// Take the last seen index for each ancestor level. the highest index will
+// be the direct ancestor of the current heading.
+const ancestorLevelIndexes=prevIndexForLevel.slice(2,curr.level);curr.parentIndex=Math.max(...ancestorLevelIndexes);// Mark that curr.level was last seen at the current index.
+prevIndexForLevel[curr.level]=currIndex;});const rootNodes=[];// For a given parentIndex, add each Node into that parent's `children` array
+headings.forEach(heading=>{const{parentIndex,...rest}=heading;if(parentIndex>=0){headings[parentIndex].children.push(rest);}else{rootNodes.push(rest);}});return rootNodes;}/**
+ * Takes a flat TOC list (from the MDX loader) and treeifies it into what the
+ * TOC components expect. Memoized for performance.
+ */function useTreeifiedTOC(toc){return useMemo(()=>treeifyTOC(toc),[toc]);}function filterTOC({toc,minHeadingLevel,maxHeadingLevel}){function isValid(item){return item.level>=minHeadingLevel&&item.level<=maxHeadingLevel;}return toc.flatMap(item=>{const filteredChildren=filterTOC({toc:item.children,minHeadingLevel,maxHeadingLevel});if(isValid(item)){return[{...item,children:filteredChildren}];}return filteredChildren;});}/**
+ * Takes a flat TOC list (from the MDX loader) and treeifies it into what the
+ * TOC components expect, applying the `minHeadingLevel` and `maxHeadingLevel`.
+ * Memoized for performance.
+ *
+ * **Important**: this is not the same as `useTreeifiedTOC(toc.filter(...))`,
+ * because we have to filter the TOC after it has been treeified. This is mostly
+ * to ensure that weird TOC structures preserve their semantics. For example, an
+ * h3-h2-h4 sequence should not be treeified as an "h3 > h4" hierarchy with
+ * min=3, max=4, but should rather be "[h3, h4]" (since the h2 heading has split
+ * the two headings and they are not parent-children)
+ */function useFilteredAndTreeifiedTOC({toc,minHeadingLevel,maxHeadingLevel}){return (0,react.useMemo)(()=>filterTOC({toc:treeifyTOC(toc),minHeadingLevel,maxHeadingLevel}),[toc,minHeadingLevel,maxHeadingLevel]);}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/hooks/useTOCHighlight.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function AdmonitionIconDanger(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 12 16",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fillRule:"evenodd",d:"M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"})});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Danger.js
+ */// TODO make the hardcoded theme-classic classnames configurable (or add them
+// to ThemeClassNames?)
+/**
+ * If the anchor has no height and is just a "marker" in the DOM; we'll use the
+ * parent (normally the link text) rect boundaries instead
+ */function getVisibleBoundingClientRect(element){const rect=element.getBoundingClientRect();const hasNoHeight=rect.top===rect.bottom;if(hasNoHeight){return getVisibleBoundingClientRect(element.parentNode);}return rect;}/**
+ * Considering we divide viewport into 2 zones of each 50vh, this returns true
+ * if an element is in the first zone (i.e., appear in viewport, near the top)
+ */function isInViewportTopHalf(boundingRect){return boundingRect.top>0&&boundingRect.bottom<window.innerHeight/2;}function getAnchors({minHeadingLevel,maxHeadingLevel}){const selectors=[];for(let i=minHeadingLevel;i<=maxHeadingLevel;i+=1){selectors.push(`h${i}.anchor`);}return Array.from(document.querySelectorAll(selectors.join()));}function getActiveAnchor(anchors,{anchorTopOffset}){// Naming is hard: The "nextVisibleAnchor" is the first anchor that appear
+// under the viewport top boundary. It does not mean this anchor is visible
+// yet, but if user continues scrolling down, it will be the first to become
+// visible
+const nextVisibleAnchor=anchors.find(anchor=>{const boundingRect=getVisibleBoundingClientRect(anchor);return boundingRect.top>=anchorTopOffset;});if(nextVisibleAnchor){const boundingRect=getVisibleBoundingClientRect(nextVisibleAnchor);// If anchor is in the top half of the viewport: it is the one we consider
+// "active" (unless it's too close to the top and and soon to be scrolled
+// outside viewport)
+if(isInViewportTopHalf(boundingRect)){return nextVisibleAnchor;}// If anchor is in the bottom half of the viewport, or under the viewport,
+// we consider the active anchor is the previous one. This is because the
+// main text appearing in the user screen mostly belong to the previous
+// anchor. Returns null for the first anchor, see
+// https://github.com/facebook/docusaurus/issues/5318
+return anchors[anchors.indexOf(nextVisibleAnchor)-1]??null;}// No anchor under viewport top (i.e. we are at the bottom of the page),
+// highlight the last anchor found
+return anchors[anchors.length-1]??null;}function getLinkAnchorValue(link){return decodeURIComponent(link.href.substring(link.href.indexOf('#')+1));}function getLinks(linkClassName){return Array.from(document.getElementsByClassName(linkClassName));}function getNavbarHeight(){// Not ideal to obtain actual height this way
+// Using TS ! (not ?) because otherwise a bad selector would be un-noticed
+return document.querySelector('.navbar').clientHeight;}function useAnchorTopOffsetRef(){const anchorTopOffsetRef=(0,react.useRef)(0);const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.p)();(0,react.useEffect)(()=>{anchorTopOffsetRef.current=hideOnScroll?0:getNavbarHeight();},[hideOnScroll]);return anchorTopOffsetRef;}/**
+ * Side-effect that applies the active class name to the TOC heading that the
+ * user is currently viewing. Disabled when `config` is undefined.
+ */function useTOCHighlight(config){const lastActiveLinkRef=(0,react.useRef)(undefined);const anchorTopOffsetRef=useAnchorTopOffsetRef();(0,react.useEffect)(()=>{if(!config){// No-op, highlighting is disabled
+return()=>{};}const{linkClassName,linkActiveClassName,minHeadingLevel,maxHeadingLevel}=config;function updateLinkActiveClass(link,active){if(active){if(lastActiveLinkRef.current&&lastActiveLinkRef.current!==link){lastActiveLinkRef.current.classList.remove(linkActiveClassName);}link.classList.add(linkActiveClassName);lastActiveLinkRef.current=link;// link.scrollIntoView({block: 'nearest'});
+}else{link.classList.remove(linkActiveClassName);}}function updateActiveLink(){const links=getLinks(linkClassName);const anchors=getAnchors({minHeadingLevel,maxHeadingLevel});const activeAnchor=getActiveAnchor(anchors,{anchorTopOffset:anchorTopOffsetRef.current});const activeLink=links.find(link=>activeAnchor&&activeAnchor.id===getLinkAnchorValue(link));links.forEach(link=>{updateLinkActiveClass(link,link===activeLink);});}document.addEventListener('scroll',updateActiveLink);document.addEventListener('resize',updateActiveLink);updateActiveLink();return()=>{document.removeEventListener('scroll',updateActiveLink);document.removeEventListener('resize',updateActiveLink);};},[config,anchorTopOffsetRef]);}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOCItems/Tree.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const Danger_infimaClassName='alert alert--danger';const Danger_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconDanger,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.danger",description:"The default label used for the Danger admonition (:::danger)",children:"danger"})};function AdmonitionTypeDanger(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Danger_defaultProps,...props,className:(0,clsx/* default */.A)(Danger_infimaClassName,props.className),children:props.children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Type/Caution.js
+ */// Recursive component rendering the toc tree
+function TOCItemTree({toc,className,linkClassName,isChild}){if(!toc.length){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:isChild?undefined:className,children:toc.map(heading=>/*#__PURE__*/(0,jsx_runtime.jsxs)("li",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{to:`#${heading.id}`,className:linkClassName??undefined// Developer provided the HTML, so assume it's safe.
+,dangerouslySetInnerHTML:{__html:heading.value}}),/*#__PURE__*/(0,jsx_runtime.jsx)(TOCItemTree,{isChild:true,toc:heading.children,className:className,linkClassName:linkClassName})]},heading.id))});}// Memo only the tree root is enough
+/* harmony default export */ const Tree = (/*#__PURE__*/react.memo(TOCItemTree));
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOCItems/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const Caution_infimaClassName='alert alert--warning';const Caution_defaultProps={icon:/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionIconCaution,{}),title:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.admonition.caution",description:"The default label used for the Caution admonition (:::caution)",children:"caution"})};// TODO remove before v4: Caution replaced by Warning
-// see https://github.com/facebook/docusaurus/issues/7558
-function AdmonitionTypeCaution(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionLayout,{...Caution_defaultProps,...props,className:(0,clsx/* default */.A)(Caution_infimaClassName,props.className),children:props.children});}
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/Types.js
+ */function TOCItems({toc,className='table-of-contents table-of-contents__left-border',linkClassName='table-of-contents__link',linkActiveClassName=undefined,minHeadingLevel:minHeadingLevelOption,maxHeadingLevel:maxHeadingLevelOption,...props}){const themeConfig=(0,useThemeConfig/* useThemeConfig */.p)();const minHeadingLevel=minHeadingLevelOption??themeConfig.tableOfContents.minHeadingLevel;const maxHeadingLevel=maxHeadingLevelOption??themeConfig.tableOfContents.maxHeadingLevel;const tocTree=useFilteredAndTreeifiedTOC({toc,minHeadingLevel,maxHeadingLevel});const tocHighlightConfig=(0,react.useMemo)(()=>{if(linkClassName&&linkActiveClassName){return{linkClassName,linkActiveClassName,minHeadingLevel,maxHeadingLevel};}return undefined;},[linkClassName,linkActiveClassName,minHeadingLevel,maxHeadingLevel]);useTOCHighlight(tocHighlightConfig);return/*#__PURE__*/(0,jsx_runtime.jsx)(Tree,{toc:tocTree,className:className,linkClassName:linkClassName,...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/CollapseButton/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const CollapseButton_styles_module = ({"tocCollapsibleButton":"tocCollapsibleButton_MR_T","tocCollapsibleButtonExpanded":"tocCollapsibleButtonExpanded_zKeV"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/CollapseButton/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const admonitionTypes={note:AdmonitionTypeNote,tip:AdmonitionTypeTip,info:AdmonitionTypeInfo,warning:AdmonitionTypeWarning,danger:AdmonitionTypeDanger};// Undocumented legacy admonition type aliases
-// Provide hardcoded/untranslated retrocompatible label
-// See also https://github.com/facebook/docusaurus/issues/7767
-const admonitionAliases={secondary:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeNote,{title:"secondary",...props}),important:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeInfo,{title:"important",...props}),success:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeTip,{title:"success",...props}),caution:AdmonitionTypeCaution};/* harmony default export */ const Types = ({...admonitionTypes,...admonitionAliases});
-;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js
+ */function TOCCollapsibleCollapseButton({collapsed,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button",...props,className:(0,clsx/* default */.A)('clean-btn',CollapseButton_styles_module.tocCollapsibleButton,!collapsed&&CollapseButton_styles_module.tocCollapsibleButtonExpanded,props.className),children:/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.TOCCollapsible.toggleButtonLabel",description:"The label used by the button on the collapsible TOC component",children:"On this page"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const TOCCollapsible_styles_module = ({"tocCollapsible":"tocCollapsible_T7DW","tocCollapsibleContent":"tocCollapsibleContent_H0jK","tocCollapsibleExpanded":"tocCollapsibleExpanded_Zbox"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOCCollapsible/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function getAdmonitionTypeComponent(type){const component=Types[type];if(component){return component;}console.warn(`No admonition component found for admonition type "${type}". Using Info as fallback.`);return Types.info;}function Admonition(unprocessedProps){const props=processAdmonitionProps(unprocessedProps);const AdmonitionTypeComponent=getAdmonitionTypeComponent(props.type);return/*#__PURE__*/(0,jsx_runtime.jsx)(AdmonitionTypeComponent,{...props});}
+ */function TOCCollapsible({toc,className,minHeadingLevel,maxHeadingLevel}){const{collapsed,toggleCollapsed}=(0,Collapsible/* useCollapsible */.u)({initialState:true});return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(TOCCollapsible_styles_module.tocCollapsible,!collapsed&&TOCCollapsible_styles_module.tocCollapsibleExpanded,className),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(TOCCollapsibleCollapseButton,{collapsed:collapsed,onClick:toggleCollapsed}),/*#__PURE__*/(0,jsx_runtime.jsx)(Collapsible/* Collapsible */.N,{lazy:true,className:TOCCollapsible_styles_module.tocCollapsibleContent,collapsed:collapsed,children:/*#__PURE__*/(0,jsx_runtime.jsx)(TOCItems,{toc:toc,minHeadingLevel:minHeadingLevel,maxHeadingLevel:maxHeadingLevel})})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Mobile/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Mobile_styles_module = ({"tocMobile":"tocMobile_bOT1"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Mobile/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocItemTOCMobile(){const{toc,frontMatter}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(TOCCollapsible,{toc:toc,minHeadingLevel:frontMatter.toc_min_heading_level,maxHeadingLevel:frontMatter.toc_max_heading_level,className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docTocMobile,Mobile_styles_module.tocMobile)});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOC/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const TOC_styles_module = ({"tableOfContents":"tableOfContents_K4vG","docItemContainer":"docItemContainer_Rg3g"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/TOC/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Using a custom className
+// This prevents TOCInline/TOCCollapsible getting highlighted by mistake
+const LINK_CLASS_NAME='table-of-contents__link toc-highlight';const LINK_ACTIVE_CLASS_NAME='table-of-contents__link--active';function TOC({className,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(TOC_styles_module.tableOfContents,'thin-scrollbar',className),children:/*#__PURE__*/(0,jsx_runtime.jsx)(TOCItems,{...props,linkClassName:LINK_CLASS_NAME,linkActiveClassName:LINK_ACTIVE_CLASS_NAME})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Desktop/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocItemTOCDesktop(){const{toc,frontMatter}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsx)(TOC,{toc:toc,minHeadingLevel:frontMatter.toc_min_heading_level,maxHeadingLevel:frontMatter.toc_max_heading_level,className:ThemeClassNames/* ThemeClassNames */.G.docs.docTocDesktop});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
+var Heading = __webpack_require__(1463);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0/node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(1197);
+// EXTERNAL MODULE: ./src/theme/MDXComponents.js
+var MDXComponents = __webpack_require__(8302);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXContent/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MDXContent({children}){return/*#__PURE__*/(0,jsx_runtime.jsx)(lib/* MDXProvider */.x,{components:MDXComponents/* default */.A,children:children});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Content/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ Title can be declared inside md content or declared through
+ front matter and added manually. To make both cases consistent,
+ the added title is added under the same div.markdown block
+ See https://github.com/facebook/docusaurus/pull/4882#issuecomment-853021120
+
+ We render a "synthetic title" if:
+ - user doesn't ask to hide it with front matter
+ - the markdown content does not already contain a top-level h1 heading
+*/function useSyntheticTitle(){const{metadata,frontMatter,contentTitle}=useDoc();const shouldRender=!frontMatter.hide_title&&typeof contentTitle==='undefined';if(!shouldRender){return null;}return metadata.title;}function DocItemContent({children}){const syntheticTitle=useSyntheticTitle();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docMarkdown,'markdown'),children:[syntheticTitle&&/*#__PURE__*/(0,jsx_runtime.jsx)("header",{children:/*#__PURE__*/(0,jsx_runtime.jsx)(Heading/* default */.A,{as:"h1",children:syntheticTitle})}),/*#__PURE__*/(0,jsx_runtime.jsx)(MDXContent,{children:children})]});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._0102d6af86e0a1ac91bb34bdebfdc33d/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js + 1 modules
+var docsUtils = __webpack_require__(2638);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
+var routesUtils = __webpack_require__(1544);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(9431);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Home/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconHome(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{d:"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z",fill:"currentColor"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/Items/Home/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Home_styles_module = ({"breadcrumbHomeIcon":"breadcrumbHomeIcon_hhbW"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/Items/Home/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function HomeBreadcrumbItem(){const homeHref=(0,useBaseUrl/* default */.Ay)('/');return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:"breadcrumbs__item",children:/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.breadcrumbs.home',message:'Home page',description:'The ARIA label for the home page in the breadcrumbs'}),className:"breadcrumbs__link",href:homeHref,children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconHome,{className:Home_styles_module.breadcrumbHomeIcon})})});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Head.js
+var Head = __webpack_require__(1754);
+;// ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._0102d6af86e0a1ac91bb34bdebfdc33d/node_modules/@docusaurus/plugin-content-docs/lib/client/structuredDataUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useBreadcrumbsStructuredData({breadcrumbs}){const{siteConfig}=(0,useDocusaurusContext/* default */.A)();return{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:breadcrumbs// We filter breadcrumb items without links, they are not allowed
+// See also https://github.com/facebook/docusaurus/issues/9319#issuecomment-2643560845
+.filter(breadcrumb=>breadcrumb.href).map((breadcrumb,index)=>({'@type':'ListItem',position:index+1,name:breadcrumb.label,item:`${siteConfig.url}${breadcrumb.href}`}))};}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/StructuredData/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocBreadcrumbsStructuredData(props){const structuredData=useBreadcrumbsStructuredData({breadcrumbs:props.breadcrumbs});return/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("script",{type:"application/ld+json",children:JSON.stringify(structuredData)})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const DocBreadcrumbs_styles_module = ({"breadcrumbsContainer":"breadcrumbsContainer_zGgE"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// TODO move to design system folder
+function BreadcrumbsItemLink({children,href,isLast}){const className='breadcrumbs__link';if(isLast){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:className,children:children});}return href?/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{className:className,href:href,children:/*#__PURE__*/(0,jsx_runtime.jsx)("span",{children:children})}):/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:className,children:children});}// TODO move to design system folder
+function BreadcrumbsItem({children,active}){return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{className:(0,clsx/* default */.A)('breadcrumbs__item',{'breadcrumbs__item--active':active}),children:children});}function DocBreadcrumbs(){const breadcrumbs=(0,docsUtils/* useSidebarBreadcrumbs */.OF)();const homePageRoute=(0,routesUtils/* useHomePageRoute */.Dt)();if(!breadcrumbs){return null;}return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(DocBreadcrumbsStructuredData,{breadcrumbs:breadcrumbs}),/*#__PURE__*/(0,jsx_runtime.jsx)("nav",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docBreadcrumbs,DocBreadcrumbs_styles_module.breadcrumbsContainer),"aria-label":(0,Translate/* translate */.T)({id:'theme.docs.breadcrumbs.navAriaLabel',message:'Breadcrumbs',description:'The ARIA label for the breadcrumbs'}),children:/*#__PURE__*/(0,jsx_runtime.jsxs)("ul",{className:"breadcrumbs",children:[homePageRoute&&/*#__PURE__*/(0,jsx_runtime.jsx)(HomeBreadcrumbItem,{}),breadcrumbs.map((item,idx)=>{const isLast=idx===breadcrumbs.length-1;const href=item.type==='category'&&item.linkUnlisted?undefined:item.href;return/*#__PURE__*/(0,jsx_runtime.jsx)(BreadcrumbsItem,{active:isLast,children:/*#__PURE__*/(0,jsx_runtime.jsx)(BreadcrumbsItemLink,{href:href,isLast:isLast,children:item.label})},idx);})]})})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/translations/contentVisibilityTranslations.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function UnlistedBannerTitle(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.unlistedBanner.title",description:"The unlisted content banner title",children:"Unlisted page"});}function UnlistedBannerMessage(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.unlistedBanner.message",description:"The unlisted content banner message",children:"This page is unlisted. Search engines will not index it, and only users having a direct link can access it."});}// TODO Docusaurus v4 breaking change (since it's v3 public theme-common API :/)
+//  Move this to theme/ContentVisibility/Unlisted
+function UnlistedMetadata(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"robots",content:"noindex, nofollow"})});}function DraftBannerTitle(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.draftBanner.title",description:"The draft content banner title",children:"Draft page"});}function DraftBannerMessage(){return/*#__PURE__*/(0,jsx_runtime.jsx)(Translate/* default */.A,{id:"theme.contentVisibility.draftBanner.message",description:"The draft content banner message",children:"This page is a draft. It will only be visible in dev and be excluded from the production build."});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js + 15 modules
+var Admonition = __webpack_require__(673);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/ContentVisibility/Draft/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function Draft({className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Admonition/* default */.A,{type:"caution",title:/*#__PURE__*/(0,jsx_runtime.jsx)(DraftBannerTitle,{}),className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.common.draftBanner),children:/*#__PURE__*/(0,jsx_runtime.jsx)(DraftBannerMessage,{})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/ContentVisibility/Unlisted/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function UnlistedBanner({className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Admonition/* default */.A,{type:"caution",title:/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedBannerTitle,{}),className:(0,clsx/* default */.A)(className,ThemeClassNames/* ThemeClassNames */.G.common.unlistedBanner),children:/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedBannerMessage,{})});}function Unlisted(props){return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedMetadata,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(UnlistedBanner,{...props})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/ContentVisibility/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function ContentVisibility({metadata}){const{unlisted,frontMatter}=metadata;// Reading draft/unlisted status from frontMatter is useful to display
+// the banners in dev mode (in dev, metadata.unlisted is always false)
+// See https://github.com/facebook/docusaurus/issues/8285
+return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(unlisted||frontMatter.unlisted)&&/*#__PURE__*/(0,jsx_runtime.jsx)(Unlisted,{}),frontMatter.draft&&/*#__PURE__*/(0,jsx_runtime.jsx)(Draft,{})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Layout/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Layout_styles_module = ({"docItemContainer":"docItemContainer_rikH","docItemCol":"docItemCol_poiS"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Decide if the toc should be rendered, on mobile or desktop viewports
+ */function useDocTOC(){const{frontMatter,toc}=useDoc();const windowSize=(0,useWindowSize/* useWindowSize */.l)();const hidden=frontMatter.hide_table_of_contents;const canRender=!hidden&&toc.length>0;const mobile=canRender?/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemTOCMobile,{}):undefined;const desktop=canRender&&(windowSize==='desktop'||windowSize==='ssr')?/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemTOCDesktop,{}):undefined;return{hidden,mobile,desktop};}function DocItemLayout({children}){const docTOC=useDocTOC();const{metadata}=useDoc();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"row",children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('col',!docTOC.hidden&&Layout_styles_module.docItemCol),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(ContentVisibility,{metadata:metadata}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocVersionBanner,{}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:Layout_styles_module.docItemContainer,children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("article",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(DocBreadcrumbs,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocVersionBadge,{}),docTOC.mobile,/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemContent,{children:children}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemFooter,{})]}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemPaginator,{})]})]}),docTOC.desktop&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"col col--3",children:docTOC.desktop})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/DocItem/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function DocItem(props){const docHtmlClassName=`docs-doc-id-${props.content.metadata.id}`;const MDXComponent=props.content;return/*#__PURE__*/(0,jsx_runtime.jsx)(DocProvider,{content:props.content,children:/*#__PURE__*/(0,jsx_runtime.jsxs)(metadataUtils/* HtmlClassNameProvider */.e3,{className:docHtmlClassName,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemMetadata,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(DocItemLayout,{children:/*#__PURE__*/(0,jsx_runtime.jsx)(MDXComponent,{})})]})});}
 
 /***/ }),
 
@@ -44947,6 +42458,2495 @@ if (void 0) {
 
 
 
+
+/***/ }),
+
+/***/ 9141:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ theme_MDXComponents)
+});
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Head.js
+var Head = __webpack_require__(1754);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
+var useIsBrowser = __webpack_require__(8205);
+// EXTERNAL MODULE: ./node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+var clsx = __webpack_require__(3526);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
+var contexts_colorMode = __webpack_require__(1018);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
+var useThemeConfig = __webpack_require__(641);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/hooks/usePrismTheme.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Returns a color-mode-dependent Prism theme: whatever the user specified in
+ * the config. Falls back to `palenight`.
+ */function usePrismTheme(){const{prism}=(0,useThemeConfig/* useThemeConfig */.p)();const{colorMode}=(0,contexts_colorMode/* useColorMode */.G)();const lightModeTheme=prism.theme;const darkModeTheme=prism.darkTheme||lightModeTheme;const prismTheme=colorMode==='dark'?darkModeTheme:lightModeTheme;return prismTheme;}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
+var ThemeClassNames = __webpack_require__(4562);
+// EXTERNAL MODULE: ./node_modules/.pnpm/parse-numeric-range@1.3.0/node_modules/parse-numeric-range/index.js
+var parse_numeric_range = __webpack_require__(4809);
+var parse_numeric_range_default = /*#__PURE__*/__webpack_require__.n(parse_numeric_range);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
+var reactUtils = __webpack_require__(3403);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7259);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/codeBlockUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const codeBlockTitleRegex=/title=(?<quote>["'])(?<title>.*?)\1/;const metastringLinesRangeRegex=/\{(?<range>[\d,-]+)\}/;// Supported types of highlight comments
+const popularCommentPatterns={js:{start:'\\/\\/',end:''},jsBlock:{start:'\\/\\*',end:'\\*\\/'},jsx:{start:'\\{\\s*\\/\\*',end:'\\*\\/\\s*\\}'},bash:{start:'#',end:''},html:{start:'<!--',end:'-->'}};const commentPatterns={...popularCommentPatterns,// shallow copy is sufficient
+// minor comment styles
+lua:{start:'--',end:''},wasm:{start:'\\;\\;',end:''},tex:{start:'%',end:''},vb:{start:"['‘’]",end:''},vbnet:{start:"(?:_\\s*)?['‘’]",end:''},// Visual Studio 2019 or later
+rem:{start:'[Rr][Ee][Mm]\\b',end:''},f90:{start:'!',end:''},// Free format only
+ml:{start:'\\(\\*',end:'\\*\\)'},cobol:{start:'\\*>',end:''}// Free format only
+};const popularCommentTypes=Object.keys(popularCommentPatterns);function getCommentPattern(languages,magicCommentDirectives){// To be more reliable, the opening and closing comment must match
+const commentPattern=languages.map(lang=>{const{start,end}=commentPatterns[lang];return`(?:${start}\\s*(${magicCommentDirectives.flatMap(d=>[d.line,d.block?.start,d.block?.end].filter(Boolean)).join('|')})\\s*${end})`;}).join('|');// White space is allowed, but otherwise it should be on it's own line
+return new RegExp(`^\\s*(?:${commentPattern})\\s*$`);}/**
+ * Select comment styles based on language
+ */function getAllMagicCommentDirectiveStyles(lang,magicCommentDirectives){switch(lang){case'js':case'javascript':case'ts':case'typescript':return getCommentPattern(['js','jsBlock'],magicCommentDirectives);case'jsx':case'tsx':return getCommentPattern(['js','jsBlock','jsx'],magicCommentDirectives);case'html':return getCommentPattern(['js','jsBlock','html'],magicCommentDirectives);case'python':case'py':case'bash':return getCommentPattern(['bash'],magicCommentDirectives);case'markdown':case'md':// Text uses HTML, front matter uses bash
+return getCommentPattern(['html','jsx','bash'],magicCommentDirectives);case'tex':case'latex':case'matlab':return getCommentPattern(['tex'],magicCommentDirectives);case'lua':case'haskell':return getCommentPattern(['lua'],magicCommentDirectives);case'sql':return getCommentPattern(['lua','jsBlock'],magicCommentDirectives);case'wasm':return getCommentPattern(['wasm'],magicCommentDirectives);case'vb':case'vba':case'visual-basic':return getCommentPattern(['vb','rem'],magicCommentDirectives);case'vbnet':return getCommentPattern(['vbnet','rem'],magicCommentDirectives);case'batch':return getCommentPattern(['rem'],magicCommentDirectives);case'basic':// https://github.com/PrismJS/prism/blob/master/components/prism-basic.js#L3
+return getCommentPattern(['rem','f90'],magicCommentDirectives);case'fsharp':return getCommentPattern(['js','ml'],magicCommentDirectives);case'ocaml':case'sml':return getCommentPattern(['ml'],magicCommentDirectives);case'fortran':return getCommentPattern(['f90'],magicCommentDirectives);case'cobol':return getCommentPattern(['cobol'],magicCommentDirectives);default:// All popular comment types
+return getCommentPattern(popularCommentTypes,magicCommentDirectives);}}function parseCodeBlockTitle(metastring){return metastring?.match(codeBlockTitleRegex)?.groups.title??'';}function getMetaLineNumbersStart(metastring){const showLineNumbersMeta=metastring?.split(' ').find(str=>str.startsWith('showLineNumbers'));if(showLineNumbersMeta){if(showLineNumbersMeta.startsWith('showLineNumbers=')){const value=showLineNumbersMeta.replace('showLineNumbers=','');return parseInt(value,10);}return 1;}return undefined;}function getLineNumbersStart({showLineNumbers,metastring}){const defaultStart=1;if(typeof showLineNumbers==='boolean'){return showLineNumbers?defaultStart:undefined;}if(typeof showLineNumbers==='number'){return showLineNumbers;}return getMetaLineNumbersStart(metastring);}// TODO Docusaurus v4: remove, only kept for internal retro-compatibility
+//  See https://github.com/facebook/docusaurus/pull/11153
+function containsLineNumbers(metastring){return Boolean(metastring?.includes('showLineNumbers'));}function parseCodeLinesFromMetastring(code,{metastring,magicComments}){// Highlighted lines specified in props: don't parse the content
+if(metastring&&metastringLinesRangeRegex.test(metastring)){const linesRange=metastring.match(metastringLinesRangeRegex).groups.range;if(magicComments.length===0){throw new Error(`A highlight range has been given in code block's metastring (\`\`\` ${metastring}), but no magic comment config is available. Docusaurus applies the first magic comment entry's className for metastring ranges.`);}const metastringRangeClassName=magicComments[0].className;const lines=parse_numeric_range_default()(linesRange).filter(n=>n>0).map(n=>[n-1,[metastringRangeClassName]]);return{lineClassNames:Object.fromEntries(lines),code};}return null;}function parseCodeLinesFromContent(code,params){const{language,magicComments}=params;if(language===undefined){return{lineClassNames:{},code};}const directiveRegex=getAllMagicCommentDirectiveStyles(language,magicComments);// Go through line by line
+const lines=code.split(/\r?\n/);const blocks=Object.fromEntries(magicComments.map(d=>[d.className,{start:0,range:''}]));const lineToClassName=Object.fromEntries(magicComments.filter(d=>d.line).map(({className,line})=>[line,className]));const blockStartToClassName=Object.fromEntries(magicComments.filter(d=>d.block).map(({className,block})=>[block.start,className]));const blockEndToClassName=Object.fromEntries(magicComments.filter(d=>d.block).map(({className,block})=>[block.end,className]));for(let lineNumber=0;lineNumber<lines.length;){const line=lines[lineNumber];const match=line.match(directiveRegex);if(!match){// Lines without directives are unchanged
+lineNumber+=1;continue;}const directive=match.slice(1).find(item=>item!==undefined);if(lineToClassName[directive]){blocks[lineToClassName[directive]].range+=`${lineNumber},`;}else if(blockStartToClassName[directive]){blocks[blockStartToClassName[directive]].start=lineNumber;}else if(blockEndToClassName[directive]){blocks[blockEndToClassName[directive]].range+=`${blocks[blockEndToClassName[directive]].start}-${lineNumber-1},`;}lines.splice(lineNumber,1);}const lineClassNames={};Object.entries(blocks).forEach(([className,{range}])=>{parse_numeric_range_default()(range).forEach(l=>{lineClassNames[l]??=[];lineClassNames[l].push(className);});});return{code:lines.join('\n'),lineClassNames};}/**
+ * Parses the code content, strips away any magic comments, and returns the
+ * clean content and the highlighted lines marked by the comments or metastring.
+ *
+ * If the metastring contains a range, the `content` will be returned as-is
+ * without any parsing. The returned `lineClassNames` will be a map from that
+ * number range to the first magic comment config entry (which _should_ be for
+ * line highlight directives.)
+ */function parseLines(code,params){// Historical behavior: we remove last line break
+const newCode=code.replace(/\r?\n$/,'');// Historical behavior: we try one strategy after the other
+// we don't support mixing metastring ranges + magic comments
+return parseCodeLinesFromMetastring(newCode,{...params})??parseCodeLinesFromContent(newCode,{...params});}/**
+ * Gets the language name from the class name (set by MDX).
+ * e.g. `"language-javascript"` => `"javascript"`.
+ * Returns undefined if there is no language class name.
+ */function parseClassNameLanguage(className){if(!className){return undefined;}const languageClassName=className.split(' ').find(str=>str.startsWith('language-'));return languageClassName?.replace(/language-/,'');}// Prism languages are always lowercase
+// We want to fail-safe and allow both "php" and "PHP"
+// See https://github.com/facebook/docusaurus/issues/9012
+function normalizeLanguage(language){return language?.toLowerCase();}function getLanguage(params){return normalizeLanguage(params.language??parseClassNameLanguage(params.className)??params.defaultLanguage)??'text';// There's always a language, required by Prism;
+}/**
+ * This ensures that we always have the code block language as className
+ * For MDX code blocks this is provided automatically by MDX
+ * For JSX code blocks, the language gets added by this function
+ * This ensures both cases lead to a consistent HTML output
+ */function ensureLanguageClassName({className,language}){return (0,clsx/* default */.A)(className,language&&!className?.includes(`language-${language}`)&&`language-${language}`);}function createCodeBlockMetadata(params){const language=getLanguage({language:params.language,defaultLanguage:params.defaultLanguage,className:params.className});const{lineClassNames,code}=parseLines(params.code,{metastring:params.metastring,magicComments:params.magicComments,language});const className=ensureLanguageClassName({className:params.className,language});const title=parseCodeBlockTitle(params.metastring)||params.title;const lineNumbersStart=getLineNumbersStart({showLineNumbers:params.showLineNumbers,metastring:params.metastring});return{codeInput:params.code,code,className,language,title,lineNumbersStart,lineClassNames};}function getPrismCssVariables(prismTheme){const mapping={color:'--prism-color',backgroundColor:'--prism-background-color'};const properties={};Object.entries(prismTheme.plain).forEach(([key,value])=>{const varName=mapping[key];if(varName&&typeof value==='string'){properties[varName]=value;}});return properties;}const CodeBlockContext=/*#__PURE__*/(0,react.createContext)(null);function CodeBlockContextProvider({metadata,wordWrap,children}){// Should we optimize this in 2 contexts?
+// Unlike metadata, wordWrap is stateful and likely to trigger re-renders
+const value=(0,react.useMemo)(()=>{return{metadata,wordWrap};},[metadata,wordWrap]);return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContext.Provider,{value:value,children:children});}function useCodeBlockContext(){const value=(0,react.useContext)(CodeBlockContext);if(value===null){throw new reactUtils/* ReactContextError */.dV('CodeBlockContextProvider');}return value;}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Container/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"codeBlockContainer":"codeBlockContainer__Jj3"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Container/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function CodeBlockContainer({as:As,...props}){const prismTheme=usePrismTheme();const prismCssVariables=getPrismCssVariables(prismTheme);return/*#__PURE__*/(0,jsx_runtime.jsx)(As// Polymorphic components are hard to type, without `oneOf` generics
+,{...props,style:prismCssVariables,className:(0,clsx/* default */.A)(props.className,styles_module.codeBlockContainer,ThemeClassNames/* ThemeClassNames */.G.common.codeBlock)});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Content_styles_module = ({"codeBlock":"codeBlock_qPUf","codeBlockStandalone":"codeBlockStandalone_jVCn","codeBlockLines":"codeBlockLines_MEUk","codeBlockLinesWithNumbering":"codeBlockLinesWithNumbering_lV2Y"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/Element.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// TODO Docusaurus v4: move this component at the root?
+// This component only handles a rare edge-case: <pre><MyComp/></pre> in MDX
+// <pre> tags in markdown map to CodeBlocks. They may contain JSX children.
+// When children is not a simple string, we just return a styled block without
+// actually highlighting.
+function CodeBlockJSX({children,className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContainer,{as:"pre",tabIndex:0,className:(0,clsx/* default */.A)(Content_styles_module.codeBlockStandalone,'thin-scrollbar',className),children:/*#__PURE__*/(0,jsx_runtime.jsx)("code",{className:Content_styles_module.codeBlockLines,children:children})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/hooks/useMutationObserver.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const DefaultOptions={attributes:true,characterData:true,childList:true,subtree:true};function useMutationObserver(target,callback,options=DefaultOptions){const stableCallback=(0,reactUtils/* useEvent */._q)(callback);// MutationObserver options are not nested much
+// so this should be to memo options in 99%
+// TODO handle options.attributeFilter array
+const stableOptions=(0,reactUtils/* useShallowMemoObject */.Be)(options);(0,react.useEffect)(()=>{const observer=new MutationObserver(stableCallback);if(target){observer.observe(target,stableOptions);}return()=>observer.disconnect();},[target,stableCallback,stableOptions]);}
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/hooks/useCodeWordWrap.js
+// Callback fires when the "hidden" attribute of a tabpanel changes
+// See https://github.com/facebook/docusaurus/pull/7485
+function useTabBecameVisibleCallback(codeBlockRef,callback){const[hiddenTabElement,setHiddenTabElement]=(0,react.useState)();const updateHiddenTabElement=(0,react.useCallback)(()=>{// No need to observe non-hidden tabs
+// + we want to force a re-render when a tab becomes visible
+setHiddenTabElement(codeBlockRef.current?.closest('[role=tabpanel][hidden]'));},[codeBlockRef,setHiddenTabElement]);(0,react.useEffect)(()=>{updateHiddenTabElement();},[updateHiddenTabElement]);useMutationObserver(hiddenTabElement,mutations=>{mutations.forEach(mutation=>{if(mutation.type==='attributes'&&mutation.attributeName==='hidden'){callback();updateHiddenTabElement();}});},{attributes:true,characterData:false,childList:false,subtree:false});}function useCodeWordWrap(){const[isEnabled,setIsEnabled]=(0,react.useState)(false);const[isCodeScrollable,setIsCodeScrollable]=(0,react.useState)(false);const codeBlockRef=(0,react.useRef)(null);const toggle=(0,react.useCallback)(()=>{const codeElement=codeBlockRef.current.querySelector('code');if(isEnabled){codeElement.removeAttribute('style');}else{codeElement.style.whiteSpace='pre-wrap';// When code wrap is enabled, we want to avoid a scrollbar in any case
+// Ensure that very very long words/strings/tokens still wrap
+codeElement.style.overflowWrap='anywhere';}setIsEnabled(value=>!value);},[codeBlockRef,isEnabled]);const updateCodeIsScrollable=(0,react.useCallback)(()=>{const{scrollWidth,clientWidth}=codeBlockRef.current;const isScrollable=scrollWidth>clientWidth||codeBlockRef.current.querySelector('code').hasAttribute('style');setIsCodeScrollable(isScrollable);},[codeBlockRef]);useTabBecameVisibleCallback(codeBlockRef,updateCodeIsScrollable);(0,react.useEffect)(()=>{updateCodeIsScrollable();},[isEnabled,updateCodeIsScrollable]);(0,react.useEffect)(()=>{window.addEventListener('resize',updateCodeIsScrollable,{passive:true});return()=>{window.removeEventListener('resize',updateCodeIsScrollable);};},[updateCodeIsScrollable]);return{codeBlockRef,isEnabled,isCodeScrollable,toggle};}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Title/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Just a pass-through component that users can swizzle and customize
+function CodeBlockTitle({children}){return children;}
+// EXTERNAL MODULE: ./node_modules/.pnpm/prism-react-renderer@2.4.1_react@19.2.0/node_modules/prism-react-renderer/dist/index.mjs
+var dist = __webpack_require__(3293);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Line/Token/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Pass-through components that users can swizzle and customize
+function CodeBlockLineToken({line,token,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("span",{...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Line/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Line_styles_module = ({"codeLine":"codeLine_TOiY","codeLineNumber":"codeLineNumber_AfvE","codeLineContent":"codeLineContent_l7Hy"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Line/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Replaces '\n' by ''
+// Historical code, not sure why we even need this :/
+function fixLineBreak(line){const singleLineBreakToken=line.length===1&&line[0].content==='\n'?line[0]:undefined;if(singleLineBreakToken){return[{...singleLineBreakToken,content:''}];}return line;}function CodeBlockLine({line:lineProp,classNames,showLineNumbers,getLineProps,getTokenProps}){const line=fixLineBreak(lineProp);const lineProps=getLineProps({line,className:(0,clsx/* default */.A)(classNames,showLineNumbers&&Line_styles_module.codeLine)});const lineTokens=line.map((token,key)=>{const tokenProps=getTokenProps({token});return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockLineToken,{...tokenProps,line:line,token:token,children:tokenProps.children},key);});return/*#__PURE__*/(0,jsx_runtime.jsxs)("span",{...lineProps,children:[showLineNumbers?/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:Line_styles_module.codeLineNumber}),/*#__PURE__*/(0,jsx_runtime.jsx)("span",{className:Line_styles_module.codeLineContent,children:lineTokens})]}):lineTokens,/*#__PURE__*/(0,jsx_runtime.jsx)("br",{})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// TODO Docusaurus v4: remove useless forwardRef
+const Pre=/*#__PURE__*/react.forwardRef((props,ref)=>{return/*#__PURE__*/(0,jsx_runtime.jsx)("pre",{ref:ref/* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */,tabIndex:0,...props,className:(0,clsx/* default */.A)(props.className,Content_styles_module.codeBlock,'thin-scrollbar')});});function Code(props){const{metadata}=useCodeBlockContext();return/*#__PURE__*/(0,jsx_runtime.jsx)("code",{...props,className:(0,clsx/* default */.A)(props.className,Content_styles_module.codeBlockLines,metadata.lineNumbersStart!==undefined&&Content_styles_module.codeBlockLinesWithNumbering),style:{...props.style,counterReset:metadata.lineNumbersStart===undefined?undefined:`line-count ${metadata.lineNumbersStart-1}`}});}function CodeBlockContent({className:classNameProp}){const{metadata,wordWrap}=useCodeBlockContext();const prismTheme=usePrismTheme();const{code,language,lineNumbersStart,lineClassNames}=metadata;return/*#__PURE__*/(0,jsx_runtime.jsx)(dist/* Highlight */.f4,{theme:prismTheme,code:code,language:language,children:({className,style,tokens:lines,getLineProps,getTokenProps})=>/*#__PURE__*/(0,jsx_runtime.jsx)(Pre,{ref:wordWrap.codeBlockRef,className:(0,clsx/* default */.A)(classNameProp,className),style:style,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Code,{children:lines.map((line,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockLine,{line:line,getLineProps:getLineProps,getTokenProps:getTokenProps,classNames:lineClassNames[i],showLineNumbers:lineNumbersStart!==undefined},i))})})});}
+;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/BrowserOnly.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Similar comp to the one described here:
+// https://www.joshwcomeau.com/react/the-perils-of-rehydration/#abstractions
+function BrowserOnly({children,fallback}){const isBrowser=(0,useIsBrowser/* default */.A)();if(isBrowser){if(typeof children!=='function'&&"production"==='development')// removed by dead control flow
+{}return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:children?.()});}return fallback??null;}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(6007);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/Button/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function CodeBlockButton({className,...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{type:"button",...props,className:(0,clsx/* default */.A)('clean-btn',className)});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Copy/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconCopy(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Icon/Success/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconSuccess(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/CopyButton/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const CopyButton_styles_module = ({"copyButtonCopied":"copyButtonCopied_rkN_","copyButtonIcons":"copyButtonIcons_lQNr","copyButtonIcon":"copyButtonIcon_V1IV","copyButtonSuccessIcon":"copyButtonSuccessIcon_gbfw"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/CopyButton/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function title(){return (0,Translate/* translate */.T)({id:'theme.CodeBlock.copy',message:'Copy',description:'The copy button label on code blocks'});}function ariaLabel(isCopied){return isCopied?(0,Translate/* translate */.T)({id:'theme.CodeBlock.copied',message:'Copied',description:'The copied button label on code blocks'}):(0,Translate/* translate */.T)({id:'theme.CodeBlock.copyButtonAriaLabel',message:'Copy code to clipboard',description:'The ARIA label for copy code blocks button'});}function useCopyButton(){const{metadata:{code}}=useCodeBlockContext();const[isCopied,setIsCopied]=(0,react.useState)(false);const copyTimeout=(0,react.useRef)(undefined);const copyCode=(0,react.useCallback)(()=>{navigator.clipboard.writeText(code).then(()=>{setIsCopied(true);copyTimeout.current=window.setTimeout(()=>{setIsCopied(false);},1000);});},[code]);(0,react.useEffect)(()=>()=>window.clearTimeout(copyTimeout.current),[]);return{copyCode,isCopied};}function CopyButton({className}){const{copyCode,isCopied}=useCopyButton();return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockButton,{"aria-label":ariaLabel(isCopied),title:title(),className:(0,clsx/* default */.A)(className,CopyButton_styles_module.copyButton,isCopied&&CopyButton_styles_module.copyButtonCopied),onClick:copyCode,children:/*#__PURE__*/(0,jsx_runtime.jsxs)("span",{className:CopyButton_styles_module.copyButtonIcons,"aria-hidden":"true",children:[/*#__PURE__*/(0,jsx_runtime.jsx)(IconCopy,{className:CopyButton_styles_module.copyButtonIcon}),/*#__PURE__*/(0,jsx_runtime.jsx)(IconSuccess,{className:CopyButton_styles_module.copyButtonSuccessIcon})]})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Icon/WordWrap/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function IconWordWrap(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("svg",{viewBox:"0 0 24 24",...props,children:/*#__PURE__*/(0,jsx_runtime.jsx)("path",{fill:"currentColor",d:"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/WordWrapButton/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const WordWrapButton_styles_module = ({"wordWrapButtonIcon":"wordWrapButtonIcon_RgI5","wordWrapButtonEnabled":"wordWrapButtonEnabled_EQP2"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/WordWrapButton/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function WordWrapButton({className}){const{wordWrap}=useCodeBlockContext();const canShowButton=wordWrap.isEnabled||wordWrap.isCodeScrollable;if(!canShowButton){return false;}const title=(0,Translate/* translate */.T)({id:'theme.CodeBlock.wordWrapToggle',message:'Toggle word wrap',description:'The title attribute for toggle word wrapping button of code block lines'});return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockButton,{onClick:()=>wordWrap.toggle(),className:(0,clsx/* default */.A)(className,wordWrap.isEnabled&&WordWrapButton_styles_module.wordWrapButtonEnabled),"aria-label":title,title:title,children:/*#__PURE__*/(0,jsx_runtime.jsx)(IconWordWrap,{className:WordWrapButton_styles_module.wordWrapButtonIcon,"aria-hidden":"true"})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Buttons_styles_module = ({"buttonGroup":"buttonGroup_YREO"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Buttons/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Code block buttons are not server-rendered on purpose
+// Adding them to the initial HTML is useless and expensive (due to JSX SVG)
+// They are hidden by default and require React  to become interactive
+function CodeBlockButtons({className}){return/*#__PURE__*/(0,jsx_runtime.jsx)(BrowserOnly,{children:()=>/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(className,Buttons_styles_module.buttonGroup),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(WordWrapButton,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(CopyButton,{})]})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Layout/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Layout_styles_module = ({"codeBlockContent":"codeBlockContent__MW5","codeBlockTitle":"codeBlockTitle_crTb","codeBlock":"codeBlock_QdZo"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Layout/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function CodeBlockLayout({className}){const{metadata}=useCodeBlockContext();return/*#__PURE__*/(0,jsx_runtime.jsxs)(CodeBlockContainer,{as:"div",className:(0,clsx/* default */.A)(className,metadata.className),children:[metadata.title&&/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:Layout_styles_module.codeBlockTitle,children:/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockTitle,{children:metadata.title})}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:Layout_styles_module.codeBlockContent,children:[/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContent,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockButtons,{})]})]});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/Content/String.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useCodeBlockMetadata(props){const{prism}=(0,useThemeConfig/* useThemeConfig */.p)();return createCodeBlockMetadata({code:props.children,className:props.className,metastring:props.metastring,magicComments:prism.magicComments,defaultLanguage:prism.defaultLanguage,language:props.language,title:props.title,showLineNumbers:props.showLineNumbers});}// TODO Docusaurus v4: move this component at the root?
+function CodeBlockString(props){const metadata=useCodeBlockMetadata(props);const wordWrap=useCodeWordWrap();return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockContextProvider,{metadata:metadata,wordWrap:wordWrap,children:/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockLayout,{})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeBlock/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//**
+ * Best attempt to make the children a plain string so it is copyable. If there
+ * are react elements, we will not be able to copy the content, and it will
+ * return `children` as-is; otherwise, it concatenates the string children
+ * together.
+ */function maybeStringifyChildren(children){if(react.Children.toArray(children).some(el=>/*#__PURE__*/(0,react.isValidElement)(el))){return children;}// The children is now guaranteed to be one/more plain strings
+return Array.isArray(children)?children.join(''):children;}function CodeBlock({children:rawChildren,...props}){// The Prism theme on SSR is always the default theme but the site theme can
+// be in a different mode. React hydration doesn't update DOM styles that come
+// from SSR. Hence force a re-render after mounting to apply the current
+// relevant styles.
+const isBrowser=(0,useIsBrowser/* default */.A)();const children=maybeStringifyChildren(rawChildren);const CodeBlockComp=typeof children==='string'?CodeBlockString:CodeBlockJSX;return/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlockComp,{...props,children:children},String(isBrowser));}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/CodeInline/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Simple component used to render inline code blocks
+// its purpose is to be swizzled and customized
+// MDX 1 used to have a inlineCode comp, see https://mdxjs.com/migrating/v2/
+function CodeInline(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("code",{...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Code.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function shouldBeInline(props){return(// empty code blocks have no props.children,
+// see https://github.com/facebook/docusaurus/pull/9704
+typeof props.children!=='undefined'&&react.Children.toArray(props.children).every(el=>typeof el==='string'&&!el.includes('\n')));}function MDXCode(props){return shouldBeInline(props)?/*#__PURE__*/(0,jsx_runtime.jsx)(CodeInline,{...props}):/*#__PURE__*/(0,jsx_runtime.jsx)(CodeBlock,{...props});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/Link.js
+var Link = __webpack_require__(3308);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/A/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const A_styles_module = ({"footnoteRefStickyNavbar":"footnoteRefStickyNavbar_RuiY","footnoteRefHideOnScrollNavbar":"footnoteRefHideOnScrollNavbar_p3Z0"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/A/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function isFootnoteRef(props){return props['data-footnote-ref']===true;}function FootnoteRefLink(props){const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.p)();return/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{...props,className:(0,clsx/* default */.A)(hideOnScroll?A_styles_module.footnoteRefHideOnScrollNavbar:A_styles_module.footnoteRefStickyNavbar,props.className)});}function MDXA(props){if(isFootnoteRef(props)){return/*#__PURE__*/(0,jsx_runtime.jsx)(FootnoteRefLink,{...props});}return/*#__PURE__*/(0,jsx_runtime.jsx)(Link/* default */.A,{...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Pre.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MDXPre(props){// With MDX 2, this element is only used for fenced code blocks
+// It always receives a MDXComponents/Code as children
+return/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:props.children});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/useBrokenLinks.js + 1 modules
+var useBrokenLinks = __webpack_require__(5086);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/components/Collapsible/index.js
+var Collapsible = __webpack_require__(7166);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/components/Details/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Details_styles_module = ({"details":"details_XInd","isBrowser":"isBrowser_PPQY","collapsibleContent":"collapsibleContent_jnws"});
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/components/Details/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function isInSummary(node){if(!node){return false;}return node.tagName==='SUMMARY'||isInSummary(node.parentElement);}function hasParent(node,parent){if(!node){return false;}return node===parent||hasParent(node.parentElement,parent);}/**
+ * A mostly un-styled `<details>` element with smooth collapsing. Provides some
+ * very lightweight styles, but you should bring your UI.
+ */function Details({summary,children,...props}){(0,useBrokenLinks/* default */.A)().collectAnchor(props.id);const isBrowser=(0,useIsBrowser/* default */.A)();const detailsRef=(0,react.useRef)(null);const{collapsed,setCollapsed}=(0,Collapsible/* useCollapsible */.u)({initialState:!props.open});// Use a separate state for the actual details prop, because it must be set
+// only after animation completes, otherwise close animations won't work
+const[open,setOpen]=(0,react.useState)(props.open);const summaryElement=/*#__PURE__*/react.isValidElement(summary)?summary:/*#__PURE__*/(0,jsx_runtime.jsx)("summary",{children:summary??'Details'});return(/*#__PURE__*/// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
+(0,jsx_runtime.jsxs)("details",{...props,ref:detailsRef,open:open,"data-collapsed":collapsed,className:(0,clsx/* default */.A)(Details_styles_module.details,isBrowser&&Details_styles_module.isBrowser,props.className),onMouseDown:e=>{const target=e.target;// Prevent a double-click to highlight summary text
+if(isInSummary(target)&&e.detail>1){e.preventDefault();}},onClick:e=>{e.stopPropagation();// For isolation of multiple nested details/summary
+const target=e.target;const shouldToggle=isInSummary(target)&&hasParent(target,detailsRef.current);if(!shouldToggle){return;}e.preventDefault();if(collapsed){setCollapsed(false);setOpen(true);}else{setCollapsed(true);// Don't do this, it breaks close animation!
+// setOpen(false);
+}},children:[summaryElement,/*#__PURE__*/(0,jsx_runtime.jsx)(Collapsible/* Collapsible */.N,{lazy:false// Content might matter for SEO in this case
+,collapsed:collapsed,onCollapseTransitionEnd:newCollapsed=>{setCollapsed(newCollapsed);setOpen(!newCollapsed);},children:/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:Details_styles_module.collapsibleContent,children:children})})]}));}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Details/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const theme_Details_styles_module = ({"details":"details_e8xq"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Details/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Should we have a custom details/summary comp in Infima instead of reusing
+// alert classes?
+const InfimaClasses='alert alert--info';function Details_Details({...props}){return/*#__PURE__*/(0,jsx_runtime.jsx)(Details,{...props,className:(0,clsx/* default */.A)(InfimaClasses,theme_Details_styles_module.details,props.className)});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Details.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MDXDetails(props){const items=react.Children.toArray(props.children);// Split summary item from the rest to pass it as a separate prop to the
+// Details theme component
+const summary=items.find(item=>/*#__PURE__*/react.isValidElement(item)&&item.type==='summary');const children=/*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment,{children:items.filter(item=>item!==summary)});return/*#__PURE__*/(0,jsx_runtime.jsx)(Details_Details,{...props,summary:summary,children:children});}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
+var Heading = __webpack_require__(1463);
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Heading.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MDXHeading(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(Heading/* default */.A,{...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Ul/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Ul_styles_module = ({"containsTaskList":"containsTaskList_qLpy"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Ul/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function transformUlClassName(className){// Fix https://github.com/facebook/docusaurus/issues/9098
+if(typeof className==='undefined'){return undefined;}return (0,clsx/* default */.A)(className,// This class is set globally by GitHub/MDX. We keep the global class, and
+// add another class to get a task list without the default ul styling
+// See https://github.com/syntax-tree/mdast-util-to-hast/issues/28
+className?.includes('contains-task-list')&&Ul_styles_module.containsTaskList);}function MDXUl(props){return/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{...props,className:transformUlClassName(props.className)});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Li.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MDXLi(props){// MDX Footnotes have ids such as <li id="user-content-fn-1-953011">
+(0,useBrokenLinks/* default */.A)().collectAnchor(props.id);return/*#__PURE__*/(0,jsx_runtime.jsx)("li",{...props});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Img/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Img_styles_module = ({"img":"img_K16g"});
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/Img/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function transformImgClassName(className){return (0,clsx/* default */.A)(className,Img_styles_module.img);}function MDXImg(props){return(/*#__PURE__*/// eslint-disable-next-line jsx-a11y/alt-text
+(0,jsx_runtime.jsx)("img",{decoding:"async",loading:"lazy",...props,className:transformImgClassName(props.className)}));}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js + 15 modules
+var Admonition = __webpack_require__(673);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_4db3a8b487c231d9021c0775e2732424/node_modules/@docusaurus/core/lib/client/exports/ErrorBoundary.js + 1 modules
+var ErrorBoundary = __webpack_require__(3032);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._eb4f955dcfdb24019d79a6ab63a7d4a6/node_modules/@docusaurus/theme-common/lib/utils/errorBoundaryUtils.js + 1 modules
+var errorBoundaryUtils = __webpack_require__(9292);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-KS23V3DP.mjs
+var chunk_KS23V3DP = __webpack_require__(4285);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-EXTU4WIE.mjs
+var chunk_EXTU4WIE = __webpack_require__(7348);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-MI3HLSF2.mjs
+var chunk_MI3HLSF2 = __webpack_require__(3767);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-N4CR4FBY.mjs
+var chunk_N4CR4FBY = __webpack_require__(6659);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-QXUST7PY.mjs
+var chunk_QXUST7PY = __webpack_require__(9142);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-HN2XXSSU.mjs
+var chunk_HN2XXSSU = __webpack_require__(9124);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-JZLCHNYA.mjs
+var chunk_JZLCHNYA = __webpack_require__(7440);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-CVBHYZKI.mjs
+var chunk_CVBHYZKI = __webpack_require__(5611);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-ATLVNIR6.mjs
+var chunk_ATLVNIR6 = __webpack_require__(3637);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-JA3XYJ7Z.mjs + 13 modules
+var chunk_JA3XYJ7Z = __webpack_require__(2133);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-S3R3BYOJ.mjs
+var chunk_S3R3BYOJ = __webpack_require__(1808);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-ABZYJK2D.mjs + 3 modules
+var chunk_ABZYJK2D = __webpack_require__(7693);
+// EXTERNAL MODULE: ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/chunks/mermaid.core/chunk-AGHRB4JF.mjs
+var chunk_AGHRB4JF = __webpack_require__(1595);
+// EXTERNAL MODULE: ./node_modules/.pnpm/ts-dedent@2.2.0/node_modules/ts-dedent/esm/index.js
+var esm = __webpack_require__(6793);
+// EXTERNAL MODULE: ./node_modules/.pnpm/d3@7.9.0/node_modules/d3/src/index.js + 216 modules
+var src = __webpack_require__(3170);
+;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Enum.js
+var MS = '-ms-'
+var MOZ = '-moz-'
+var WEBKIT = '-webkit-'
+
+var COMMENT = 'comm'
+var RULESET = 'rule'
+var DECLARATION = 'decl'
+
+var PAGE = '@page'
+var MEDIA = '@media'
+var IMPORT = '@import'
+var CHARSET = '@charset'
+var VIEWPORT = '@viewport'
+var SUPPORTS = '@supports'
+var DOCUMENT = '@document'
+var NAMESPACE = '@namespace'
+var KEYFRAMES = '@keyframes'
+var FONT_FACE = '@font-face'
+var COUNTER_STYLE = '@counter-style'
+var FONT_FEATURE_VALUES = '@font-feature-values'
+var LAYER = '@layer'
+var SCOPE = '@scope'
+
+;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Utility.js
+/**
+ * @param {number}
+ * @return {number}
+ */
+var abs = Math.abs
+
+/**
+ * @param {number}
+ * @return {string}
+ */
+var Utility_from = String.fromCharCode
+
+/**
+ * @param {object}
+ * @return {object}
+ */
+var Utility_assign = Object.assign
+
+/**
+ * @param {string} value
+ * @param {number} length
+ * @return {number}
+ */
+function hash (value, length) {
+	return charat(value, 0) ^ 45 ? (((((((length << 2) ^ charat(value, 0)) << 2) ^ charat(value, 1)) << 2) ^ charat(value, 2)) << 2) ^ charat(value, 3) : 0
+}
+
+/**
+ * @param {string} value
+ * @return {string}
+ */
+function trim (value) {
+	return value.trim()
+}
+
+/**
+ * @param {string} value
+ * @param {RegExp} pattern
+ * @return {string?}
+ */
+function match (value, pattern) {
+	return (value = pattern.exec(value)) ? value[0] : value
+}
+
+/**
+ * @param {string} value
+ * @param {(string|RegExp)} pattern
+ * @param {string} replacement
+ * @return {string}
+ */
+function replace (value, pattern, replacement) {
+	return value.replace(pattern, replacement)
+}
+
+/**
+ * @param {string} value
+ * @param {string} search
+ * @param {number} position
+ * @return {number}
+ */
+function indexof (value, search, position) {
+	return value.indexOf(search, position)
+}
+
+/**
+ * @param {string} value
+ * @param {number} index
+ * @return {number}
+ */
+function charat (value, index) {
+	return value.charCodeAt(index) | 0
+}
+
+/**
+ * @param {string} value
+ * @param {number} begin
+ * @param {number} end
+ * @return {string}
+ */
+function substr (value, begin, end) {
+	return value.slice(begin, end)
+}
+
+/**
+ * @param {string} value
+ * @return {number}
+ */
+function strlen (value) {
+	return value.length
+}
+
+/**
+ * @param {any[]} value
+ * @return {number}
+ */
+function sizeof (value) {
+	return value.length
+}
+
+/**
+ * @param {any} value
+ * @param {any[]} array
+ * @return {any}
+ */
+function Utility_append (value, array) {
+	return array.push(value), value
+}
+
+/**
+ * @param {string[]} array
+ * @param {function} callback
+ * @return {string}
+ */
+function combine (array, callback) {
+	return array.map(callback).join('')
+}
+
+/**
+ * @param {string[]} array
+ * @param {RegExp} pattern
+ * @return {string[]}
+ */
+function filter (array, pattern) {
+	return array.filter(function (value) { return !match(value, pattern) })
+}
+
+;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Serializer.js
+
+
+
+/**
+ * @param {object[]} children
+ * @param {function} callback
+ * @return {string}
+ */
+function serialize (children, callback) {
+	var output = ''
+
+	for (var i = 0; i < children.length; i++)
+		output += callback(children[i], i, children, callback) || ''
+
+	return output
+}
+
+/**
+ * @param {object} element
+ * @param {number} index
+ * @param {object[]} children
+ * @param {function} callback
+ * @return {string}
+ */
+function stringify (element, index, children, callback) {
+	switch (element.type) {
+		case LAYER: if (element.children.length) break
+		case IMPORT: case NAMESPACE: case DECLARATION: return element.return = element.return || element.value
+		case COMMENT: return ''
+		case KEYFRAMES: return element.return = element.value + '{' + serialize(element.children, callback) + '}'
+		case RULESET: if (!strlen(element.value = element.props.join(','))) return ''
+	}
+
+	return strlen(children = serialize(element.children, callback)) ? element.return = element.value + '{' + children + '}' : ''
+}
+
+;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Tokenizer.js
+
+
+var line = 1
+var column = 1
+var Tokenizer_length = 0
+var position = 0
+var character = 0
+var characters = ''
+
+/**
+ * @param {string} value
+ * @param {object | null} root
+ * @param {object | null} parent
+ * @param {string} type
+ * @param {string[] | string} props
+ * @param {object[] | string} children
+ * @param {object[]} siblings
+ * @param {number} length
+ */
+function node (value, root, parent, type, props, children, length, siblings) {
+	return {value: value, root: root, parent: parent, type: type, props: props, children: children, line: line, column: column, length: length, return: '', siblings: siblings}
+}
+
+/**
+ * @param {object} root
+ * @param {object} props
+ * @return {object}
+ */
+function copy (root, props) {
+	return assign(node('', null, null, '', null, null, 0, root.siblings), root, {length: -root.length}, props)
+}
+
+/**
+ * @param {object} root
+ */
+function lift (root) {
+	while (root.root)
+		root = copy(root.root, {children: [root]})
+
+	append(root, root.siblings)
+}
+
+/**
+ * @return {number}
+ */
+function Tokenizer_char () {
+	return character
+}
+
+/**
+ * @return {number}
+ */
+function prev () {
+	character = position > 0 ? charat(characters, --position) : 0
+
+	if (column--, character === 10)
+		column = 1, line--
+
+	return character
+}
+
+/**
+ * @return {number}
+ */
+function next () {
+	character = position < Tokenizer_length ? charat(characters, position++) : 0
+
+	if (column++, character === 10)
+		column = 1, line++
+
+	return character
+}
+
+/**
+ * @return {number}
+ */
+function peek () {
+	return charat(characters, position)
+}
+
+/**
+ * @return {number}
+ */
+function caret () {
+	return position
+}
+
+/**
+ * @param {number} begin
+ * @param {number} end
+ * @return {string}
+ */
+function slice (begin, end) {
+	return substr(characters, begin, end)
+}
+
+/**
+ * @param {number} type
+ * @return {number}
+ */
+function token (type) {
+	switch (type) {
+		// \0 \t \n \r \s whitespace token
+		case 0: case 9: case 10: case 13: case 32:
+			return 5
+		// ! + , / > @ ~ isolate token
+		case 33: case 43: case 44: case 47: case 62: case 64: case 126:
+		// ; { } breakpoint token
+		case 59: case 123: case 125:
+			return 4
+		// : accompanied token
+		case 58:
+			return 3
+		// " ' ( [ opening delimit token
+		case 34: case 39: case 40: case 91:
+			return 2
+		// ) ] closing delimit token
+		case 41: case 93:
+			return 1
+	}
+
+	return 0
+}
+
+/**
+ * @param {string} value
+ * @return {any[]}
+ */
+function alloc (value) {
+	return line = column = 1, Tokenizer_length = strlen(characters = value), position = 0, []
+}
+
+/**
+ * @param {any} value
+ * @return {any}
+ */
+function dealloc (value) {
+	return characters = '', value
+}
+
+/**
+ * @param {number} type
+ * @return {string}
+ */
+function delimit (type) {
+	return trim(slice(position - 1, delimiter(type === 91 ? type + 2 : type === 40 ? type + 1 : type)))
+}
+
+/**
+ * @param {string} value
+ * @return {string[]}
+ */
+function tokenize (value) {
+	return dealloc(tokenizer(alloc(value)))
+}
+
+/**
+ * @param {number} type
+ * @return {string}
+ */
+function whitespace (type) {
+	while (character = peek())
+		if (character < 33)
+			next()
+		else
+			break
+
+	return token(type) > 2 || token(character) > 3 ? '' : ' '
+}
+
+/**
+ * @param {string[]} children
+ * @return {string[]}
+ */
+function tokenizer (children) {
+	while (next())
+		switch (token(character)) {
+			case 0: append(identifier(position - 1), children)
+				break
+			case 2: append(delimit(character), children)
+				break
+			default: append(from(character), children)
+		}
+
+	return children
+}
+
+/**
+ * @param {number} index
+ * @param {number} count
+ * @return {string}
+ */
+function escaping (index, count) {
+	while (--count && next())
+		// not 0-9 A-F a-f
+		if (character < 48 || character > 102 || (character > 57 && character < 65) || (character > 70 && character < 97))
+			break
+
+	return slice(index, caret() + (count < 6 && peek() == 32 && next() == 32))
+}
+
+/**
+ * @param {number} type
+ * @return {number}
+ */
+function delimiter (type) {
+	while (next())
+		switch (character) {
+			// ] ) " '
+			case type:
+				return position
+			// " '
+			case 34: case 39:
+				if (type !== 34 && type !== 39)
+					delimiter(character)
+				break
+			// (
+			case 40:
+				if (type === 41)
+					delimiter(type)
+				break
+			// \
+			case 92:
+				next()
+				break
+		}
+
+	return position
+}
+
+/**
+ * @param {number} type
+ * @param {number} index
+ * @return {number}
+ */
+function commenter (type, index) {
+	while (next())
+		// //
+		if (type + character === 47 + 10)
+			break
+		// /*
+		else if (type + character === 42 + 42 && peek() === 47)
+			break
+
+	return '/*' + slice(index, position - 1) + '*' + Utility_from(type === 47 ? type : next())
+}
+
+/**
+ * @param {number} index
+ * @return {string}
+ */
+function identifier (index) {
+	while (!token(peek()))
+		next()
+
+	return slice(index, position)
+}
+
+;// ./node_modules/.pnpm/stylis@4.3.6/node_modules/stylis/src/Parser.js
+
+
+
+
+/**
+ * @param {string} value
+ * @return {object[]}
+ */
+function compile (value) {
+	return dealloc(parse('', null, null, null, [''], value = alloc(value), 0, [0], value))
+}
+
+/**
+ * @param {string} value
+ * @param {object} root
+ * @param {object?} parent
+ * @param {string[]} rule
+ * @param {string[]} rules
+ * @param {string[]} rulesets
+ * @param {number[]} pseudo
+ * @param {number[]} points
+ * @param {string[]} declarations
+ * @return {object}
+ */
+function parse (value, root, parent, rule, rules, rulesets, pseudo, points, declarations) {
+	var index = 0
+	var offset = 0
+	var length = pseudo
+	var atrule = 0
+	var property = 0
+	var previous = 0
+	var variable = 1
+	var scanning = 1
+	var ampersand = 1
+	var character = 0
+	var type = ''
+	var props = rules
+	var children = rulesets
+	var reference = rule
+	var characters = type
+
+	while (scanning)
+		switch (previous = character, character = next()) {
+			// (
+			case 40:
+				if (previous != 108 && charat(characters, length - 1) == 58) {
+					if (indexof(characters += replace(delimit(character), '&', '&\f'), '&\f', abs(index ? points[index - 1] : 0)) != -1)
+						ampersand = -1
+					break
+				}
+			// " ' [
+			case 34: case 39: case 91:
+				characters += delimit(character)
+				break
+			// \t \n \r \s
+			case 9: case 10: case 13: case 32:
+				characters += whitespace(previous)
+				break
+			// \
+			case 92:
+				characters += escaping(caret() - 1, 7)
+				continue
+			// /
+			case 47:
+				switch (peek()) {
+					case 42: case 47:
+						Utility_append(comment(commenter(next(), caret()), root, parent, declarations), declarations)
+						if ((token(previous || 1) == 5 || token(peek() || 1) == 5) && strlen(characters) && substr(characters, -1, void 0) !== ' ') characters += ' '
+						break
+					default:
+						characters += '/'
+				}
+				break
+			// {
+			case 123 * variable:
+				points[index++] = strlen(characters) * ampersand
+			// } ; \0
+			case 125 * variable: case 59: case 0:
+				switch (character) {
+					// \0 }
+					case 0: case 125: scanning = 0
+					// ;
+					case 59 + offset: if (ampersand == -1) characters = replace(characters, /\f/g, '')
+						if (property > 0 && (strlen(characters) - length || (variable === 0 && previous === 47)))
+							Utility_append(property > 32 ? declaration(characters + ';', rule, parent, length - 1, declarations) : declaration(replace(characters, ' ', '') + ';', rule, parent, length - 2, declarations), declarations)
+						break
+					// @ ;
+					case 59: characters += ';'
+					// { rule/at-rule
+					default:
+						Utility_append(reference = ruleset(characters, root, parent, index, offset, rules, points, type, props = [], children = [], length, rulesets), rulesets)
+
+						if (character === 123)
+							if (offset === 0)
+								parse(characters, root, reference, reference, props, rulesets, length, points, children)
+							else {
+								switch (atrule) {
+									// c(ontainer)
+									case 99:
+										if (charat(characters, 3) === 110) break
+									// l(ayer)
+									case 108:
+										if (charat(characters, 2) === 97) break
+									default:
+										offset = 0
+									// d(ocument) m(edia) s(upports)
+									case 100: case 109: case 115:
+								}
+								if (offset) parse(value, reference, reference, rule && Utility_append(ruleset(value, reference, reference, 0, 0, rules, points, type, rules, props = [], length, children), children), rules, children, length, points, rule ? props : children)
+								else parse(characters, reference, reference, reference, [''], children, 0, points, children)
+							}
+				}
+
+				index = offset = property = 0, variable = ampersand = 1, type = characters = '', length = pseudo
+				break
+			// :
+			case 58:
+				length = 1 + strlen(characters), property = previous
+			default:
+				if (variable < 1)
+					if (character == 123)
+						--variable
+					else if (character == 125 && variable++ == 0 && prev() == 125)
+						continue
+
+				switch (characters += Utility_from(character), character * variable) {
+					// &
+					case 38:
+						ampersand = offset > 0 ? 1 : (characters += '\f', -1)
+						break
+					// ,
+					case 44:
+						points[index++] = (strlen(characters) - 1) * ampersand, ampersand = 1
+						break
+					// @
+					case 64:
+						// -
+						if (peek() === 45)
+							characters += delimit(next())
+
+						atrule = peek(), offset = length = strlen(type = characters += identifier(caret())), character++
+						break
+					// -
+					case 45:
+						if (previous === 45 && strlen(characters) == 2)
+							variable = 0
+				}
+		}
+
+	return rulesets
+}
+
+/**
+ * @param {string} value
+ * @param {object} root
+ * @param {object?} parent
+ * @param {number} index
+ * @param {number} offset
+ * @param {string[]} rules
+ * @param {number[]} points
+ * @param {string} type
+ * @param {string[]} props
+ * @param {string[]} children
+ * @param {number} length
+ * @param {object[]} siblings
+ * @return {object}
+ */
+function ruleset (value, root, parent, index, offset, rules, points, type, props, children, length, siblings) {
+	var post = offset - 1
+	var rule = offset === 0 ? rules : ['']
+	var size = sizeof(rule)
+
+	for (var i = 0, j = 0, k = 0; i < index; ++i)
+		for (var x = 0, y = substr(value, post + 1, post = abs(j = points[i])), z = value; x < size; ++x)
+			if (z = trim(j > 0 ? rule[x] + ' ' + y : replace(y, /&\f/g, rule[x])))
+				props[k++] = z
+
+	return node(value, root, parent, offset === 0 ? RULESET : type, props, children, length, siblings)
+}
+
+/**
+ * @param {number} value
+ * @param {object} root
+ * @param {object?} parent
+ * @param {object[]} siblings
+ * @return {object}
+ */
+function comment (value, root, parent, siblings) {
+	return node(value, root, parent, COMMENT, Utility_from(Tokenizer_char()), substr(value, 2, -2), 0, siblings)
+}
+
+/**
+ * @param {string} value
+ * @param {object} root
+ * @param {object?} parent
+ * @param {number} length
+ * @param {object[]} siblings
+ * @return {object}
+ */
+function declaration (value, root, parent, length, siblings) {
+	return node(value, root, parent, DECLARATION, substr(value, 0, length), substr(value, length + 1, -1), length, siblings)
+}
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/dompurify@3.2.7/node_modules/dompurify/dist/purify.es.mjs
+var purify_es = __webpack_require__(4309);
+// EXTERNAL MODULE: ./node_modules/.pnpm/lodash-es@4.17.21/node_modules/lodash-es/isEmpty.js
+var isEmpty = __webpack_require__(570);
+;// ./node_modules/.pnpm/mermaid@11.12.0/node_modules/mermaid/dist/mermaid.core.mjs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// src/mermaid.ts
+
+
+// src/diagrams/c4/c4Detector.ts
+var id = "c4";
+var detector = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*C4Context|C4Container|C4Component|C4Dynamic|C4Deployment/.test(txt);
+}, "detector");
+var loader = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 2903).then(__webpack_require__.bind(__webpack_require__, 2903));
+  return { id, diagram: diagram2 };
+}, "loader");
+var mermaid_core_plugin = {
+  id,
+  detector,
+  loader
+};
+var c4Detector_default = mermaid_core_plugin;
+
+// src/diagrams/flowchart/flowDetector.ts
+var id2 = "flowchart";
+var detector2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
+  if (config?.flowchart?.defaultRenderer === "dagre-wrapper" || config?.flowchart?.defaultRenderer === "elk") {
+    return false;
+  }
+  return /^\s*graph/.test(txt);
+}, "detector");
+var loader2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5789)]).then(__webpack_require__.bind(__webpack_require__, 5789));
+  return { id: id2, diagram: diagram2 };
+}, "loader");
+var plugin2 = {
+  id: id2,
+  detector: detector2,
+  loader: loader2
+};
+var flowDetector_default = plugin2;
+
+// src/diagrams/flowchart/flowDetector-v2.ts
+var id3 = "flowchart-v2";
+var detector3 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
+  if (config?.flowchart?.defaultRenderer === "dagre-d3") {
+    return false;
+  }
+  if (config?.flowchart?.defaultRenderer === "elk") {
+    config.layout = "elk";
+  }
+  if (/^\s*graph/.test(txt) && config?.flowchart?.defaultRenderer === "dagre-wrapper") {
+    return true;
+  }
+  return /^\s*flowchart/.test(txt);
+}, "detector");
+var loader3 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5789)]).then(__webpack_require__.bind(__webpack_require__, 5789));
+  return { id: id3, diagram: diagram2 };
+}, "loader");
+var plugin3 = {
+  id: id3,
+  detector: detector3,
+  loader: loader3
+};
+var flowDetector_v2_default = plugin3;
+
+// src/diagrams/er/erDetector.ts
+var id4 = "er";
+var detector4 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*erDiagram/.test(txt);
+}, "detector");
+var loader4 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4546)]).then(__webpack_require__.bind(__webpack_require__, 4546));
+  return { id: id4, diagram: diagram2 };
+}, "loader");
+var plugin4 = {
+  id: id4,
+  detector: detector4,
+  loader: loader4
+};
+var erDetector_default = plugin4;
+
+// src/diagrams/git/gitGraphDetector.ts
+var id5 = "gitGraph";
+var detector5 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*gitGraph/.test(txt);
+}, "detector");
+var loader5 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5373)]).then(__webpack_require__.bind(__webpack_require__, 5373));
+  return { id: id5, diagram: diagram2 };
+}, "loader");
+var plugin5 = {
+  id: id5,
+  detector: detector5,
+  loader: loader5
+};
+var gitGraphDetector_default = plugin5;
+
+// src/diagrams/gantt/ganttDetector.ts
+var id6 = "gantt";
+var detector6 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*gantt/.test(txt);
+}, "detector");
+var loader6 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 8169).then(__webpack_require__.bind(__webpack_require__, 8169));
+  return { id: id6, diagram: diagram2 };
+}, "loader");
+var plugin6 = {
+  id: id6,
+  detector: detector6,
+  loader: loader6
+};
+var ganttDetector_default = plugin6;
+
+// src/diagrams/info/infoDetector.ts
+var id7 = "info";
+var detector7 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*info/.test(txt);
+}, "detector");
+var loader7 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9646)]).then(__webpack_require__.bind(__webpack_require__, 9646));
+  return { id: id7, diagram: diagram2 };
+}, "loader");
+var info = {
+  id: id7,
+  detector: detector7,
+  loader: loader7
+};
+
+// src/diagrams/pie/pieDetector.ts
+var id8 = "pie";
+var detector8 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*pie/.test(txt);
+}, "detector");
+var loader8 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4422)]).then(__webpack_require__.bind(__webpack_require__, 4422));
+  return { id: id8, diagram: diagram2 };
+}, "loader");
+var pie = {
+  id: id8,
+  detector: detector8,
+  loader: loader8
+};
+
+// src/diagrams/quadrant-chart/quadrantDetector.ts
+var id9 = "quadrantChart";
+var detector9 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*quadrantChart/.test(txt);
+}, "detector");
+var loader9 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 4273).then(__webpack_require__.bind(__webpack_require__, 4273));
+  return { id: id9, diagram: diagram2 };
+}, "loader");
+var plugin7 = {
+  id: id9,
+  detector: detector9,
+  loader: loader9
+};
+var quadrantDetector_default = plugin7;
+
+// src/diagrams/xychart/xychartDetector.ts
+var id10 = "xychart";
+var detector10 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*xychart(-beta)?/.test(txt);
+}, "detector");
+var loader10 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 9629).then(__webpack_require__.bind(__webpack_require__, 9629));
+  return { id: id10, diagram: diagram2 };
+}, "loader");
+var plugin8 = {
+  id: id10,
+  detector: detector10,
+  loader: loader10
+};
+var xychartDetector_default = plugin8;
+
+// src/diagrams/requirement/requirementDetector.ts
+var id11 = "requirement";
+var detector11 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*requirement(Diagram)?/.test(txt);
+}, "detector");
+var loader11 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(1562)]).then(__webpack_require__.bind(__webpack_require__, 1562));
+  return { id: id11, diagram: diagram2 };
+}, "loader");
+var plugin9 = {
+  id: id11,
+  detector: detector11,
+  loader: loader11
+};
+var requirementDetector_default = plugin9;
+
+// src/diagrams/sequence/sequenceDetector.ts
+var id12 = "sequence";
+var detector12 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*sequenceDiagram/.test(txt);
+}, "detector");
+var loader12 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 3582).then(__webpack_require__.bind(__webpack_require__, 3582));
+  return { id: id12, diagram: diagram2 };
+}, "loader");
+var plugin10 = {
+  id: id12,
+  detector: detector12,
+  loader: loader12
+};
+var sequenceDetector_default = plugin10;
+
+// src/diagrams/class/classDetector.ts
+var id13 = "class";
+var detector13 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
+  if (config?.class?.defaultRenderer === "dagre-wrapper") {
+    return false;
+  }
+  return /^\s*classDiagram/.test(txt);
+}, "detector");
+var loader13 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9076), __webpack_require__.e(6404)]).then(__webpack_require__.bind(__webpack_require__, 6404));
+  return { id: id13, diagram: diagram2 };
+}, "loader");
+var plugin11 = {
+  id: id13,
+  detector: detector13,
+  loader: loader13
+};
+var classDetector_default = plugin11;
+
+// src/diagrams/class/classDetector-V2.ts
+var id14 = "classDiagram";
+var detector14 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
+  if (/^\s*classDiagram/.test(txt) && config?.class?.defaultRenderer === "dagre-wrapper") {
+    return true;
+  }
+  return /^\s*classDiagram-v2/.test(txt);
+}, "detector");
+var loader14 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9076), __webpack_require__.e(141)]).then(__webpack_require__.bind(__webpack_require__, 141));
+  return { id: id14, diagram: diagram2 };
+}, "loader");
+var plugin12 = {
+  id: id14,
+  detector: detector14,
+  loader: loader14
+};
+var classDetector_V2_default = plugin12;
+
+// src/diagrams/state/stateDetector.ts
+var id15 = "state";
+var detector15 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
+  if (config?.state?.defaultRenderer === "dagre-wrapper") {
+    return false;
+  }
+  return /^\s*stateDiagram/.test(txt);
+}, "detector");
+var loader15 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4326), __webpack_require__.e(7386), __webpack_require__.e(8868)]).then(__webpack_require__.bind(__webpack_require__, 8868));
+  return { id: id15, diagram: diagram2 };
+}, "loader");
+var plugin13 = {
+  id: id15,
+  detector: detector15,
+  loader: loader15
+};
+var stateDetector_default = plugin13;
+
+// src/diagrams/state/stateDetector-V2.ts
+var id16 = "stateDiagram";
+var detector16 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config) => {
+  if (/^\s*stateDiagram-v2/.test(txt)) {
+    return true;
+  }
+  if (/^\s*stateDiagram/.test(txt) && config?.state?.defaultRenderer === "dagre-wrapper") {
+    return true;
+  }
+  return false;
+}, "detector");
+var loader16 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(7386), __webpack_require__.e(9312)]).then(__webpack_require__.bind(__webpack_require__, 9312));
+  return { id: id16, diagram: diagram2 };
+}, "loader");
+var plugin14 = {
+  id: id16,
+  detector: detector16,
+  loader: loader16
+};
+var stateDetector_V2_default = plugin14;
+
+// src/diagrams/user-journey/journeyDetector.ts
+var id17 = "journey";
+var detector17 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*journey/.test(txt);
+}, "detector");
+var loader17 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(6282)]).then(__webpack_require__.bind(__webpack_require__, 6282));
+  return { id: id17, diagram: diagram2 };
+}, "loader");
+var plugin15 = {
+  id: id17,
+  detector: detector17,
+  loader: loader17
+};
+var journeyDetector_default = plugin15;
+
+// src/diagrams/error/errorRenderer.ts
+var draw = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((_text, id28, version) => {
+  chunk_AGHRB4JF/* log */.Rm.debug("rendering svg for syntax error\n");
+  const svg = (0,chunk_EXTU4WIE/* selectSvgElement */.D)(id28);
+  const g = svg.append("g");
+  svg.attr("viewBox", "0 0 2412 512");
+  (0,chunk_ABZYJK2D/* configureSvgSize */.a$)(svg, 100, 512, true);
+  g.append("path").attr("class", "error-icon").attr(
+    "d",
+    "m411.313,123.313c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32-9.375,9.375-20.688-20.688c-12.484-12.5-32.766-12.5-45.25,0l-16,16c-1.261,1.261-2.304,2.648-3.31,4.051-21.739-8.561-45.324-13.426-70.065-13.426-105.867,0-192,86.133-192,192s86.133,192 192,192 192-86.133 192-192c0-24.741-4.864-48.327-13.426-70.065 1.402-1.007 2.79-2.049 4.051-3.31l16-16c12.5-12.492 12.5-32.758 0-45.25l-20.688-20.688 9.375-9.375 32.001-31.999zm-219.313,100.687c-52.938,0-96,43.063-96,96 0,8.836-7.164,16-16,16s-16-7.164-16-16c0-70.578 57.422-128 128-128 8.836,0 16,7.164 16,16s-7.164,16-16,16z"
+  );
+  g.append("path").attr("class", "error-icon").attr(
+    "d",
+    "m459.02,148.98c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l16,16c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16.001-16z"
+  );
+  g.append("path").attr("class", "error-icon").attr(
+    "d",
+    "m340.395,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16-16c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l15.999,16z"
+  );
+  g.append("path").attr("class", "error-icon").attr(
+    "d",
+    "m400,64c8.844,0 16-7.164 16-16v-32c0-8.836-7.156-16-16-16-8.844,0-16,7.164-16,16v32c0,8.836 7.156,16 16,16z"
+  );
+  g.append("path").attr("class", "error-icon").attr(
+    "d",
+    "m496,96.586h-32c-8.844,0-16,7.164-16,16 0,8.836 7.156,16 16,16h32c8.844,0 16-7.164 16-16 0-8.836-7.156-16-16-16z"
+  );
+  g.append("path").attr("class", "error-icon").attr(
+    "d",
+    "m436.98,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l32-32c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32c-6.251,6.25-6.251,16.375-0.001,22.625z"
+  );
+  g.append("text").attr("class", "error-text").attr("x", 1440).attr("y", 250).attr("font-size", "150px").style("text-anchor", "middle").text("Syntax error in text");
+  g.append("text").attr("class", "error-text").attr("x", 1250).attr("y", 400).attr("font-size", "100px").style("text-anchor", "middle").text(`mermaid version ${version}`);
+}, "draw");
+var renderer = { draw };
+var errorRenderer_default = renderer;
+
+// src/diagrams/error/errorDiagram.ts
+var diagram = {
+  db: {},
+  renderer,
+  parser: {
+    parse: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+      return;
+    }, "parse")
+  }
+};
+var errorDiagram_default = diagram;
+
+// src/diagrams/flowchart/elk/detector.ts
+var id18 = "flowchart-elk";
+var detector18 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt, config = {}) => {
+  if (
+    // If diagram explicitly states flowchart-elk
+    /^\s*flowchart-elk/.test(txt) || // If a flowchart/graph diagram has their default renderer set to elk
+    /^\s*(flowchart|graph)/.test(txt) && config?.flowchart?.defaultRenderer === "elk"
+  ) {
+    config.layout = "elk";
+    return true;
+  }
+  return false;
+}, "detector");
+var loader18 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5789)]).then(__webpack_require__.bind(__webpack_require__, 5789));
+  return { id: id18, diagram: diagram2 };
+}, "loader");
+var plugin16 = {
+  id: id18,
+  detector: detector18,
+  loader: loader18
+};
+var detector_default = plugin16;
+
+// src/diagrams/timeline/detector.ts
+var id19 = "timeline";
+var detector19 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*timeline/.test(txt);
+}, "detector");
+var loader19 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 3497).then(__webpack_require__.bind(__webpack_require__, 5878));
+  return { id: id19, diagram: diagram2 };
+}, "loader");
+var plugin17 = {
+  id: id19,
+  detector: detector19,
+  loader: loader19
+};
+var detector_default2 = plugin17;
+
+// src/diagrams/mindmap/detector.ts
+var id20 = "mindmap";
+var detector20 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*mindmap/.test(txt);
+}, "detector");
+var loader20 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(6077)]).then(__webpack_require__.bind(__webpack_require__, 6077));
+  return { id: id20, diagram: diagram2 };
+}, "loader");
+var plugin18 = {
+  id: id20,
+  detector: detector20,
+  loader: loader20
+};
+var detector_default3 = plugin18;
+
+// src/diagrams/kanban/detector.ts
+var id21 = "kanban";
+var detector21 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*kanban/.test(txt);
+}, "detector");
+var loader21 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(5739)]).then(__webpack_require__.bind(__webpack_require__, 5739));
+  return { id: id21, diagram: diagram2 };
+}, "loader");
+var plugin19 = {
+  id: id21,
+  detector: detector21,
+  loader: loader21
+};
+var detector_default4 = plugin19;
+
+// src/diagrams/sankey/sankeyDetector.ts
+var id22 = "sankey";
+var detector22 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*sankey(-beta)?/.test(txt);
+}, "detector");
+var loader22 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await __webpack_require__.e(/* import() */ 1706).then(__webpack_require__.bind(__webpack_require__, 1706));
+  return { id: id22, diagram: diagram2 };
+}, "loader");
+var plugin20 = {
+  id: id22,
+  detector: detector22,
+  loader: loader22
+};
+var sankeyDetector_default = plugin20;
+
+// src/diagrams/packet/detector.ts
+var id23 = "packet";
+var detector23 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*packet(-beta)?/.test(txt);
+}, "detector");
+var loader23 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(6261)]).then(__webpack_require__.bind(__webpack_require__, 6261));
+  return { id: id23, diagram: diagram2 };
+}, "loader");
+var packet = {
+  id: id23,
+  detector: detector23,
+  loader: loader23
+};
+
+// src/diagrams/radar/detector.ts
+var id24 = "radar";
+var detector24 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*radar-beta/.test(txt);
+}, "detector");
+var loader24 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(2774)]).then(__webpack_require__.bind(__webpack_require__, 2774));
+  return { id: id24, diagram: diagram2 };
+}, "loader");
+var radar = {
+  id: id24,
+  detector: detector24,
+  loader: loader24
+};
+
+// src/diagrams/block/blockDetector.ts
+var id25 = "block";
+var detector25 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*block(-beta)?/.test(txt);
+}, "detector");
+var loader25 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8454)]).then(__webpack_require__.bind(__webpack_require__, 8454));
+  return { id: id25, diagram: diagram2 };
+}, "loader");
+var plugin21 = {
+  id: id25,
+  detector: detector25,
+  loader: loader25
+};
+var blockDetector_default = plugin21;
+
+// src/diagrams/architecture/architectureDetector.ts
+var id26 = "architecture";
+var detector26 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*architecture/.test(txt);
+}, "detector");
+var loader26 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(638), __webpack_require__.e(8215)]).then(__webpack_require__.bind(__webpack_require__, 8215));
+  return { id: id26, diagram: diagram2 };
+}, "loader");
+var architecture = {
+  id: id26,
+  detector: detector26,
+  loader: loader26
+};
+var architectureDetector_default = architecture;
+
+// src/diagrams/treemap/detector.ts
+var id27 = "treemap";
+var detector27 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((txt) => {
+  return /^\s*treemap/.test(txt);
+}, "detector");
+var loader27 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4739)]).then(__webpack_require__.bind(__webpack_require__, 4739));
+  return { id: id27, diagram: diagram2 };
+}, "loader");
+var treemap = {
+  id: id27,
+  detector: detector27,
+  loader: loader27
+};
+
+// src/diagram-api/diagram-orchestration.ts
+var hasLoadedDiagrams = false;
+var addDiagrams = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+  if (hasLoadedDiagrams) {
+    return;
+  }
+  hasLoadedDiagrams = true;
+  (0,chunk_ABZYJK2D/* registerDiagram */.Js)("error", errorDiagram_default, (text) => {
+    return text.toLowerCase().trim() === "error";
+  });
+  (0,chunk_ABZYJK2D/* registerDiagram */.Js)(
+    "---",
+    // --- diagram type may appear if YAML front-matter is not parsed correctly
+    {
+      db: {
+        clear: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+        }, "clear")
+      },
+      styles: {},
+      // should never be used
+      renderer: {
+        draw: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+        }, "draw")
+      },
+      parser: {
+        parse: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+          throw new Error(
+            "Diagrams beginning with --- are not valid. If you were trying to use a YAML front-matter, please ensure that you've correctly opened and closed the YAML front-matter with un-indented `---` blocks"
+          );
+        }, "parse")
+      },
+      init: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => null, "init")
+      // no op
+    },
+    (text) => {
+      return text.toLowerCase().trimStart().startsWith("---");
+    }
+  );
+  if (true) {
+    (0,chunk_ABZYJK2D/* registerLazyLoadedDiagrams */.Xd)(detector_default, detector_default3, architectureDetector_default);
+  }
+  (0,chunk_ABZYJK2D/* registerLazyLoadedDiagrams */.Xd)(
+    c4Detector_default,
+    detector_default4,
+    classDetector_V2_default,
+    classDetector_default,
+    erDetector_default,
+    ganttDetector_default,
+    info,
+    pie,
+    requirementDetector_default,
+    sequenceDetector_default,
+    flowDetector_v2_default,
+    flowDetector_default,
+    detector_default2,
+    gitGraphDetector_default,
+    stateDetector_V2_default,
+    stateDetector_default,
+    journeyDetector_default,
+    quadrantDetector_default,
+    sankeyDetector_default,
+    packet,
+    xychartDetector_default,
+    blockDetector_default,
+    radar,
+    treemap
+  );
+}, "addDiagrams");
+
+// src/diagram-api/loadDiagram.ts
+var loadRegisteredDiagrams = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  chunk_AGHRB4JF/* log */.Rm.debug(`Loading registered diagrams`);
+  const results = await Promise.allSettled(
+    Object.entries(chunk_ABZYJK2D/* detectors */.mW).map(async ([key, { detector: detector28, loader: loader28 }]) => {
+      if (!loader28) {
+        return;
+      }
+      try {
+        (0,chunk_ABZYJK2D/* getDiagram */.Gs)(key);
+      } catch {
+        try {
+          const { diagram: diagram2, id: id28 } = await loader28();
+          (0,chunk_ABZYJK2D/* registerDiagram */.Js)(id28, diagram2, detector28);
+        } catch (err) {
+          chunk_AGHRB4JF/* log */.Rm.error(`Failed to load external diagram with key ${key}. Removing from detectors.`);
+          delete chunk_ABZYJK2D/* detectors */.mW[key];
+          throw err;
+        }
+      }
+    })
+  );
+  const failed = results.filter((result) => result.status === "rejected");
+  if (failed.length > 0) {
+    chunk_AGHRB4JF/* log */.Rm.error(`Failed to load ${failed.length} external diagrams`);
+    for (const res of failed) {
+      chunk_AGHRB4JF/* log */.Rm.error(res);
+    }
+    throw new Error(`Failed to load ${failed.length} external diagrams`);
+  }
+}, "loadRegisteredDiagrams");
+
+// src/mermaidAPI.ts
+
+
+
+
+
+// src/accessibility.ts
+var SVG_ROLE = "graphics-document document";
+function setA11yDiagramInfo(svg, diagramType) {
+  svg.attr("role", SVG_ROLE);
+  if (diagramType !== "") {
+    svg.attr("aria-roledescription", diagramType);
+  }
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(setA11yDiagramInfo, "setA11yDiagramInfo");
+function addSVGa11yTitleDescription(svg, a11yTitle, a11yDesc, baseId) {
+  if (svg.insert === void 0) {
+    return;
+  }
+  if (a11yDesc) {
+    const descId = `chart-desc-${baseId}`;
+    svg.attr("aria-describedby", descId);
+    svg.insert("desc", ":first-child").attr("id", descId).text(a11yDesc);
+  }
+  if (a11yTitle) {
+    const titleId = `chart-title-${baseId}`;
+    svg.attr("aria-labelledby", titleId);
+    svg.insert("title", ":first-child").attr("id", titleId).text(a11yTitle);
+  }
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(addSVGa11yTitleDescription, "addSVGa11yTitleDescription");
+
+// src/Diagram.ts
+var Diagram = class _Diagram {
+  constructor(type, text, db, parser, renderer2) {
+    this.type = type;
+    this.text = text;
+    this.db = db;
+    this.parser = parser;
+    this.renderer = renderer2;
+  }
+  static {
+    (0,chunk_AGHRB4JF/* __name */.K2)(this, "Diagram");
+  }
+  static async fromText(text, metadata = {}) {
+    const config = (0,chunk_ABZYJK2D/* getConfig */.zj)();
+    const type = (0,chunk_ABZYJK2D/* detectType */.Ch)(text, config);
+    text = (0,chunk_S3R3BYOJ/* encodeEntities */.C4)(text) + "\n";
+    try {
+      (0,chunk_ABZYJK2D/* getDiagram */.Gs)(type);
+    } catch {
+      const loader28 = (0,chunk_ABZYJK2D/* getDiagramLoader */.J$)(type);
+      if (!loader28) {
+        throw new chunk_ABZYJK2D/* UnknownDiagramError */.C0(`Diagram ${type} not found.`);
+      }
+      const { id: id28, diagram: diagram2 } = await loader28();
+      (0,chunk_ABZYJK2D/* registerDiagram */.Js)(id28, diagram2);
+    }
+    const { db, parser, renderer: renderer2, init: init2 } = (0,chunk_ABZYJK2D/* getDiagram */.Gs)(type);
+    if (parser.parser) {
+      parser.parser.yy = db;
+    }
+    db.clear?.();
+    init2?.(config);
+    if (metadata.title) {
+      db.setDiagramTitle?.(metadata.title);
+    }
+    await parser.parse(text);
+    return new _Diagram(type, text, db, parser, renderer2);
+  }
+  async render(id28, version) {
+    await this.renderer.draw(this.text, id28, version, this);
+  }
+  getParser() {
+    return this.parser;
+  }
+  getType() {
+    return this.type;
+  }
+};
+
+// src/interactionDb.ts
+var interactionFunctions = [];
+var attachFunctions = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+  interactionFunctions.forEach((f) => {
+    f();
+  });
+  interactionFunctions = [];
+}, "attachFunctions");
+
+// src/diagram-api/comments.ts
+var cleanupComments = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((text) => {
+  return text.replace(/^\s*%%(?!{)[^\n]+\n?/gm, "").trimStart();
+}, "cleanupComments");
+
+// src/diagram-api/frontmatter.ts
+function extractFrontMatter(text) {
+  const matches = text.match(chunk_ABZYJK2D/* frontMatterRegex */.EJ);
+  if (!matches) {
+    return {
+      text,
+      metadata: {}
+    };
+  }
+  let parsed = (0,chunk_MI3HLSF2/* load */.H)(matches[1], {
+    // To support config, we need JSON schema.
+    // https://www.yaml.org/spec/1.2/spec.html#id2803231
+    schema: chunk_MI3HLSF2/* JSON_SCHEMA */.r
+  }) ?? {};
+  parsed = typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  const metadata = {};
+  if (parsed.displayMode) {
+    metadata.displayMode = parsed.displayMode.toString();
+  }
+  if (parsed.title) {
+    metadata.title = parsed.title.toString();
+  }
+  if (parsed.config) {
+    metadata.config = parsed.config;
+  }
+  return {
+    text: text.slice(matches[0].length),
+    metadata
+  };
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(extractFrontMatter, "extractFrontMatter");
+
+// src/preprocess.ts
+var cleanupText = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((code) => {
+  return code.replace(/\r\n?/g, "\n").replace(
+    /<(\w+)([^>]*)>/g,
+    (match, tag, attributes) => "<" + tag + attributes.replace(/="([^"]*)"/g, "='$1'") + ">"
+  );
+}, "cleanupText");
+var processFrontmatter = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((code) => {
+  const { text, metadata } = extractFrontMatter(code);
+  const { displayMode, title, config = {} } = metadata;
+  if (displayMode) {
+    if (!config.gantt) {
+      config.gantt = {};
+    }
+    config.gantt.displayMode = displayMode;
+  }
+  return { title, config, text };
+}, "processFrontmatter");
+var processDirectives = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((code) => {
+  const initDirective = chunk_S3R3BYOJ/* utils_default */._K.detectInit(code) ?? {};
+  const wrapDirectives = chunk_S3R3BYOJ/* utils_default */._K.detectDirective(code, "wrap");
+  if (Array.isArray(wrapDirectives)) {
+    initDirective.wrap = wrapDirectives.some(({ type }) => type === "wrap");
+  } else if (wrapDirectives?.type === "wrap") {
+    initDirective.wrap = true;
+  }
+  return {
+    text: (0,chunk_S3R3BYOJ/* removeDirectives */.vU)(code),
+    directive: initDirective
+  };
+}, "processDirectives");
+function preprocessDiagram(code) {
+  const cleanedCode = cleanupText(code);
+  const frontMatterResult = processFrontmatter(cleanedCode);
+  const directiveResult = processDirectives(frontMatterResult.text);
+  const config = (0,chunk_S3R3BYOJ/* cleanAndMerge */.$t)(frontMatterResult.config, directiveResult.directive);
+  code = cleanupComments(directiveResult.text);
+  return {
+    code,
+    title: frontMatterResult.title,
+    config
+  };
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(preprocessDiagram, "preprocessDiagram");
+
+// src/utils/base64.ts
+function toBase64(str) {
+  const utf8Bytes = new TextEncoder().encode(str);
+  const utf8Str = Array.from(utf8Bytes, (byte) => String.fromCodePoint(byte)).join("");
+  return btoa(utf8Str);
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(toBase64, "toBase64");
+
+// src/mermaidAPI.ts
+var MAX_TEXTLENGTH = 5e4;
+var MAX_TEXTLENGTH_EXCEEDED_MSG = "graph TB;a[Maximum text size in diagram exceeded];style a fill:#faa";
+var SECURITY_LVL_SANDBOX = "sandbox";
+var SECURITY_LVL_LOOSE = "loose";
+var XMLNS_SVG_STD = "http://www.w3.org/2000/svg";
+var XMLNS_XLINK_STD = "http://www.w3.org/1999/xlink";
+var XMLNS_XHTML_STD = "http://www.w3.org/1999/xhtml";
+var IFRAME_WIDTH = "100%";
+var IFRAME_HEIGHT = "100%";
+var IFRAME_STYLES = "border:0;margin:0;";
+var IFRAME_BODY_STYLE = "margin:0";
+var IFRAME_SANDBOX_OPTS = "allow-top-navigation-by-user-activation allow-popups";
+var IFRAME_NOT_SUPPORTED_MSG = 'The "iframe" tag is not supported by your browser.';
+var DOMPURIFY_TAGS = ["foreignobject"];
+var DOMPURIFY_ATTR = ["dominant-baseline"];
+function processAndSetConfigs(text) {
+  const processed = preprocessDiagram(text);
+  (0,chunk_ABZYJK2D/* reset */.cL)();
+  (0,chunk_ABZYJK2D/* addDirective */.xA)(processed.config ?? {});
+  return processed;
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(processAndSetConfigs, "processAndSetConfigs");
+async function mermaid_core_parse(text, parseOptions) {
+  addDiagrams();
+  try {
+    const { code, config } = processAndSetConfigs(text);
+    const diagram2 = await getDiagramFromText(code);
+    return { diagramType: diagram2.type, config };
+  } catch (error) {
+    if (parseOptions?.suppressErrors) {
+      return false;
+    }
+    throw error;
+  }
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(mermaid_core_parse, "parse");
+var cssImportantStyles = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((cssClass, element, cssClasses = []) => {
+  return `
+.${cssClass} ${element} { ${cssClasses.join(" !important; ")} !important; }`;
+}, "cssImportantStyles");
+var createCssStyles = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((config, classDefs = /* @__PURE__ */ new Map()) => {
+  let cssStyles = "";
+  if (config.themeCSS !== void 0) {
+    cssStyles += `
+${config.themeCSS}`;
+  }
+  if (config.fontFamily !== void 0) {
+    cssStyles += `
+:root { --mermaid-font-family: ${config.fontFamily}}`;
+  }
+  if (config.altFontFamily !== void 0) {
+    cssStyles += `
+:root { --mermaid-alt-font-family: ${config.altFontFamily}}`;
+  }
+  if (classDefs instanceof Map) {
+    const htmlLabels = config.htmlLabels ?? config.flowchart?.htmlLabels;
+    const cssHtmlElements = ["> *", "span"];
+    const cssShapeElements = ["rect", "polygon", "ellipse", "circle", "path"];
+    const cssElements = htmlLabels ? cssHtmlElements : cssShapeElements;
+    classDefs.forEach((styleClassDef) => {
+      if (!(0,isEmpty/* default */.A)(styleClassDef.styles)) {
+        cssElements.forEach((cssElement) => {
+          cssStyles += cssImportantStyles(styleClassDef.id, cssElement, styleClassDef.styles);
+        });
+      }
+      if (!(0,isEmpty/* default */.A)(styleClassDef.textStyles)) {
+        cssStyles += cssImportantStyles(
+          styleClassDef.id,
+          "tspan",
+          (styleClassDef?.textStyles || []).map((s) => s.replace("color", "fill"))
+        );
+      }
+    });
+  }
+  return cssStyles;
+}, "createCssStyles");
+var createUserStyles = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((config, graphType, classDefs, svgId) => {
+  const userCSSstyles = createCssStyles(config, classDefs);
+  const allStyles = (0,chunk_ABZYJK2D/* styles_default */.tM)(graphType, userCSSstyles, config.themeVariables);
+  return serialize(compile(`${svgId}{${allStyles}}`), stringify);
+}, "createUserStyles");
+var cleanUpSvgCode = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((svgCode = "", inSandboxMode, useArrowMarkerUrls) => {
+  let cleanedUpSvg = svgCode;
+  if (!useArrowMarkerUrls && !inSandboxMode) {
+    cleanedUpSvg = cleanedUpSvg.replace(
+      /marker-end="url\([\d+./:=?A-Za-z-]*?#/g,
+      'marker-end="url(#'
+    );
+  }
+  cleanedUpSvg = (0,chunk_S3R3BYOJ/* decodeEntities */.Sm)(cleanedUpSvg);
+  cleanedUpSvg = cleanedUpSvg.replace(/<br>/g, "<br/>");
+  return cleanedUpSvg;
+}, "cleanUpSvgCode");
+var putIntoIFrame = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((svgCode = "", svgElement) => {
+  const height = svgElement?.viewBox?.baseVal?.height ? svgElement.viewBox.baseVal.height + "px" : IFRAME_HEIGHT;
+  const base64encodedSrc = toBase64(`<body style="${IFRAME_BODY_STYLE}">${svgCode}</body>`);
+  return `<iframe style="width:${IFRAME_WIDTH};height:${height};${IFRAME_STYLES}" src="data:text/html;charset=UTF-8;base64,${base64encodedSrc}" sandbox="${IFRAME_SANDBOX_OPTS}">
+  ${IFRAME_NOT_SUPPORTED_MSG}
+</iframe>`;
+}, "putIntoIFrame");
+var appendDivSvgG = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((parentRoot, id28, enclosingDivId, divStyle, svgXlink) => {
+  const enclosingDiv = parentRoot.append("div");
+  enclosingDiv.attr("id", enclosingDivId);
+  if (divStyle) {
+    enclosingDiv.attr("style", divStyle);
+  }
+  const svgNode = enclosingDiv.append("svg").attr("id", id28).attr("width", "100%").attr("xmlns", XMLNS_SVG_STD);
+  if (svgXlink) {
+    svgNode.attr("xmlns:xlink", svgXlink);
+  }
+  svgNode.append("g");
+  return parentRoot;
+}, "appendDivSvgG");
+function sandboxedIframe(parentNode, iFrameId) {
+  return parentNode.append("iframe").attr("id", iFrameId).attr("style", "width: 100%; height: 100%;").attr("sandbox", "");
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(sandboxedIframe, "sandboxedIframe");
+var removeExistingElements = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((doc, id28, divId, iFrameId) => {
+  doc.getElementById(id28)?.remove();
+  doc.getElementById(divId)?.remove();
+  doc.getElementById(iFrameId)?.remove();
+}, "removeExistingElements");
+var render = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function(id28, text, svgContainingElement) {
+  addDiagrams();
+  const processed = processAndSetConfigs(text);
+  text = processed.code;
+  const config = (0,chunk_ABZYJK2D/* getConfig */.zj)();
+  chunk_AGHRB4JF/* log */.Rm.debug(config);
+  if (text.length > (config?.maxTextSize ?? MAX_TEXTLENGTH)) {
+    text = MAX_TEXTLENGTH_EXCEEDED_MSG;
+  }
+  const idSelector = "#" + id28;
+  const iFrameID = "i" + id28;
+  const iFrameID_selector = "#" + iFrameID;
+  const enclosingDivID = "d" + id28;
+  const enclosingDivID_selector = "#" + enclosingDivID;
+  const removeTempElements = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+    const tmpElementSelector = isSandboxed ? iFrameID_selector : enclosingDivID_selector;
+    const node = (0,src/* select */.Ltv)(tmpElementSelector).node();
+    if (node && "remove" in node) {
+      node.remove();
+    }
+  }, "removeTempElements");
+  let root = (0,src/* select */.Ltv)("body");
+  const isSandboxed = config.securityLevel === SECURITY_LVL_SANDBOX;
+  const isLooseSecurityLevel = config.securityLevel === SECURITY_LVL_LOOSE;
+  const fontFamily = config.fontFamily;
+  if (svgContainingElement !== void 0) {
+    if (svgContainingElement) {
+      svgContainingElement.innerHTML = "";
+    }
+    if (isSandboxed) {
+      const iframe = sandboxedIframe((0,src/* select */.Ltv)(svgContainingElement), iFrameID);
+      root = (0,src/* select */.Ltv)(iframe.nodes()[0].contentDocument.body);
+      root.node().style.margin = 0;
+    } else {
+      root = (0,src/* select */.Ltv)(svgContainingElement);
+    }
+    appendDivSvgG(root, id28, enclosingDivID, `font-family: ${fontFamily}`, XMLNS_XLINK_STD);
+  } else {
+    removeExistingElements(document, id28, enclosingDivID, iFrameID);
+    if (isSandboxed) {
+      const iframe = sandboxedIframe((0,src/* select */.Ltv)("body"), iFrameID);
+      root = (0,src/* select */.Ltv)(iframe.nodes()[0].contentDocument.body);
+      root.node().style.margin = 0;
+    } else {
+      root = (0,src/* select */.Ltv)("body");
+    }
+    appendDivSvgG(root, id28, enclosingDivID);
+  }
+  let diag;
+  let parseEncounteredException;
+  try {
+    diag = await Diagram.fromText(text, { title: processed.title });
+  } catch (error) {
+    if (config.suppressErrorRendering) {
+      removeTempElements();
+      throw error;
+    }
+    diag = await Diagram.fromText("error");
+    parseEncounteredException = error;
+  }
+  const element = root.select(enclosingDivID_selector).node();
+  const diagramType = diag.type;
+  const svg = element.firstChild;
+  const firstChild = svg.firstChild;
+  const diagramClassDefs = diag.renderer.getClasses?.(text, diag);
+  const rules = createUserStyles(config, diagramType, diagramClassDefs, idSelector);
+  const style1 = document.createElement("style");
+  style1.innerHTML = rules;
+  svg.insertBefore(style1, firstChild);
+  try {
+    await diag.renderer.draw(text, id28, chunk_KS23V3DP/* package_default */.n.version, diag);
+  } catch (e) {
+    if (config.suppressErrorRendering) {
+      removeTempElements();
+    } else {
+      errorRenderer_default.draw(text, id28, chunk_KS23V3DP/* package_default */.n.version);
+    }
+    throw e;
+  }
+  const svgNode = root.select(`${enclosingDivID_selector} svg`);
+  const a11yTitle = diag.db.getAccTitle?.();
+  const a11yDescr = diag.db.getAccDescription?.();
+  addA11yInfo(diagramType, svgNode, a11yTitle, a11yDescr);
+  root.select(`[id="${id28}"]`).selectAll("foreignobject > *").attr("xmlns", XMLNS_XHTML_STD);
+  let svgCode = root.select(enclosingDivID_selector).node().innerHTML;
+  chunk_AGHRB4JF/* log */.Rm.debug("config.arrowMarkerAbsolute", config.arrowMarkerAbsolute);
+  svgCode = cleanUpSvgCode(svgCode, isSandboxed, (0,chunk_ABZYJK2D/* evaluate */._3)(config.arrowMarkerAbsolute));
+  if (isSandboxed) {
+    const svgEl = root.select(enclosingDivID_selector + " svg").node();
+    svgCode = putIntoIFrame(svgCode, svgEl);
+  } else if (!isLooseSecurityLevel) {
+    svgCode = purify_es/* default */.A.sanitize(svgCode, {
+      ADD_TAGS: DOMPURIFY_TAGS,
+      ADD_ATTR: DOMPURIFY_ATTR,
+      HTML_INTEGRATION_POINTS: { foreignobject: true }
+    });
+  }
+  attachFunctions();
+  if (parseEncounteredException) {
+    throw parseEncounteredException;
+  }
+  removeTempElements();
+  return {
+    diagramType,
+    svg: svgCode,
+    bindFunctions: diag.db.bindFunctions
+  };
+}, "render");
+function initialize(userOptions = {}) {
+  const options = (0,chunk_ABZYJK2D/* assignWithDepth_default */.hH)({}, userOptions);
+  if (options?.fontFamily && !options.themeVariables?.fontFamily) {
+    if (!options.themeVariables) {
+      options.themeVariables = {};
+    }
+    options.themeVariables.fontFamily = options.fontFamily;
+  }
+  (0,chunk_ABZYJK2D/* saveConfigFromInitialize */.wZ)(options);
+  if (options?.theme && options.theme in chunk_ABZYJK2D/* themes_default */.H$) {
+    options.themeVariables = chunk_ABZYJK2D/* themes_default */.H$[options.theme].getThemeVariables(
+      options.themeVariables
+    );
+  } else if (options) {
+    options.themeVariables = chunk_ABZYJK2D/* themes_default */.H$.default.getThemeVariables(options.themeVariables);
+  }
+  const config = typeof options === "object" ? (0,chunk_ABZYJK2D/* setSiteConfig */.UU)(options) : (0,chunk_ABZYJK2D/* getSiteConfig */.Q2)();
+  (0,chunk_AGHRB4JF/* setLogLevel */.He)(config.logLevel);
+  addDiagrams();
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(initialize, "initialize");
+var getDiagramFromText = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((text, metadata = {}) => {
+  const { code } = preprocessDiagram(text);
+  return Diagram.fromText(code, metadata);
+}, "getDiagramFromText");
+function addA11yInfo(diagramType, svgNode, a11yTitle, a11yDescr) {
+  setA11yDiagramInfo(svgNode, diagramType);
+  addSVGa11yTitleDescription(svgNode, a11yTitle, a11yDescr, svgNode.attr("id"));
+}
+(0,chunk_AGHRB4JF/* __name */.K2)(addA11yInfo, "addA11yInfo");
+var mermaidAPI = Object.freeze({
+  render,
+  parse: mermaid_core_parse,
+  getDiagramFromText,
+  initialize,
+  getConfig: chunk_ABZYJK2D/* getConfig */.zj,
+  setConfig: chunk_ABZYJK2D/* setConfig */.Nk,
+  getSiteConfig: chunk_ABZYJK2D/* getSiteConfig */.Q2,
+  updateSiteConfig: chunk_ABZYJK2D/* updateSiteConfig */.B6,
+  reset: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+    (0,chunk_ABZYJK2D/* reset */.cL)();
+  }, "reset"),
+  globalReset: /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+    (0,chunk_ABZYJK2D/* reset */.cL)(chunk_ABZYJK2D/* defaultConfig */.sb);
+  }, "globalReset"),
+  defaultConfig: chunk_ABZYJK2D/* defaultConfig */.sb
+});
+(0,chunk_AGHRB4JF/* setLogLevel */.He)((0,chunk_ABZYJK2D/* getConfig */.zj)().logLevel);
+(0,chunk_ABZYJK2D/* reset */.cL)((0,chunk_ABZYJK2D/* getConfig */.zj)());
+
+// src/mermaid.ts
+var handleError = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((error, errors, parseError) => {
+  chunk_AGHRB4JF/* log */.Rm.warn(error);
+  if ((0,chunk_S3R3BYOJ/* isDetailedError */.dq)(error)) {
+    if (parseError) {
+      parseError(error.str, error.hash);
+    }
+    errors.push({ ...error, message: error.str, error });
+  } else {
+    if (parseError) {
+      parseError(error);
+    }
+    if (error instanceof Error) {
+      errors.push({
+        str: error.message,
+        message: error.message,
+        hash: error.name,
+        error
+      });
+    }
+  }
+}, "handleError");
+var run = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function(options = {
+  querySelector: ".mermaid"
+}) {
+  try {
+    await runThrowsErrors(options);
+  } catch (e) {
+    if ((0,chunk_S3R3BYOJ/* isDetailedError */.dq)(e)) {
+      chunk_AGHRB4JF/* log */.Rm.error(e.str);
+    }
+    if (mermaid.parseError) {
+      mermaid.parseError(e);
+    }
+    if (!options.suppressErrors) {
+      chunk_AGHRB4JF/* log */.Rm.error("Use the suppressErrors option to suppress these errors");
+      throw e;
+    }
+  }
+}, "run");
+var runThrowsErrors = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function({ postRenderCallback, querySelector, nodes } = {
+  querySelector: ".mermaid"
+}) {
+  const conf = mermaidAPI.getConfig();
+  chunk_AGHRB4JF/* log */.Rm.debug(`${!postRenderCallback ? "No " : ""}Callback function found`);
+  let nodesToProcess;
+  if (nodes) {
+    nodesToProcess = nodes;
+  } else if (querySelector) {
+    nodesToProcess = document.querySelectorAll(querySelector);
+  } else {
+    throw new Error("Nodes and querySelector are both undefined");
+  }
+  chunk_AGHRB4JF/* log */.Rm.debug(`Found ${nodesToProcess.length} diagrams`);
+  if (conf?.startOnLoad !== void 0) {
+    chunk_AGHRB4JF/* log */.Rm.debug("Start On Load: " + conf?.startOnLoad);
+    mermaidAPI.updateSiteConfig({ startOnLoad: conf?.startOnLoad });
+  }
+  const idGenerator = new chunk_S3R3BYOJ/* utils_default */._K.InitIDGenerator(conf.deterministicIds, conf.deterministicIDSeed);
+  let txt;
+  const errors = [];
+  for (const element of Array.from(nodesToProcess)) {
+    chunk_AGHRB4JF/* log */.Rm.info("Rendering diagram: " + element.id);
+    if (element.getAttribute("data-processed")) {
+      continue;
+    }
+    element.setAttribute("data-processed", "true");
+    const id28 = `mermaid-${idGenerator.next()}`;
+    txt = element.innerHTML;
+    txt = (0,esm/* dedent */.T)(chunk_S3R3BYOJ/* utils_default */._K.entityDecode(txt)).trim().replace(/<br\s*\/?>/gi, "<br/>");
+    const init2 = chunk_S3R3BYOJ/* utils_default */._K.detectInit(txt);
+    if (init2) {
+      chunk_AGHRB4JF/* log */.Rm.debug("Detected early reinit: ", init2);
+    }
+    try {
+      const { svg, bindFunctions } = await render2(id28, txt, element);
+      element.innerHTML = svg;
+      if (postRenderCallback) {
+        await postRenderCallback(id28);
+      }
+      if (bindFunctions) {
+        bindFunctions(element);
+      }
+    } catch (error) {
+      handleError(error, errors, mermaid.parseError);
+    }
+  }
+  if (errors.length > 0) {
+    throw errors[0];
+  }
+}, "runThrowsErrors");
+var initialize2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(function(config) {
+  mermaidAPI.initialize(config);
+}, "initialize");
+var init = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async function(config, nodes, callback) {
+  chunk_AGHRB4JF/* log */.Rm.warn("mermaid.init is deprecated. Please use run instead.");
+  if (config) {
+    initialize2(config);
+  }
+  const runOptions = { postRenderCallback: callback, querySelector: ".mermaid" };
+  if (typeof nodes === "string") {
+    runOptions.querySelector = nodes;
+  } else if (nodes) {
+    if (nodes instanceof HTMLElement) {
+      runOptions.nodes = [nodes];
+    } else {
+      runOptions.nodes = nodes;
+    }
+  }
+  await run(runOptions);
+}, "init");
+var registerExternalDiagrams = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async (diagrams, {
+  lazyLoad = true
+} = {}) => {
+  addDiagrams();
+  (0,chunk_ABZYJK2D/* registerLazyLoadedDiagrams */.Xd)(...diagrams);
+  if (lazyLoad === false) {
+    await loadRegisteredDiagrams();
+  }
+}, "registerExternalDiagrams");
+var contentLoaded = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(function() {
+  if (mermaid.startOnLoad) {
+    const { startOnLoad } = mermaidAPI.getConfig();
+    if (startOnLoad) {
+      mermaid.run().catch((err) => chunk_AGHRB4JF/* log */.Rm.error("Mermaid failed to initialize", err));
+    }
+  }
+}, "contentLoaded");
+if (typeof document !== "undefined") {
+  window.addEventListener("load", contentLoaded, false);
+}
+var setParseErrorHandler = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(function(parseErrorHandler) {
+  mermaid.parseError = parseErrorHandler;
+}, "setParseErrorHandler");
+var executionQueue = [];
+var executionQueueRunning = false;
+var executeQueue = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async () => {
+  if (executionQueueRunning) {
+    return;
+  }
+  executionQueueRunning = true;
+  while (executionQueue.length > 0) {
+    const f = executionQueue.shift();
+    if (f) {
+      try {
+        await f();
+      } catch (e) {
+        chunk_AGHRB4JF/* log */.Rm.error("Error executing queue", e);
+      }
+    }
+  }
+  executionQueueRunning = false;
+}, "executeQueue");
+var parse2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(async (text, parseOptions) => {
+  return new Promise((resolve, reject) => {
+    const performCall = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => new Promise((res, rej) => {
+      mermaidAPI.parse(text, parseOptions).then(
+        (r) => {
+          res(r);
+          resolve(r);
+        },
+        (e) => {
+          chunk_AGHRB4JF/* log */.Rm.error("Error parsing", e);
+          mermaid.parseError?.(e);
+          rej(e);
+          reject(e);
+        }
+      );
+    }), "performCall");
+    executionQueue.push(performCall);
+    executeQueue().catch(reject);
+  });
+}, "parse");
+var render2 = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)((id28, text, container) => {
+  return new Promise((resolve, reject) => {
+    const performCall = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => new Promise((res, rej) => {
+      mermaidAPI.render(id28, text, container).then(
+        (r) => {
+          res(r);
+          resolve(r);
+        },
+        (e) => {
+          chunk_AGHRB4JF/* log */.Rm.error("Error parsing", e);
+          mermaid.parseError?.(e);
+          rej(e);
+          reject(e);
+        }
+      );
+    }), "performCall");
+    executionQueue.push(performCall);
+    executeQueue().catch(reject);
+  });
+}, "render");
+var getRegisteredDiagramsMetadata = /* @__PURE__ */ (0,chunk_AGHRB4JF/* __name */.K2)(() => {
+  return Object.keys(chunk_ABZYJK2D/* detectors */.mW).map((id28) => ({
+    id: id28
+  }));
+}, "getRegisteredDiagramsMetadata");
+var mermaid = {
+  startOnLoad: true,
+  mermaidAPI,
+  parse: parse2,
+  render: render2,
+  init,
+  run,
+  registerExternalDiagrams,
+  registerLayoutLoaders: chunk_N4CR4FBY/* registerLayoutLoaders */.sO,
+  initialize: initialize2,
+  parseError: void 0,
+  contentLoaded,
+  setParseErrorHandler,
+  detectType: chunk_ABZYJK2D/* detectType */.Ch,
+  registerIconPacks: chunk_JA3XYJ7Z/* registerIconPacks */.pC,
+  getRegisteredDiagramsMetadata
+};
+var mermaid_default = mermaid;
+
+/*! Check if previously processed */
+/*!
+ * Wait for document loaded before starting the execution
+ */
+
+;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_ab2ff13e80bd069bc9f5da25d8a0b2b4/node_modules/@docusaurus/theme-mermaid/lib/client/layouts.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */async function registerOptionalElkLayout(){// Mermaid does not support ELK layouts by default
+// See https://github.com/mermaid-js/mermaid/tree/develop/packages/mermaid-layout-elk
+// ELK layouts are heavy, so we made it an optional peer dependency
+// See https://github.com/facebook/docusaurus/pull/11357
+if(false)// removed by dead control flow
+{}}// Ensure we only try to register layouts once
+let layoutsRegistered=false;async function ensureLayoutsRegistered(){if(!layoutsRegistered){await registerOptionalElkLayout();layoutsRegistered=true;}}
+;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_ab2ff13e80bd069bc9f5da25d8a0b2b4/node_modules/@docusaurus/theme-mermaid/lib/client/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// Stable className to allow users to easily target with CSS
+const MermaidContainerClassName='docusaurus-mermaid-container';function useMermaidThemeConfig(){return (0,useThemeConfig/* useThemeConfig */.p)().mermaid;}function useMermaidConfig(){const{colorMode}=(0,contexts_colorMode/* useColorMode */.G)();const mermaidThemeConfig=useMermaidThemeConfig();const theme=mermaidThemeConfig.theme[colorMode];const{options}=mermaidThemeConfig;return (0,react.useMemo)(()=>({startOnLoad:false,...options,theme}),[theme,options]);}function useMermaidId(){/*
+    Random client-only id, we don't care much but mermaid want an id so...
+    Note: Mermaid doesn't like values provided by Rect.useId() and throws
+    */// TODO Docusaurus v4: check if useId() now works
+//  It could work thanks to https://github.com/facebook/react/pull/32001
+// return useId(); // tried that, doesn't work ('#d:re:' is not a valid selector.)
+return (0,react.useState)(`mermaid-svg-${Math.round(Math.random()*10000000)}`)[0];}async function renderMermaid({id,text,config}){await ensureLayoutsRegistered();/*
+    Mermaid API is really weird :s
+    It is a big mutable singleton with multiple config levels
+    Note: most recent API type definitions are missing
+  
+    There are 2 kind of configs:
+  
+    - siteConfig: some kind of global/protected shared config
+      you can only set with "initialize"
+  
+    - config/currentConfig
+      the config the renderer will use
+      it is reset to siteConfig before each render
+      but it can be altered by the mermaid txt content itself through directives
+  
+    To use a new mermaid config (on colorMode change for example) we should
+    update siteConfig, and it can only be done with initialize()
+     */mermaid_default.initialize(config);try{return await mermaid_default.render(id,text);}catch(e){// Because Mermaid add a weird SVG/Message to the DOM on error
+// https://github.com/mermaid-js/mermaid/issues/3205#issuecomment-1719620183
+document.querySelector(`#d${id}`)?.remove();throw e;}}function useMermaidRenderResult({text,config:providedConfig}){const[result,setResult]=(0,react.useState)(null);const id=useMermaidId();/*
+    For flexibility, we allow the hook to receive a custom Mermaid config
+    The user could inject a modified version of the default config for example
+     */const defaultMermaidConfig=useMermaidConfig();const config=providedConfig??defaultMermaidConfig;(0,react.useEffect)(()=>{renderMermaid({id,text,config})// TODO maybe try to use Suspense here and throw the promise?
+// See also https://github.com/pmndrs/suspend-react
+.then(setResult).catch(e=>{// Funky way to trigger parent React error boundary
+// See https://x.com/sebastienlorber/status/1628340871899893768
+setResult(()=>{throw e;});});},[id,text,config]);return result;}
+;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_ab2ff13e80bd069bc9f5da25d8a0b2b4/node_modules/@docusaurus/theme-mermaid/lib/theme/Mermaid/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Mermaid_styles_module = ({"container":"container_DFLN"});
+;// ./node_modules/.pnpm/@docusaurus+theme-mermaid@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1_ab2ff13e80bd069bc9f5da25d8a0b2b4/node_modules/@docusaurus/theme-mermaid/lib/theme/Mermaid/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function MermaidRenderResult({renderResult}){const ref=(0,react.useRef)(null);(0,react.useEffect)(()=>{const div=ref.current;renderResult.bindFunctions?.(div);},[renderResult]);return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{ref:ref,className:`${MermaidContainerClassName} ${Mermaid_styles_module.container}`// eslint-disable-next-line react/no-danger
+,dangerouslySetInnerHTML:{__html:renderResult.svg}});}function MermaidRenderer({value}){const renderResult=useMermaidRenderResult({text:value});if(renderResult===null){return null;}return/*#__PURE__*/(0,jsx_runtime.jsx)(MermaidRenderResult,{renderResult:renderResult});}function Mermaid(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{fallback:params=>/*#__PURE__*/(0,jsx_runtime.jsx)(errorBoundaryUtils/* ErrorBoundaryErrorMessageFallback */.MN,{...params}),children:/*#__PURE__*/(0,jsx_runtime.jsx)(MermaidRenderer,{...props})});}
+;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@7.0.2/node_modules/@docusaurus/theme-classic/lib/theme/MDXComponents/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const MDXComponents={Head: Head/* default */.A,details:MDXDetails,// For MD mode support, see https://github.com/facebook/docusaurus/issues/9092#issuecomment-1602902274
+Details:MDXDetails,code:MDXCode,a:MDXA,pre:MDXPre,ul:MDXUl,li:MDXLi,img:MDXImg,h1:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h1",...props}),h2:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h2",...props}),h3:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h3",...props}),h4:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h4",...props}),h5:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h5",...props}),h6:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(MDXHeading,{as:"h6",...props}),admonition:Admonition/* default */.A,mermaid:Mermaid};/* harmony default export */ const theme_MDXComponents = (MDXComponents);
 
 /***/ }),
 

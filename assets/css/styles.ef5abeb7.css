@@ -3116,24 +3116,24 @@ html[data-theme='dark'] {
   --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
 }
 
-.tag_um1G {
+.tag_J4X1 {
   border: 1px solid var(--docusaurus-tag-list-border);
   transition: border var(--ifm-transition-fast);
 }
 
-.tag_um1G:hover {
+.tag_J4X1:hover {
   --docusaurus-tag-list-border: var(--ifm-link-color);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.tagRegular_hNAe {
+.tagRegular_t4de {
   border-radius: var(--ifm-global-radius);
   padding: 0.2rem 0.5rem 0.3rem;
   font-size: 90%;
 }
 
-.tagWithCount_ovLX {
+.tagWithCount_Dq3n {
   display: flex;
   align-items: center;
   position: relative;
@@ -3141,8 +3141,8 @@ html[data-theme='dark'] {
   border-left: 0;
 }
 
-.tagWithCount_ovLX::before,
-.tagWithCount_ovLX::after {
+.tagWithCount_Dq3n::before,
+.tagWithCount_Dq3n::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -3150,7 +3150,7 @@ html[data-theme='dark'] {
   transition: inherit;
 }
 
-.tagWithCount_ovLX::before {
+.tagWithCount_Dq3n::before {
   right: 100%;
   transform: translate(50%, -50%) rotate(-45deg);
   width: 1.18rem;
@@ -3159,7 +3159,7 @@ html[data-theme='dark'] {
   border-bottom: 0;
 }
 
-.tagWithCount_ovLX::after {
+.tagWithCount_Dq3n::after {
   left: 0;
   transform: translateY(-50%);
   width: 0.5rem;
@@ -3167,7 +3167,7 @@ html[data-theme='dark'] {
   border-radius: 50%;
 }
 
-.tagWithCount_ovLX span {
+.tagWithCount_Dq3n span {
   background: var(--ifm-color-secondary);
   color: var(--ifm-color-black);
   font-size: 0.7rem;
@@ -3185,11 +3185,11 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.tags_tUsW {
+.tags_JnZS {
   display: inline;
 }
 
-.tag_hQ_W {
+.tag_IUIr {
   margin: 0 0.4rem 0.5rem 0;
   display: inline-block;
 }
@@ -3202,7 +3202,7 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.iconEdit_W4sC {
+.iconEdit_nCVZ {
   margin-right: 0.3em;
   vertical-align: sub;
 }
@@ -3215,14 +3215,14 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.lastUpdated_o9YG {
+.lastUpdated_RZYL {
   font-size: smaller;
   font-style: italic;
   margin-top: 0.2rem;
 }
 
 @media (min-width: 997px) {
-  .lastUpdated_o9YG {
+  .lastUpdated_RZYL {
     text-align: right;
   }
 }
@@ -3235,7 +3235,7 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.tocCollapsibleButton_NDx3 {
+.tocCollapsibleButton_MR_T {
   font-size: inherit;
   display: flex;
   justify-content: space-between;
@@ -3244,7 +3244,7 @@ html[data-theme='dark'] {
   width: 100%;
 }
 
-.tocCollapsibleButton_NDx3::after {
+.tocCollapsibleButton_MR_T::after {
   content: '';
   background: var(--ifm-menu-link-sublist-icon) 50% 50% / 2rem 2rem no-repeat;
   filter: var(--ifm-menu-link-sublist-icon-filter);
@@ -3254,7 +3254,7 @@ html[data-theme='dark'] {
   transition: transform var(--ifm-transition-fast);
 }
 
-.tocCollapsibleButtonExpanded__Mq7::after {
+.tocCollapsibleButtonExpanded_zKeV::after {
   transform: none;
 }
 }
@@ -3266,28 +3266,28 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.tocCollapsible_jpDM {
+.tocCollapsible_T7DW {
   background-color: var(--ifm-menu-color-background-active);
   border-radius: var(--ifm-global-radius);
   margin: 1rem 0;
 }
 
-.tocCollapsibleContent_Lw8X > ul {
+.tocCollapsibleContent_H0jK > ul {
   border-left: none;
   border-top: 1px solid var(--ifm-color-emphasis-300);
   padding: 0.2rem 0;
   font-size: 15px;
 }
 
-.tocCollapsibleContent_Lw8X ul li {
+.tocCollapsibleContent_H0jK ul li {
   margin: 0.4rem 0.8rem;
 }
 
-.tocCollapsibleContent_Lw8X a {
+.tocCollapsibleContent_H0jK a {
   display: block;
 }
 
-.tocCollapsibleExpanded_YHxf {
+.tocCollapsibleExpanded_Zbox {
   transform: none;
 }
 }
@@ -3301,13 +3301,13 @@ html[data-theme='dark'] {
 
 @media (min-width: 997px) {
   /* Prevent hydration FOUC, as the mobile TOC needs to be server-rendered */
-  .tocMobile_Ay0K {
+  .tocMobile_bOT1 {
     display: none;
   }
 }
 
 @media print {
-  .tocMobile_Ay0K {
+  .tocMobile_bOT1 {
     display: none;
   }
 }
@@ -3320,7 +3320,7 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.tableOfContents_oOrG {
+.tableOfContents_K4vG {
   max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
   overflow-y: auto;
   position: sticky;
@@ -3328,11 +3328,11 @@ html[data-theme='dark'] {
 }
 
 @media (max-width: 996px) {
-  .tableOfContents_oOrG {
+  .tableOfContents_K4vG {
     display: none;
   }
 
-  .docItemContainer_S3Be {
+  .docItemContainer_Rg3g {
     padding: 0 0.3rem;
   }
 }
@@ -3345,7 +3345,7 @@ html[data-theme='dark'] {
  * LICENSE file in the root directory of this source tree.
  */
 
-.backToTopButton_alJK {
+.backToTopButton_Vwbs {
   position: fixed;
   right: 1.3rem;
   bottom: 1.3rem;
@@ -3362,7 +3362,7 @@ html[data-theme='dark'] {
   visibility: hidden;
 }
 
-.backToTopButton_alJK::after {
+.backToTopButton_Vwbs::after {
   content: ' ';
   display: inline-block;
   -webkit-mask: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem no-repeat;
@@ -3373,12 +3373,12 @@ html[data-theme='dark'] {
 }
 
 @media (hover: hover) {
-  .backToTopButton_alJK:hover {
+  .backToTopButton_Vwbs:hover {
     background-color: var(--ifm-color-emphasis-300);
   }
 }
 
-.backToTopButtonShow__olZ {
+.backToTopButtonShow_tI3N {
   opacity: 1;
   transform: scale(1);
   visibility: visible;
@@ -3416,7 +3416,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
  * LICENSE file in the root directory of this source tree.
  */
 
-.skipToContent_Snvu {
+.skipToContent_KfE0 {
   position: fixed;
   top: 1rem;
   left: 100%;
@@ -3426,7 +3426,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   background-color: var(--ifm-background-surface-color);
 }
 
-.skipToContent_Snvu:focus {
+.skipToContent_KfE0:focus {
   left: 1rem;
   box-shadow: var(--ifm-global-shadow-md);
 }
@@ -3439,7 +3439,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
  * LICENSE file in the root directory of this source tree.
  */
 
-.closeButton_DNX5 {
+.closeButton_h3YG {
   padding: 0;
   line-height: 0;
 }
@@ -3452,13 +3452,13 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
  * LICENSE file in the root directory of this source tree.
  */
 
-.content_QIvL {
+.content_cC7F {
   font-size: 85%;
   text-align: center;
   padding: 5px 0;
 }
 
-.content_QIvL a {
+.content_cC7F a {
   color: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -3476,7 +3476,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   --docusaurus-announcement-bar-height: auto;
 }
 
-.announcementBar_qKoH {
+.announcementBar_gxXw {
   display: flex;
   align-items: center;
   height: var(--docusaurus-announcement-bar-height);
@@ -3494,25 +3494,25 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   border-bottom: 1px solid var(--ifm-color-emphasis-100);
 }
 
-html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
+html[data-announcement-bar-initially-dismissed='true'] .announcementBar_gxXw {
   display: none;
 }
 
-.announcementBarPlaceholder_cVN_ {
+.announcementBarPlaceholder_eW7K {
   flex: 0 0 10px;
 }
 
-.announcementBarClose_ptvj {
+.announcementBarClose_VbuS {
   flex: 0 0 30px;
   align-self: stretch;
 }
 
-.announcementBarContent_sgH0 {
+.announcementBarContent_MKZk {
   flex: 1 1 auto;
 }
 
 @media print {
-  .announcementBar_qKoH {
+  .announcementBar_gxXw {
     display: none;
   }
 }
@@ -3522,8 +3522,8 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
     --docusaurus-announcement-bar-height: 30px;
   }
 
-  .announcementBarPlaceholder_cVN_,
-  .announcementBarClose_ptvj {
+  .announcementBarPlaceholder_eW7K,
+  .announcementBarClose_VbuS {
     flex-basis: 50px;
   }
 }
@@ -3536,12 +3536,12 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
  * LICENSE file in the root directory of this source tree.
  */
 
-.toggle_Og8A {
+.toggle_GJxB {
   width: 2rem;
   height: 2rem;
 }
 
-.toggleButton_uR6M {
+.toggleButton_pEAH {
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   display: flex;
@@ -3552,21 +3552,21 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
   transition: background var(--ifm-transition-fast);
 }
 
-.toggleButton_uR6M:hover {
+.toggleButton_pEAH:hover {
   background: var(--ifm-color-emphasis-200);
 }
 
-.toggleIcon_DNkF {
+.toggleIcon_x0Jq {
   display: none;
 }
 
-[data-theme-choice='system'] .systemToggleIcon_ceD5,
-[data-theme-choice='light'] .lightToggleIcon_d2Cq,
-[data-theme-choice='dark'] .darkToggleIcon_kDyW {
+[data-theme-choice='system'] .systemToggleIcon__l4t,
+[data-theme-choice='light'] .lightToggleIcon_oswe,
+[data-theme-choice='dark'] .darkToggleIcon_xkIs {
   display: initial;
 }
 
-.toggleButtonDisabled_QqRk {
+.toggleButtonDisabled_YBwC {
   cursor: not-allowed;
 }
 }
@@ -3578,7 +3578,7 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
  * LICENSE file in the root directory of this source tree.
  */
 
-.darkNavbarColorModeToggle_Th41:hover {
+.darkNavbarColorModeToggle_LIsp:hover {
   background: var(--ifm-color-gray-800);
 }
 }
@@ -3590,15 +3590,15 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
  * LICENSE file in the root directory of this source tree.
  */
 
-.themedComponent_NwjF {
+.themedComponent_D1_e {
   display: none;
 }
 
-[data-theme='light'] .themedComponent--light_Y9pu {
+[data-theme='light'] .themedComponent--light_z9UV {
   display: initial;
 }
 
-[data-theme='dark'] .themedComponent--dark_OnJW {
+[data-theme='dark'] .themedComponent--dark_LdLQ {
   display: initial;
 }
 
@@ -3606,7 +3606,7 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar_qKoH {
 JS disabled??? Show light version by default => better than showing nothing
 TODO bad, but we currently always show light mode when there's no data-theme
  */
-html:not([data-theme]) .themedComponent--light_Y9pu {
+html:not([data-theme]) .themedComponent--light_z9UV {
   display: initial;
 }
 }
@@ -3629,7 +3629,7 @@ html:not([data-theme]) .themedComponent--light_Y9pu {
 }
 
 @media (min-width: 997px) {
-  .collapseSidebarButton_xc03 {
+  .collapseSidebarButton_kfV3 {
     display: block !important;
     background-color: var(--docusaurus-collapse-button-bg);
     height: 40px;
@@ -3639,22 +3639,22 @@ html:not([data-theme]) .themedComponent--light_Y9pu {
     border: 1px solid var(--ifm-toc-border-color);
   }
 
-  .collapseSidebarButtonIcon_qWz2 {
+  .collapseSidebarButtonIcon__tpj {
     transform: rotate(180deg);
     margin-top: 4px;
   }
 
-  [dir='rtl'] .collapseSidebarButtonIcon_qWz2 {
+  [dir='rtl'] .collapseSidebarButtonIcon__tpj {
     transform: rotate(0);
   }
 
-  .collapseSidebarButton_xc03:hover,
-  .collapseSidebarButton_xc03:focus {
+  .collapseSidebarButton_kfV3:hover,
+  .collapseSidebarButton_kfV3:focus {
     background-color: var(--docusaurus-collapse-button-bg-hover);
   }
 }
 
-.collapseSidebarButton_xc03 {
+.collapseSidebarButton_kfV3 {
   display: none;
   margin: 0;
 }
@@ -3667,7 +3667,7 @@ html:not([data-theme]) .themedComponent--light_Y9pu {
  * LICENSE file in the root directory of this source tree.
  */
 
-.iconExternalLink_ykX6 {
+.iconExternalLink_quzI {
   margin-left: 0.3rem;
 }
 }
@@ -3679,11 +3679,11 @@ html:not([data-theme]) .themedComponent--light_Y9pu {
  * LICENSE file in the root directory of this source tree.
  */
 
-.menuExternalLink_M_3J {
+.menuExternalLink_BZYS {
   align-items: center;
 }
 
-.linkLabel_Tdqw {
+.linkLabel_h81F {
   overflow: hidden;
   display: -webkit-box;
   line-clamp: 2;
@@ -3699,7 +3699,7 @@ html:not([data-theme]) .themedComponent--light_Y9pu {
  * LICENSE file in the root directory of this source tree.
  */
 
-.categoryLink_ul9C {
+.categoryLink_w37P {
   overflow: hidden;
 }
 
@@ -3710,7 +3710,7 @@ TODO merge this logic back in Infima?
   margin-left: var(--ifm-menu-link-padding-vertical);
 }
 
-.categoryLinkLabel_wbsQ {
+.categoryLinkLabel_lbA_ {
   flex: 1;
   overflow: hidden;
   display: -webkit-box;
@@ -3728,7 +3728,7 @@ TODO merge this logic back in Infima?
  */
 
 @media (min-width: 997px) {
-  .menuHtmlItem_wyuw {
+  .menuHtmlItem_RdCp {
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
   }
@@ -3743,18 +3743,18 @@ TODO merge this logic back in Infima?
  */
 
 @media (min-width: 997px) {
-  .menu_Imbn {
+  .menu_fCW8 {
     flex-grow: 1;
     padding: 0.5rem;
   }
   @supports (scrollbar-gutter: stable) {
-    .menu_Imbn {
+    .menu_fCW8 {
       padding: 0.5rem 0 0.5rem 0.5rem;
       scrollbar-gutter: stable;
     }
   }
 
-  .menuWithAnnouncementBar_cSw2 {
+  .menuWithAnnouncementBar_OKJI {
     margin-bottom: var(--docusaurus-announcement-bar-height);
   }
 }
@@ -3768,7 +3768,7 @@ TODO merge this logic back in Infima?
  */
 
 @media (min-width: 997px) {
-  .sidebar_wgYa {
+  .sidebar_qgx5 {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -3776,16 +3776,16 @@ TODO merge this logic back in Infima?
     width: var(--doc-sidebar-width);
   }
 
-  .sidebarWithHideableNavbar_HcEO {
+  .sidebarWithHideableNavbar_vUsn {
     padding-top: 0;
   }
 
-  .sidebarHidden_vGZj {
+  .sidebarHidden_B4if {
     opacity: 0;
     visibility: hidden;
   }
 
-  .sidebarLogo_aBWk {
+  .sidebarLogo_gwes {
     display: flex !important;
     align-items: center;
     margin: 0 var(--ifm-navbar-padding-horizontal);
@@ -3796,13 +3796,13 @@ TODO merge this logic back in Infima?
     text-decoration: none !important;
   }
 
-  .sidebarLogo_aBWk img {
+  .sidebarLogo_gwes img {
     margin-right: 0.5rem;
     height: 2rem;
   }
 }
 
-.sidebarLogo_aBWk {
+.sidebarLogo_gwes {
   display: none;
 }
 }
@@ -3815,7 +3815,7 @@ TODO merge this logic back in Infima?
  */
 
 @media (min-width: 997px) {
-  .expandButton_XGsp {
+  .expandButton_kRh4 {
     position: absolute;
     top: 0;
     right: 0;
@@ -3828,16 +3828,16 @@ TODO merge this logic back in Infima?
     background-color: var(--docusaurus-collapse-button-bg);
   }
 
-  .expandButton_XGsp:hover,
-  .expandButton_XGsp:focus {
+  .expandButton_kRh4:hover,
+  .expandButton_kRh4:focus {
     background-color: var(--docusaurus-collapse-button-bg-hover);
   }
 
-  .expandButtonIcon_Pit7 {
+  .expandButtonIcon_aq1l {
     transform: rotate(0);
   }
 
-  [dir='rtl'] .expandButtonIcon_Pit7 {
+  [dir='rtl'] .expandButtonIcon_aq1l {
     transform: rotate(180deg);
   }
 }
@@ -3855,12 +3855,12 @@ TODO merge this logic back in Infima?
   --doc-sidebar-hidden-width: 30px;
 }
 
-.docSidebarContainer_GaLo {
+.docSidebarContainer_hdya {
   display: none;
 }
 
 @media (min-width: 997px) {
-  .docSidebarContainer_GaLo {
+  .docSidebarContainer_hdya {
     display: block;
     width: var(--doc-sidebar-width);
     margin-top: calc(-1 * var(--ifm-navbar-height));
@@ -3870,12 +3870,12 @@ TODO merge this logic back in Infima?
     clip-path: inset(0);
   }
 
-  .docSidebarContainerHidden_ZJCq {
+  .docSidebarContainerHidden_jnvk {
     width: var(--doc-sidebar-hidden-width);
     cursor: pointer;
   }
 
-  .sidebarViewport_L6nV {
+  .sidebarViewport_kBWX {
     top: 0;
     position: sticky;
     height: 100%;
@@ -3891,22 +3891,22 @@ TODO merge this logic back in Infima?
  * LICENSE file in the root directory of this source tree.
  */
 
-.docMainContainer_M3hG {
+.docMainContainer_I59s {
   display: flex;
   width: 100%;
 }
 
 @media (min-width: 997px) {
-  .docMainContainer_M3hG {
+  .docMainContainer_I59s {
     flex-grow: 1;
     max-width: calc(100% - var(--doc-sidebar-width));
   }
 
-  .docMainContainerEnhanced_Yeyj {
+  .docMainContainerEnhanced_xY9H {
     max-width: calc(100% - var(--doc-sidebar-hidden-width));
   }
 
-  .docItemWrapperEnhanced_r4KN {
+  .docItemWrapperEnhanced_MUmp {
     max-width: calc(
       var(--ifm-container-width) + var(--doc-sidebar-width)
     ) !important;
@@ -3921,12 +3921,12 @@ TODO merge this logic back in Infima?
  * LICENSE file in the root directory of this source tree.
  */
 
-.docRoot_wXYr {
+.docRoot_SPrU {
   display: flex;
   width: 100%;
 }
 
-.docsWrapper_hHmU {
+.docsWrapper_Fxyu {
   display: flex;
   flex: 1 0 auto;
 }
@@ -3944,11 +3944,11 @@ When the navbar is sticky, ensure that on anchor click,
 the browser does not scroll that anchor behind the navbar
 See https://x.com/JoshWComeau/status/1332015868725891076
  */
-.anchorWithStickyNavbar_CIwr {
+.anchorWithStickyNavbar_lKHS {
   scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
 }
 
-.anchorWithHideOnScrollNavbar_inFD {
+.anchorWithHideOnScrollNavbar__R8z {
   scroll-margin-top: 0.5rem;
 }
 
@@ -3977,7 +3977,7 @@ See https://x.com/JoshWComeau/status/1332015868725891076
  * LICENSE file in the root directory of this source tree.
  */
 
-.codeBlockContainer_UH37 {
+.codeBlockContainer__Jj3 {
   background: var(--prism-background-color);
   color: var(--prism-color);
   margin-bottom: var(--ifm-leading);
@@ -3993,17 +3993,17 @@ See https://x.com/JoshWComeau/status/1332015868725891076
  * LICENSE file in the root directory of this source tree.
  */
 
-.codeBlock_skZe {
+.codeBlock_qPUf {
   --ifm-pre-background: var(--prism-background-color);
   margin: 0;
   padding: 0;
 }
 
-.codeBlockStandalone_LWEz {
+.codeBlockStandalone_jVCn {
   padding: 0;
 }
 
-.codeBlockLines_GM_q {
+.codeBlockLines_MEUk {
   font: inherit;
   /* rtl:ignore */
   float: left;
@@ -4011,13 +4011,13 @@ See https://x.com/JoshWComeau/status/1332015868725891076
   padding: var(--ifm-pre-padding);
 }
 
-.codeBlockLinesWithNumbering_iYHT {
+.codeBlockLinesWithNumbering_lV2Y {
   display: table;
   padding: var(--ifm-pre-padding) 0;
 }
 
 @media print {
-  .codeBlockLines_GM_q {
+  .codeBlockLines_MEUk {
     white-space: pre-wrap;
   }
 }
@@ -4047,12 +4047,12 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   padding: 0 var(--ifm-pre-padding);
 }
 
-.codeLine_KaC6 {
+.codeLine_TOiY {
   display: table-row;
   counter-increment: line-count;
 }
 
-.codeLineNumber_Vney {
+.codeLineNumber_AfvE {
   display: table-cell;
   text-align: right;
   width: 1%;
@@ -4063,16 +4063,16 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   overflow-wrap: normal;
 }
 
-.codeLineNumber_Vney::before {
+.codeLineNumber_AfvE::before {
   content: counter(line-count);
   opacity: 0.4;
 }
 
-.theme-code-block-highlighted-line .codeLineNumber_Vney::before {
+.theme-code-block-highlighted-line .codeLineNumber_AfvE::before {
   opacity: 0.8;
 }
 
-.codeLineContent_I0xC {
+.codeLineContent_l7Hy {
   padding-right: var(--ifm-pre-padding);
 }
 }
@@ -4084,18 +4084,18 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
  * LICENSE file in the root directory of this source tree.
  */
 
-.theme-code-block:hover .copyButtonCopied_PWMo {
+.theme-code-block:hover .copyButtonCopied_rkN_ {
   opacity: 1 !important;
 }
 
-.copyButtonIcons_eD0b {
+.copyButtonIcons_lQNr {
   position: relative;
   width: 1.125rem;
   height: 1.125rem;
 }
 
-.copyButtonIcon_l99o,
-.copyButtonSuccessIcon_yjLY {
+.copyButtonIcon_V1IV,
+.copyButtonSuccessIcon_gbfw {
   position: absolute;
   top: 0;
   left: 0;
@@ -4106,7 +4106,7 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   transition: all var(--ifm-transition-fast) ease;
 }
 
-.copyButtonSuccessIcon_yjLY {
+.copyButtonSuccessIcon_gbfw {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.33);
@@ -4114,12 +4114,12 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   color: #00d600;
 }
 
-.copyButtonCopied_PWMo .copyButtonIcon_l99o {
+.copyButtonCopied_rkN_ .copyButtonIcon_V1IV {
   transform: scale(0.33);
   opacity: 0;
 }
 
-.copyButtonCopied_PWMo .copyButtonSuccessIcon_yjLY {
+.copyButtonCopied_rkN_ .copyButtonSuccessIcon_gbfw {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition-delay: 0.075s;
@@ -4133,12 +4133,12 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
  * LICENSE file in the root directory of this source tree.
  */
 
-.wordWrapButtonIcon_t17H {
+.wordWrapButtonIcon_RgI5 {
   width: 1.2rem;
   height: 1.2rem;
 }
 
-.wordWrapButtonEnabled_QF3o .wordWrapButtonIcon_t17H {
+.wordWrapButtonEnabled_EQP2 .wordWrapButtonIcon_RgI5 {
   color: var(--ifm-color-primary);
 }
 }
@@ -4150,7 +4150,7 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
  * LICENSE file in the root directory of this source tree.
  */
 
-.buttonGroup_ju_h {
+.buttonGroup_YREO {
   display: flex;
   column-gap: 0.2rem;
   position: absolute;
@@ -4159,7 +4159,7 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   top: calc(var(--ifm-pre-padding) / 2);
 }
 
-.buttonGroup_ju_h button {
+.buttonGroup_YREO button {
   display: flex;
   align-items: center;
   background: var(--prism-background-color);
@@ -4172,12 +4172,12 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   opacity: 0;
 }
 
-.buttonGroup_ju_h button:focus-visible,
-.buttonGroup_ju_h button:hover {
+.buttonGroup_YREO button:focus-visible,
+.buttonGroup_YREO button:hover {
   opacity: 1 !important;
 }
 
-.theme-code-block:hover .buttonGroup_ju_h button {
+.theme-code-block:hover .buttonGroup_YREO button {
   opacity: 0.4;
 }
 }
@@ -4189,14 +4189,14 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
  * LICENSE file in the root directory of this source tree.
  */
 
-.codeBlockContent_UcRl {
+.codeBlockContent__MW5 {
   position: relative;
   /* rtl:ignore */
   direction: ltr;
   border-radius: inherit;
 }
 
-.codeBlockTitle_oAfZ {
+.codeBlockTitle_crTb {
   border-bottom: 1px solid var(--ifm-color-emphasis-300);
   font-size: var(--ifm-code-font-size);
   font-weight: 500;
@@ -4205,7 +4205,7 @@ the background in custom CSS file due bug https://github.com/facebook/docusaurus
   border-top-right-radius: inherit;
 }
 
-.codeBlockTitle_oAfZ + .codeBlockContent_UcRl .codeBlock_Ii3J {
+.codeBlockTitle_crTb + .codeBlockContent__MW5 .codeBlock_QdZo {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4224,11 +4224,11 @@ the browser does not scroll to the ref behind the navbar
 See https://github.com/facebook/docusaurus/issues/11232
 See also headings case https://x.com/JoshWComeau/status/1332015868725891076
  */
-.footnoteRefStickyNavbar_JMYU {
+.footnoteRefStickyNavbar_RuiY {
   scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
 }
 
-.footnoteRefHideOnScrollNavbar_A8Gn {
+.footnoteRefHideOnScrollNavbar_p3Z0 {
   scroll-margin-top: 0.5rem;
 }
 }
@@ -4243,13 +4243,13 @@ See also headings case https://x.com/JoshWComeau/status/1332015868725891076
 /*
 CSS variables, meant to be overridden by final theme
  */
-.details_yaxw {
+.details_XInd {
   --docusaurus-details-summary-arrow-size: 0.38rem;
   --docusaurus-details-transition: transform 200ms ease;
   --docusaurus-details-decoration-color: grey;
 }
 
-.details_yaxw > summary {
+.details_XInd > summary {
   position: relative;
   cursor: pointer;
   list-style: none;
@@ -4257,11 +4257,11 @@ CSS variables, meant to be overridden by final theme
 }
 
 /* TODO: deprecation, need to remove this after Safari will support `::marker` */
-.details_yaxw > summary::-webkit-details-marker {
+.details_XInd > summary::-webkit-details-marker {
   display: none;
 }
 
-.details_yaxw > summary::before {
+.details_XInd > summary::before {
   position: absolute;
   top: 0.45rem;
   left: 0;
@@ -4280,23 +4280,23 @@ CSS variables, meant to be overridden by final theme
 }
 
 /* When JS disabled/failed to load: we use the open property for arrow animation: */
-.details_yaxw[open]:not(.isBrowser_XySv) > summary::before,
+.details_XInd[open]:not(.isBrowser_PPQY) > summary::before,
 
-.details_yaxw[data-collapsed='false'].isBrowser_XySv > summary::before {
+.details_XInd[data-collapsed='false'].isBrowser_PPQY > summary::before {
   transform: rotate(90deg);
 }
 
-.collapsibleContent_wyob {
+.collapsibleContent_jnws {
   margin-top: 1rem;
   border-top: 1px solid var(--docusaurus-details-decoration-color);
   padding-top: 1rem;
 }
 
-.collapsibleContent_wyob p:last-child {
+.collapsibleContent_jnws p:last-child {
   margin-bottom: 0;
 }
 
-.details_yaxw > summary > p:last-child {
+.details_XInd > summary > p:last-child {
   margin-bottom: 0;
 }
 }
@@ -4308,7 +4308,7 @@ CSS variables, meant to be overridden by final theme
  * LICENSE file in the root directory of this source tree.
  */
 
-.details_QLvM {
+.details_e8xq {
   --docusaurus-details-decoration-color: var(--ifm-alert-border-color);
   --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
   margin: 0 0 var(--ifm-spacing-vertical);
@@ -4323,11 +4323,11 @@ CSS variables, meant to be overridden by final theme
  * LICENSE file in the root directory of this source tree.
  */
 
-.containsTaskList_oYSy {
+.containsTaskList_qLpy {
   list-style: none;
 }
 
-:not(.containsTaskList_oYSy > li) > .containsTaskList_oYSy {
+:not(.containsTaskList_qLpy > li) > .containsTaskList_qLpy {
   padding-left: 0;
 }
 }
@@ -4339,7 +4339,7 @@ CSS variables, meant to be overridden by final theme
  * LICENSE file in the root directory of this source tree.
  */
 
-.img_wPmx {
+.img_K16g {
   height: auto;
 }
 }
@@ -4351,39 +4351,39 @@ CSS variables, meant to be overridden by final theme
  * LICENSE file in the root directory of this source tree.
  */
 
-.admonition_wUh5 {
+.admonition_45ko {
   margin-bottom: 1em;
 }
 
-.admonitionHeading_cUJc {
+.admonitionHeading_ll91 {
   font: var(--ifm-heading-font-weight) var(--ifm-h5-font-size) /
     var(--ifm-heading-line-height) var(--ifm-heading-font-family);
   text-transform: uppercase;
 }
 
 /* Heading alone without content (does not handle fragment content) */
-.admonitionHeading_cUJc:not(:last-child) {
+.admonitionHeading_ll91:not(:last-child) {
   margin-bottom: 0.3rem;
 }
 
-.admonitionHeading_cUJc code {
+.admonitionHeading_ll91 code {
   text-transform: none;
 }
 
-.admonitionIcon_kGVO {
+.admonitionIcon_f5ex {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.4em;
 }
 
-.admonitionIcon_kGVO svg {
+.admonitionIcon_f5ex svg {
   display: inline-block;
   height: 1.6em;
   width: 1.6em;
   fill: var(--ifm-alert-foreground-color);
 }
 
-.admonitionContent_aw5S > :last-child {
+.admonitionContent_K63K > :last-child {
   margin-bottom: 0;
 }
 }
@@ -4395,7 +4395,7 @@ CSS variables, meant to be overridden by final theme
  * LICENSE file in the root directory of this source tree.
  */
 
-.dropdownNavbarItemMobile_UR_l {
+.dropdownNavbarItemMobile__6fY {
   cursor: pointer;
 }
 }
@@ -4407,7 +4407,7 @@ CSS variables, meant to be overridden by final theme
  * LICENSE file in the root directory of this source tree.
  */
 
-.iconLanguage_gCNh {
+.iconLanguage_bQ78 {
   vertical-align: text-bottom;
   margin-right: 5px;
 }
@@ -4424,19 +4424,19 @@ CSS variables, meant to be overridden by final theme
 Workaround to avoid rendering empty search container
 See https://github.com/facebook/docusaurus/pull/9385
 */
-.navbarSearchContainer_HJoG:empty {
+.navbarSearchContainer_b8Jh:empty {
   display: none;
 }
 
 @media (max-width: 996px) {
-  .navbarSearchContainer_HJoG {
+  .navbarSearchContainer_b8Jh {
     position: absolute;
     right: var(--ifm-navbar-padding-horizontal);
   }
 }
 
 @media (min-width: 997px) {
-  .navbarSearchContainer_HJoG {
+  .navbarSearchContainer_b8Jh {
     padding: 0 var(--ifm-navbar-item-padding-horizontal);
   }
 }
@@ -4449,11 +4449,11 @@ See https://github.com/facebook/docusaurus/pull/9385
  * LICENSE file in the root directory of this source tree.
  */
 
-.navbarHideable_AIB5 {
+.navbarHideable_Gvou {
   transition: transform var(--ifm-transition-fast) ease;
 }
 
-.navbarHidden_RE_t {
+.navbarHidden_AlDN {
   transform: translate3d(0, calc(-100% - 2px), 0);
 }
 }
@@ -4465,12 +4465,12 @@ See https://github.com/facebook/docusaurus/pull/9385
  * LICENSE file in the root directory of this source tree.
  */
 
-.errorBoundaryError_hwFI {
+.errorBoundaryError_oECT {
   white-space: pre-wrap;
   color: red;
 }
 
-.errorBoundaryFallback_IPlr {
+.errorBoundaryFallback_iAIi {
   color: red;
   padding: 0.55rem;
 }
@@ -4487,7 +4487,7 @@ See https://github.com/facebook/docusaurus/pull/9385
 Hide color mode toggle in small viewports
  */
 @media (max-width: 996px) {
-  .colorModeToggle_O0m1 {
+  .colorModeToggle_pgPV {
     display: none;
   }
 }
@@ -4508,13 +4508,13 @@ See https://github.com/facebook/docusaurus/pull/11142
  * LICENSE file in the root directory of this source tree.
  */
 
-.footerLogoLink_I7k4 {
+.footerLogoLink_kTli {
   opacity: 0.5;
   transition: opacity var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
 }
 
-.footerLogoLink_I7k4:hover {
+.footerLogoLink_kTli:hover {
   opacity: 1;
 }
 }
@@ -4531,7 +4531,7 @@ body {
   height: 100%;
 }
 
-.mainWrapper_Ino9 {
+.mainWrapper_H63a {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
@@ -4556,11 +4556,11 @@ body {
  * LICENSE file in the root directory of this source tree.
  */
 
-.container_nj2j {
+.container_DFLN {
   max-width: 100%;
 }
 
-.container_nj2j > svg {
+.container_DFLN > svg {
   max-width: 100%;
 }
 }
@@ -4572,7 +4572,7 @@ body {
  * LICENSE file in the root directory of this source tree.
  */
 
-.breadcrumbHomeIcon_c9sO {
+.breadcrumbHomeIcon_hhbW {
   position: relative;
   top: 1px;
   vertical-align: top;
@@ -4588,7 +4588,7 @@ body {
  * LICENSE file in the root directory of this source tree.
  */
 
-.breadcrumbsContainer_JpcI {
+.breadcrumbsContainer_zGgE {
   --ifm-breadcrumb-size-multiplier: 0.8;
   margin-bottom: 0.8rem;
 }
@@ -4601,13 +4601,13 @@ body {
  * LICENSE file in the root directory of this source tree.
  */
 
-.docItemContainer_Amuc header + *,
-.docItemContainer_Amuc article > *:first-child {
+.docItemContainer_rikH header + *,
+.docItemContainer_rikH article > *:first-child {
   margin-top: 0;
 }
 
 @media (min-width: 997px) {
-  .docItemCol_Ix_p {
+  .docItemCol_poiS {
     max-width: 75% !important;
   }
 }

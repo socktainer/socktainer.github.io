@@ -1050,76 +1050,6 @@ function toKey(value) {
 
 /***/ }),
 
-/***/ 1544:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   S: () => (/* binding */ createArchitectureServices)
-/* harmony export */ });
-/* unused harmony export ArchitectureModule */
-/* harmony import */ var _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4214);
-/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8158);
-/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5846);
-/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6103);
-
-
-// src/language/architecture/module.ts
-
-
-// src/language/architecture/tokenBuilder.ts
-var ArchitectureTokenBuilder = class extends _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .AbstractMermaidTokenBuilder */ .mR {
-  static {
-    (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(this, "ArchitectureTokenBuilder");
-  }
-  constructor() {
-    super(["architecture"]);
-  }
-};
-
-// src/language/architecture/valueConverter.ts
-var ArchitectureValueConverter = class extends _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .AbstractMermaidValueConverter */ .dg {
-  static {
-    (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(this, "ArchitectureValueConverter");
-  }
-  runCustomConverter(rule, input, _cstNode) {
-    if (rule.name === "ARCH_ICON") {
-      return input.replace(/[()]/g, "").trim();
-    } else if (rule.name === "ARCH_TEXT_ICON") {
-      return input.replace(/["()]/g, "");
-    } else if (rule.name === "ARCH_TITLE") {
-      return input.replace(/[[\]]/g, "").trim();
-    }
-    return void 0;
-  }
-};
-
-// src/language/architecture/module.ts
-var ArchitectureModule = {
-  parser: {
-    TokenBuilder: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new ArchitectureTokenBuilder(), "TokenBuilder"),
-    ValueConverter: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new ArchitectureValueConverter(), "ValueConverter")
-  }
-};
-function createArchitectureServices(context = langium__WEBPACK_IMPORTED_MODULE_3__/* .EmptyFileSystem */ .D) {
-  const shared = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
-    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultSharedCoreModule */ .u)(context),
-    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .MermaidGeneratedSharedModule */ .sr
-  );
-  const Architecture = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
-    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultCoreModule */ .t)({ shared }),
-    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .ArchitectureGeneratedModule */ .jE,
-    ArchitectureModule
-  );
-  shared.ServiceRegistry.register(Architecture);
-  return { shared, Architecture };
-}
-(0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(createArchitectureServices, "createArchitectureServices");
-
-
-
-
-/***/ }),
-
 /***/ 1849:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -4299,59 +4229,6 @@ var CommonTokenBuilder = class extends AbstractMermaidTokenBuilder {
     __name(this, "CommonTokenBuilder");
   }
 };
-
-
-
-
-/***/ }),
-
-/***/ 4289:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   f: () => (/* binding */ createRadarServices)
-/* harmony export */ });
-/* unused harmony export RadarModule */
-/* harmony import */ var _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4214);
-/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8158);
-/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5846);
-/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6103);
-
-
-// src/language/radar/module.ts
-
-
-// src/language/radar/tokenBuilder.ts
-var RadarTokenBuilder = class extends _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .AbstractMermaidTokenBuilder */ .mR {
-  static {
-    (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(this, "RadarTokenBuilder");
-  }
-  constructor() {
-    super(["radar-beta"]);
-  }
-};
-
-// src/language/radar/module.ts
-var RadarModule = {
-  parser: {
-    TokenBuilder: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new RadarTokenBuilder(), "TokenBuilder"),
-    ValueConverter: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .CommonValueConverter */ .Tm(), "ValueConverter")
-  }
-};
-function createRadarServices(context = langium__WEBPACK_IMPORTED_MODULE_3__/* .EmptyFileSystem */ .D) {
-  const shared = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
-    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultSharedCoreModule */ .u)(context),
-    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .MermaidGeneratedSharedModule */ .sr
-  );
-  const Radar = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
-    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultCoreModule */ .t)({ shared }),
-    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .RadarGeneratedModule */ .YP,
-    RadarModule
-  );
-  shared.ServiceRegistry.register(Radar);
-  return { shared, Radar };
-}
-(0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(createRadarServices, "createRadarServices");
 
 
 
@@ -7815,6 +7692,59 @@ function assertUnreachable(_) {
 
 /***/ }),
 
+/***/ 6670:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   f: () => (/* binding */ createRadarServices)
+/* harmony export */ });
+/* unused harmony export RadarModule */
+/* harmony import */ var _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4214);
+/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8158);
+/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5846);
+/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6103);
+
+
+// src/language/radar/module.ts
+
+
+// src/language/radar/tokenBuilder.ts
+var RadarTokenBuilder = class extends _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .AbstractMermaidTokenBuilder */ .mR {
+  static {
+    (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(this, "RadarTokenBuilder");
+  }
+  constructor() {
+    super(["radar-beta"]);
+  }
+};
+
+// src/language/radar/module.ts
+var RadarModule = {
+  parser: {
+    TokenBuilder: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new RadarTokenBuilder(), "TokenBuilder"),
+    ValueConverter: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .CommonValueConverter */ .Tm(), "ValueConverter")
+  }
+};
+function createRadarServices(context = langium__WEBPACK_IMPORTED_MODULE_3__/* .EmptyFileSystem */ .D) {
+  const shared = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
+    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultSharedCoreModule */ .u)(context),
+    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .MermaidGeneratedSharedModule */ .sr
+  );
+  const Radar = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
+    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultCoreModule */ .t)({ shared }),
+    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .RadarGeneratedModule */ .YP,
+    RadarModule
+  );
+  shared.ServiceRegistry.register(Radar);
+  return { shared, Radar };
+}
+(0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(createRadarServices, "createRadarServices");
+
+
+
+
+/***/ }),
+
 /***/ 6687:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -8382,8 +8312,8 @@ var getIconStyles = /* @__PURE__ */ (0,_chunk_AGHRB4JF_mjs__WEBPACK_IMPORTED_MOD
 /* harmony import */ var _chunks_mermaid_parser_core_chunk_T44TD3VJ_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4555);
 /* harmony import */ var _chunks_mermaid_parser_core_chunk_KMC2YHZD_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5450);
 /* harmony import */ var _chunks_mermaid_parser_core_chunk_WFWHJNB7_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2323);
-/* harmony import */ var _chunks_mermaid_parser_core_chunk_JEIROHC2_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1544);
-/* harmony import */ var _chunks_mermaid_parser_core_chunk_WFRQ32O7_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4289);
+/* harmony import */ var _chunks_mermaid_parser_core_chunk_JEIROHC2_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9163);
+/* harmony import */ var _chunks_mermaid_parser_core_chunk_WFRQ32O7_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6670);
 /* harmony import */ var _chunks_mermaid_parser_core_chunk_XRWGC2XP_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8047);
 /* harmony import */ var _chunks_mermaid_parser_core_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4214);
 
@@ -25960,6 +25890,76 @@ var getDiagramElement = /* @__PURE__ */ (0,_chunk_AGHRB4JF_mjs__WEBPACK_IMPORTED
   const svg = root.select(`[id="${id}"]`);
   return svg;
 }, "getDiagramElement");
+
+
+
+
+/***/ }),
+
+/***/ 9163:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   S: () => (/* binding */ createArchitectureServices)
+/* harmony export */ });
+/* unused harmony export ArchitectureModule */
+/* harmony import */ var _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4214);
+/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8158);
+/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5846);
+/* harmony import */ var langium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6103);
+
+
+// src/language/architecture/module.ts
+
+
+// src/language/architecture/tokenBuilder.ts
+var ArchitectureTokenBuilder = class extends _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .AbstractMermaidTokenBuilder */ .mR {
+  static {
+    (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(this, "ArchitectureTokenBuilder");
+  }
+  constructor() {
+    super(["architecture"]);
+  }
+};
+
+// src/language/architecture/valueConverter.ts
+var ArchitectureValueConverter = class extends _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .AbstractMermaidValueConverter */ .dg {
+  static {
+    (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(this, "ArchitectureValueConverter");
+  }
+  runCustomConverter(rule, input, _cstNode) {
+    if (rule.name === "ARCH_ICON") {
+      return input.replace(/[()]/g, "").trim();
+    } else if (rule.name === "ARCH_TEXT_ICON") {
+      return input.replace(/["()]/g, "");
+    } else if (rule.name === "ARCH_TITLE") {
+      return input.replace(/[[\]]/g, "").trim();
+    }
+    return void 0;
+  }
+};
+
+// src/language/architecture/module.ts
+var ArchitectureModule = {
+  parser: {
+    TokenBuilder: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new ArchitectureTokenBuilder(), "TokenBuilder"),
+    ValueConverter: /* @__PURE__ */ (0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(() => new ArchitectureValueConverter(), "ValueConverter")
+  }
+};
+function createArchitectureServices(context = langium__WEBPACK_IMPORTED_MODULE_3__/* .EmptyFileSystem */ .D) {
+  const shared = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
+    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultSharedCoreModule */ .u)(context),
+    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .MermaidGeneratedSharedModule */ .sr
+  );
+  const Architecture = (0,langium__WEBPACK_IMPORTED_MODULE_2__/* .inject */ .WQ)(
+    (0,langium__WEBPACK_IMPORTED_MODULE_1__/* .createDefaultCoreModule */ .t)({ shared }),
+    _chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .ArchitectureGeneratedModule */ .jE,
+    ArchitectureModule
+  );
+  shared.ServiceRegistry.register(Architecture);
+  return { shared, Architecture };
+}
+(0,_chunk_4KMFLZZN_mjs__WEBPACK_IMPORTED_MODULE_0__/* .__name */ .K2)(createArchitectureServices, "createArchitectureServices");
 
 
 

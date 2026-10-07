@@ -11,7 +11,7 @@
 /* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3118);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8451);
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(644);
-/* harmony import */ var _theme_original_MDXComponents__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(538);
+/* harmony import */ var _theme_original_MDXComponents__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9141);
 // Import the original mapper
 // Import the library component.
 // Import all brands icons.
