@@ -1,0 +1,29 @@
+/* Short fade when switching install tabs; the panel is re-mounted via its key */
+.panel {
+  animation: panelIn 0.25s ease-out;
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+/* Gentle nudge on the arrow hinting there is more below the hero */
+.nudge {
+  animation: nudge 1.6s ease-in-out infinite;
+}
+
+@keyframes nudge {
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .nudge {
+    animation: none;
+  }
+}
