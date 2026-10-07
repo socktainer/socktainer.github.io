@@ -1,5 +1,5 @@
 import Link from '@docusaurus/Link';
-import { faArrowRight, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowRight, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Layout from '@theme/Layout';
@@ -138,7 +138,7 @@ export default function Download(): ReactElement {
     <Layout title="Download" description="Download Socktainer - Docker REST API for Apple Containers">
       <TailWindThemeSelector />
 
-      <header className="relative overflow-hidden bg-orange-50 dark:bg-zinc-900 py-12 md:py-16">
+      <header className="relative overflow-hidden flex items-center min-h-[calc(100svh-var(--ifm-navbar-height))] bg-orange-50 dark:bg-zinc-900 py-12 md:py-16">
         {/* Faint dot grid, as on the homepage */}
         <div
           aria-hidden
@@ -149,7 +149,7 @@ export default function Download(): ReactElement {
             maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 75%)',
           }}
         />
-        <div className="relative container mx-auto px-4 max-w-4xl text-center">
+        <div className="relative w-full container mx-auto px-4 max-w-4xl text-center">
           <img
             src="https://img.shields.io/github/v/release/socktainer/socktainer?style=flat&label=latest&color=f97316"
             alt="Latest release"
@@ -183,10 +183,18 @@ export default function Download(): ReactElement {
             <span className={pillClass}>Docker CLI (optional)</span>
           </div>
         </div>
+
+        <a
+          href="#other-ways"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 text-sm text-gray-500 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400"
+        >
+          Other ways to install
+          <FontAwesomeIcon icon={faArrowDown} className={styles.nudge} />
+        </a>
       </header>
 
       <main className="container mx-auto px-4 max-w-4xl py-12 space-y-10">
-        <section>
+        <section id="other-ways" className="scroll-mt-24">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-zinc-100 mb-4">Other ways to install</h2>
           <InstallTabs />
         </section>

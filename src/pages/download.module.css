@@ -10,8 +10,20 @@
   }
 }
 
+/* Gentle nudge on the arrow hinting there is more below the hero */
+.nudge {
+  animation: nudge 1.6s ease-in-out infinite;
+}
+
+@keyframes nudge {
+  50% {
+    transform: translateY(3px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .panel {
+  .panel,
+  .nudge {
     animation: none;
   }
 }
