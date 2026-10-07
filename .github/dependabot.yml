@@ -23,6 +23,11 @@ updates:
       interval: daily
       time: "03:00"
       timezone: Etc/GMT
+    groups:
+      docusaurus:
+        patterns:
+          - "@docusaurus/*"
+          - "docusaurus"
 
   - package-ecosystem: github-actions
     directory: /
