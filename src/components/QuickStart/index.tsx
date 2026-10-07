@@ -8,10 +8,10 @@ docker ps`;
 
 const at = (d: number, n?: number) => ({ '--d': `${d}s`, '--n': n }) as CSSProperties;
 
-function Command({ d, n, children }: { d: number; n: number; children: ReactNode }) {
+function Command({ d, n, cont, children }: { d: number; n: number; cont?: boolean; children: ReactNode }) {
   return (
     <div className={styles.show} style={at(d)}>
-      <span className="text-green-400 select-none">$ </span>
+      <span className="text-green-400 select-none">{cont ? '    ' : '$ '}</span>
       <span className={styles.typed} style={at(d, n)}>
         {children}
       </span>
@@ -77,8 +77,11 @@ export default function QuickStart(): ReactNode {
             <span className="text-orange-400">./socktainer</span>
           </Command>
           <Output d={2.4}>✓ listening on ~/.socktainer/container.sock</Output>
-          <Command d={3} n={58}>
-            <span className="text-green-400">export</span> <span className="text-blue-400">DOCKER_HOST</span>=
+          <Command d={3} n={20}>
+            <span className="text-green-400">export</span> <span className="text-blue-400">DOCKER_HOST</span>
+            {'=\\'}
+          </Command>
+          <Command cont d={3.8} n={39}>
             <span className="text-yellow-500">unix://$HOME/.socktainer/container.sock</span>
           </Command>
           <Command d={5.3} n={9}>
