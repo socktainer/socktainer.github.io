@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const row = (gridRow: string): CSSProperties => ({ gridRow, gridColumn: 1 });
 
 const nodeClass =
-  'relative z-10 mx-3 flex items-center justify-center gap-3 h-16 px-3 rounded-xl border border-orange-200 dark:border-orange-800 bg-white dark:bg-zinc-900';
+  'relative z-10 mx-3 flex items-center justify-center gap-3 h-14 px-3 rounded-xl border border-orange-200 dark:border-orange-800 bg-white dark:bg-zinc-900';
 const zoneLabelClass = 'relative z-10 mx-3 mt-3 text-[10px] font-semibold uppercase tracking-wider text-left';
 
 function Node({
@@ -39,9 +39,9 @@ export default function HeroAnimation(): ReactNode {
     <div
       role="img"
       aria-label="On the CLI side, docker run sends a request through the Unix socket. On the socket side, Socktainer receives it and Apple container starts the container in its own lightweight VM, then the result goes back to the Docker CLI."
-      className="bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl p-4 sm:p-6 border-2 border-orange-200 dark:border-orange-800 w-full max-w-md"
+      className="bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl p-4 border-2 border-orange-200 dark:border-orange-800 w-full max-w-md"
     >
-      <div className="grid gap-2">
+      <div className="grid gap-1.5">
         {/* Zones */}
         <div
           style={row('1 / 4')}
@@ -54,7 +54,7 @@ export default function HeroAnimation(): ReactNode {
 
         {/* Flow track, from the Docker CLI center to the Apple container center */}
         <div style={row('3 / 9')} className="relative pointer-events-none">
-          <div className="absolute left-1/2 -translate-x-1/2 top-8 bottom-8 w-0.5 bg-orange-300 dark:bg-orange-700">
+          <div className="absolute left-1/2 -translate-x-1/2 top-7 bottom-7 w-0.5 bg-orange-300 dark:bg-orange-700">
             <span className={styles.req}></span>
             <span className={styles.res}></span>
           </div>
@@ -66,7 +66,7 @@ export default function HeroAnimation(): ReactNode {
         </div>
         <div
           style={row('2')}
-          className="relative z-10 mx-3 bg-gray-900 dark:bg-black rounded-lg p-4 border border-gray-700 font-mono text-sm text-left"
+          className="relative z-10 mx-3 bg-gray-900 dark:bg-black rounded-lg p-3 border border-gray-700 font-mono text-sm text-left"
         >
           <div className="flex gap-1.5 mb-3">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>

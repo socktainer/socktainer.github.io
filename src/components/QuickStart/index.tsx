@@ -47,8 +47,8 @@ export default function QuickStart(): ReactNode {
     });
 
   return (
-    <div className="mt-8 bg-gray-900 dark:bg-black rounded-lg shadow-2xl p-6 border border-gray-700 max-w-2xl mx-auto lg:mx-0">
-      <div className="flex flex-wrap items-center gap-2 mb-4 text-xs font-medium">
+    <div className="mt-2 bg-gray-900 dark:bg-black rounded-lg shadow-2xl p-4 md:p-5 border border-gray-700 max-w-2xl mx-auto lg:mx-0">
+      <div className="flex flex-wrap items-center gap-2 mb-3 text-xs font-medium">
         <div className="flex gap-1.5 mr-2">
           <div className="w-3 h-3 rounded-full bg-red-500"></div>
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -67,7 +67,7 @@ export default function QuickStart(): ReactNode {
           {copied ? '✓ Copied' : '⧉ Copy'}
         </button>
       </div>
-      <pre className="text-sm md:text-base text-left overflow-x-auto bg-transparent p-0 m-0">
+      <pre className="text-xs md:text-sm text-left overflow-x-auto bg-transparent p-0 m-0">
         <code className="text-gray-300 bg-transparent border-0 p-0">
           <Command d={0.3} n={22}>
             <span className="text-orange-400">container system start</span>

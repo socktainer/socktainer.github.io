@@ -1,21 +1,109 @@
-/* Tiles fade in as they scroll into view; browsers without scroll timelines show them as-is. */
+/*
+ * Scroll-driven details inside the tiles and the call to action.
+ * Tile reveal itself is the global .reveal-on-scroll (src/css/custom.css).
+ * Ranges are fixed distances after the element is fully on screen, so they always
+ * complete before the page bottom, whatever the viewport height.
+ */
 @supports (animation-timeline: view()) {
-  .reveal {
-    animation: reveal linear both;
+  /*
+   * The mini terminals scroll horizontally, which would make view() track the terminal box itself,
+   * so the terminal exposes a named timeline tracked against the page instead.
+   */
+  .term {
+    view-timeline-name: --term;
+  }
+
+  /* Command types in once the terminal is on screen; --n is its length */
+  .typeIn {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+    width: calc(var(--n) * 1ch);
+    animation: typeIn steps(var(--n)) both;
+    animation-timeline: --term;
+    animation-range: contain 0px contain 120px;
+  }
+
+  /* Output that appears after the typed command */
+  .after {
+    animation: fadeIn linear both;
+    animation-timeline: --term;
+    animation-range: contain 120px contain 160px;
+  }
+
+  /* Chips pop in one after another; --i is the chip index */
+  .chip {
+    animation: pop linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 25%;
+    animation-range: contain calc(var(--i, 0) * 15px) contain calc(60px + var(--i, 0) * 15px);
+  }
+
+  .cta {
+    position: relative;
+    overflow: hidden;
+    animation: ctaIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+  }
+
+  /* One light sweep across the band as it settles */
+  .cta::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(110deg, transparent 35%, rgb(255 255 255 / 0.3) 50%, transparent 65%);
+    animation: shine linear both;
+    animation-timeline: view();
+    animation-range: contain 40px contain 240px;
   }
 }
 
-@keyframes reveal {
+@keyframes typeIn {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(16px);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+}
+
+@keyframes ctaIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes shine {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .typeIn,
+  .after,
+  .chip,
+  .cta,
+  .cta::after {
     animation: none;
+  }
+  .cta::after {
+    content: none;
   }
 }

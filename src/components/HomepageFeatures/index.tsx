@@ -1,16 +1,17 @@
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const chipClass =
   'px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-100 dark:bg-zinc-900 text-gray-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800';
-const termClass = 'rounded-lg bg-zinc-950 border border-zinc-800 p-3 font-mono text-xs text-zinc-300 overflow-x-auto';
+const vars = (v: Record<string, number>) => v as CSSProperties;
+const termClass = `${styles.term} rounded-lg bg-zinc-950 border border-zinc-800 p-3 font-mono text-xs text-zinc-300 overflow-x-auto`;
 
 function Chips({ items }: { items: string[] }) {
   return (
     <div className="flex flex-wrap gap-2">
-      {items.map(item => (
-        <span key={item} className={chipClass}>
+      {items.map((item, i) => (
+        <span key={item} className={`${styles.chip} ${chipClass}`} style={vars({ '--i': i })}>
           {item}
         </span>
       ))}
@@ -60,8 +61,11 @@ const tiles: Tile[] = [
     visual: (
       <div className="space-y-3">
         <div className={termClass}>
-          <span className="text-green-400">$ </span>docker logs -f web
-          <div className="text-zinc-500">listening on :8080</div>
+          <span className="text-green-400">$ </span>
+          <span className={styles.typeIn} style={vars({ '--n': 18 })}>
+            docker logs -f web
+          </span>
+          <div className={`${styles.after} text-zinc-500`}>listening on :8080</div>
         </div>
         <Chips
           items={['create', 'start', 'stop', 'restart', 'kill', 'rm', 'inspect', 'logs', 'exec', 'attach', 'events']}
@@ -83,19 +87,22 @@ const tiles: Tile[] = [
     description: 'Point DOCKER_HOST at the socket and you are done.',
     visual: (
       <div className={termClass}>
-        <div>
+        <span className={styles.typeIn} style={vars({ '--n': 19 })}>
           <span className="text-green-400">export</span> DOCKER_HOST=
+        </span>
+        <div className={`${styles.after} pl-4 whitespace-nowrap text-yellow-500`}>
+          unix://$HOME/.socktainer/container.sock
         </div>
-        <div className="pl-4 whitespace-nowrap text-yellow-500">unix://$HOME/.socktainer/container.sock</div>
       </div>
     ),
   },
 ];
 
-function Feature({ title, icon, description, visual, span = '' }: Tile) {
+function Feature({ title, icon, description, visual, span = '', index }: Tile & { index: number }) {
   return (
     <div
-      className={`${styles.reveal} ${span} min-w-0 flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-orange-400 dark:hover:border-orange-500 hover:shadow-[0_0_32px_-8px_rgb(249_115_22/0.45)] transition-[border-color,box-shadow] duration-300`}
+      style={vars({ '--i': index })}
+      className={`reveal-on-scroll ${span} min-w-0 flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-orange-400 dark:hover:border-orange-500 hover:shadow-[0_0_32px_-8px_rgb(249_115_22/0.45)] transition-[border-color,box-shadow] duration-300`}
     >
       <div className="w-10 h-10 flex items-center justify-center rounded-xl text-xl bg-orange-100 dark:bg-orange-950/50">
         {icon}
@@ -124,14 +131,14 @@ export default function HomepageFeatures(): ReactNode {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {tiles.map(tile => (
-            <Feature key={tile.title} {...tile} />
+          {tiles.map((tile, index) => (
+            <Feature key={tile.title} index={index} {...tile} />
           ))}
         </div>
 
         {/* Call to Action */}
         <div
-          className={`${styles.reveal} mt-16 flex flex-col md:flex-row md:items-center justify-between gap-6 rounded-2xl p-8 md:p-10 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-xl`}
+          className={`${styles.cta} mt-16 flex flex-col md:flex-row md:items-center justify-between gap-6 rounded-2xl p-8 md:p-10 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-xl`}
         >
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white">Ready to get started?</h3>
