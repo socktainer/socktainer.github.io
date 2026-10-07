@@ -84,6 +84,35 @@ function HomepageHeader() {
   );
 }
 
+function WorksWith() {
+  return (
+    <section className="border-y border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-950/40">
+      <div className="container mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-gray-600 dark:text-zinc-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-400">
+            Works with
+          </span>
+          <span className="font-medium text-gray-800 dark:text-zinc-200">Docker CLI</span>
+          <span className="font-medium text-gray-800 dark:text-zinc-200">Testcontainers</span>
+          <span className="font-medium text-gray-800 dark:text-zinc-200">Podman Desktop</span>
+        </div>
+        <a href="https://github.com/socktainer/socktainer" className="flex items-center gap-2">
+          <img
+            src="https://img.shields.io/github/stars/socktainer/socktainer?style=flat&logo=github&label=stars&color=f97316"
+            alt="GitHub stars"
+            height={20}
+          />
+          <img
+            src="https://img.shields.io/github/v/release/socktainer/socktainer?style=flat&label=release&color=f97316"
+            alt="Latest release"
+            height={20}
+          />
+        </a>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): ReactNode {
   return (
     <Layout
@@ -93,6 +122,7 @@ export default function Home(): ReactNode {
       {' '}
       <TailWindThemeSelector />
       <HomepageHeader />
+      <WorksWith />
       <main>
         <HomepageFeatures />
       </main>
