@@ -794,41 +794,6 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
-/***/ 1175:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   $z: () => (/* binding */ groupBy),
-/* harmony export */   sb: () => (/* binding */ uniq)
-/* harmony export */ });
-/* unused harmony export duplicates */
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// A replacement of lodash in client code
-/**
- * Gets the duplicate values in an array.
- * @param arr The array.
- * @param comparator Compares two values and returns `true` if they are equal
- * (duplicated).
- * @returns Value of the elements `v` that have a preceding element `u` where
- * `comparator(u, v) === true`. Values within the returned array are not
- * guaranteed to be unique.
- */function duplicates(arr,comparator=(a,b)=>a===b){return arr.filter((v,vIndex)=>arr.findIndex(u=>comparator(u,v))!==vIndex);}/**
- * Remove duplicate array items (similar to `_.uniq`)
- * @param arr The array.
- * @returns An array with duplicate elements removed by reference comparison.
- */function uniq(arr){// Note: had problems with [...new Set()]: https://github.com/facebook/docusaurus/issues/4972#issuecomment-863895061
-return Array.from(new Set(arr));}// TODO 2025: replace by std Object.groupBy ?
-// This is a local polyfill with exact same TS signature
-// see https://github.com/microsoft/TypeScript/blob/main/src/lib/esnext.object.d.ts
-function groupBy(items,keySelector){const result={};let index=0;for(const item of items){const key=keySelector(item,index);result[key]??=[];result[key].push(item);index+=1;}return result;}
-
-/***/ }),
-
 /***/ 1408:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -886,9 +851,9 @@ var __webpack_unused_export__;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */__webpack_unused_export__ = ({value:true});exports.rA=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=exports.Ks=exports.LU=void 0;const tslib_1=__webpack_require__(5482);// __ prefix allows search crawlers (Algolia/DocSearch) to ignore anchors
+ */__webpack_unused_export__ = ({value:true});exports.rA=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=__webpack_unused_export__=exports.Ks=__webpack_unused_export__=void 0;const tslib_1=__webpack_require__(5482);// __ prefix allows search crawlers (Algolia/DocSearch) to ignore anchors
 // https://github.com/facebook/docusaurus/issues/8883#issuecomment-1516328368
-exports.LU='__blog-post-container';var applyTrailingSlash_1=__webpack_require__(5604);Object.defineProperty(exports, "Ks", ({enumerable:true,get:function(){return tslib_1.__importDefault(applyTrailingSlash_1).default;}}));__webpack_unused_export__ = ({enumerable:true,get:function(){return applyTrailingSlash_1.addTrailingSlash;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return applyTrailingSlash_1.addLeadingSlash;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return applyTrailingSlash_1.removeTrailingSlash;}});var stringUtils_1=__webpack_require__(9267);__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.addPrefix;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.removeSuffix;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.addSuffix;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.removePrefix;}});var errorUtils_1=__webpack_require__(866);Object.defineProperty(exports, "rA", ({enumerable:true,get:function(){return errorUtils_1.getErrorCausalChain;}}));
+__webpack_unused_export__='__blog-post-container';var applyTrailingSlash_1=__webpack_require__(5604);Object.defineProperty(exports, "Ks", ({enumerable:true,get:function(){return tslib_1.__importDefault(applyTrailingSlash_1).default;}}));__webpack_unused_export__ = ({enumerable:true,get:function(){return applyTrailingSlash_1.addTrailingSlash;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return applyTrailingSlash_1.addLeadingSlash;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return applyTrailingSlash_1.removeTrailingSlash;}});var stringUtils_1=__webpack_require__(9267);__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.addPrefix;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.removeSuffix;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.addSuffix;}});__webpack_unused_export__ = ({enumerable:true,get:function(){return stringUtils_1.removePrefix;}});var errorUtils_1=__webpack_require__(866);Object.defineProperty(exports, "rA", ({enumerable:true,get:function(){return errorUtils_1.getErrorCausalChain;}}));
 
 /***/ }),
 
@@ -17252,7 +17217,7 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 // EXTERNAL MODULE: ./.docusaurus/routesChunkNames.json
 var routesChunkNames = __webpack_require__(4054);
 ;// ./.docusaurus/registry.js
-/* harmony default export */ const registry = ({"0058b4c6":[()=>__webpack_require__.e(/* import() | 0058b4c6 */ 849).then(__webpack_require__.t.bind(__webpack_require__, 6164, 19)),"@generated/docusaurus-plugin-content-docs/default/p/docs-175.json",/*require.resolve*/(6164)],"03234f2b":[()=>__webpack_require__.e(/* import() | 03234f2b */ 2715).then(__webpack_require__.t.bind(__webpack_require__, 2684, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/__plugin.json",/*require.resolve*/(2684)],"0e384e19":[()=>Promise.all(/* import() | 0e384e19 */[__webpack_require__.e(2076), __webpack_require__.e(3976)]).then(__webpack_require__.bind(__webpack_require__, 3987)),"@site/docs/intro.md",/*require.resolve*/(3987)],"17896441":[()=>Promise.all(/* import() | 17896441 */[__webpack_require__.e(1869), __webpack_require__.e(2076), __webpack_require__.e(9226), __webpack_require__.e(8401)]).then(__webpack_require__.bind(__webpack_require__, 6887)),"@theme/DocItem",/*require.resolve*/(6887)],"1df93b7f":[()=>__webpack_require__.e(/* import() | 1df93b7f */ 4583).then(__webpack_require__.bind(__webpack_require__, 7251)),"@site/src/pages/index.tsx",/*require.resolve*/(7251)],"1f391b9e":[()=>Promise.all(/* import() | 1f391b9e */[__webpack_require__.e(1869), __webpack_require__.e(2076), __webpack_require__.e(9226), __webpack_require__.e(6061)]).then(__webpack_require__.bind(__webpack_require__, 6961)),"@theme/MDXPage",/*require.resolve*/(6961)],"33fc5bb8":[()=>Promise.all(/* import() | 33fc5bb8 */[__webpack_require__.e(1869), __webpack_require__.e(2076), __webpack_require__.e(9226), __webpack_require__.e(6215), __webpack_require__.e(867)]).then(__webpack_require__.bind(__webpack_require__, 4250)),"@theme/Blog/Pages/BlogAuthorsPostsPage",/*require.resolve*/(4250)],"36994c47":[()=>__webpack_require__.e(/* import() | 36994c47 */ 9858).then(__webpack_require__.t.bind(__webpack_require__, 5516, 19)),"@generated/docusaurus-plugin-content-blog/default/__plugin.json",/*require.resolve*/(5516)],"393be207":[()=>Promise.all(/* import() | 393be207 */[__webpack_require__.e(2076), __webpack_require__.e(4134)]).then(__webpack_require__.bind(__webpack_require__, 1621)),"@site/src/pages/markdown-page.md",/*require.resolve*/(1621)],"464507d4":[()=>Promise.all(/* import() | 464507d4 */[__webpack_require__.e(2076), __webpack_require__.e(1019)]).then(__webpack_require__.bind(__webpack_require__, 2121)),"@site/docs/api-feature-parity.md",/*require.resolve*/(2121)],"50a482e8":[()=>__webpack_require__.e(/* import() | 50a482e8 */ 822).then(__webpack_require__.t.bind(__webpack_require__, 1270, 19)),"@generated/docusaurus-plugin-content-blog/default/p/blog-authors-benoitf-963.json",/*require.resolve*/(1270)],"5e95c892":[()=>__webpack_require__.e(/* import() | 5e95c892 */ 9647).then(__webpack_require__.bind(__webpack_require__, 537)),"@theme/DocsRoot",/*require.resolve*/(537)],"5e9f5e1a":[()=>Promise.resolve(/* import() */).then(__webpack_require__.bind(__webpack_require__, 4784)),"@generated/docusaurus.config",/*require.resolve*/(4784)],"621db11d":[()=>Promise.all(/* import() | 621db11d */[__webpack_require__.e(1869), __webpack_require__.e(6215), __webpack_require__.e(4212)]).then(__webpack_require__.bind(__webpack_require__, 8468)),"@theme/Blog/Pages/BlogAuthorsListPage",/*require.resolve*/(8468)],"64e5928d":[()=>Promise.all(/* import() | 64e5928d */[__webpack_require__.e(2076), __webpack_require__.e(2302)]).then(__webpack_require__.bind(__webpack_require__, 6368)),"@site/docs/docker-context.md",/*require.resolve*/(6368)],"6867d105":[()=>__webpack_require__.e(/* import() | 6867d105 */ 2424).then(__webpack_require__.bind(__webpack_require__, 5424)),"@site/src/pages/download.tsx",/*require.resolve*/(5424)],"814f3328":[()=>__webpack_require__.e(/* import() | 814f3328 */ 7472).then(__webpack_require__.t.bind(__webpack_require__, 5513, 19)),"~blog/default/blog-post-list-prop-default.json",/*require.resolve*/(5513)],"94c8361b":[()=>Promise.all(/* import() | 94c8361b */[__webpack_require__.e(2076), __webpack_require__.e(4819)]).then(__webpack_require__.bind(__webpack_require__, 468)),"@site/docs/registry-authentication.md",/*require.resolve*/(468)],"a58a13eb":[()=>Promise.all(/* import() | a58a13eb */[__webpack_require__.e(2076), __webpack_require__.e(1901)]).then(__webpack_require__.bind(__webpack_require__, 4613)),"@site/tutorial/index.md",/*require.resolve*/(4613)],"a7456010":[()=>__webpack_require__.e(/* import() | a7456010 */ 1235).then(__webpack_require__.t.bind(__webpack_require__, 8552, 19)),"@generated/docusaurus-plugin-content-pages/default/__plugin.json",/*require.resolve*/(8552)],"a7bd4aaa":[()=>__webpack_require__.e(/* import() | a7bd4aaa */ 7098).then(__webpack_require__.bind(__webpack_require__, 7743)),"@theme/DocVersionRoot",/*require.resolve*/(7743)],"a94703ab":[()=>Promise.all(/* import() | a94703ab */[__webpack_require__.e(1869), __webpack_require__.e(9048)]).then(__webpack_require__.bind(__webpack_require__, 2528)),"@theme/DocRoot",/*require.resolve*/(2528)],"aba21aa0":[()=>__webpack_require__.e(/* import() | aba21aa0 */ 5742).then(__webpack_require__.t.bind(__webpack_require__, 7093, 19)),"@generated/docusaurus-plugin-content-docs/default/__plugin.json",/*require.resolve*/(7093)],"acecf23e":[()=>__webpack_require__.e(/* import() | acecf23e */ 1903).then(__webpack_require__.t.bind(__webpack_require__, 1912, 19)),"~blog/default/blogMetadata-default.json",/*require.resolve*/(1912)],"d982e1fa":[()=>__webpack_require__.e(/* import() | d982e1fa */ 285).then(__webpack_require__.t.bind(__webpack_require__, 9256, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/p/tutorial-0f7.json",/*require.resolve*/(9256)],"ef8b811a":[()=>__webpack_require__.e(/* import() | ef8b811a */ 8947).then(__webpack_require__.t.bind(__webpack_require__, 6600, 19)),"@generated/docusaurus-plugin-content-blog/default/p/blog-authors-790.json",/*require.resolve*/(6600)],"fca495da":[()=>Promise.all(/* import() | fca495da */[__webpack_require__.e(2076), __webpack_require__.e(9174)]).then(__webpack_require__.bind(__webpack_require__, 1870)),"@site/tutorial/testcontainers.md",/*require.resolve*/(1870)]});
+/* harmony default export */ const registry = ({"0058b4c6":[()=>__webpack_require__.e(/* import() | 0058b4c6 */ 849).then(__webpack_require__.t.bind(__webpack_require__, 6164, 19)),"@generated/docusaurus-plugin-content-docs/default/p/docs-175.json",/*require.resolve*/(6164)],"03234f2b":[()=>__webpack_require__.e(/* import() | 03234f2b */ 2715).then(__webpack_require__.t.bind(__webpack_require__, 2684, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/__plugin.json",/*require.resolve*/(2684)],"0e384e19":[()=>Promise.all(/* import() | 0e384e19 */[__webpack_require__.e(2076), __webpack_require__.e(3976)]).then(__webpack_require__.bind(__webpack_require__, 3987)),"@site/docs/intro.md",/*require.resolve*/(3987)],"17896441":[()=>Promise.all(/* import() | 17896441 */[__webpack_require__.e(1869), __webpack_require__.e(2076), __webpack_require__.e(1661), __webpack_require__.e(8401)]).then(__webpack_require__.bind(__webpack_require__, 2584)),"@theme/DocItem",/*require.resolve*/(2584)],"1df93b7f":[()=>__webpack_require__.e(/* import() | 1df93b7f */ 4583).then(__webpack_require__.bind(__webpack_require__, 7251)),"@site/src/pages/index.tsx",/*require.resolve*/(7251)],"464507d4":[()=>Promise.all(/* import() | 464507d4 */[__webpack_require__.e(2076), __webpack_require__.e(1019)]).then(__webpack_require__.bind(__webpack_require__, 2121)),"@site/docs/api-feature-parity.md",/*require.resolve*/(2121)],"5e95c892":[()=>__webpack_require__.e(/* import() | 5e95c892 */ 9647).then(__webpack_require__.bind(__webpack_require__, 537)),"@theme/DocsRoot",/*require.resolve*/(537)],"5e9f5e1a":[()=>Promise.resolve(/* import() */).then(__webpack_require__.bind(__webpack_require__, 4784)),"@generated/docusaurus.config",/*require.resolve*/(4784)],"64e5928d":[()=>Promise.all(/* import() | 64e5928d */[__webpack_require__.e(2076), __webpack_require__.e(2302)]).then(__webpack_require__.bind(__webpack_require__, 6368)),"@site/docs/docker-context.md",/*require.resolve*/(6368)],"6867d105":[()=>__webpack_require__.e(/* import() | 6867d105 */ 2424).then(__webpack_require__.bind(__webpack_require__, 5424)),"@site/src/pages/download.tsx",/*require.resolve*/(5424)],"94c8361b":[()=>Promise.all(/* import() | 94c8361b */[__webpack_require__.e(2076), __webpack_require__.e(4819)]).then(__webpack_require__.bind(__webpack_require__, 468)),"@site/docs/registry-authentication.md",/*require.resolve*/(468)],"a58a13eb":[()=>Promise.all(/* import() | a58a13eb */[__webpack_require__.e(2076), __webpack_require__.e(1901)]).then(__webpack_require__.bind(__webpack_require__, 1426)),"@site/tutorial/index.md",/*require.resolve*/(1426)],"a7456010":[()=>__webpack_require__.e(/* import() | a7456010 */ 1235).then(__webpack_require__.t.bind(__webpack_require__, 8552, 19)),"@generated/docusaurus-plugin-content-pages/default/__plugin.json",/*require.resolve*/(8552)],"a7bd4aaa":[()=>__webpack_require__.e(/* import() | a7bd4aaa */ 7098).then(__webpack_require__.bind(__webpack_require__, 7743)),"@theme/DocVersionRoot",/*require.resolve*/(7743)],"a94703ab":[()=>Promise.all(/* import() | a94703ab */[__webpack_require__.e(1869), __webpack_require__.e(9048)]).then(__webpack_require__.bind(__webpack_require__, 2528)),"@theme/DocRoot",/*require.resolve*/(2528)],"aba21aa0":[()=>__webpack_require__.e(/* import() | aba21aa0 */ 5742).then(__webpack_require__.t.bind(__webpack_require__, 7093, 19)),"@generated/docusaurus-plugin-content-docs/default/__plugin.json",/*require.resolve*/(7093)],"d982e1fa":[()=>__webpack_require__.e(/* import() | d982e1fa */ 285).then(__webpack_require__.t.bind(__webpack_require__, 9256, 19)),"@generated/docusaurus-plugin-content-docs/tutorial/p/tutorial-0f7.json",/*require.resolve*/(9256)],"fca495da":[()=>Promise.all(/* import() | fca495da */[__webpack_require__.e(2076), __webpack_require__.e(9174)]).then(__webpack_require__.bind(__webpack_require__, 361)),"@site/tutorial/testcontainers.md",/*require.resolve*/(361)]});
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7259);
 ;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/theme-fallback/Loading/index.js
@@ -17303,7 +17268,7 @@ if(typeof chunk==='object'||typeof chunk==='function'){Object.keys(loadedModule)
 let val=loadedModules;const keyPaths=keyPath.split('.');keyPaths.slice(0,-1).forEach(k=>{val=val[k];});val[keyPaths[keyPaths.length-1]]=chunk;});/* eslint-disable no-underscore-dangle */const Component=loadedModules.__comp;delete loadedModules.__comp;const routeContext=loadedModules.__context;delete loadedModules.__context;const routeProps=loadedModules.__props;delete loadedModules.__props;/* eslint-enable no-underscore-dangle */// Is there any way to put this RouteContextProvider upper in the tree?
 return/*#__PURE__*/(0,jsx_runtime.jsx)(client_routeContext/* RouteContextProvider */.W,{value:routeContext,children:/*#__PURE__*/(0,jsx_runtime.jsx)(Component,{...loadedModules,...routeProps,...props})});}});}
 ;// ./.docusaurus/routes.js
-/* harmony default export */ const routes = ([{path:'/blog/authors',component:ComponentCreator('/blog/authors','0b7'),exact:true},{path:'/blog/authors/benoitf',component:ComponentCreator('/blog/authors/benoitf','137'),exact:true},{path:'/download',component:ComponentCreator('/download','b81'),exact:true},{path:'/markdown-page',component:ComponentCreator('/markdown-page','3d7'),exact:true},{path:'/docs',component:ComponentCreator('/docs','fe2'),routes:[{path:'/docs',component:ComponentCreator('/docs','f0d'),routes:[{path:'/docs',component:ComponentCreator('/docs','12a'),routes:[{path:'/docs/api-feature-parity',component:ComponentCreator('/docs/api-feature-parity','cfa'),exact:true,sidebar:"mySidebar"},{path:'/docs/docker-context',component:ComponentCreator('/docs/docker-context','dcb'),exact:true,sidebar:"mySidebar"},{path:'/docs/intro',component:ComponentCreator('/docs/intro','193'),exact:true,sidebar:"mySidebar"},{path:'/docs/registry-authentication',component:ComponentCreator('/docs/registry-authentication','8a4'),exact:true,sidebar:"mySidebar"}]}]}]},{path:'/tutorial',component:ComponentCreator('/tutorial','e90'),routes:[{path:'/tutorial',component:ComponentCreator('/tutorial','0dd'),routes:[{path:'/tutorial',component:ComponentCreator('/tutorial','049'),routes:[{path:'/tutorial',component:ComponentCreator('/tutorial','faa'),exact:true,sidebar:"mySidebar"},{path:'/tutorial/testcontainers',component:ComponentCreator('/tutorial/testcontainers','46b'),exact:true,sidebar:"mySidebar"}]}]}]},{path:'/',component:ComponentCreator('/','e5f'),exact:true},{path:'*',component:ComponentCreator('*')}]);
+/* harmony default export */ const routes = ([{path:'/download',component:ComponentCreator('/download','b81'),exact:true},{path:'/docs',component:ComponentCreator('/docs','fe2'),routes:[{path:'/docs',component:ComponentCreator('/docs','f0d'),routes:[{path:'/docs',component:ComponentCreator('/docs','12a'),routes:[{path:'/docs/api-feature-parity',component:ComponentCreator('/docs/api-feature-parity','cfa'),exact:true,sidebar:"mySidebar"},{path:'/docs/docker-context',component:ComponentCreator('/docs/docker-context','dcb'),exact:true,sidebar:"mySidebar"},{path:'/docs/intro',component:ComponentCreator('/docs/intro','193'),exact:true,sidebar:"mySidebar"},{path:'/docs/registry-authentication',component:ComponentCreator('/docs/registry-authentication','8a4'),exact:true,sidebar:"mySidebar"}]}]}]},{path:'/tutorial',component:ComponentCreator('/tutorial','e90'),routes:[{path:'/tutorial',component:ComponentCreator('/tutorial','0dd'),routes:[{path:'/tutorial',component:ComponentCreator('/tutorial','049'),routes:[{path:'/tutorial',component:ComponentCreator('/tutorial','faa'),exact:true,sidebar:"mySidebar"},{path:'/tutorial/testcontainers',component:ComponentCreator('/tutorial/testcontainers','46b'),exact:true,sidebar:"mySidebar"}]}]}]},{path:'/',component:ComponentCreator('/','e5f'),exact:true},{path:'*',component:ComponentCreator('*')}]);
 
 /***/ }),
 
@@ -17696,109 +17661,6 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-
-/***/ }),
-
-/***/ 3057:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   B5: () => (/* binding */ useDocRootMetadata),
-/* harmony export */   Nr: () => (/* binding */ findFirstSidebarItemLink),
-/* harmony export */   OF: () => (/* binding */ useSidebarBreadcrumbs),
-/* harmony export */   QB: () => (/* binding */ useLayoutDoc),
-/* harmony export */   Vd: () => (/* binding */ useDocsVersionCandidates),
-/* harmony export */   Y: () => (/* binding */ useVisibleSidebarItems),
-/* harmony export */   fW: () => (/* binding */ useLayoutDocsSidebar),
-/* harmony export */   w8: () => (/* binding */ isActiveSidebarItem)
-/* harmony export */ });
-/* unused harmony exports useDocById, findSidebarCategory, findFirstSidebarItemCategoryLink, useCurrentSidebarCategory, useCurrentSidebarSiblings, isVisibleSidebarItem, filterDocCardListItems */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6363);
-/* harmony import */ var _docusaurus_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7596);
-/* harmony import */ var _docusaurus_renderRoutes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2073);
-/* harmony import */ var _docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2913);
-/* harmony import */ var _docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2412);
-/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1175);
-/* harmony import */ var _docsPreferredVersion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(149);
-/* harmony import */ var _docsVersion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2516);
-/* harmony import */ var _docsSidebar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2180);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useDocById(id){const version=useDocsVersion();if(!id){return undefined;}const doc=version.docs[id];if(!doc){throw new Error(`no version doc found by id=${id}`);}return doc;}/**
- * Pure function, similar to `Array#find`, but works on the sidebar tree.
- */function findSidebarCategory(sidebar,predicate){for(const item of sidebar){if(item.type==='category'){if(predicate(item)){return item;}const subItem=findSidebarCategory(item.items,predicate);if(subItem){return subItem;}}}return undefined;}/**
- * Best effort to assign a link to a sidebar category. If the category doesn't
- * have a link itself, we link to the first sub item with a link.
- */function findFirstSidebarItemCategoryLink(item){if(item.href&&!item.linkUnlisted){return item.href;}for(const subItem of item.items){const link=findFirstSidebarItemLink(subItem);if(link){return link;}}return undefined;}/**
- * Best effort to assign a link to a sidebar item.
- */function findFirstSidebarItemLink(item){if(item.type==='link'&&!item.unlisted){return item.href;}if(item.type==='category'){return findFirstSidebarItemCategoryLink(item);}// Other items types, like "html"
-return undefined;}/**
- * Gets the category associated with the current location. Should only be used
- * on category index pages.
- */function useCurrentSidebarCategory(){const{pathname}=useLocation();const sidebar=useDocsSidebar();if(!sidebar){throw new Error('Unexpected: cant find current sidebar in context');}const categoryBreadcrumbs=getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname,onlyCategories:true});const deepestCategory=categoryBreadcrumbs.slice(-1)[0];if(!deepestCategory){throw new Error(`${pathname} is not associated with a category. useCurrentSidebarCategory() should only be used on category index pages.`);}return deepestCategory;}/**
- * Gets the category associated with the current location. Should only be used
- * on category index pages.
- */function useCurrentSidebarSiblings(){const{pathname}=useLocation();const sidebar=useDocsSidebar();if(!sidebar){throw new Error('Unexpected: cant find current sidebar in context');}const categoryBreadcrumbs=getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname,onlyCategories:true});const deepestCategory=categoryBreadcrumbs.slice(-1)[0];return deepestCategory?.items??sidebar.items;}const isActive=(testedPath,activePath)=>typeof testedPath!=='undefined'&&(0,_docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_4__/* .isSamePath */ .ys)(testedPath,activePath);const containsActiveSidebarItem=(items,activePath)=>items.some(subItem=>isActiveSidebarItem(subItem,activePath));/**
- * Checks if a sidebar item should be active, based on the active path.
- */function isActiveSidebarItem(item,activePath){if(item.type==='link'){return isActive(item.href,activePath);}if(item.type==='category'){return isActive(item.href,activePath)||containsActiveSidebarItem(item.items,activePath);}return false;}function isVisibleSidebarItem(item,activePath){switch(item.type){case'category':return isActiveSidebarItem(item,activePath)||typeof item.href!=='undefined'&&!item.linkUnlisted||item.items.some(subItem=>isVisibleSidebarItem(subItem,activePath));case'link':// An unlisted item remains visible if it is active
-return!item.unlisted||isActiveSidebarItem(item,activePath);default:return true;}}function useVisibleSidebarItems(items,activePath){return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>items.filter(item=>isVisibleSidebarItem(item,activePath)),[items,activePath]);}/**
- * Get the sidebar the breadcrumbs for a given pathname
- * Ordered from top to bottom
- */function getSidebarBreadcrumbs({sidebarItems,pathname,onlyCategories=false}){const breadcrumbs=[];function extract(items){for(const item of items){if(item.type==='category'&&((0,_docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_4__/* .isSamePath */ .ys)(item.href,pathname)||extract(item.items))||item.type==='link'&&(0,_docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_4__/* .isSamePath */ .ys)(item.href,pathname)){const filtered=onlyCategories&&item.type!=='category';if(!filtered){breadcrumbs.unshift(item);}return true;}}return false;}extract(sidebarItems);return breadcrumbs;}/**
- * Gets the breadcrumbs of the current doc page, based on its sidebar location.
- * Returns `null` if there's no sidebar or breadcrumbs are disabled.
- */function useSidebarBreadcrumbs(){const sidebar=(0,_docsSidebar__WEBPACK_IMPORTED_MODULE_8__/* .useDocsSidebar */ .t)();const{pathname}=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_1__/* .useLocation */ .zy)();const breadcrumbsOption=(0,_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_3__/* .useActivePlugin */ .vT)()?.pluginData.breadcrumbs;if(breadcrumbsOption===false||!sidebar){return null;}return getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname});}/**
- * "Version candidates" are mostly useful for the layout components, which must
- * be able to work on all pages. For example, if a user has `{ type: "doc",
- * docId: "intro" }` as a navbar item, which version does that refer to? We
- * believe that it could refer to at most three version candidates:
- *
- * 1. The **active version**, the one that the user is currently browsing. See
- * {@link useActiveDocContext}.
- * 2. The **preferred version**, the one that the user last visited. See
- * {@link useDocsPreferredVersion}.
- * 3. The **latest version**, the "default". See {@link useLatestVersion}.
- *
- * @param docsPluginId The plugin ID to get versions from.
- * @returns An array of 1~3 versions with priorities defined above, guaranteed
- * to be unique and non-sparse. Will be memoized, hence stable for deps array.
- */function useDocsVersionCandidates(docsPluginId){const{activeVersion}=(0,_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_3__/* .useActiveDocContext */ .zK)(docsPluginId);const{preferredVersion}=(0,_docsPreferredVersion__WEBPACK_IMPORTED_MODULE_6__/* .useDocsPreferredVersion */ .g1)(docsPluginId);const latestVersion=(0,_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_3__/* .useLatestVersion */ .r7)(docsPluginId);return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>(0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_5__/* .uniq */ .sb)([activeVersion,preferredVersion,latestVersion].filter(Boolean)),[activeVersion,preferredVersion,latestVersion]);}/**
- * The layout components, like navbar items, must be able to work on all pages,
- * even on non-doc ones where there's no version context, so a sidebar ID could
- * be ambiguous. This hook would always return a sidebar to be linked to. See
- * also {@link useDocsVersionCandidates} for how this selection is done.
- *
- * @throws This hook throws if a sidebar with said ID is not found.
- */function useLayoutDocsSidebar(sidebarId,docsPluginId){const versions=useDocsVersionCandidates(docsPluginId);return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>{const allSidebars=versions.flatMap(version=>version.sidebars?Object.entries(version.sidebars):[]);const sidebarEntry=allSidebars.find(sidebar=>sidebar[0]===sidebarId);if(!sidebarEntry){throw new Error(`Can't find any sidebar with id "${sidebarId}" in version${versions.length>1?'s':''} ${versions.map(version=>version.name).join(', ')}".
-Available sidebar ids are:
-- ${allSidebars.map(entry=>entry[0]).join('\n- ')}`);}return sidebarEntry[1];},[sidebarId,versions]);}/**
- * The layout components, like navbar items, must be able to work on all pages,
- * even on non-doc ones where there's no version context, so a doc ID could be
- * ambiguous. This hook would always return a doc to be linked to. See also
- * {@link useDocsVersionCandidates} for how this selection is done.
- *
- * @throws This hook throws if a doc with said ID is not found.
- */function useLayoutDoc(docId,docsPluginId){const versions=useDocsVersionCandidates(docsPluginId);return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>{const allDocs=versions.flatMap(version=>version.docs);const doc=allDocs.find(versionDoc=>versionDoc.id===docId);if(!doc){const isDraft=versions.flatMap(version=>version.draftIds).includes(docId);// Drafts should be silently filtered instead of throwing
-if(isDraft){return null;}throw new Error(`Couldn't find any doc with id "${docId}" in version${versions.length>1?'s':''} "${versions.map(version=>version.name).join(', ')}".
-Available doc ids are:
-- ${(0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_5__/* .uniq */ .sb)(allDocs.map(versionDoc=>versionDoc.id)).join('\n- ')}`);}return doc;},[docId,versions]);}// TODO later read version/route directly from context
-/**
- * The docs plugin creates nested routes, with the top-level route providing the
- * version metadata, and the subroutes creating individual doc pages. This hook
- * will match the current location against all known sub-routes.
- *
- * @param props The props received by `@theme/DocRoot`
- * @returns The data of the relevant document at the current location, or `null`
- * if no document associated with the current location can be found.
- */function useDocRootMetadata({route}){const location=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_1__/* .useLocation */ .zy)();const versionMetadata=(0,_docsVersion__WEBPACK_IMPORTED_MODULE_7__/* .useDocsVersion */ .r)();const docRoutes=route.routes;const currentDocRoute=docRoutes.find(docRoute=>(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_1__/* .matchPath */ .B6)(location.pathname,docRoute));if(!currentDocRoute){return null;}// For now, the sidebarName is added as route config: not ideal!
-const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?versionMetadata.docsSidebars[sidebarName]:undefined;const docElement=(0,_docusaurus_renderRoutes__WEBPACK_IMPORTED_MODULE_2__/* .renderRoutes */ .v)(docRoutes);return{docElement,sidebarName,sidebarItems};}/**
- * Filter items we don't want to display on the doc card list view
- * @param items
- */function filterDocCardListItems(items){return items.filter(item=>{const canHaveLink=item.type==='category'||item.type==='link';if(canHaveLink){return!!findFirstSidebarItemLink(item);}return true;});}
 
 /***/ }),
 
@@ -22775,7 +22637,7 @@ const DEFAULT_PLUGIN_ID='default';
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"/blog/authors-0b7":{"__comp":"621db11d","__context":{"data":{"blogMetadata":"acecf23e"},"plugin":"36994c47"},"sidebar":"814f3328","__props":"ef8b811a"},"/blog/authors/benoitf-137":{"__comp":"33fc5bb8","__context":{"data":{"blogMetadata":"acecf23e"},"plugin":"36994c47"},"items":[],"sidebar":"814f3328","__props":"50a482e8"},"/download-b81":{"__comp":"6867d105","__context":{"plugin":"a7456010"},"config":"5e9f5e1a"},"/markdown-page-3d7":{"__comp":"1f391b9e","__context":{"plugin":"a7456010"},"content":"393be207"},"/docs-fe2":{"__comp":"5e95c892","__context":{"plugin":"aba21aa0"}},"/docs-f0d":{"__comp":"a7bd4aaa","__props":"0058b4c6"},"/docs-12a":{"__comp":"a94703ab"},"/docs/api-feature-parity-cfa":{"__comp":"17896441","content":"464507d4"},"/docs/docker-context-dcb":{"__comp":"17896441","content":"64e5928d"},"/docs/intro-193":{"__comp":"17896441","content":"0e384e19"},"/docs/registry-authentication-8a4":{"__comp":"17896441","content":"94c8361b"},"/tutorial-e90":{"__comp":"5e95c892","__context":{"plugin":"03234f2b"}},"/tutorial-0dd":{"__comp":"a7bd4aaa","__props":"d982e1fa"},"/tutorial-049":{"__comp":"a94703ab"},"/tutorial-faa":{"__comp":"17896441","content":"a58a13eb"},"/tutorial/testcontainers-46b":{"__comp":"17896441","content":"fca495da"},"/-e5f":{"__comp":"1df93b7f","__context":{"plugin":"a7456010"},"config":"5e9f5e1a"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"/download-b81":{"__comp":"6867d105","__context":{"plugin":"a7456010"},"config":"5e9f5e1a"},"/docs-fe2":{"__comp":"5e95c892","__context":{"plugin":"aba21aa0"}},"/docs-f0d":{"__comp":"a7bd4aaa","__props":"0058b4c6"},"/docs-12a":{"__comp":"a94703ab"},"/docs/api-feature-parity-cfa":{"__comp":"17896441","content":"464507d4"},"/docs/docker-context-dcb":{"__comp":"17896441","content":"64e5928d"},"/docs/intro-193":{"__comp":"17896441","content":"0e384e19"},"/docs/registry-authentication-8a4":{"__comp":"17896441","content":"94c8361b"},"/tutorial-e90":{"__comp":"5e95c892","__context":{"plugin":"03234f2b"}},"/tutorial-0dd":{"__comp":"a7bd4aaa","__props":"d982e1fa"},"/tutorial-049":{"__comp":"a94703ab"},"/tutorial-faa":{"__comp":"17896441","content":"a58a13eb"},"/tutorial/testcontainers-46b":{"__comp":"17896441","content":"fca495da"},"/-e5f":{"__comp":"1df93b7f","__context":{"plugin":"a7456010"},"config":"5e9f5e1a"}}');
 
 /***/ }),
 
@@ -23652,6 +23514,15 @@ __webpack_require__.r(__webpack_exports__);
   "themes": [
     "@docusaurus/theme-mermaid"
   ],
+  "headTags": [
+    {
+      "tagName": "script",
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Socktainer\",\"description\":\"Docker-compatible REST API on top of Apple container. Use Docker CLI and Testcontainers on macOS with Apple containers.\",\"url\":\"https://socktainer.github.io\",\"image\":\"https://socktainer.github.io/img/social-card.png\",\"applicationCategory\":\"DeveloperApplication\",\"operatingSystem\":\"macOS\",\"license\":\"https://github.com/socktainer/socktainer/blob/main/LICENSE\",\"sameAs\":[\"https://github.com/socktainer/socktainer\"],\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"}}"
+    }
+  ],
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -23664,6 +23535,7 @@ __webpack_require__.r(__webpack_exports__);
     [
       "classic",
       {
+        "blog": false,
         "docs": {
           "sidebarPath": "./sidebars.ts",
           "editUrl": "https://github.com/socktainer/socktainer.github.io/tree/main/"
@@ -23675,7 +23547,7 @@ __webpack_require__.r(__webpack_exports__);
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "image": "img/social-card.png",
     "colorMode": {
       "defaultMode": "dark",
       "disableSwitch": false,
@@ -24022,7 +23894,6 @@ __webpack_require__.r(__webpack_exports__);
   ],
   "customFields": {},
   "scripts": [],
-  "headTags": [],
   "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
@@ -24471,6 +24342,145 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
+
+/***/ }),
+
+/***/ 4812:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  Nr: () => (/* binding */ findFirstSidebarItemLink),
+  w8: () => (/* binding */ isActiveSidebarItem),
+  B5: () => (/* binding */ useDocRootMetadata),
+  Vd: () => (/* binding */ useDocsVersionCandidates),
+  QB: () => (/* binding */ useLayoutDoc),
+  fW: () => (/* binding */ useLayoutDocsSidebar),
+  OF: () => (/* binding */ useSidebarBreadcrumbs),
+  Y: () => (/* binding */ useVisibleSidebarItems)
+});
+
+// UNUSED EXPORTS: filterDocCardListItems, findFirstSidebarItemCategoryLink, findSidebarCategory, isVisibleSidebarItem, useCurrentSidebarCategory, useCurrentSidebarSiblings, useDocById
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/index.js
+var react = __webpack_require__(6363);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-router@5.3.4_react@19.2.0/node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(7596);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-router-config@5.1.1_react-router@5.3.4_react@19.2.0__react@19.2.0/node_modules/react-router-config/esm/react-router-config.js
+var react_router_config = __webpack_require__(2073);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/index.js + 2 modules
+var client = __webpack_require__(2913);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
+var routesUtils = __webpack_require__(2412);
+;// ./node_modules/.pnpm/@docusaurus+theme-common@3.9.1_@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1._c766a1a672374b4422edc1258196eaf5/node_modules/@docusaurus/theme-common/lib/utils/jsUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// A replacement of lodash in client code
+/**
+ * Gets the duplicate values in an array.
+ * @param arr The array.
+ * @param comparator Compares two values and returns `true` if they are equal
+ * (duplicated).
+ * @returns Value of the elements `v` that have a preceding element `u` where
+ * `comparator(u, v) === true`. Values within the returned array are not
+ * guaranteed to be unique.
+ */function duplicates(arr,comparator=(a,b)=>a===b){return arr.filter((v,vIndex)=>arr.findIndex(u=>comparator(u,v))!==vIndex);}/**
+ * Remove duplicate array items (similar to `_.uniq`)
+ * @param arr The array.
+ * @returns An array with duplicate elements removed by reference comparison.
+ */function uniq(arr){// Note: had problems with [...new Set()]: https://github.com/facebook/docusaurus/issues/4972#issuecomment-863895061
+return Array.from(new Set(arr));}// TODO 2025: replace by std Object.groupBy ?
+// This is a local polyfill with exact same TS signature
+// see https://github.com/microsoft/TypeScript/blob/main/src/lib/esnext.object.d.ts
+function groupBy(items,keySelector){const result={};let index=0;for(const item of items){const key=keySelector(item,index);result[key]??=[];result[key].push(item);index+=1;}return result;}
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsPreferredVersion.js
+var docsPreferredVersion = __webpack_require__(149);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsVersion.js
+var docsVersion = __webpack_require__(2516);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsSidebar.js
+var docsSidebar = __webpack_require__(2180);
+;// ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useDocById(id){const version=useDocsVersion();if(!id){return undefined;}const doc=version.docs[id];if(!doc){throw new Error(`no version doc found by id=${id}`);}return doc;}/**
+ * Pure function, similar to `Array#find`, but works on the sidebar tree.
+ */function findSidebarCategory(sidebar,predicate){for(const item of sidebar){if(item.type==='category'){if(predicate(item)){return item;}const subItem=findSidebarCategory(item.items,predicate);if(subItem){return subItem;}}}return undefined;}/**
+ * Best effort to assign a link to a sidebar category. If the category doesn't
+ * have a link itself, we link to the first sub item with a link.
+ */function findFirstSidebarItemCategoryLink(item){if(item.href&&!item.linkUnlisted){return item.href;}for(const subItem of item.items){const link=findFirstSidebarItemLink(subItem);if(link){return link;}}return undefined;}/**
+ * Best effort to assign a link to a sidebar item.
+ */function findFirstSidebarItemLink(item){if(item.type==='link'&&!item.unlisted){return item.href;}if(item.type==='category'){return findFirstSidebarItemCategoryLink(item);}// Other items types, like "html"
+return undefined;}/**
+ * Gets the category associated with the current location. Should only be used
+ * on category index pages.
+ */function useCurrentSidebarCategory(){const{pathname}=useLocation();const sidebar=useDocsSidebar();if(!sidebar){throw new Error('Unexpected: cant find current sidebar in context');}const categoryBreadcrumbs=getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname,onlyCategories:true});const deepestCategory=categoryBreadcrumbs.slice(-1)[0];if(!deepestCategory){throw new Error(`${pathname} is not associated with a category. useCurrentSidebarCategory() should only be used on category index pages.`);}return deepestCategory;}/**
+ * Gets the category associated with the current location. Should only be used
+ * on category index pages.
+ */function useCurrentSidebarSiblings(){const{pathname}=useLocation();const sidebar=useDocsSidebar();if(!sidebar){throw new Error('Unexpected: cant find current sidebar in context');}const categoryBreadcrumbs=getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname,onlyCategories:true});const deepestCategory=categoryBreadcrumbs.slice(-1)[0];return deepestCategory?.items??sidebar.items;}const isActive=(testedPath,activePath)=>typeof testedPath!=='undefined'&&(0,routesUtils/* isSamePath */.ys)(testedPath,activePath);const containsActiveSidebarItem=(items,activePath)=>items.some(subItem=>isActiveSidebarItem(subItem,activePath));/**
+ * Checks if a sidebar item should be active, based on the active path.
+ */function isActiveSidebarItem(item,activePath){if(item.type==='link'){return isActive(item.href,activePath);}if(item.type==='category'){return isActive(item.href,activePath)||containsActiveSidebarItem(item.items,activePath);}return false;}function isVisibleSidebarItem(item,activePath){switch(item.type){case'category':return isActiveSidebarItem(item,activePath)||typeof item.href!=='undefined'&&!item.linkUnlisted||item.items.some(subItem=>isVisibleSidebarItem(subItem,activePath));case'link':// An unlisted item remains visible if it is active
+return!item.unlisted||isActiveSidebarItem(item,activePath);default:return true;}}function useVisibleSidebarItems(items,activePath){return (0,react.useMemo)(()=>items.filter(item=>isVisibleSidebarItem(item,activePath)),[items,activePath]);}/**
+ * Get the sidebar the breadcrumbs for a given pathname
+ * Ordered from top to bottom
+ */function getSidebarBreadcrumbs({sidebarItems,pathname,onlyCategories=false}){const breadcrumbs=[];function extract(items){for(const item of items){if(item.type==='category'&&((0,routesUtils/* isSamePath */.ys)(item.href,pathname)||extract(item.items))||item.type==='link'&&(0,routesUtils/* isSamePath */.ys)(item.href,pathname)){const filtered=onlyCategories&&item.type!=='category';if(!filtered){breadcrumbs.unshift(item);}return true;}}return false;}extract(sidebarItems);return breadcrumbs;}/**
+ * Gets the breadcrumbs of the current doc page, based on its sidebar location.
+ * Returns `null` if there's no sidebar or breadcrumbs are disabled.
+ */function useSidebarBreadcrumbs(){const sidebar=(0,docsSidebar/* useDocsSidebar */.t)();const{pathname}=(0,react_router/* useLocation */.zy)();const breadcrumbsOption=(0,client/* useActivePlugin */.vT)()?.pluginData.breadcrumbs;if(breadcrumbsOption===false||!sidebar){return null;}return getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname});}/**
+ * "Version candidates" are mostly useful for the layout components, which must
+ * be able to work on all pages. For example, if a user has `{ type: "doc",
+ * docId: "intro" }` as a navbar item, which version does that refer to? We
+ * believe that it could refer to at most three version candidates:
+ *
+ * 1. The **active version**, the one that the user is currently browsing. See
+ * {@link useActiveDocContext}.
+ * 2. The **preferred version**, the one that the user last visited. See
+ * {@link useDocsPreferredVersion}.
+ * 3. The **latest version**, the "default". See {@link useLatestVersion}.
+ *
+ * @param docsPluginId The plugin ID to get versions from.
+ * @returns An array of 1~3 versions with priorities defined above, guaranteed
+ * to be unique and non-sparse. Will be memoized, hence stable for deps array.
+ */function useDocsVersionCandidates(docsPluginId){const{activeVersion}=(0,client/* useActiveDocContext */.zK)(docsPluginId);const{preferredVersion}=(0,docsPreferredVersion/* useDocsPreferredVersion */.g1)(docsPluginId);const latestVersion=(0,client/* useLatestVersion */.r7)(docsPluginId);return (0,react.useMemo)(()=>uniq([activeVersion,preferredVersion,latestVersion].filter(Boolean)),[activeVersion,preferredVersion,latestVersion]);}/**
+ * The layout components, like navbar items, must be able to work on all pages,
+ * even on non-doc ones where there's no version context, so a sidebar ID could
+ * be ambiguous. This hook would always return a sidebar to be linked to. See
+ * also {@link useDocsVersionCandidates} for how this selection is done.
+ *
+ * @throws This hook throws if a sidebar with said ID is not found.
+ */function useLayoutDocsSidebar(sidebarId,docsPluginId){const versions=useDocsVersionCandidates(docsPluginId);return (0,react.useMemo)(()=>{const allSidebars=versions.flatMap(version=>version.sidebars?Object.entries(version.sidebars):[]);const sidebarEntry=allSidebars.find(sidebar=>sidebar[0]===sidebarId);if(!sidebarEntry){throw new Error(`Can't find any sidebar with id "${sidebarId}" in version${versions.length>1?'s':''} ${versions.map(version=>version.name).join(', ')}".
+Available sidebar ids are:
+- ${allSidebars.map(entry=>entry[0]).join('\n- ')}`);}return sidebarEntry[1];},[sidebarId,versions]);}/**
+ * The layout components, like navbar items, must be able to work on all pages,
+ * even on non-doc ones where there's no version context, so a doc ID could be
+ * ambiguous. This hook would always return a doc to be linked to. See also
+ * {@link useDocsVersionCandidates} for how this selection is done.
+ *
+ * @throws This hook throws if a doc with said ID is not found.
+ */function useLayoutDoc(docId,docsPluginId){const versions=useDocsVersionCandidates(docsPluginId);return (0,react.useMemo)(()=>{const allDocs=versions.flatMap(version=>version.docs);const doc=allDocs.find(versionDoc=>versionDoc.id===docId);if(!doc){const isDraft=versions.flatMap(version=>version.draftIds).includes(docId);// Drafts should be silently filtered instead of throwing
+if(isDraft){return null;}throw new Error(`Couldn't find any doc with id "${docId}" in version${versions.length>1?'s':''} "${versions.map(version=>version.name).join(', ')}".
+Available doc ids are:
+- ${uniq(allDocs.map(versionDoc=>versionDoc.id)).join('\n- ')}`);}return doc;},[docId,versions]);}// TODO later read version/route directly from context
+/**
+ * The docs plugin creates nested routes, with the top-level route providing the
+ * version metadata, and the subroutes creating individual doc pages. This hook
+ * will match the current location against all known sub-routes.
+ *
+ * @param props The props received by `@theme/DocRoot`
+ * @returns The data of the relevant document at the current location, or `null`
+ * if no document associated with the current location can be found.
+ */function useDocRootMetadata({route}){const location=(0,react_router/* useLocation */.zy)();const versionMetadata=(0,docsVersion/* useDocsVersion */.r)();const docRoutes=route.routes;const currentDocRoute=docRoutes.find(docRoute=>(0,react_router/* matchPath */.B6)(location.pathname,docRoute));if(!currentDocRoute){return null;}// For now, the sidebarName is added as route config: not ideal!
+const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?versionMetadata.docsSidebars[sidebarName]:undefined;const docElement=(0,react_router_config/* renderRoutes */.v)(docRoutes);return{docElement,sidebarName,sidebarItems};}/**
+ * Filter items we don't want to display on the doc card list view
+ * @param items
+ */function filterDocCardListItems(items){return items.filter(item=>{const canHaveLink=item.type==='category'||item.type==='link';if(canHaveLink){return!!findFirstSidebarItemLink(item);}return true;});}
 
 /***/ }),
 
@@ -25287,7 +25297,7 @@ const i18n_namespaceObject = /*#__PURE__*/JSON.parse('{"defaultLocale":"en","loc
 // EXTERNAL MODULE: ./.docusaurus/codeTranslations.json
 var codeTranslations = __webpack_require__(2654);
 ;// ./.docusaurus/site-metadata.json
-const site_metadata_namespaceObject = /*#__PURE__*/JSON.parse('{"docusaurusVersion":"3.9.1","siteVersion":"0.0.0","pluginVersions":{"docusaurus-plugin-css-cascade-layers":{"type":"package","name":"@docusaurus/plugin-css-cascade-layers","version":"3.9.1"},"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.9.1"},"docusaurus-plugin-content-blog":{"type":"package","name":"@docusaurus/plugin-content-blog","version":"3.9.1"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.9.1"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.9.1"},"docusaurus-plugin-svgr":{"type":"package","name":"@docusaurus/plugin-svgr","version":"3.9.1"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.9.1"},"docusaurus-tailwindcss":{"type":"local"},"docusaurus-plugin-goatcounter":{"type":"package","name":"docusaurus-plugin-goatcounter","version":"4.0.0"},"docusaurus-theme-mermaid":{"type":"package","name":"@docusaurus/theme-mermaid","version":"3.9.1"}}}');
+const site_metadata_namespaceObject = /*#__PURE__*/JSON.parse('{"docusaurusVersion":"3.9.1","siteVersion":"0.0.0","pluginVersions":{"docusaurus-plugin-css-cascade-layers":{"type":"package","name":"@docusaurus/plugin-css-cascade-layers","version":"3.9.1"},"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.9.1"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.9.1"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.9.1"},"docusaurus-plugin-svgr":{"type":"package","name":"@docusaurus/plugin-svgr","version":"3.9.1"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.9.1"},"docusaurus-tailwindcss":{"type":"local"},"docusaurus-plugin-goatcounter":{"type":"package","name":"docusaurus-plugin-goatcounter","version":"4.0.0"},"docusaurus-theme-mermaid":{"type":"package","name":"@docusaurus/theme-mermaid","version":"3.9.1"}}}');
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7259);
 ;// ./node_modules/.pnpm/@docusaurus+core@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19.2.0__react-dom@_3fe5344a2badf17583f12489cd537e57/node_modules/@docusaurus/core/lib/client/docusaurusContext.js
@@ -32065,8 +32075,8 @@ const dropdownLabel=mobile?(0,Translate/* translate */.T)({message:'Languages',i
  */function HtmlNavbarItem({value,className,mobile=false,isDropdownItem=false}){const Comp=isDropdownItem?'li':'div';return/*#__PURE__*/(0,jsx_runtime.jsx)(Comp,{className:(0,clsx/* default */.A)({navbar__item:!mobile&&!isDropdownItem,'menu__list-item':mobile},className),dangerouslySetInnerHTML:{__html:value}});}
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/index.js + 2 modules
 var client = __webpack_require__(2913);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js
-var docsUtils = __webpack_require__(3057);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+plugin-content-docs@3.9.1_@mdx-js+react@3.1.1_@types+react@19.2.0_react@19._cbd1b14dd29bec47fe303e08a237ae71/node_modules/@docusaurus/plugin-content-docs/lib/client/docsUtils.js + 1 modules
+var docsUtils = __webpack_require__(4812);
 ;// ./node_modules/.pnpm/@docusaurus+theme-classic@3.9.1_@types+react@19.2.0_react-dom@19.2.0_react@19.2.0__react@19.2.0_typescript@5.6.3/node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DocNavbarItem.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.

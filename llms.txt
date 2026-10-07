@@ -1,0 +1,21 @@
+# Socktainer
+
+> Socktainer is a CLI/daemon for macOS (Apple Silicon) that exposes a Docker-compatible REST API on top of Apple's containerization framework (Apple container). It listens on the Unix socket `$HOME/.socktainer/container.sock` so existing Docker tooling (Docker CLI, Testcontainers, ...) can manage Apple containers.
+
+## Docs
+
+- [Introduction](https://raw.githubusercontent.com/socktainer/socktainer.github.io/main/docs/intro.md): what Socktainer is, features, installation and getting started
+- [Docker Context](https://raw.githubusercontent.com/socktainer/socktainer.github.io/main/docs/docker-context.md): point the Docker CLI at Socktainer with a docker context
+- [Registry Authentication](https://raw.githubusercontent.com/socktainer/socktainer.github.io/main/docs/registry-authentication.md): pull from private registries
+- [Docker Engine API Feature Parity](https://raw.githubusercontent.com/socktainer/socktainer.github.io/main/docs/api-feature-parity.md): which Docker API endpoints are supported
+
+## Tutorials
+
+- [Testcontainers](https://raw.githubusercontent.com/socktainer/socktainer.github.io/main/tutorial/testcontainers.md): run Testcontainers-based tests on macOS with Socktainer
+
+## Links
+
+- [Website](https://socktainer.github.io)
+- [Download](https://socktainer.github.io/download)
+- [Source code](https://github.com/socktainer/socktainer)
+- [Releases](https://github.com/socktainer/socktainer/releases)
