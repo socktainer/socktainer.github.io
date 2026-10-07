@@ -17,8 +17,8 @@ const installTabs: { id: string; label: string; commands: string[]; links: { lab
   {
     id: 'brew',
     label: 'Homebrew',
-    commands: [BREW_TAP, 'brew install socktainer/tap/socktainer'],
-    links: [{ label: 'Homebrew tap repository', to: 'https://github.com/socktainer/homebrew-tap' }],
+    commands: ['brew install socktainer'],
+    links: [{ label: 'Homebrew formula', to: 'https://formulae.brew.sh/formula/socktainer' }],
   },
   {
     id: 'zip',
@@ -46,6 +46,7 @@ const installTabs: { id: string; label: string; commands: string[]; links: { lab
     label: 'Pre-release',
     commands: [BREW_TAP, 'brew install socktainer/tap/socktainer-next'],
     links: [
+      { label: 'Homebrew tap (nightly)', to: 'https://github.com/socktainer/homebrew-tap' },
       { label: 'Pre-releases repository', to: 'https://github.com/socktainer/prereleases' },
       { label: 'Pre-release tags', to: 'https://github.com/socktainer/prereleases/tags' },
     ],
