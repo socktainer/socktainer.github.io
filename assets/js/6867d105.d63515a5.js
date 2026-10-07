@@ -111,13 +111,12 @@ const installTabs = [
         id: 'brew',
         label: 'Homebrew',
         commands: [
-            BREW_TAP,
-            'brew install socktainer/tap/socktainer'
+            'brew install socktainer'
         ],
         links: [
             {
-                label: 'Homebrew tap repository',
-                to: 'https://github.com/socktainer/homebrew-tap'
+                label: 'Homebrew formula',
+                to: 'https://formulae.brew.sh/formula/socktainer'
             }
         ]
     },
@@ -160,6 +159,10 @@ const installTabs = [
             'brew install socktainer/tap/socktainer-next'
         ],
         links: [
+            {
+                label: 'Homebrew tap (nightly)',
+                to: 'https://github.com/socktainer/homebrew-tap'
+            },
             {
                 label: 'Pre-releases repository',
                 to: 'https://github.com/socktainer/prereleases'
