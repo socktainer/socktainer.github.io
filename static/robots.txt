@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://socktainer.github.io/sitemap.xml
