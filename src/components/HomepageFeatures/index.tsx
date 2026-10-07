@@ -1,115 +1,117 @@
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import Link from '@docusaurus/Link';
+import styles from './styles.module.css';
 
-type FeatureItem = {
+const chipClass =
+  'px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-100 dark:bg-zinc-900 text-gray-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800';
+const vars = (v: Record<string, number>) => v as CSSProperties;
+const termClass = `${styles.term} rounded-lg bg-zinc-950 border border-zinc-800 p-3 font-mono text-xs text-zinc-300 overflow-x-auto`;
+
+function Chips({ items }: { items: string[] }) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {items.map((item, i) => (
+        <span key={item} className={`${styles.chip} ${chipClass}`} style={vars({ '--i': i })}>
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+type Tile = {
   title: string;
   icon: string;
   description: ReactNode;
-  link?: string;
-  linkText?: string;
+  visual: ReactNode;
+  span?: string;
 };
 
-const FeatureList: FeatureItem[] = [
+const tiles: Tile[] = [
   {
-    title: 'Built on Apple Container',
-    icon: '🍏',
-    description: (
-      <>
-        Leverages Apple's containerization framework for macOS. Designed specifically for Apple Silicon (arm64) to
-        provide fast, secure, and efficient container operations.
-      </>
-    ),
-  },
-  {
-    title: 'Docker API Compatible',
+    title: 'Docker API compatible',
     icon: '🐳',
-    description: (
-      <>
-        Provides a Docker-compatible REST API interface. Use your favorite Docker tools like Docker CLI, TestContainers,
-        and other Docker clients seamlessly with Apple containers.
-      </>
-    ),
+    description: 'A Docker-compatible REST API, so the tools you already use talk to Apple containers unchanged.',
+    visual: <Chips items={['Docker CLI', 'Testcontainers', 'Podman Desktop', 'any Docker API client']} />,
+    span: 'lg:col-span-2',
   },
   {
-    title: 'Testcontainers Support',
+    title: 'Built on Apple container',
+    icon: '🍏',
+    description: "Runs on Apple's containerization framework, designed for Apple Silicon.",
+    visual: <Chips items={['arm64', '1 VM per container', 'Swift']} />,
+  },
+  {
+    title: 'Testcontainers',
     icon: '☕',
-    description: (
-      <>Perfect for Java developers using Testcontainers. Run your integration tests on macOS without Docker Desktop.</>
-    ),
-    link: '/tutorial/testcontainers',
-    linkText: 'View Tutorial →',
-  },
-  {
-    title: 'Unix Socket Interface',
-    icon: '🔌',
-    description: (
-      <>
-        Listens on a Unix domain socket at{' '}
-        <code className="text-orange-600 dark:text-orange-400">$HOME/.socktainer/container.sock</code>. Simple setup
-        with environment variable <code className="text-orange-600 dark:text-orange-400">DOCKER_HOST</code>.
-      </>
+    description: 'Run your integration tests on macOS without Docker Desktop.',
+    visual: (
+      <Link
+        to="/tutorial/testcontainers"
+        className="font-semibold text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300"
+      >
+        View tutorial →
+      </Link>
     ),
   },
   {
-    title: 'Container Lifecycle',
+    title: 'Container lifecycle',
     icon: '♻️',
-    description: (
-      <>
-        Full support for container operations: create, start, stop, remove, inspect, logs, health checks, and exec.
-        Monitor container events for real-time updates.
-      </>
+    description: 'Create, run and inspect containers, follow logs, exec into them and stream events.',
+    visual: (
+      <div className="space-y-3">
+        <div className={termClass}>
+          <span className="text-green-400">$ </span>
+          <span className={styles.typeIn} style={vars({ '--n': 18 })}>
+            docker logs -f web
+          </span>
+          <div className={`${styles.after} text-zinc-500`}>listening on :8080</div>
+        </div>
+        <Chips
+          items={['create', 'start', 'stop', 'restart', 'kill', 'rm', 'inspect', 'logs', 'exec', 'attach', 'events']}
+        />
+      </div>
     ),
+    span: 'lg:col-span-2',
   },
   {
-    title: 'Image Management',
+    title: 'Image management',
     icon: '📦',
-    description: (
-      <>
-        Manage container images with ease: list, pull, and delete images. Compatible with standard OCI image formats and
-        container registries.
-      </>
+    description: 'Pull, build and push OCI images, with authentication for your registries.',
+    visual: <Chips items={['pull', 'build', 'push', 'tag', 'list', 'delete', 'save / load']} />,
+    span: 'lg:col-span-2',
+  },
+  {
+    title: 'Unix socket',
+    icon: '🔌',
+    description: 'Point DOCKER_HOST at the socket and you are done.',
+    visual: (
+      <div className={termClass}>
+        <span className={styles.typeIn} style={vars({ '--n': 19 })}>
+          <span className="text-green-400">export</span> DOCKER_HOST=
+        </span>
+        <div className={`${styles.after} pl-4 whitespace-nowrap text-yellow-500`}>
+          unix://$HOME/.socktainer/container.sock
+        </div>
+      </div>
     ),
   },
 ];
 
-function Feature({ title, icon, description, link, linkText }: FeatureItem) {
+function Feature({ title, icon, description, visual, span = '', index }: Tile & { index: number }) {
   return (
-    <div className="group relative">
-      <div className="h-full bg-white dark:bg-zinc-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border-2 border-transparent hover:border-orange-400 dark:hover:border-orange-500 transform hover:-translate-y-1">
-        {/* Icon */}
-        <div className="flex justify-center mb-4">
-          <div className="text-6xl transform group-hover:scale-110 transition-transform duration-300">{icon}</div>
-        </div>
-
-        {/* Title */}
-        <h3 className="text-xl font-bold text-center mb-4 text-gray-800 dark:text-zinc-100">{title}</h3>
-
-        {/* Description */}
-        <p className="text-gray-600 dark:text-zinc-300 text-center leading-relaxed">{description}</p>
-
-        {/* Optional Link */}
-        {link && linkText && (
-          <div className="mt-6 text-center">
-            {link.startsWith('/') ? (
-              <Link
-                to={link}
-                className="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
-              >
-                {linkText}
-              </Link>
-            ) : (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
-              >
-                {linkText}
-              </a>
-            )}
-          </div>
-        )}
+    <div
+      style={vars({ '--i': index })}
+      className={`reveal-on-scroll ${span} min-w-0 flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-orange-400 dark:hover:border-orange-500 hover:shadow-[0_0_32px_-8px_rgb(249_115_22/0.45)] transition-[border-color,box-shadow] duration-300`}
+    >
+      <div className="w-10 h-10 flex items-center justify-center rounded-xl text-xl bg-orange-100 dark:bg-orange-950/50">
+        {icon}
       </div>
+      <div>
+        <h3 className="text-lg font-bold mb-1 text-gray-900 dark:text-zinc-100">{title}</h3>
+        <p className="m-0 text-gray-600 dark:text-zinc-400 leading-relaxed">{description}</p>
+      </div>
+      <div className="mt-auto">{visual}</div>
     </div>
   );
 }
@@ -117,45 +119,46 @@ function Feature({ title, icon, description, link, linkText }: FeatureItem) {
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className="py-20 bg-gray-50 dark:bg-zinc-900">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-orange-600 dark:text-orange-400">Key Features</h2>
-          <p className="text-xl text-gray-600 dark:text-zinc-300 max-w-3xl mx-auto">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="text-center lg:text-left mb-12">
+          <div className="text-sm font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-400 mb-2">
+            Why Socktainer
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-zinc-100">Key Features</h2>
+          <p className="text-xl text-gray-600 dark:text-zinc-400 max-w-3xl mx-auto lg:mx-0">
             Running Docker workloads on macOS with Apple's container framework
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {FeatureList.map(props => (
-            <Feature key={props.title} {...props} />
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {tiles.map((tile, index) => (
+            <Feature key={tile.title} index={index} {...tile} />
           ))}
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-orange-100 dark:bg-orange-950/50 rounded-2xl p-8 border-2 border-orange-200 dark:border-orange-800">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-zinc-100">Ready to get started? 🚀</h3>
-            <p className="text-gray-600 dark:text-zinc-300 mb-6 max-w-2xl">
+        <div
+          className={`${styles.cta} mt-16 flex flex-col md:flex-row md:items-center justify-between gap-6 rounded-2xl p-8 md:p-10 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-xl`}
+        >
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white">Ready to get started?</h3>
+            <p className="m-0 text-orange-50">
               Download Socktainer and start running your Docker workloads on Apple containers today.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/download"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <span>📥</span>
-                Download Latest Release
-              </Link>
-              <a
-                href="https://github.com/socktainer/socktainer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white dark:bg-zinc-900 hover:bg-gray-50 dark:hover:bg-zinc-800 text-gray-800 dark:text-zinc-100 font-semibold rounded-lg border-2 border-orange-500 dark:border-orange-500 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <span>⭐</span>
-                Star on GitHub
-              </a>
-            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+            <Link
+              to="/download"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-orange-600 hover:bg-orange-50 hover:text-orange-700 font-semibold rounded-lg shadow transition-colors"
+            >
+              📥 Download
+            </Link>
+            <a
+              href="https://github.com/socktainer/socktainer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white/70 text-white hover:bg-white/10 hover:text-white font-semibold rounded-lg transition-colors"
+            >
+              ⭐ Star on GitHub
+            </a>
           </div>
         </div>
       </div>
