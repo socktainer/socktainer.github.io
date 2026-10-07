@@ -1,6 +1,7 @@
 import Link from '@docusaurus/Link';
 import HeroAnimation from '@site/src/components/HeroAnimation';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import QuickStart from '@site/src/components/QuickStart';
 import Layout from '@theme/Layout';
 import type { ReactNode } from 'react';
 import TailWindThemeSelector from '../components/TailWindThemeSelector';
@@ -11,7 +12,7 @@ function HomepageHeader() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Text */}
-          <div className="text-center lg:text-left space-y-6">
+          <div className="min-w-0 text-center lg:text-left space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-orange-600 dark:text-orange-400 leading-tight">
               Socktainer
               <div className="inline-block">
@@ -50,39 +51,11 @@ function HomepageHeader() {
               </Link>
             </div>
 
-            {/* Quick Start Code */}
-            <div className="mt-8 bg-gray-900 dark:bg-black rounded-lg shadow-2xl p-6 border border-gray-700 max-w-2xl mx-auto lg:mx-0">
-              <div className="flex items-center gap-2 mb-3">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                </div>
-                <span className="text-gray-400 text-sm ml-2">Quick Start</span>
-              </div>
-              <pre className="text-sm md:text-base text-left overflow-x-auto">
-                <code className="text-gray-300">
-                  <span className="text-gray-500"># Ensure Apple container is running</span>
-                  {'\n'}
-                  <span className="text-orange-400">container system start</span>
-                  {'\n'}
-                  <span className="text-gray-500"># Run Socktainer</span>
-                  {'\n'}
-                  <span className="text-orange-400">./socktainer</span>
-                  {'\n\n'}
-                  <span className="text-gray-500"># Use with Docker CLI</span>
-                  {'\n'}
-                  <span className="text-green-400">export</span> <span className="text-blue-400">DOCKER_HOST</span>=
-                  <span className="text-yellow-500">unix://$HOME/.socktainer/container.sock</span>
-                  {'\n'}
-                  <span className="text-orange-400">docker</span> <span className="text-purple-400">ps</span>
-                </code>
-              </pre>
-            </div>
+            <QuickStart />
           </div>
 
           {/* Hero Visual */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="min-w-0 flex justify-center lg:justify-end">
             <HeroAnimation />
           </div>
         </div>
