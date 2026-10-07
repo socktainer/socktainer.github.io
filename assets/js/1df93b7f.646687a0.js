@@ -77,10 +77,10 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(7259);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@docusaurus+core@3.10.2_@docusaurus+faster@3.10.2_@docusaurus+types@3.10.2_@swc+core@1._e0b4eaa988cc61160a482facd28fdf4e/node_modules/@docusaurus/core/lib/client/exports/Link.js
 var Link = __webpack_require__(6605);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@fortawesome+free-solid-svg-icons@7.1.0/node_modules/@fortawesome/free-solid-svg-icons/index.mjs
-var free_solid_svg_icons = __webpack_require__(8451);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@fortawesome+react-fontawesome@3.1.0_@fortawesome+fontawesome-svg-core@7.1.0_react@19.2.0/node_modules/@fortawesome/react-fontawesome/dist/index.js
-var dist = __webpack_require__(644);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@fortawesome+free-solid-svg-icons@7.3.1/node_modules/@fortawesome/free-solid-svg-icons/index.mjs
+var free_solid_svg_icons = __webpack_require__(3222);
+// EXTERNAL MODULE: ./node_modules/.pnpm/@fortawesome+react-fontawesome@3.5.0_@fortawesome+fontawesome-svg-core@7.3.1_react@19.2.0/node_modules/@fortawesome/react-fontawesome/dist/index.js
+var dist = __webpack_require__(7613);
 ;// CONCATENATED MODULE: ./src/components/HeroAnimation/styles.module.css
 // extracted by css-extract-rspack-plugin
 /* export default */ const styles_module = ({"typing":"typing__j9f","caret":"caret_2TgB","blink":"blink_UMG_","output":"output_bOmP","req":"req_PtMk","res":"res_DJEg","glowCli":"glowCli_rnhm","glowSock":"glowSock_whf2","glowApple":"glowApple_NQtc","vm":"vm_Gk4s"});
