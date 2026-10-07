@@ -229,12 +229,3 @@ article .markdown ol ol {
 .navbar__items--right > *:nth-child(2) {
   order: 1;
 }
-
-/* Translucent sticky navbar: content scrolls softly underneath */
-.navbar {
-  background-color: color-mix(in srgb, var(--ifm-navbar-background-color) 70%, transparent);
-  backdrop-filter: saturate(180%) blur(12px);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
-  box-shadow: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--ifm-color-emphasis-300) 60%, transparent);
-}

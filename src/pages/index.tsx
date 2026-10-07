@@ -11,7 +11,7 @@ import TailWindThemeSelector from '../components/TailWindThemeSelector';
 function HomepageHeader() {
   return (
     <header className="relative overflow-hidden bg-orange-50 dark:bg-zinc-900 py-10 md:py-12">
-      {/* Ambient background: faint dot grid and a soft glow behind the animation */}
+      {/* Ambient background: faint dot grid */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 text-zinc-400/40 dark:text-zinc-500/25"
@@ -20,10 +20,6 @@ function HomepageHeader() {
           backgroundSize: '24px 24px',
           maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 75%)',
         }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-32 top-1/2 -translate-y-1/2 w-[40rem] h-[40rem] rounded-full blur-3xl bg-orange-400/20 dark:bg-orange-500/10"
       />
 
       <div className="relative container mx-auto px-4">
