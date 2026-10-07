@@ -1,0 +1,217 @@
+/*
+ * One 8s loop, every step is a keyframe window on the same timeline:
+ * 0-20% type command, 22-48% request goes down, 50-58% VM starts,
+ * 58-74% response goes up, 78% output shown, 95-100% fade out.
+ * Base (non-animated) styles are the final frame, used for reduced motion.
+ */
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: 19ch;
+  animation: typing 8s steps(19) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  20%,
+  100% {
+    width: 19ch;
+  }
+}
+
+.caret {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.output {
+  animation: output 8s infinite;
+}
+
+@keyframes output {
+  0%,
+  76% {
+    opacity: 0;
+  }
+  80%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.req,
+.res {
+  position: absolute;
+  left: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.req {
+  background: #f97316;
+  box-shadow: 0 0 12px 4px rgb(249 115 22 / 0.6);
+  animation: req 8s linear infinite;
+}
+
+.res {
+  background: #22c55e;
+  box-shadow: 0 0 12px 4px rgb(34 197 94 / 0.6);
+  animation: res 8s linear infinite;
+}
+
+@keyframes req {
+  0%,
+  21% {
+    top: 0;
+    opacity: 0;
+  }
+  22% {
+    top: 0;
+    opacity: 1;
+  }
+  48% {
+    top: 100%;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes res {
+  0%,
+  57% {
+    top: 100%;
+    opacity: 0;
+  }
+  58% {
+    top: 100%;
+    opacity: 1;
+  }
+  74% {
+    top: 0;
+    opacity: 1;
+  }
+  76%,
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+/* Node highlights, timed to when a dot passes each node */
+.glowCli {
+  animation: glowCli 8s infinite;
+}
+.glowSock {
+  animation: glowSock 8s infinite;
+}
+.glowApple {
+  animation: glowApple 8s infinite;
+}
+
+@keyframes glowCli {
+  0%,
+  18%,
+  28%,
+  70%,
+  82%,
+  100% {
+    box-shadow: none;
+  }
+  22%,
+  76% {
+    box-shadow:
+      0 0 0 3px rgb(249 115 22 / 0.6),
+      0 0 20px rgb(249 115 22 / 0.5);
+  }
+}
+
+@keyframes glowSock {
+  0%,
+  30%,
+  40%,
+  62%,
+  70%,
+  100% {
+    box-shadow: none;
+  }
+  35%,
+  66% {
+    box-shadow:
+      0 0 0 3px rgb(249 115 22 / 0.6),
+      0 0 20px rgb(249 115 22 / 0.5);
+  }
+}
+
+@keyframes glowApple {
+  0%,
+  44%,
+  62%,
+  100% {
+    box-shadow: none;
+  }
+  48%,
+  58% {
+    box-shadow:
+      0 0 0 3px rgb(249 115 22 / 0.6),
+      0 0 20px rgb(249 115 22 / 0.5);
+  }
+}
+
+.vm {
+  animation: vm 8s infinite;
+}
+
+@keyframes vm {
+  0%,
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  58%,
+  95% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing,
+  .caret,
+  .output,
+  .req,
+  .res,
+  .glowCli,
+  .glowSock,
+  .glowApple,
+  .vm {
+    animation: none;
+  }
+}

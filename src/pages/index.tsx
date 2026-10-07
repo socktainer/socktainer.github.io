@@ -1,4 +1,5 @@
 import Link from '@docusaurus/Link';
+import HeroAnimation from '@site/src/components/HeroAnimation';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Layout from '@theme/Layout';
 import type { ReactNode } from 'react';
@@ -82,50 +83,7 @@ function HomepageHeader() {
 
           {/* Hero Visual */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              {/* Floating Card */}
-              <div className="bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl p-8 border-2 border-orange-200 dark:border-orange-800 max-w-md transform hover:scale-105 transition-transform duration-300">
-                <div className="space-y-6">
-                  {/* Apple Container */}
-                  <div className="flex items-center gap-4 p-4 bg-orange-50 dark:bg-zinc-950 rounded-xl border border-orange-200 dark:border-orange-800">
-                    <div className="text-5xl">🍏</div>
-                    <div>
-                      <div className="font-bold text-lg text-gray-800 dark:text-zinc-200">Apple Container</div>
-                      <div className="text-sm text-gray-600 dark:text-zinc-400">Containerization Framework</div>
-                    </div>
-                  </div>
-
-                  {/* Connection Arrow */}
-                  <div className="flex justify-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <div className="text-3xl animate-bounce">↕️</div>
-                      <div className="text-sm font-semibold text-orange-600 dark:text-orange-400 bg-orange-100 dark:bg-orange-950/50 px-3 py-1 rounded-full">
-                        Socktainer (REST API)
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Docker API */}
-                  <div className="flex items-center gap-4 p-4 bg-blue-50 dark:bg-zinc-950 rounded-xl border border-orange-200 dark:border-orange-800">
-                    <div className="text-5xl">🐳</div>
-                    <div>
-                      <div className="font-bold text-lg text-gray-800 dark:text-zinc-200">Docker REST API</div>
-                      <div className="text-sm text-gray-600 dark:text-zinc-400">Compatible Interface</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Feature badges */}
-                <div className="mt-6 flex flex-wrap gap-2 justify-center">
-                  <span className="px-3 py-1 bg-orange-100 dark:bg-orange-950/50 text-orange-700 dark:text-orange-300 rounded-full text-xs font-medium">
-                    Lightweight 🪶
-                  </span>
-                  <span className="px-3 py-1 bg-orange-100 dark:bg-orange-950/50 text-orange-700 dark:text-orange-300 rounded-full text-xs font-medium">
-                    Swift based
-                  </span>
-                </div>
-              </div>
-            </div>
+            <HeroAnimation />
           </div>
         </div>
       </div>
