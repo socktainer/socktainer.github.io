@@ -15,7 +15,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-api-feature-parity-md-464.json
-var site_docs_api_feature_parity_md_464_namespaceObject = JSON.parse('{"id":"api-feature-parity","title":"Docker Engine API Feature Parity","description":"This page tracks the implementation status of Docker Engine API v1.51 endpoints in Socktainer.","source":"@site/docs/api-feature-parity.md","sourceDirName":".","slug":"/api-feature-parity","permalink":"/docs/api-feature-parity","draft":false,"unlisted":false,"editUrl":"https://github.com/socktainer/socktainer.github.io/tree/main/docs/api-feature-parity.md","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"sidebar_position":2},"sidebar":"mySidebar","previous":{"title":"Introduction","permalink":"/docs/intro"},"next":{"title":"Docker Context","permalink":"/docs/docker-context"}}')
+var site_docs_api_feature_parity_md_464_namespaceObject = JSON.parse('{"id":"api-feature-parity","title":"Docker Engine API Feature Parity","description":"This page tracks how much of the Docker Engine API v1.51 Socktainer supports on top of Apple container.","source":"@site/docs/api-feature-parity.md","sourceDirName":".","slug":"/api-feature-parity","permalink":"/docs/api-feature-parity","draft":false,"unlisted":false,"editUrl":"https://github.com/socktainer/socktainer.github.io/tree/main/docs/api-feature-parity.md","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"sidebar_position":2},"sidebar":"mySidebar","previous":{"title":"Introduction","permalink":"/docs/intro"},"next":{"title":"Docker Context","permalink":"/docs/docker-context"}}')
 // EXTERNAL MODULE: ./node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7259);
 // EXTERNAL MODULE: ./node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@19.3.0_react@19.2.0/node_modules/@mdx-js/react/lib/index.js
@@ -103,21 +103,74 @@ function _createMdxContent(props) {
         id: "docker-engine-api-feature-parity",
         children: "Docker Engine API Feature Parity"
       })
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "This page tracks the implementation status of Docker Engine API v1.51 endpoints in Socktainer."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This page tracks how much of the ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/moby/moby/blob/v28.5.2/api/swagger.yaml",
+        children: "Docker Engine API v1.51"
+      }), " Socktainer supports on top of Apple container."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["Source ticket: ", (0,jsx_runtime.jsx)(_components.a, {
         href: "https://github.com/socktainer/socktainer/issues/14",
         children: "socktainer/socktainer#14"
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ Supported"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⚠️ Partial / pending"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "❌ Not applicable"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "52"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "17"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "28"
+            })
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "52 of 69 applicable endpoints are supported (~75%)."
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-      type: "important",
+      type: "note",
       children: (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["This table is just a draft for Docker Engine API v1.51.\nComparing against Apple container ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "v0.10.0"
+        children: ["Compared against Apple container ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1.5.0"
         }), " (commit ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "6bdb647b69671c037e2188558ed2e5ba49af2e1a"
-        }), ").\nLast updated March 18th, 2026."]
+          children: "d265d669ecae041bf338cb3b39c4118316d138f0"
+        }), ").\nLast updated October 8th, 2026."]
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "status-legend",
@@ -126,23 +179,16 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["✅ ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Implemented"
-        }), " - Endpoint is fully functional"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["❌ ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Not Implemented"
-        }), " - Endpoint is stubbed but not yet functional"]
+        }), " - The linked PRs and issues give details and limitations"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["⚠️ ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Limited/Not Applicable"
-        }), " - Cannot be implemented due to Apple container limitations or not applicable to Socktainer's use case"]
+          children: "Partial / pending"
+        }), " - Not implemented or stubbed yet. Apple container may add support later, or Socktainer may emulate it"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not applicable"
+        }), " - Not applicable to Apple container (for example swarm or pause). Returns a \"not supported\" error"]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["Endpoints marked with ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "⚠️"
-        }), " might be implemented by Apple in the future,\nor could be \"mocked\" by socktainer in the future."]
-      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "containers",
       children: "Containers"
@@ -175,7 +221,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/37",
+              href: "https://github.com/socktainer/socktainer/issues/37",
               children: "#37"
             })
           })]
@@ -227,12 +273,12 @@ function _createMdxContent(props) {
               children: "/containers/{id}/export"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/313",
+              children: "#313"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -240,12 +286,12 @@ function _createMdxContent(props) {
               children: "/containers/{id}/stats"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/217",
+              children: "#217"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -253,12 +299,12 @@ function _createMdxContent(props) {
               children: "/containers/{id}/resize"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/232",
+              children: "#232"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -285,7 +331,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/82",
+              href: "https://github.com/socktainer/socktainer/issues/82",
               children: "#82"
             })
           })]
@@ -298,7 +344,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/82",
+              href: "https://github.com/socktainer/socktainer/issues/82",
               children: "#82"
             })
           })]
@@ -308,12 +354,12 @@ function _createMdxContent(props) {
               children: "/containers/{id}/update"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "✅"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: [(0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/308",
+              children: "#308"
+            }), " — restart policy only; resource limits are ignored with a warning (VM resources fixed at create)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -321,12 +367,12 @@ function _createMdxContent(props) {
               children: "/containers/{id}/rename"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "✅"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: [(0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/418",
+              children: "#418"
+            }), " — never-started containers only (409 otherwise)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -334,12 +380,9 @@ function _createMdxContent(props) {
               children: "/containers/{id}/pause"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "❌"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not supported by Apple container, returns an error"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -363,7 +406,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/94",
+              href: "https://github.com/socktainer/socktainer/issues/94",
               children: "#94"
             })
           })]
@@ -373,12 +416,12 @@ function _createMdxContent(props) {
               children: "/containers/{id}/attach/ws"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "❌"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not implemented, stubbed for now (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/243",
+              children: "#243"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -389,7 +432,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/82",
+              href: "https://github.com/socktainer/socktainer/issues/82",
               children: "#82"
             })
           })]
@@ -410,7 +453,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/169",
+              href: "https://github.com/socktainer/socktainer/issues/169",
               children: "#169"
             })
           })]
@@ -423,7 +466,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/65",
+              href: "https://github.com/socktainer/socktainer/issues/65",
               children: "#65"
             })
           })]
@@ -461,7 +504,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/101",
+              href: "https://github.com/socktainer/socktainer/issues/101",
               children: "#101"
             })
           })]
@@ -474,7 +517,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/183",
+              href: "https://github.com/socktainer/socktainer/issues/183",
               children: "#183"
             })
           })]
@@ -485,11 +528,18 @@ function _createMdxContent(props) {
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "✅"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/12",
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/12",
               children: "#12"
-            })
+            }), " ", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/321",
+              children: "#321"
+            }), " (import via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "fromSrc=-"
+            }), "; URL ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "fromSrc"
+            }), " unsupported)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -505,12 +555,12 @@ function _createMdxContent(props) {
               children: "/images/{name}/history"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), "), could be handled entirely within socktainer."]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/188",
+              children: "#188"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -521,7 +571,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/128",
+              href: "https://github.com/socktainer/socktainer/issues/128",
               children: "#128"
             })
           })]
@@ -534,7 +584,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/126",
+              href: "https://github.com/socktainer/socktainer/issues/126",
               children: "#126"
             })
           })]
@@ -552,12 +602,12 @@ function _createMdxContent(props) {
               children: "/images/search"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "✅"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available(", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), "), who is responsible for this logic?"]
+            children: [(0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/309",
+              children: "#309"
+            }), " — Docker Hub only"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -568,7 +618,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/133",
+              href: "https://github.com/socktainer/socktainer/issues/133",
               children: "#133"
             })
           })]
@@ -581,7 +631,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/137",
+              href: "https://github.com/socktainer/socktainer/issues/137",
               children: "#137"
             })
           })]
@@ -594,7 +644,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/137",
+              href: "https://github.com/socktainer/socktainer/issues/137",
               children: "#137"
             })
           })]
@@ -607,7 +657,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/137",
+              href: "https://github.com/socktainer/socktainer/issues/137",
               children: "#137"
             })
           })]
@@ -686,7 +736,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/58",
+              href: "https://github.com/socktainer/socktainer/issues/58",
               children: "#58"
             })
           })]
@@ -699,7 +749,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/58",
+              href: "https://github.com/socktainer/socktainer/issues/58",
               children: "#58"
             })
           })]
@@ -712,7 +762,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/58",
+              href: "https://github.com/socktainer/socktainer/issues/58",
               children: "#58"
             })
           })]
@@ -725,7 +775,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/58",
+              href: "https://github.com/socktainer/socktainer/issues/58",
               children: "#58"
             })
           })]
@@ -755,7 +805,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/44",
+              href: "https://github.com/socktainer/socktainer/issues/44",
               children: "#44"
             })
           })]
@@ -768,10 +818,10 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/44",
+              href: "https://github.com/socktainer/socktainer/issues/44",
               children: "#44"
             }), " ", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/52",
+              href: "https://github.com/socktainer/socktainer/issues/52",
               children: "#52"
             })]
           })]
@@ -784,7 +834,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/52",
+              href: "https://github.com/socktainer/socktainer/issues/52",
               children: "#52"
             })
           })]
@@ -796,9 +846,9 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "⚠️"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
+            children: ["No-op returning 200 so Compose proceeds; Apple container cannot attach networks (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/212",
+              children: "#212"
             }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
@@ -809,9 +859,9 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "⚠️"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
+            children: ["No-op returning 200 so Compose proceeds; Apple container cannot detach networks (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/212",
+              children: "#212"
             }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
@@ -823,7 +873,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/52",
+              href: "https://github.com/socktainer/socktainer/issues/52",
               children: "#52"
             })
           })]
@@ -853,7 +903,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/105",
+              href: "https://github.com/socktainer/socktainer/issues/105",
               children: "#105"
             })
           })]
@@ -866,7 +916,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/28",
+              href: "https://github.com/socktainer/socktainer/issues/28",
               children: "#28"
             })
           })]
@@ -879,7 +929,7 @@ function _createMdxContent(props) {
             children: "✅"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/28",
+              href: "https://github.com/socktainer/socktainer/issues/28",
               children: "#28"
             })
           })]
@@ -918,12 +968,12 @@ function _createMdxContent(props) {
               children: "/system/df"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/191",
+              children: "#191"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -931,12 +981,12 @@ function _createMdxContent(props) {
               children: "/distribution/{name}/json"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "❌"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not implemented, stubbed for now (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: "✅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/311",
+              children: "#311"
+            })
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -944,12 +994,9 @@ function _createMdxContent(props) {
               children: "/session"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["No matching capability available (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")"]
+            children: "❌"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not supported by Apple container, returns an error"
           })]
         })]
       })]
@@ -1134,12 +1181,12 @@ function _createMdxContent(props) {
               children: "/nodes"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1147,12 +1194,12 @@ function _createMdxContent(props) {
               children: "/nodes/{id}"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1160,12 +1207,12 @@ function _createMdxContent(props) {
               children: "/nodes/{id}/update"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1173,12 +1220,12 @@ function _createMdxContent(props) {
               children: "/swarm"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1186,12 +1233,12 @@ function _createMdxContent(props) {
               children: "/swarm/init"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1199,12 +1246,12 @@ function _createMdxContent(props) {
               children: "/swarm/join"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1212,12 +1259,12 @@ function _createMdxContent(props) {
               children: "/swarm/leave"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1225,12 +1272,12 @@ function _createMdxContent(props) {
               children: "/swarm/update"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1238,12 +1285,12 @@ function _createMdxContent(props) {
               children: "/swarm/unlockkey"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1251,12 +1298,12 @@ function _createMdxContent(props) {
               children: "/swarm/unlock"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/pull/17",
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
               children: "#17"
-            }), ")."]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1264,12 +1311,12 @@ function _createMdxContent(props) {
               children: "/services"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1277,12 +1324,12 @@ function _createMdxContent(props) {
               children: "/services/create"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1290,12 +1337,12 @@ function _createMdxContent(props) {
               children: "/services/{id}"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1303,12 +1350,12 @@ function _createMdxContent(props) {
               children: "/services/{id}/update"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1316,12 +1363,12 @@ function _createMdxContent(props) {
               children: "/services/{id}/logs"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1329,12 +1376,12 @@ function _createMdxContent(props) {
               children: "/tasks"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1342,12 +1389,12 @@ function _createMdxContent(props) {
               children: "/tasks/{id}"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1355,12 +1402,12 @@ function _createMdxContent(props) {
               children: "/tasks/{id}/logs"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1368,12 +1415,12 @@ function _createMdxContent(props) {
               children: "/secrets"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1381,12 +1428,12 @@ function _createMdxContent(props) {
               children: "/secrets/create"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1394,12 +1441,12 @@ function _createMdxContent(props) {
               children: "/secrets/{id}"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1407,12 +1454,12 @@ function _createMdxContent(props) {
               children: "/secrets/{id}/update"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1420,12 +1467,12 @@ function _createMdxContent(props) {
               children: "/configs"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1433,12 +1480,12 @@ function _createMdxContent(props) {
               children: "/configs/create"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1446,12 +1493,12 @@ function _createMdxContent(props) {
               children: "/configs/{id}"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1459,12 +1506,12 @@ function _createMdxContent(props) {
               children: "/configs/{id}/update"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "⚠️"
+            children: "❌"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Not applicable, part of swarm. Should return some kind of an error to user (", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/socktainer/socktainer/issues/18",
-              children: "#18"
-            }), ")."]
+            children: ["Not applicable (swarm), returns a \"not supported\" error (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/socktainer/socktainer/issues/17",
+              children: "#17"
+            }), ")"]
           })]
         })]
       })]
