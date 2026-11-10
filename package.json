@@ -39,7 +39,7 @@
     "@fortawesome/react-fontawesome": "^3.5.0",
     "@tailwindcss/postcss": "^4.3.3",
     "prettier": "^3.9.9",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "^4.3.5",
     "typescript": "~7.0.2"
   },
   "browserslist": {
